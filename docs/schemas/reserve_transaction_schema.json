@@ -1,0 +1,25 @@
+{
+  "schema": "reserve_transaction_schema",
+  "version": "1.0",
+  "description": "Schema for reserve fund transactions",
+  "required_fields": [
+    "reserve_txn_id", "timestamp", "reserve_type", "transaction_type",
+    "amount", "authority", "status", "audit_id"
+  ],
+  "fields": {
+    "reserve_txn_id": {"type": "string", "format": "RST-{YYYY}-{NNNN}", "description": "Unique reserve transaction identifier"},
+    "timestamp": {"type": "string", "format": "ISO-8601", "description": "Transaction timestamp"},
+    "reserve_type": {"type": "string", "enum": ["StrategicReserve", "EmergencyReserve"], "description": "Type of reserve"},
+    "transaction_type": {"type": "string", "enum": ["Contribution", "Drawdown", "Replenishment", "Rebalance"], "description": "Type of reserve transaction"},
+    "amount": {"type": "number", "minimum": 0, "description": "Transaction amount"},
+    "remaining_balance": {"type": "number", "minimum": 0, "optional": true, "description": "Balance after transaction"},
+    "authority": {"type": "string", "description": "Authorizing agent or person"},
+    "approval_chain": {"type": "array", "items": {"type": "string"}, "description": "Full approval chain"},
+    "emergency_event": {"type": "string", "optional": "true", "description": "If emergency drawdown, the event type"},
+    "description": {"type": "string", "optional": true, "description": "Transaction description"},
+    "status": {"type": "string", "enum": ["PENDING", "COMPLETED", "FAILED", "REVERSED", "AUDITED"], "description": "Transaction status"},
+    "audit_id": {"type": "string", "format": "AUDIT-{XXXXXXXX}", "description": "Link to audit record"},
+    "created_at": {"type": "string", "format": "ISO-8601", "description": "Record creation timestamp"},
+    "updated_at": {"type": "string", "format": "ISO-8601", "optional": true, "description": "Last update timestamp"}
+  }
+}

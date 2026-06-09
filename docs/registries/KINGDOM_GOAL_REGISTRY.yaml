@@ -1,0 +1,1096 @@
+kingdom_goal_registry:
+  created_at: '2026-06-08'
+  goal_lifecycle:
+  - PROPOSED
+  - APPROVED
+  - ACTIVE
+  - COMPLETED
+  - ARCHIVED
+  goals:
+  - completion_criteria: []
+    created_at: '2026-06-08T04:56:25.116478+00:00'
+    description: A test goal
+    goal_id: GOAL-0001
+    linked_programs: []
+    name: Test Goal
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T04:56:25.116478+00:00'
+    vision_link: Kingdom Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T04:56:25.129514+00:00'
+    description: Test retrieval
+    goal_id: GOAL-0002
+    linked_programs: []
+    name: Get Test
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T04:56:25.129514+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T04:56:25.161759+00:00'
+    description: Test transition
+    goal_id: GOAL-0003
+    linked_programs: []
+    name: Transition Test
+    parent_goal_id: null
+    progress: 0.0
+    status: APPROVED
+    updated_at: '2026-06-08T04:56:25.168767+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T04:56:25.217077+00:00'
+    description: Test backward
+    goal_id: GOAL-0004
+    linked_programs: []
+    name: Backwards Test
+    parent_goal_id: null
+    progress: 0.0
+    status: APPROVED
+    updated_at: '2026-06-08T04:56:25.232705+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T04:56:25.295605+00:00'
+    description: Test progress
+    goal_id: GOAL-0005
+    linked_programs: []
+    name: Progress Test
+    parent_goal_id: null
+    progress: 50.0
+    status: PROPOSED
+    updated_at: '2026-06-08T04:56:25.326749+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T04:56:25.355225+00:00'
+    description: Test invalid
+    goal_id: GOAL-0006
+    linked_programs: []
+    name: Invalid Progress
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T04:56:25.355225+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T04:56:25.496841+00:00'
+    description: For planning test
+    goal_id: GOAL-0007
+    linked_programs: []
+    name: Plan Goal
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T04:56:25.496841+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T04:56:41.000876+00:00'
+    description: A test goal
+    goal_id: GOAL-0008
+    linked_programs: []
+    name: Test Goal
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T04:56:41.000876+00:00'
+    vision_link: Kingdom Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T04:56:41.019479+00:00'
+    description: Test retrieval
+    goal_id: GOAL-0009
+    linked_programs: []
+    name: Get Test
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T04:56:41.019479+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T04:56:41.083688+00:00'
+    description: Test transition
+    goal_id: GOAL-0010
+    linked_programs: []
+    name: Transition Test
+    parent_goal_id: null
+    progress: 0.0
+    status: APPROVED
+    updated_at: '2026-06-08T04:56:41.099361+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T04:56:41.133054+00:00'
+    description: Test backward
+    goal_id: GOAL-0011
+    linked_programs: []
+    name: Backwards Test
+    parent_goal_id: null
+    progress: 0.0
+    status: APPROVED
+    updated_at: '2026-06-08T04:56:41.148713+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T04:56:41.201768+00:00'
+    description: Test progress
+    goal_id: GOAL-0012
+    linked_programs: []
+    name: Progress Test
+    parent_goal_id: null
+    progress: 50.0
+    status: PROPOSED
+    updated_at: '2026-06-08T04:56:41.217425+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T04:56:41.279195+00:00'
+    description: Test invalid
+    goal_id: GOAL-0013
+    linked_programs: []
+    name: Invalid Progress
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T04:56:41.279195+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T04:56:41.519642+00:00'
+    description: For planning test
+    goal_id: GOAL-0014
+    linked_programs: []
+    name: Plan Goal
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T04:56:41.519642+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T04:58:59.129092+00:00'
+    description: A test goal
+    goal_id: GOAL-0015
+    linked_programs: []
+    name: Test Goal
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T04:58:59.129092+00:00'
+    vision_link: Kingdom Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T04:58:59.175966+00:00'
+    description: Test retrieval
+    goal_id: GOAL-0016
+    linked_programs: []
+    name: Get Test
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T04:58:59.175966+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T04:58:59.254243+00:00'
+    description: Test transition
+    goal_id: GOAL-0017
+    linked_programs: []
+    name: Transition Test
+    parent_goal_id: null
+    progress: 0.0
+    status: APPROVED
+    updated_at: '2026-06-08T04:58:59.285536+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T04:58:59.348035+00:00'
+    description: Test backward
+    goal_id: GOAL-0018
+    linked_programs: []
+    name: Backwards Test
+    parent_goal_id: null
+    progress: 0.0
+    status: APPROVED
+    updated_at: '2026-06-08T04:58:59.379286+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T04:58:59.441756+00:00'
+    description: Test progress
+    goal_id: GOAL-0019
+    linked_programs: []
+    name: Progress Test
+    parent_goal_id: null
+    progress: 50.0
+    status: PROPOSED
+    updated_at: '2026-06-08T04:58:59.472996+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T04:58:59.535497+00:00'
+    description: Test invalid
+    goal_id: GOAL-0020
+    linked_programs: []
+    name: Invalid Progress
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T04:58:59.535497+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T04:58:59.879652+00:00'
+    description: For planning test
+    goal_id: GOAL-0021
+    linked_programs: []
+    name: Plan Goal
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T04:58:59.879652+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T05:00:10.471827+00:00'
+    description: A test goal
+    goal_id: GOAL-0022
+    linked_programs: []
+    name: Test Goal
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T05:00:10.471827+00:00'
+    vision_link: Kingdom Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T05:00:10.538420+00:00'
+    description: Test retrieval
+    goal_id: GOAL-0023
+    linked_programs: []
+    name: Get Test
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T05:00:10.538420+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T05:00:10.638428+00:00'
+    description: Test transition
+    goal_id: GOAL-0024
+    linked_programs: []
+    name: Transition Test
+    parent_goal_id: null
+    progress: 0.0
+    status: APPROVED
+    updated_at: '2026-06-08T05:00:10.688644+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T05:00:10.738414+00:00'
+    description: Test backward
+    goal_id: GOAL-0025
+    linked_programs: []
+    name: Backwards Test
+    parent_goal_id: null
+    progress: 0.0
+    status: APPROVED
+    updated_at: '2026-06-08T05:00:10.788478+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T05:00:10.875848+00:00'
+    description: Test progress
+    goal_id: GOAL-0026
+    linked_programs: []
+    name: Progress Test
+    parent_goal_id: null
+    progress: 50.0
+    status: PROPOSED
+    updated_at: '2026-06-08T05:00:10.920243+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T05:00:10.986926+00:00'
+    description: Test invalid
+    goal_id: GOAL-0027
+    linked_programs: []
+    name: Invalid Progress
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T05:00:10.986926+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T05:00:11.561192+00:00'
+    description: For planning test
+    goal_id: GOAL-0028
+    linked_programs: []
+    name: Plan Goal
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T05:00:11.561192+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T05:12:57.983578+00:00'
+    description: A test goal
+    goal_id: GOAL-0029
+    linked_programs: []
+    name: Test Goal
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T05:12:57.983578+00:00'
+    vision_link: Kingdom Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T05:12:58.061752+00:00'
+    description: Test retrieval
+    goal_id: GOAL-0030
+    linked_programs: []
+    name: Get Test
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T05:12:58.061752+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T05:12:58.218214+00:00'
+    description: Test transition
+    goal_id: GOAL-0031
+    linked_programs: []
+    name: Transition Test
+    parent_goal_id: null
+    progress: 0.0
+    status: APPROVED
+    updated_at: '2026-06-08T05:12:58.265102+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T05:12:58.359178+00:00'
+    description: Test backward
+    goal_id: GOAL-0032
+    linked_programs: []
+    name: Backwards Test
+    parent_goal_id: null
+    progress: 0.0
+    status: APPROVED
+    updated_at: '2026-06-08T05:12:58.406033+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T05:12:58.612024+00:00'
+    description: Test progress
+    goal_id: GOAL-0033
+    linked_programs: []
+    name: Progress Test
+    parent_goal_id: null
+    progress: 50.0
+    status: PROPOSED
+    updated_at: '2026-06-08T05:12:58.664415+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T05:12:58.758760+00:00'
+    description: Test invalid
+    goal_id: GOAL-0034
+    linked_programs: []
+    name: Invalid Progress
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T05:12:58.758760+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T05:12:59.321440+00:00'
+    description: For planning test
+    goal_id: GOAL-0035
+    linked_programs: []
+    name: Plan Goal
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T05:12:59.321440+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:36:57.743665+00:00'
+    description: A test goal
+    goal_id: GOAL-0036
+    linked_programs: []
+    name: Test Goal
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T06:36:57.743665+00:00'
+    vision_link: Kingdom Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:36:57.838626+00:00'
+    description: Test retrieval
+    goal_id: GOAL-0037
+    linked_programs: []
+    name: Get Test
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T06:36:57.838626+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:36:58.001601+00:00'
+    description: Test transition
+    goal_id: GOAL-0038
+    linked_programs: []
+    name: Transition Test
+    parent_goal_id: null
+    progress: 0.0
+    status: APPROVED
+    updated_at: '2026-06-08T06:36:58.052913+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:36:58.135988+00:00'
+    description: Test backward
+    goal_id: GOAL-0039
+    linked_programs: []
+    name: Backwards Test
+    parent_goal_id: null
+    progress: 0.0
+    status: APPROVED
+    updated_at: '2026-06-08T06:36:58.183062+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:36:58.307734+00:00'
+    description: Test progress
+    goal_id: GOAL-0040
+    linked_programs: []
+    name: Progress Test
+    parent_goal_id: null
+    progress: 50.0
+    status: PROPOSED
+    updated_at: '2026-06-08T06:36:58.354639+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:36:58.453277+00:00'
+    description: Test invalid
+    goal_id: GOAL-0041
+    linked_programs: []
+    name: Invalid Progress
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T06:36:58.453277+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:36:58.983598+00:00'
+    description: For planning test
+    goal_id: GOAL-0042
+    linked_programs: []
+    name: Plan Goal
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T06:36:58.983598+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:52:31.127499+00:00'
+    description: A test goal
+    goal_id: GOAL-0043
+    linked_programs: []
+    name: Test Goal
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T06:52:31.127499+00:00'
+    vision_link: Kingdom Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:52:31.217737+00:00'
+    description: Test retrieval
+    goal_id: GOAL-0044
+    linked_programs: []
+    name: Get Test
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T06:52:31.217737+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:52:31.389759+00:00'
+    description: Test transition
+    goal_id: GOAL-0045
+    linked_programs: []
+    name: Transition Test
+    parent_goal_id: null
+    progress: 0.0
+    status: APPROVED
+    updated_at: '2026-06-08T06:52:31.452477+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:52:31.552137+00:00'
+    description: Test backward
+    goal_id: GOAL-0046
+    linked_programs: []
+    name: Backwards Test
+    parent_goal_id: null
+    progress: 0.0
+    status: APPROVED
+    updated_at: '2026-06-08T06:52:31.608750+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:52:31.733750+00:00'
+    description: Test progress
+    goal_id: GOAL-0047
+    linked_programs: []
+    name: Progress Test
+    parent_goal_id: null
+    progress: 50.0
+    status: PROPOSED
+    updated_at: '2026-06-08T06:52:31.811737+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:52:31.905697+00:00'
+    description: Test invalid
+    goal_id: GOAL-0048
+    linked_programs: []
+    name: Invalid Progress
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T06:52:31.905697+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:52:32.546221+00:00'
+    description: For planning test
+    goal_id: GOAL-0049
+    linked_programs: []
+    name: Plan Goal
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T06:52:32.546221+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:53:54.530344+00:00'
+    description: A test goal
+    goal_id: GOAL-0050
+    linked_programs: []
+    name: Test Goal
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T06:53:54.530344+00:00'
+    vision_link: Kingdom Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:53:54.639720+00:00'
+    description: Test retrieval
+    goal_id: GOAL-0051
+    linked_programs: []
+    name: Get Test
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T06:53:54.639720+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:53:54.827488+00:00'
+    description: Test transition
+    goal_id: GOAL-0052
+    linked_programs: []
+    name: Transition Test
+    parent_goal_id: null
+    progress: 0.0
+    status: APPROVED
+    updated_at: '2026-06-08T06:53:54.905453+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:53:55.014519+00:00'
+    description: Test backward
+    goal_id: GOAL-0053
+    linked_programs: []
+    name: Backwards Test
+    parent_goal_id: null
+    progress: 0.0
+    status: APPROVED
+    updated_at: '2026-06-08T06:53:55.101182+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:53:55.248979+00:00'
+    description: Test progress
+    goal_id: GOAL-0054
+    linked_programs: []
+    name: Progress Test
+    parent_goal_id: null
+    progress: 50.0
+    status: PROPOSED
+    updated_at: '2026-06-08T06:53:55.327079+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:53:55.452382+00:00'
+    description: Test invalid
+    goal_id: GOAL-0055
+    linked_programs: []
+    name: Invalid Progress
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T06:53:55.452382+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:53:56.156103+00:00'
+    description: For planning test
+    goal_id: GOAL-0056
+    linked_programs: []
+    name: Plan Goal
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T06:53:56.156103+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:54:18.670917+00:00'
+    description: A test goal
+    goal_id: GOAL-0057
+    linked_programs: []
+    name: Test Goal
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T06:54:18.670917+00:00'
+    vision_link: Kingdom Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:54:18.796153+00:00'
+    description: Test retrieval
+    goal_id: GOAL-0058
+    linked_programs: []
+    name: Get Test
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T06:54:18.796153+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:54:19.015893+00:00'
+    description: Test transition
+    goal_id: GOAL-0059
+    linked_programs: []
+    name: Transition Test
+    parent_goal_id: null
+    progress: 0.0
+    status: APPROVED
+    updated_at: '2026-06-08T06:54:19.092653+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:54:19.227489+00:00'
+    description: Test backward
+    goal_id: GOAL-0060
+    linked_programs: []
+    name: Backwards Test
+    parent_goal_id: null
+    progress: 0.0
+    status: APPROVED
+    updated_at: '2026-06-08T06:54:19.296400+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:54:19.483697+00:00'
+    description: Test progress
+    goal_id: GOAL-0061
+    linked_programs: []
+    name: Progress Test
+    parent_goal_id: null
+    progress: 50.0
+    status: PROPOSED
+    updated_at: '2026-06-08T06:54:19.562224+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:54:19.709085+00:00'
+    description: Test invalid
+    goal_id: GOAL-0062
+    linked_programs: []
+    name: Invalid Progress
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T06:54:19.709085+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:54:20.499627+00:00'
+    description: For planning test
+    goal_id: GOAL-0063
+    linked_programs: []
+    name: Plan Goal
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T06:54:20.499627+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:55:44.328252+00:00'
+    description: A test goal
+    goal_id: GOAL-0064
+    linked_programs: []
+    name: Test Goal
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T06:55:44.328252+00:00'
+    vision_link: Kingdom Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:55:44.476132+00:00'
+    description: Test retrieval
+    goal_id: GOAL-0065
+    linked_programs: []
+    name: Get Test
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T06:55:44.476132+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:55:44.719210+00:00'
+    description: Test transition
+    goal_id: GOAL-0066
+    linked_programs: []
+    name: Transition Test
+    parent_goal_id: null
+    progress: 0.0
+    status: APPROVED
+    updated_at: '2026-06-08T06:55:44.814567+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:55:44.952899+00:00'
+    description: Test backward
+    goal_id: GOAL-0067
+    linked_programs: []
+    name: Backwards Test
+    parent_goal_id: null
+    progress: 0.0
+    status: APPROVED
+    updated_at: '2026-06-08T06:55:45.040233+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:55:45.233533+00:00'
+    description: Test progress
+    goal_id: GOAL-0068
+    linked_programs: []
+    name: Progress Test
+    parent_goal_id: null
+    progress: 50.0
+    status: PROPOSED
+    updated_at: '2026-06-08T06:55:45.327266+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:55:45.471680+00:00'
+    description: Test invalid
+    goal_id: GOAL-0069
+    linked_programs: []
+    name: Invalid Progress
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T06:55:45.471680+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T06:55:46.327445+00:00'
+    description: For planning test
+    goal_id: GOAL-0070
+    linked_programs: []
+    name: Plan Goal
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T06:55:46.327445+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T07:13:11.461911+00:00'
+    description: A test goal
+    goal_id: GOAL-0071
+    linked_programs: []
+    name: Test Goal
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T07:13:11.461911+00:00'
+    vision_link: Kingdom Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T07:13:11.608266+00:00'
+    description: Test retrieval
+    goal_id: GOAL-0072
+    linked_programs: []
+    name: Get Test
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T07:13:11.608266+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T07:13:11.889680+00:00'
+    description: Test transition
+    goal_id: GOAL-0073
+    linked_programs: []
+    name: Transition Test
+    parent_goal_id: null
+    progress: 0.0
+    status: APPROVED
+    updated_at: '2026-06-08T07:13:11.983591+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T07:13:12.154642+00:00'
+    description: Test backward
+    goal_id: GOAL-0074
+    linked_programs: []
+    name: Backwards Test
+    parent_goal_id: null
+    progress: 0.0
+    status: APPROVED
+    updated_at: '2026-06-08T07:13:12.258475+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T07:13:12.528569+00:00'
+    description: Test progress
+    goal_id: GOAL-0075
+    linked_programs: []
+    name: Progress Test
+    parent_goal_id: null
+    progress: 50.0
+    status: PROPOSED
+    updated_at: '2026-06-08T07:13:12.638313+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T07:13:12.856280+00:00'
+    description: Test invalid
+    goal_id: GOAL-0076
+    linked_programs: []
+    name: Invalid Progress
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T07:13:12.856280+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T07:13:14.048108+00:00'
+    description: For planning test
+    goal_id: GOAL-0077
+    linked_programs: []
+    name: Plan Goal
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T07:13:14.048108+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T08:17:08.594055+00:00'
+    description: A test goal
+    goal_id: GOAL-0078
+    linked_programs: []
+    name: Test Goal
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T08:17:08.594055+00:00'
+    vision_link: Kingdom Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T08:17:08.764544+00:00'
+    description: Test retrieval
+    goal_id: GOAL-0079
+    linked_programs: []
+    name: Get Test
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T08:17:08.764544+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T08:17:09.093143+00:00'
+    description: Test transition
+    goal_id: GOAL-0080
+    linked_programs: []
+    name: Transition Test
+    parent_goal_id: null
+    progress: 0.0
+    status: APPROVED
+    updated_at: '2026-06-08T08:17:09.206008+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T08:17:09.374772+00:00'
+    description: Test backward
+    goal_id: GOAL-0081
+    linked_programs: []
+    name: Backwards Test
+    parent_goal_id: null
+    progress: 0.0
+    status: APPROVED
+    updated_at: '2026-06-08T08:17:09.483836+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T08:17:09.733575+00:00'
+    description: Test progress
+    goal_id: GOAL-0082
+    linked_programs: []
+    name: Progress Test
+    parent_goal_id: null
+    progress: 50.0
+    status: PROPOSED
+    updated_at: '2026-06-08T08:17:09.843283+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T08:17:10.014860+00:00'
+    description: Test invalid
+    goal_id: GOAL-0083
+    linked_programs: []
+    name: Invalid Progress
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T08:17:10.014860+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T08:17:11.108623+00:00'
+    description: For planning test
+    goal_id: GOAL-0084
+    linked_programs: []
+    name: Plan Goal
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T08:17:11.108623+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T08:24:57.562894+00:00'
+    description: A test goal
+    goal_id: GOAL-0085
+    linked_programs: []
+    name: Test Goal
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T08:24:57.562894+00:00'
+    vision_link: Kingdom Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T08:24:57.759640+00:00'
+    description: Test retrieval
+    goal_id: GOAL-0086
+    linked_programs: []
+    name: Get Test
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T08:24:57.759640+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T08:24:58.123964+00:00'
+    description: Test transition
+    goal_id: GOAL-0087
+    linked_programs: []
+    name: Transition Test
+    parent_goal_id: null
+    progress: 0.0
+    status: APPROVED
+    updated_at: '2026-06-08T08:24:58.252081+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T08:24:58.500483+00:00'
+    description: Test backward
+    goal_id: GOAL-0088
+    linked_programs: []
+    name: Backwards Test
+    parent_goal_id: null
+    progress: 0.0
+    status: APPROVED
+    updated_at: '2026-06-08T08:24:58.624199+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T08:24:58.889793+00:00'
+    description: Test progress
+    goal_id: GOAL-0089
+    linked_programs: []
+    name: Progress Test
+    parent_goal_id: null
+    progress: 50.0
+    status: PROPOSED
+    updated_at: '2026-06-08T08:24:59.008364+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T08:24:59.213996+00:00'
+    description: Test invalid
+    goal_id: GOAL-0090
+    linked_programs: []
+    name: Invalid Progress
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T08:24:59.213996+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T08:25:00.436318+00:00'
+    description: For planning test
+    goal_id: GOAL-0091
+    linked_programs: []
+    name: Plan Goal
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T08:25:00.436318+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T09:35:06.835516+00:00'
+    description: A test goal
+    goal_id: GOAL-0092
+    linked_programs: []
+    name: Test Goal
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T09:35:06.835516+00:00'
+    vision_link: Kingdom Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T09:35:07.046561+00:00'
+    description: Test retrieval
+    goal_id: GOAL-0093
+    linked_programs: []
+    name: Get Test
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T09:35:07.046561+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T09:35:07.421296+00:00'
+    description: Test transition
+    goal_id: GOAL-0094
+    linked_programs: []
+    name: Transition Test
+    parent_goal_id: null
+    progress: 0.0
+    status: APPROVED
+    updated_at: '2026-06-08T09:35:07.547395+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T09:35:07.749332+00:00'
+    description: Test backward
+    goal_id: GOAL-0095
+    linked_programs: []
+    name: Backwards Test
+    parent_goal_id: null
+    progress: 0.0
+    status: APPROVED
+    updated_at: '2026-06-08T09:35:07.874290+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T09:35:08.186831+00:00'
+    description: Test progress
+    goal_id: GOAL-0096
+    linked_programs: []
+    name: Progress Test
+    parent_goal_id: null
+    progress: 50.0
+    status: PROPOSED
+    updated_at: '2026-06-08T09:35:08.311440+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T09:35:08.530859+00:00'
+    description: Test invalid
+    goal_id: GOAL-0097
+    linked_programs: []
+    name: Invalid Progress
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T09:35:08.530859+00:00'
+    vision_link: Vision
+  - completion_criteria: []
+    created_at: '2026-06-08T09:35:09.889999+00:00'
+    description: For planning test
+    goal_id: GOAL-0098
+    linked_programs: []
+    name: Plan Goal
+    parent_goal_id: null
+    progress: 0.0
+    status: PROPOSED
+    updated_at: '2026-06-08T09:35:09.889999+00:00'
+    vision_link: Vision
+  last_goal_id: GOAL-0098
+  last_updated: '2026-06-08T09:35:09.889999+00:00'
+  next_review: '2026-07-08'
+  operator: Sage
+  owner: Janus
+  reviewer: Hung Vuong
+  status: ACTIVE
+  updated_at: '2026-06-08'
+  version: 1.0

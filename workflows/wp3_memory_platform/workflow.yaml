@@ -1,0 +1,22 @@
+name: wp3_memory_platform
+status: runtime_verified
+entrypoint: workflows.wp3_acceptance
+minimum_score: 0.95
+phases:
+  - research_hermes_architecture
+  - design_ak_native_learning_layer
+  - implement_runtime_package
+  - verify_runtime_and_policy
+  - report_and_review
+boundaries:
+  no_sqlite: true
+  no_chroma: true
+  no_faiss: true
+  no_hermes_runtime_import: true
+  no_opencode_runtime_execution: true
+  no_trading_activation: true
+  no_mt5_activation: true
+review_items:
+  - sage_review_required
+  - governance_review_before_protected_integration
+  - agents_currently_bootstrap

@@ -1,0 +1,15 @@
+workflow: AK WP2 Agent Runtime Acceptance
+status: ACTIVE
+mode: dry_run_only
+checks:
+  - required_files
+  - all_agents_boot
+  - role_boundaries_present
+  - memory_interface_only
+  - opencode_lang_lieu_only
+  - no_direct_execution
+  - no_secret_access
+  - tests_pass
+  - report_exists
+pass_threshold: 1.0
+command: python -m workflows.wp2_acceptance

@@ -1,0 +1,14 @@
+name: market_sandbox_loop
+status: OBSERVE_ONLY
+description: Continuous MT5 demo observation and zone validation loop
+mode: observe_only
+schedule: daily
+
+steps:
+  - collect_market_snapshot
+  - detect_zones
+  - generate_forecasts
+  - validate_against_future
+  - store_evidence
+  - distill_lessons
+  - daily_report

@@ -1,0 +1,226 @@
+iris_feature_registry:
+  created_at: '2026-06-08'
+  features:
+  - feature_id: FEAT-XAUUSDm-202606090801
+    momentum: 0.0
+    range: 6
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:31:40.978566+00:00'
+    trend: neutral
+    volatility: 0.060606
+  - feature_id: FEAT-XAUUSDm-202606090801
+    momentum: 0.0
+    range: 6
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:31:41.111983+00:00'
+    trend: neutral
+    volatility: 0.063158
+  - feature_id: FEAT-XAUUSDm-202606090801
+    momentum: 0.0
+    range: 20
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:31:41.128487+00:00'
+    trend: neutral
+    volatility: 0.222222
+  - feature_id: FEAT-XAUUSDm-202606090801
+    momentum: 0.0
+    range: 3
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:31:41.128487+00:00'
+    trend: neutral
+    volatility: 0.030303
+  - feature_id: FEAT-XAUUSDm-202606090801
+    momentum: 0.0
+    range: 20
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:31:41.145111+00:00'
+    trend: neutral
+    volatility: 0.222222
+  - feature_id: FEAT-XAUUSDm-202606090801
+    momentum: 0.0
+    range: 3
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:31:41.145111+00:00'
+    trend: neutral
+    volatility: 0.030303
+  - feature_id: FEAT-XAUUSDm-202606090801
+    momentum: 0.0
+    range: 3
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:31:41.161836+00:00'
+    trend: neutral
+    volatility: 0.030303
+  - feature_id: FEAT-XAUUSDm-202606090802
+    momentum: 0.0
+    range: 11
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:32:41.662089+00:00'
+    trend: neutral
+    volatility: 0.111111
+  - feature_id: FEAT-XAUUSDm-202606090802
+    momentum: 0.0
+    range: 12
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:32:41.711920+00:00'
+    trend: neutral
+    volatility: 0.134831
+  - feature_id: FEAT-XAUUSDm-202606090802
+    momentum: 0.0
+    range: 20
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:32:41.728647+00:00'
+    trend: neutral
+    volatility: 0.222222
+  - feature_id: FEAT-XAUUSDm-202606090802
+    momentum: 0.0
+    range: 3
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:32:41.745235+00:00'
+    trend: neutral
+    volatility: 0.030303
+  - feature_id: FEAT-XAUUSDm-202606090802
+    momentum: 0.0
+    range: 20
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:32:41.761938+00:00'
+    trend: neutral
+    volatility: 0.222222
+  - feature_id: FEAT-XAUUSDm-202606090802
+    momentum: 0.0
+    range: 3
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:32:41.778721+00:00'
+    trend: neutral
+    volatility: 0.030303
+  - feature_id: FEAT-XAUUSDm-202606090802
+    momentum: 0.0
+    range: 3
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:32:41.795237+00:00'
+    trend: neutral
+    volatility: 0.030303
+  - feature_id: FEAT-XAUUSDm-202606090802
+    momentum: 0.0
+    range: 11
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:32:55.495120+00:00'
+    trend: neutral
+    volatility: 0.111111
+  - feature_id: FEAT-XAUUSDm-202606090803
+    momentum: 0.0
+    range: 11
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:33:57.461839+00:00'
+    trend: neutral
+    volatility: 0.111111
+  - feature_id: FEAT-XAUUSDm-202606090803
+    momentum: 0.0
+    range: 16
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:33:57.511839+00:00'
+    trend: neutral
+    volatility: 0.188235
+  - feature_id: FEAT-XAUUSDm-202606090803
+    momentum: 0.0
+    range: 20
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:33:57.528545+00:00'
+    trend: neutral
+    volatility: 0.222222
+  - feature_id: FEAT-XAUUSDm-202606090803
+    momentum: 0.0
+    range: 3
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:33:57.561730+00:00'
+    trend: neutral
+    volatility: 0.030303
+  - feature_id: FEAT-XAUUSDm-202606090803
+    momentum: 0.0
+    range: 20
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:33:57.578373+00:00'
+    trend: neutral
+    volatility: 0.222222
+  - feature_id: FEAT-XAUUSDm-202606090803
+    momentum: 0.0
+    range: 3
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:33:57.611752+00:00'
+    trend: neutral
+    volatility: 0.030303
+  - feature_id: FEAT-XAUUSDm-202606090803
+    momentum: 0.0
+    range: 3
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:33:57.645188+00:00'
+    trend: neutral
+    volatility: 0.030303
+  - feature_id: FEAT-XAUUSDm-202606090804
+    momentum: 0.0
+    range: 11
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:34:38.962076+00:00'
+    trend: neutral
+    volatility: 0.111111
+  - feature_id: FEAT-XAUUSDm-202606090804
+    momentum: 0.0
+    range: 16
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:34:39.028592+00:00'
+    trend: neutral
+    volatility: 0.188235
+  - feature_id: FEAT-XAUUSDm-202606090805
+    momentum: 0.09
+    range: 9
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:35:36.567346+00:00'
+    trend: bullish
+    volatility: 0.090909
+  - feature_id: FEAT-XAUUSDm-202606090805
+    momentum: -0.12
+    range: 16
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:35:36.629856+00:00'
+    trend: bearish
+    volatility: 0.188235
+  - feature_id: FEAT-XAUUSDm-202606090805
+    momentum: 0.0
+    range: 20
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:35:36.661264+00:00'
+    trend: neutral
+    volatility: 0.222222
+  - feature_id: FEAT-XAUUSDm-202606090805
+    momentum: 0.0
+    range: 3
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:35:36.692540+00:00'
+    trend: neutral
+    volatility: 0.030303
+  - feature_id: FEAT-XAUUSDm-202606090805
+    momentum: 0.0
+    range: 20
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:35:36.723791+00:00'
+    trend: neutral
+    volatility: 0.222222
+  - feature_id: FEAT-XAUUSDm-202606090805
+    momentum: 0.0
+    range: 3
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:35:36.755040+00:00'
+    trend: neutral
+    volatility: 0.030303
+  - feature_id: FEAT-XAUUSDm-202606090805
+    momentum: 0.0
+    range: 3
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:35:36.817551+00:00'
+    trend: neutral
+    volatility: 0.030303
+  last_updated: '2026-06-08T22:35:36.833145+00:00'
+  operator: Iris
+  owner: Janus
+  reviewer: Hermes
+  status: ACTIVE
+  version: 1.0

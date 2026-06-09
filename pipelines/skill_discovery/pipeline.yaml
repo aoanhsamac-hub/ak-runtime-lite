@@ -1,0 +1,15 @@
+name: skill_discovery
+status: operational
+owner: hermes
+version: "1.0"
+created_at: "2026-06-07T00:00:00Z"
+lifecycle_stage: CANDIDATE_PRODUCTION
+input: multiple approved LessonRecord
+output: SkillRecord (APPROVED)
+gates:
+  - evidence_threshold_gate
+  - governance_gate
+dependencies:
+  - SkillRegistry
+  - LessonRegistry
+  - SkillEvidencePolicy

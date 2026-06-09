@@ -1,0 +1,13 @@
+issue_registry:
+  status: ACTIVE
+  issues:
+  - issue_id: ISSUE-2026-0001
+    title: Test issue
+    description: Description
+    status: Draft
+    risk_level: LEVEL_0_LOW
+    proposer: LangLieu
+    reviewers:
+    approvers:
+    created_at: 2026-06-07T12:12:47+00:00
+    updated_at: 2026-06-07T12:12:47+00:00

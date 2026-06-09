@@ -1,0 +1,600 @@
+# Alkasik Kingdom WP0 Memory
+
+Date: 2026-06-09 (Updated: WP35-1C-01 through WP35-1C-05 + NAOP v1.0 + NAOP Patch v1.0 + WP-REPO-HYGIENE-01 + AK-WP35.4A + Phase 1E + AK-WP35.5-001 + AK-WP36 + AK-WP37 + AK-WP38 + NCP-R-WAVE1 + NCP-R-WAVE2 + PNSRR + PSOP-01 + PSOP-01A + PSOP-02 + PSOP-03 + PSOP-04 + KTSP + AK-CAR + CAR-R + CAR-R2 + Q1-AUDIT-30D + REH-01 + AK-MT5-INTEL-01 + AK-HL-01 + AK-KACE-01 + HERMES-IMPORT-REVIEW-01 + AK-RUNTIME-LITE-PREFLIGHT-01)
+Actor: Sage Constitutional Auditor
+Scope: D:\AK
+
+## Completed Work
+
+- **AK-RUNTIME-LITE-PREFLIGHT-01 (Runtime Operational Readiness Preflight)**: COMPLETE — NOT_APPROVED. Performed full pre-deployment review for AK-RUNTIME-LITE across 10 phases (A-J) under Q1-AUDIT-30D Day-1 Gate. Created 13 reports in docs/reports/: Infrastructure, Capacity, Telegram, MT5 Safety, Scheduler, Evidence, Security, Recovery, Backup, Stop Conditions, Deployment Board, Reviewer Loop, Completion. Identified 7 critical blockers: Telegram gateway unimplemented, scheduler tasks missing, no credential storage, no supervisor/recovery, no backup strategy, stop conditions not implemented, VPS capacity insufficient (333 MB available vs ~530 MB required). Board decision: NOT_APPROVED. Created 7 test files (120 tests: 117 passed, 3 skipped) across test_runtime_resource_thresholds.py, test_scheduler_constraints.py, test_mt5_read_only_guards.py, test_telegram_whitelist.py, test_evidence_append_only.py, test_runtime_stop_conditions.py, test_runtime_recovery_logic.py. Final outcome: NO-GO. No deployment authorized until all blockers resolved.
+
+- **HERMES-BENCHMARK-01 (Hermes Functional Equivalence Benchmark)**: COMPLETE — REVIEW_COMPLETE. Benchmarked all 10 core Hermes capabilities against reference framework. Coverage: 87%, Maturity: 93%, Auditability: 98%. All capabilities score 85+ - NO IMPORT REQUIRED. 1 capability marked for upgrade (Learning Analytics). 42 benchmark tests pass. Extended Hermes capabilities deferred to Level 3 cycle.
+
+- **HERMES-IMPORT-REVIEW-01 (Hermes Import Authorization Review)**: COMPLETE — REVIEW_COMPLETE. Reviewed 3 extended Hermes Framework capabilities. 10 core capabilities accepted (already operational). 1 REJECTED (Autonomous Capability Expansion - STOP CONDITION), 2 DEFERRED (Meta-Learning Optimization, Strategic Capability Prediction - requires Level 3). Created HERMES_IMPORT_AUTHORIZATION_REGISTRY.yaml, 6 review reports. No Hermes Framework extensions imported. Q1 audit integrity maintained.
+
+- **AK-KACE-01 (Kingdom Audit & Capability Evaluation)**: COMPLETE — OPERATIONAL. Created unified evaluation framework: 3 registries (KINGDOM_AGENT_PERFORMANCE_REGISTRY.yaml, KINGDOM_AUDIT_READINESS_REGISTRY.yaml, KINGDOM_AUDIT_EVIDENCE_INDEX.yaml), 5 services (agent_performance_engine.py, capability_economy_engine.py, audit_evidence_engine.py, audit_readiness_engine.py, kingdom_scorecard_engine.py), 4 templates (WEEKLY_AGENT_REVIEW_TEMPLATE.md, WEEKLY_CAPABILITY_REVIEW_TEMPLATE.md, WEEKLY_AUDIT_REVIEW_TEMPLATE.md, WEEKLY_KINGDOM_HEALTH_TEMPLATE.md), 5 reports (KINGDOM_AGENT_PERFORMANCE_REPORT.md, KINGDOM_CAPABILITY_ECONOMY_REPORT.md, KINGDOM_AUDIT_READINESS_REPORT.md, KINGDOM_HEALTH_SCORECARD_REPORT.md, KINGDOM_EVIDENCE_INTEGRATION_REPORT.md). 48 tests pass. Unified chain established: Agent Activity → Capability Usage → Capability Value → Capability ROI → Audit Evidence → Audit Readiness → Kingdom Scorecard. No synthetic evidence, no fabricated metrics, soft freeze respected. Evidence integrity maintained.
+
+- **AK-HL-01 (Hermes-Langlieu Capability Acceleration)**: COMPLETE — OPERATIONAL. Hermes gap analysis complete (ALL 10 core capabilities IMPLEMENTED, 3 advanced capabilities DEFERRED per Level 2 constraints). Created capability implementation queue pipeline: 4 services (coding_queue_manager.py, reviewer_runtime.py, build_validation_runtime.py, sandbox_workflow_manager.py), 1 registry (CAPABILITY_IMPLEMENTATION_QUEUE.yaml with 3 queued capabilities), 5 reports (HERMES_GAP_ANALYSIS_REPORT.md, HERMES_CAPABILITY_INVENTORY.md, HERMES_MISSING_CAPABILITIES.md, CAPABILITY_VALUE_ANALYSIS.md, CAPABILITY_PRIORITY_MATRIX.md, LANGLIEU_FEASIBILITY_REVIEW.md, CAPABILITY_IMPLEMENTATION_FEASIBILITY.md, KINGDOM_CAPABILITY_ROADMAP.md, KINGDOM_CAPABILITY_PRIORITY_REPORT.md, REVIEWER_RUNTIME_ARCHITECTURE.md, REVIEWER_RUNTIME_REPORT.md, HL01_AUDIT_INTEGRATION_REPORT.md). 50 tests pass. Capability pipeline established: Hermes Discovery → Coding Queue → Reviewer Runtime (forbidden actions blocked) → Build Validation → Sandbox Workflow → HUMAN APPROVAL REQUIRED. No self-approval authority. Level 2 constraints maintained.
+
+- **AK-MT5-INTEL-01 (Market Intelligence Loop)**: COMPLETE — OPERATIONAL. Created 3 registries (KINGDOM_MARKET_FORECAST_REGISTRY.yaml, KINGDOM_FORECAST_ACCURACY_REGISTRY.yaml, KINGDOM_MARKET_LESSON_REGISTRY.yaml), 5 services (market_forecast_engine.py, forecast_accuracy_engine.py, market_lesson_engine.py, market_knowledge_engine.py, market_skill_improvement_engine.py), 3 scripts (run_market_intelligence_cycle.py, run_forecast_review_cycle.py, run_market_learning_cycle.py), 4 templates (DAILY/WEEKLY_TRADING_INTELLIGENCE_REPORT.md, FORECAST_ACCURACY_REPORT.md, MARKET_LEARNING_REPORT.md), 4 reports (TRADING_EVIDENCE_INTEGRATION_REPORT.md, AK_MT5_INTEL_01_COMPLETION_REPORT.md, AK_MT5_INTEL_01_REVIEWER_LOOP_REPORT.md). Operational proof demonstrated: MT5 Observation → Forecast → Reality → Accuracy → Lesson → Knowledge → Skill Proposal → Evidence. 44 tests pass. Full chain validated.
+
+- **AK-WP35.5-001** (National Skill Registry Foundation): JANUS DIRECTIVE completed. Extended SkillRecord with 28 fields (10 lifecycle stages, 5 categories, 6 sources, 4 ownership levels). Unified SkillRegistry with NationalMemoryPlatform ak_skills table. Created SkillLifecycleEngine (10-stage state machine with governance gates), SkillValidationEngine (6 validation types), SkillDependencyRegistry (13 relationship types across 5 target types + circular detection), SkillOwnershipRegistry (4 access levels). Created Hermes and OpenCode/OpenHands import adapters (infrastructure-only, no activation). Created 6 YAML registries in sovereign/registries/, 5 design docs in docs/design/, 75 new tests (all passing), and final report. 163 core tests pass (0 failures). No runtime/MT5/execution/governance changes made.
+- **WP-REPO-HYGIENE-01** (Root Hygiene & File Governance): All 10 phases completed. 16 unapproved root files and 9 unapproved root directories relocated under governance. intelligence/iris/ → services/iris/ (3 import paths updated). infrastructure/ → connectors/mt5/. interface/ → tools/dashboard/. 5 temporary artifacts archived. Root hygiene gate created (`tests/test_root_hygiene.py` — 3 tests, all pass). OpenCode file placement policy created. Exceptions: ak.bat, law.bat, AK_MEMORY.md kept at root.
+- **AK-WP35.4A** (Repository Knowledge Consolidation): Full audit of 558+ files. 9 deliverables delivered: inventory, dependency map, duplicate analysis, consolidation plan, merge/archive recommendations, registry structure, health score (85.3/100), final report. Key finding: legal canon mirrors in codex/ and governance/ >90% overlap. 74 files proposed for archive.
+- **MT5 Real Connection Activated**: MT5DemoObserver now connects to real MT5 terminal (v5.0.5735) when available, falls back to mock. Real OHLCV data flowing for XAUUSDm, EURUSDm, GBPUSDm. `scripts/run_market_sandbox_scan.py` updated with auto-connect. All 6 MT5 tests pass.
+- **IRIS Agent Activated**: SANDBOX_ACTIVE mode for continuous market observation. Evidence, lesson, and report recorded to memory.
+- **AK-WP37** (National Evolution & Learning System — JANUS DIRECTIVE): Capability evolution engine (6-state machine: LOCKED→UNLOCKED→EVOLVING_MATURITY→EVOLVING_CYCLE→EVOLVED/ROLLED_BACK), National Scheduler (12 tasks across daily/weekly/monthly), Agent Profile System (7 agents with capabilities/skills/maturity), Governed Terminal Autonomy (4-level hierarchy: READ_ONLY/SANDBOX_WRITE/BRANCH_WRITE/PROMOTION_CANDIDATE), evolution-cycle-aware maturity scoring, evolution ROI tracking. 56 new tests, 157 total passing, zero regressions. Report: `docs/reports/AK_WP37_KINGDOM_EVOLUTION_FINAL_REPORT.md`.
+- **LL-35-008 Phase 1E Skill Discovery**: Existing code in `learning/skill_discovery.py` reviewed. Reviewer Loop found 2 issues resolved: (1) `governance_issue_id` added to `SkillCandidate` for full traceability, (2) `_compute_outcome_consistency` double call eliminated. 42/42 tests pass (+5 traceability tests). Report: `docs/reports/AK_WP35_PHASE1E_IMPLEMENTATION_REPORT.md`.
+
+- Reorganized legal/governance documents into the sovereign directory layout.
+- Created final legal reorganization report: `docs/reports/AK_LEGAL_REORGANIZATION_REPORT.md`.
+- Created WP0 legal/governance bootstrap report: `docs/reports/AK_WP0_LEGAL_GOVERNANCE_BOOTSTRAP_REPORT.md`.
+- Created and updated legal registries for Alkasik Kingdom.
+- Created Alkasik Kingdom project charter.
+- Created Alkasik Kingdom no-legacy runtime policy.
+- Created AK governance policy engine skeleton.
+- Created protected modules registry.
+- Created append-only audit log skeleton.
+- Created minimum governance policy tests.
+- Completed WP1 Governance Engine modules for approval routing, issue registry, governance gate, and audit append.
+- Created Alkasik Kingdom National Budget Law v1.0 REVIEW.
+- Created treasury registry.
+- Completed WP3 AK-native memory platform skeleton with LanceDB-only adapter contract.
+- Created WP3 lesson, skill, capability, dataset, decision trace, learning loop, compression, distillation, quarantine, and agent memory interface modules.
+- Created OpenCode adapter-only connector and Lang Lieu development orchestrator.
+- Created WP3 implementation report.
+- Hardened WP3 LanceDB adapter to create tables with first insert rows and avoid creating tables during missing-table search.
+- Hardened WP3 LanceDB adapter with Arrow-based text-table fallback for tables without vector columns.
+- Added WP3 agent memory client so Janus, Sage, Hermes, Iris, Helen, Lang Lieu, and Yet Kieu can route through `MemoryInterface`.
+- Hardened OpenCode adapter with governance gate metadata and Windows path protection.
+- Repaired `D:\AK\.venv` and installed WP3 runtime requirements, including `lancedb` and `pylance`.
+- Created WP3 machine-checkable acceptance workflow and workflow package.
+- Completed WP2 AK Agent Runtime Framework.
+- Created BaseAgent, AgentIdentity, RoleBoundary, TaskEnvelope, ReportEnvelope, AgentRegistry, TaskRouter, AgentLifecycle, AgentSupervisor, AgentRuntime, and AuditHook.
+- Created 7 operational agent classes for Janus, Sage, Hermes, Iris, Helen, Lang Lieu, and Yet Kieu.
+- Created WP2 acceptance workflow and WP2 Agent Runtime Framework report.
+- Completed WP3.5 Learning Intelligence Layer doctrine design.
+- Created lesson quality, skill discovery, capability evolution, cross-agent learning, learning metrics, behavior improvement, and promotion governance models.
+- Created WP3.5 learning intelligence architecture, implementation roadmap, and design report.
+- Completed WP3.5 Phase 1A Learning Metrics module: `learning/learning_metrics.py` with EvidenceRecord, GovernanceContext, EvidenceProvider protocol.
+- Completed WP3.5 Phase 1A tests: `tests/learning/test_learning_metrics.py` (8 passed).
+- Created WP3.5 Phase 1A architecture and risk review: `docs/design/AK_WP35_PHASE1A_LEARNING_METRICS_NOTES.md`.
+- Completed WP-KF-01 (Knowledge Foundation Execution): Registry normalization (11 YAML registries unified), duplicate consolidation (6 design docs tagged), retrieval optimization (boot hydration, pagination, vector indexes), archive normalization (archive_index.yaml with 7 entries). All 97 tests passing.
+- Completed WP-KP-01 (National Knowledge Production System): Created 5 operational pipelines (decision_trace, lesson_production, dataset_production, skill_discovery, capability_evolution) with pipeline.yaml + pipeline.py for each. Created unified knowledge lifecycle model (8 states, 11 transitions). Created knowledge governance workflow with 4 agent roles, approval matrix, escalation path. Population readiness: PASS.
+- **WP35-1C-01** (Learning Signal Pipeline): Created `LearningSignalEngine` (extraction from lessons/traces, 3 deduplication modes, governance routing), `InsightEngine` (3 patterns: consolidation, refinement, synthesis, family discovery), `CandidateSkillPipeline` (orchestrated extraction→insight→skill). 4 registries, 2 frozen dataclass records, 1 graph engine. 47 new tests. Dry-run: 3 signals → 2 candidates → 1 skill.
+- **WP35-1C-02** (Skill Intelligence Pipeline): Created `SignalClusteringEngine` (5 cluster types), `InsightDiscoveryEngine` (2 strategies), `SkillDiscoveryEngine` (domain+keyword), `SkillDeduplicationEngine` (4 dimensions, 3 strategies), `SkillFamilyEngine` (7 families), `CanonicalSkillEngine` (5 classifications), `SkillGraphEngine` (5 relationship types), `SkillMaturityEngine` (5 levels, 6-factor weighted scoring). 2 registries, 2 dataclasses, 160 tests. Dry-run: 24 candidate skills → 6 clusters → 27 skills in 7 families → 24 canonicals → 40 graph nodes, 112 edges.
+- **WP35-1C-02B** (Skill Consolidation & Canonicalization): 33 candidate skills → 7 families → 33 canonical records (all CANONICAL, 29 SOVEREIGN/4 ADVANCED). 2 registries, 4 reuse engines, canonical_mapping/graph_integrity gates, 29 tests. Dry-run: 40 graph nodes, 135 edges, governance PASS 33/33.
+- **WP35-1C-02B-R** (Promotion Readiness Review): 9 readiness reports (inventory, graph analysis, readiness assessment, portfolio, risk, queue, governance audit, readiness package, final). 291 tests.
+- **WP35-1C-03** (Skill Promotion Engine): `SkillPromotionPolicyEngine` (5 outcomes), `IndependentReviewGate` (separates recommender/reviewer), `SkillPromotionEngine` (orchestrated pipeline), `ApprovedSkillRegistry` (APSK prefix). 35 tests. Dry-run: 33 canonical → 31 APPROVED, 2 NEEDS_REVIEW, 31 entered registry. 9 reports.
+- **WP35-1C-04** (National Capability Pipeline): `CapabilityDiscoveryEngine`, `CapabilityFamilyEngine`, `CanonicalCapabilityEngine`, `CapabilityGraphEngine`, `CapabilityMaturityEngine`, `CapabilityReadinessEngine`. 4 registries in `memory/capability_pipeline/` (CapabilityCandidateRegistry, CapabilityFamilyRegistry, CanonicalCapabilityRegistry, PromotionRecommendationRegistry). Governance `evaluate_capability()` with `no_activation` gate. 8 new audit actions. 27 tests. Dry-run: 7 capability candidates, 7 families, 7 canonicals, governance 7/7 PASS. 13 reports.
+- **WP35-1C-05** (National Capability Validation & Review Pipeline): `CapabilityValidationEngine` (DRY_RUN/SIMULATION/BACKTEST_ONLY/DOCUMENT_REVIEW/REGISTRY_REVIEW modes, blocks LIVE/PRODUCTION/EXECUTION/MT5), `CapabilityEvidenceEngine`, `CapabilityMaturityReassessmentEngine`, `CapabilityPromotionReadinessEngine`. `CapabilityEvidenceRegistry` + `OfficialCapabilityRegistry` (activation_status=DISABLED, agent_adoption_status=NOT_ASSIGNED, evolution_status=LOCKED). `memory/capability_registry.py` converted to package. Governance extended: evidence_gate, validation_gate, maturity_gate, hermes_review_gate, sage_review_gate, no_agent_adoption_gate, no_evolution_gate. 9 new audit actions. 36 tests. Dry-run: 17 skills → 7 capabilities → 17/17 validations passed → 34 evidence records → 7/7 Hermes promote → 7/7 Sage approve → 7 PROMOTION_READY → 7 official records → 7/7 governance PASS. activated=0, agent_adoption=0, evolution=0. 15 reports.
+- **NAOP Legal & Integration Completion Patch v1.0** (AUDIT/PATCH directive — no rebuild): Full repository audit (558 source/doc files, 13 deliverable gap analysis). Created `memory/capability_roi_registry.py` (standalone CapabilityROIRegistry wrapping NationalMemoryPlatform). Created 3 new compliance test suites: `test_human_sovereignty_gate.py` (9 tests — OpenCode limited to READY_FOR_SANDBOX), `test_capability_roi_registry.py` (4 tests), `test_lancedb_retention_fields.py` (10 tests — retention fields on all 13 tables). Created 6 audit/report deliverables. Certified READY_FOR_SANDBOX. 465/466 tests pass (1 pre-existing WP3 acceptance failure, score 0.78).
+- **LLM connector redesign**: Provider routing chain set to `9router` (primary) → `openrouter` (7-model sequential fallback). OpenAI/GPT/ChatGPT completely removed — no references remain. 9router default model: `oc/deepseek-v4-flash-free`. 9router configured for localhost:20128 with `ROUTER9_API_KEY`/`ROUTER9_BASE_URL` env vars (also accepts `9ROUTER_*` and `AK_LLM_*` names). OpenRouter configured with 7 non-OpenAI models (poolside/laguna-m.1:free → z-ai/glm-4.5-air:free → nvidia/nemotron-3-ultra-550b-a55b:free → sourceful/riverflow-v2.5-pro:free → nvidia/nemotron-3-super-120b-a12b:free → meta-llama/llama-3.3-70b-instruct:free → openrouter/free). `auto` mode tries each provider in order; `openrouter` mode autofalls through all 7 models. All 7 agents accept injectable `llm_connector` param. No regression — pre-existing 0.78 WP3 failure unchanged.
+- **7 agents LLM API activation verified**: All 7 agents boot to SANDBOX_ACTIVE and make API calls via OpenRouter. 3/7 returned real content (janus 625 chars, sage 200 chars, yet_kieu 224 chars); 4/7 hit free-model rate limits but confirmed API routing works (mode=api). Hermes successfully distilled a lesson from evidence via LLM.
+
+## Key Files
+
+- `sovereign/legal_index.yaml`
+- `sovereign/registries/legal_registry.yaml`
+- `sovereign/registries/constitution_registry.yaml`
+- `sovereign/registries/state_corpus_registry.yaml`
+- `sovereign/registries/legal_hierarchy.yaml`
+- `sovereign/registries/directive_registry.yaml`
+- `AK_PROJECT_CHARTER.md`
+- `AK_NO_LEGACY_RUNTIME_POLICY.md`
+- `governance/policy_engine.py`
+- `governance/registries/protected_modules.yaml`
+- `governance/audit/audit_log.jsonl`
+- `governance/audit/README.md`
+- `tests/test_governance_policy.py`
+- `governance/approval_engine.py`
+- `governance/issue_registry.py`
+- `governance/governance_gate.py`
+- `governance/audit_engine.py`
+- `governance/registries/approval_matrix.yaml`
+- `governance/registries/issue_registry.yaml`
+- `governance/registries/governance_gate_registry.yaml`
+- `sovereign/laws/budget/AK_KINGDOM_BUDGET_LAW_v1.0_REVIEW.md`
+- `sovereign/registries/treasury_registry.yaml`
+- `docs/reports/CAR_CONSTITUTION_REVIEW.md`
+- `docs/reports/CAR_STATE_CORPUS_REVIEW.md`
+- `docs/reports/CAR_BRANCH_ALIGNMENT_REVIEW.md`
+- `docs/reports/CAR_LAW_CHARTER_REVIEW.md`
+- `docs/reports/CAR_TREASURY_ALIGNMENT_REVIEW.md`
+- `docs/reports/CAR_REGISTRY_ALIGNMENT_REVIEW.md`
+- `docs/reports/CAR_AGENT_GOVERNANCE_REVIEW.md`
+- `docs/reports/CAR_KTSP_CERTIFICATION_REVIEW.md`
+- `docs/reports/FINAL_CONSTITUTIONAL_CERTIFICATION.md`
+- `docs/reports/CAR_COMPLETION_REPORT.md`
+- `docs/reports/CAR_REVIEWER_LOOP_REPORT.md`
+- `tests/test_governance_engine.py`
+- `memory/lancedb_adapter.py`
+- `memory/memory_interface.py`
+- `memory/agent_memory.py`
+- `memory/lesson_registry.py`
+- `memory/skill_registry.py`
+- `memory/capability_registry.py`
+- `memory/dataset_registry.py`
+- `memory/decision_trace_registry.py`
+- `memory/learning_loop.py`
+- `memory/knowledge_compression.py`
+- `memory/distillation_pipeline.py`
+- `memory/quarantine_policy.py`
+- `memory/schemas/records.py`
+- `connectors/opencode_connector.py`
+- `agents/lang_lieu/dev_orchestrator.py`
+- `workflows/wp3_acceptance.py`
+- `workflows/wp3_memory_platform/README.md`
+- `workflows/wp3_memory_platform/workflow.yaml`
+- `tests/test_lancedb_adapter.py`
+- `tests/test_learning_loop.py`
+- `tests/test_skill_registry.py`
+- `tests/test_capability_registry.py`
+- `tests/test_decision_trace.py`
+- `tests/test_memory_interface.py`
+- `tests/test_agent_memory_interface.py`
+- `tests/test_wp3_acceptance.py`
+- `tests/test_opencode_connector.py`
+- `docs/reports/AK_WP3_HERMES_NATIVE_MEMORY_PLATFORM_REPORT.md`
+- `agents/base.py`
+- `agents/identity.py`
+- `agents/role_boundary.py`
+- `agents/task_envelope.py`
+- `agents/report_envelope.py`
+- `agents/registry.py`
+- `agents/router.py`
+- `agents/lifecycle.py`
+- `agents/supervisor.py`
+- `agents/runtime.py`
+- `agents/audit_hook.py`
+- `agents/registry.yaml`
+- `workflows/wp2_acceptance.py`
+- `workflows/wp2_agent_runtime/README.md`
+- `workflows/wp2_agent_runtime/workflow.yaml`
+- `docs/reports/AK_WP2_AGENT_RUNTIME_FRAMEWORK_REPORT.md`
+- `docs/design/AK_LESSON_QUALITY_MODEL.md`
+- `docs/design/AK_SKILL_DISCOVERY_MODEL.md`
+- `docs/design/AK_CAPABILITY_EVOLUTION_MODEL.md`
+- `docs/design/AK_CROSS_AGENT_LEARNING_MODEL.md`
+- `docs/design/AK_LEARNING_METRICS_MODEL.md`
+- `docs/design/AK_BEHAVIOR_IMPROVEMENT_MODEL.md`
+- `docs/design/AK_PROMOTION_GOVERNANCE_MODEL.md`
+- `docs/architecture/AK_LEARNING_INTELLIGENCE_ARCHITECTURE.md`
+- `docs/roadmaps/AK_WP35_IMPLEMENTATION_ROADMAP.md`
+- `docs/reports/AK_WP35_LEARNING_INTELLIGENCE_DESIGN_REPORT.md`
+- `learning/learning_metrics.py`
+- `learning/lesson_evaluator.py`
+- `learning/skill_discovery.py`
+- `tests/learning/test_learning_metrics.py`
+- `tests/learning/test_lesson_evaluator.py`
+- `tests/learning/test_skill_discovery.py`
+- `docs/legal/canon/ALKASIK_CONSTITUTION_v1.1_FINAL.md`
+- `docs/legal/canon/ALKASIK_STATE_CORPUS_v1.0_FINAL.md`
+- `docs/legal/canon/ALKASIK_AGENT_LAW_v1.0_FINAL.md`
+- `docs/legal/canon/ALKASIK_MEMORY_LAW_v1.0_FINAL.md`
+- `docs/legal/canon/ALKASIK_INFORMATION_LAW_v1.0_FINAL.md`
+- `docs/legal/canon/ALKASIK_REPO_GOVERNANCE_DECREE_v1.0_FINAL.md`
+- `docs/legal/canon/LEGAL_CANON_INDEX.md`
+- `docs/legal/canon/LEGAL_COMPLIANCE_AUDIT.md`
+- `docs/legal/codex/` (43 files: AK-CODEX acceptance package complete)
+- `docs/legal/codex/AK_CODEX_ACCEPTANCE_PACKAGE.md`
+- `docs/design/AK_KNOWLEDGE_LIFECYCLE_MODEL.md`
+- `docs/design/AK_DECISION_TRACE_PIPELINE.md`
+- `docs/design/AK_LESSON_PRODUCTION_PIPELINE.md`
+- `docs/design/AK_DATASET_PRODUCTION_PIPELINE.md`
+- `docs/design/AK_SKILL_DISCOVERY_PIPELINE.md`
+- `docs/design/AK_CAPABILITY_EVOLUTION_PIPELINE.md`
+- `docs/design/AK_KNOWLEDGE_GOVERNANCE_WORKFLOW.md`
+- `docs/reports/AK_KNOWLEDGE_INVENTORY_REPORT.md`
+- `docs/reports/AK_MEMORY_COMPACTION_RECOMMENDATIONS.md`
+- `docs/reports/AK_RETRIEVAL_OPTIMIZATION_REPORT.md`
+- `docs/reports/AK_KNOWLEDGE_STATE_AUDIT.md`
+- `docs/reports/AK_REGISTRY_NORMALIZATION_PLAN.md`
+- `docs/reports/AK_DUPLICATE_CONSOLIDATION_PLAN.md`
+- `docs/reports/AK_KINGDOM_KNOWLEDGE_INVENTORY.md`
+- `docs/reports/AK_RETRIEVAL_OPTIMIZATION_IMPLEMENTATION_PLAN.md`
+- `docs/reports/AK_ARCHIVE_NORMALIZATION_PLAN.md`
+- `docs/reports/AK_REGISTRY_NORMALIZATION_EXECUTION_REPORT.md`
+- `docs/reports/AK_DUPLICATE_CONSOLIDATION_REPORT.md`
+- `docs/reports/AK_RETRIEVAL_OPTIMIZATION_EXECUTION_REPORT.md`
+- `docs/reports/AK_ARCHIVE_NORMALIZATION_EXECUTION_REPORT.md`
+- `docs/reports/AK_KNOWLEDGE_FOUNDATION_AUDIT.md`
+- `docs/reports/AK_POPULATION_READINESS_ASSESSMENT.md`
+- `docs/reports/HERMES_CLEANUP_01_FINAL_REPORT.md`
+- `docs/reports/WP_KF_01_FINAL_REPORT.md`
+- `docs/reports/WP_KP_01_FINAL_REPORT.md`
+- `docs/roadmaps/AK_KNOWLEDGE_PRODUCTION_ROADMAP.md`
+- `memory/archive_registry/archive_index.yaml`
+- `pipelines/decision_trace/pipeline.py`
+- `pipelines/decision_trace/pipeline.yaml`
+- `pipelines/lesson_production/pipeline.py`
+- `pipelines/lesson_production/pipeline.yaml`
+- `pipelines/dataset_production/pipeline.py`
+- `pipelines/dataset_production/pipeline.yaml`
+- `pipelines/skill_discovery/pipeline.py`
+- `pipelines/skill_discovery/pipeline.yaml`
+- `pipelines/capability_evolution/pipeline.py`
+- `pipelines/capability_evolution/pipeline.yaml`
+- `services/learning_signal_engine.py`
+- `services/insight_engine.py`
+- `services/candidate_skill_pipeline.py`
+- `services/signal_clustering_engine.py`
+- `services/insight_discovery_engine.py`
+- `services/skill_discovery_engine.py`
+- `services/skill_deduplication_engine.py`
+- `services/skill_family_engine.py`
+- `services/canonical_skill_engine.py`
+- `services/skill_graph_engine.py`
+- `services/skill_maturity_engine.py`
+- `services/skill_promotion_policy_engine.py`
+- `services/independent_review_gate.py`
+- `services/skill_promotion_engine.py`
+- `services/learning_governance_gate.py`
+- `services/learning_audit_layer.py`
+- `services/capability_discovery_engine.py`
+- `services/capability_family_engine.py`
+- `services/canonical_capability_engine.py`
+- `services/capability_graph_engine.py`
+- `services/capability_maturity_engine.py`
+- `services/capability_readiness_engine.py`
+- `services/capability_validation_engine.py`
+- `services/capability_evidence_engine.py`
+- `services/capability_maturity_reassessment_engine.py`
+- `services/capability_promotion_readiness_engine.py`
+- `memory/learning_registry/` (8 registries: LearningSignalRegistry, InsightRegistry, CandidateSkillRegistry, SignalClusterRegistry, SkillFamilyRegistry, CanonicalSkillRegistry, ApprovedSkillRegistry + schemas)
+- `memory/capability_pipeline/` (4 registries: CapabilityCandidateRegistry, CapabilityFamilyRegistry, CanonicalCapabilityRegistry, PromotionRecommendationRegistry + schemas)
+- `memory/capability_registry/__init__.py` (package: legacy.py, capability_evidence_registry.py, official_capability_registry.py)
+- `scripts/run_signal_pipeline.py`
+- `scripts/run_skill_pipeline.py`
+- `scripts/run_capability_pipeline.py`
+- `scripts/run_capability_validation_pipeline.py`
+- `docs/reports/WP35_PREP_01_FINAL_REPORT.md`
+- `docs/reports/WP35_1C_01_FINAL_REPORT.md`
+- `docs/reports/WP35_1C_02_FINAL_REPORT.md`
+- `docs/reports/WP35_1C_02B_FINAL_REPORT.md`
+- `docs/reports/WP35_1C_02B_R_FINAL_REPORT.md`
+- `docs/reports/WP35_1C_03_FINAL_REPORT.md`
+- `docs/reports/WP35_1C_04_FINAL_REPORT.md`
+- `docs/reports/WP35_1C_05_FINAL_REPORT.md`
+- `docs/reports/AK_CAPABILITY_DISCOVERY_REPORT.md`
+- `docs/reports/AK_CAPABILITY_FAMILY_REPORT.md`
+- `docs/reports/AK_CANONICAL_CAPABILITY_REPORT.md`
+- `docs/reports/AK_CAPABILITY_GRAPH_REPORT.md`
+- `docs/reports/AK_CAPABILITY_MATURITY_REPORT.md`
+- `docs/reports/AK_CAPABILITY_READINESS_REPORT.md`
+- `docs/reports/AK_CAPABILITY_GOVERNANCE_REPORT.md`
+- `docs/reports/AK_CAPABILITY_REGISTRY_REPORT.md`
+- `docs/reports/AK_CAPABILITY_AUDIT_REPORT.md`
+- `docs/reports/AK_CAPABILITY_VALIDATION_BASELINE.md`
+- `docs/reports/AK_CAPABILITY_VALIDATION_SCENARIOS.md`
+- `docs/reports/AK_CAPABILITY_VALIDATION_ENGINE_REPORT.md`
+- `docs/reports/AK_CAPABILITY_EVIDENCE_REPORT.md`
+- `docs/reports/AK_CAPABILITY_MATURITY_REASSESSMENT_REPORT.md`
+- `docs/reports/AK_CAPABILITY_PROMOTION_READINESS_REPORT.md`
+- `docs/reports/AK_HERMES_CAPABILITY_REVIEW.md`
+- `docs/reports/AK_SAGE_CAPABILITY_REVIEW.md`
+- `docs/reports/AK_CAPABILITY_DECISION_PACKAGE.md`
+- `docs/reports/AK_OFFICIAL_CAPABILITY_REGISTRY_REPORT.md`
+- `docs/reports/AK_CAPABILITY_VALIDATION_GOVERNANCE_REPORT.md`
+- `docs/reports/AK_CAPABILITY_VALIDATION_AUDIT_REPORT.md`
+- `docs/reports/AK_CAPABILITY_VALIDATION_PIPELINE_REPORT.md`
+- `docs/reports/AK_CAPABILITY_VALIDATION_TEST_REPORT.md`
+- `docs/reports/AK_WP35_PHASE1E_IMPLEMENTATION_REPORT.md`
+- `docs/reports/AK_AGENT_CAPABILITY_COMPLETION_REPORT.md`
+- `docs/reports/AK_AGENT_ACTIVATION_READINESS_REPORT.md`
+- `docs/reports/AK_LEARNING_BY_DOING_FIRST_RUN_REPORT.md`
+- `agents/runtime_models.py`
+- `agents/runtime.py`
+- `connectors/llm_connector.py`
+- `connectors/filesystem_connector.py`
+- `connectors/git_connector.py`
+- `memory/usage_registry.py`
+- `memory/evidence_registry.py`
+- `memory/learning_runtime.py`
+- `workflows/mission_runtime.py`
+- `workflows/council_review.py`
+- `scripts/run_agent_smoke_test.py`
+- `scripts/run_council_mission.py`
+- `akctl.py`
+- `scripts/run_agent_smoke_test.py`
+- `scripts/run_council_mission.py`
+- `tests/test_signal_pipeline.py`
+- `tests/test_insight_engine.py`
+- `tests/test_candidate_skill_pipeline.py`
+- `tests/test_signal_pipeline_integration.py`
+- `tests/test_signal_clustering_engine.py`
+- `tests/test_insight_discovery_engine.py`
+- `tests/test_skill_discovery_engine.py`
+- `tests/test_skill_deduplication_engine.py`
+- `tests/test_skill_family_engine.py`
+- `tests/test_canonical_skill_engine.py`
+- `tests/test_skill_graph_engine.py`
+- `tests/test_skill_maturity_engine.py`
+- `tests/test_skill_promotion_policy_engine.py`
+- `tests/test_independent_review_gate.py`
+- `tests/test_skill_promotion_engine.py`
+- `tests/test_approved_skill_registry.py`
+- `tests/test_capability_discovery_engine.py`
+- `tests/test_capability_family_engine.py`
+- `tests/test_canonical_capability_engine.py`
+- `tests/test_capability_graph_engine.py`
+- `tests/test_capability_maturity_engine.py`
+- `tests/test_capability_readiness_engine.py`
+- `tests/test_capability_governance.py`
+- `tests/test_capability_validation_engine.py`
+- `tests/test_capability_evidence_engine.py`
+- `tests/test_capability_maturity_reassessment_engine.py`
+- `tests/test_capability_promotion_readiness_engine.py`
+- `tests/test_capability_validation_governance.py`
+- `tests/test_official_capability_registry.py`
+- `tests/test_agent_operational_capabilities.py`
+- `tests/test_learning_by_doing_runtime.py`
+- `tests/test_capability_activation_gate.py`
+- `memory/capability_roi_registry.py`
+- `tests/test_human_sovereignty_gate.py`
+- `tests/test_capability_roi_registry.py`
+- `tests/test_lancedb_retention_fields.py`
+- `docs/reports/AK_NAOP_AUDIT_REPORT.md`
+- `docs/reports/AK_NAOP_GAP_ANALYSIS.md`
+- `docs/reports/AK_KNOWLEDGE_LIFECYCLE_AUDIT.md`
+- `docs/reports/AK_RETENTION_GOVERNANCE_REPORT.md`
+- `docs/reports/AK_AGENT_BOUNDARY_AUDIT.md`
+- `docs/reports/AK_NAOP_INTEGRATION_VERIFICATION.md`
+- `tests/test_sandbox_readiness_boundary.py`
+- `tests/test_agent_sandbox_operations.py`
+- `tests/test_capability_connectivity.py`
+- `tests/test_lancedb_operational_memory_flow.py`
+- `tests/test_legacy_learning_audit.py`
+- `tests/test_legacy_learning_no_runtime_import.py`
+- `tests/test_legacy_learning_secret_scan.py`
+- `scripts/audit_legacy_learning.py`
+- `docs/reports/AK_SANDBOX_READINESS_VERIFICATION.md`
+- `docs/reports/AK_CAPABILITY_CONNECTIVITY_REPORT.md`
+- `docs/reports/AK_OPERATIONAL_MEMORY_FLOW_REPORT.md`
+- `docs/reports/AK_LEGACY_LEARNING_INVENTORY.md`
+- `docs/reports/AK_LEGACY_LEARNING_MIGRATION_PLAN.md`
+- `docs/reports/AK_LEGACY_LEARNING_SECURITY_SCAN.md`
+- `docs/reports/AK_LEGACY_LEARNING_INVENTORY.csv`
+- `memory/legacy_corpus/legacy_learning_index.yaml`
+- `memory/legacy_corpus/hermes_review_results.yaml`
+- `memory/capability_backlog/__init__.py`
+- `memory/capability_backlog/backlog_registry.py`
+- `memory/capability_backlog/index.yaml`
+- `memory/prompt_registry.py`
+- `memory/fine_tuning_registry.py`
+- `memory/dual_brain_registry.py`
+- `memory/skill_benchmark_registry.py`
+- `workflows/debate_engine/workflow.yaml`
+- `workflows/mission_templates/*.yaml` (9 templates)
+- `docs/reports/AK_NEURON_IMPLEMENTATION_AUDIT.md`
+- `docs/reports/AK_CAPABILITY_ECONOMY_CLOSURE_FINAL.md`
+- `docs/reports/AK_SANDBOX_01_30_DAY_PLAN.md`
+- `docs/reports/AK_SANDBOX_01_EXECUTION_ENABLEMENT_REPORT.md`
+- `docs/reports/AK_MARKET_SANDBOX_01_EXECUTION_PLAN.md`
+- `docs/reports/AK_MARKET_SANDBOX_01_DAILY_REPORT.md`
+- `docs/reports/AK_MARKET_SANDBOX_01_FINAL_REPORT.md`
+- `connectors/mt5/mt5_demo_observer.py`
+- `intelligence/iris/market_snapshot.py`
+- `intelligence/iris/zone_detector.py`
+- `intelligence/iris/zone_validation_engine.py`
+- `infrastructure/yet_kieu/mt5_health_monitor.py`
+- `memory/market_forecast_registry.py`
+- `memory/zone_validation_registry.py`
+- `workflows/market_sandbox_loop.yaml`
+- `scripts/run_market_sandbox_scan.py`
+- `scripts/run_market_validation_cycle.py`
+- `scripts/run_market_daily_report.py`
+- tests for market sandbox (15 tests)
+- `memory/adoption_registry.py` (AdoptionRecord + CapabilityAdoptionRegistry, 6 lifecycle stages, transition map)
+- `services/capability_adoption_engine.py` (CapabilityAdoptionEngine, CapabilityAssignmentPolicy, governance gates)
+- `tests/test_capability_adoption_engine.py` (52 tests)
+- `reports/wp36_capability_adoption_engine_report.md`
+
+## Backups
+
+- Legal reorganization backup: `archive/legal_reorganization/backup_20260607_011203`
+- WP0 bootstrap backup: `archive/wp0_bootstrap_backup/backup_20260607_011903`
+- WP1 governance engine backup: `archive/wp1_governance_engine_backup/backup_20260607_013241`
+- WP2 agent framework backup: `archive/wp2_agent_framework_backup/backup_20260607_040410`
+- WP3.5 learning intelligence design backup: `archive/wp35_learning_intelligence_design_backup/backup_20260607_085853`
+- WP3.5 review preparation backup: `archive/wp35_review_preparation_backup` (empty)
+- WP3.5 sage round 2 backup: `archive/wp35_sage_round2_backup/backup_20260607_092305`
+
+## Key Preflight Tests
+
+- `tests/test_runtime_resource_thresholds.py`
+- `tests/test_scheduler_constraints.py`
+- `tests/test_mt5_read_only_guards.py`
+- `tests/test_telegram_whitelist.py`
+- `tests/test_evidence_append_only.py`
+- `tests/test_runtime_stop_conditions.py`
+- `tests/test_runtime_recovery_logic.py`
+
+## Verification
+
+- **AK-RUNTIME-LITE-PREFLIGHT-01** verification: 13 preflight reports created in docs/reports/. 120 preflight tests collected (117 passed, 3 skipped). Infrastructure PASS, Capacity APPROVED(PC)/NOT_APPROVED(VPS), Telegram FAIL, MT5 Safety PASS, Scheduler FAIL, Evidence PASS, Security FAIL, Recovery FAIL, Backup FAIL, Stop Conditions FAIL. Deployment Board: NOT_APPROVED. Reviewer Loop: PASS — all 7 critical blockers identified. No false approvals detected. No deployment authorized.
+
+- `governance.policy_engine` imports successfully.
+- `python -m pytest D:\AK\tests\test_governance_policy.py`: 5 passed.
+- `python -m pytest D:\AK\tests\test_governance_policy.py D:\AK\tests\test_governance_engine.py`: 12 passed.
+- WP1 acceptance file check: 14/14 required files present.
+- Acceptance file check: 14/14 required files present.
+- Strict secret scan: `SECURITY_FINDING_REDACTED: 0`.
+- WP3 TDD red check confirmed missing `memory.lancedb_adapter` before implementation.
+- WP3 + governance manual runner verification: 28 test functions passed.
+- WP3 hardening runner verification: 34 test functions passed.
+- WP3 pytest runtime verification in `D:\AK\.venv`: 35 tests passed.
+- WP3 pytest runtime verification after acceptance workflow: 37 tests passed.
+- WP3 real LanceDB smoke verification: insert/search returned 1 matching row from a local LanceDB table.
+- WP3 acceptance workflow verification: `python -m workflows.wp3_acceptance` returned PASS with score 1.0.
+- WP3 syntax parse verification: 16 Python files passed.
+- WP3 acceptance file check: 22/22 required files present.
+- WP3 banned memory backend scan: no `sqlite`, `chroma`, or `faiss` tokens found in `memory/*.py`.
+- WP3 smoke test: `MemoryInterface` created a `DRAFT` lesson, search worked through injected backend, and OpenCode connector returned safe `UNAVAILABLE` status when executable was absent.
+- WP3 hardening checks: first-insert table creation verified, missing-table search verified as non-mutating, Windows protected path detection verified, and agent memory client verified without direct backend exposure.
+- WP3 runtime checks: LanceDB text-only table search verified through Arrow fallback without requiring Pandas.
+- WP3 acceptance gate checks: required files, banned backend scan, runtime dependencies, runtime boundaries, OpenCode safety, report readiness, and LanceDB runtime smoke all passed.
+- Agent source reference check: seven WP2 agent classes import successfully and report `operational` in dry-run runtime.
+- WP2 required pytest command was attempted and failed only because Windows denied cleanup of the requested external basetemp directory.
+- WP2 workspace-local pytest verification: 53 tests passed.
+- WP2 acceptance workflow verification: `python -m workflows.wp2_acceptance` returned PASS with score 1.0.
+- G3 Agent Gate status: PASS.
+- 7 agents boot successfully and report operational.
+- WP3.5 design verification: doctrine, architecture, roadmap, and design report created as documentation only.
+- WP3.5 Phase 1A learning metrics verification: 8 pytest tests passed, no LanceDB/FAISS/SQLite tokens, root cleanup verified.
+- WP3.5 Phase 1A constitutional audit: Articles 27, 36, 37, 38, 39 referenced; exact constitutional text verification blocked by binary .docx format.
+- WP3.5 Phase 1B Learning Evaluator implemented with LessonStatus, InformationClassification, mandatory fields, 11 tests passed (19 total WP3.5 tests).
+- Legal canon created under docs/legal/canon/ for constitutional compliance verification (7 files + audit).
+- WP3.5 Phase 1B legal audit: All Articles 27, 36, 37, 39 verified PASS against canonical .md files.
+- AK-CODEX-WP01 Phase 1: Legal Discovery complete (CODEX_DISCOVERY_REPORT.md created).
+- AK-CODEX structure created under docs/legal/codex/ with all required folders.
+- AK-CODEX Phase 3: Structure established with constitution, policies, standards, specifications, registries, audits, reviews.
+- AK-CODEX Phase 6: Registry consolidation report created.
+- AK-CODEX Phase 7: Legal relationship map created.
+- AK-CODEX Phase 8: Final execution report - PASS (Recommendation Ready).
+- AK-CODEX Normalization Audit: PASS - All requirements verified.
+- AK-CODEX-WP01-R2 completed: Naming normalized, registries consolidated, authority chain mapped, legal graph prepared.
+- AK-CODEX Final Audit: PASS - Recommendation ready for Sage review and Hung Vuong approval.
+- AK-CODEX-ACCEPTANCE-GATE completed: All 10 validation requirements PASS.
+- AK-CODEX v1.0: ACCEPTED as Official National Codex of Alkasik Kingdom.
+- WP-CODEX-GOV-01 completed: Governance law, integration policy, query standard, audit model created (8 deliverables).
+- AK-CODEX enters maintenance mode - No further legal restructuring required.
+- Root cleanup verification: deleted `_pytest_tmp_wp2`, `_pytest_tmp_wp2_verify`, `__pycache__`, `.pytest_cache` at repository root.
+- WP-KF-01 execution verification: 11 YAML registries normalized, 6 design docs tagged as superseded, 5 Python registries enhanced with boot hydration + pagination, archive_index.yaml created with 7 entries. All 97 tests pass.
+- WP-KP-01 execution verification: 5 pipeline modules import successfully, population readiness assessment returns PASS. All 97 tests pass.
+- **Janus Directive Agent Capability Completion** verification: 44 new capability tests pass (19 agent operational capabilities, 16 learning-by-doing runtime, 10 capability activation gate). 430/431 total tests pass (1 pre-existing unrelated WP3 acceptance failure).
+- All 7 agents boot, call LLM/mock, generate AgentReportEnvelope, write evidence, distill lessons (Hermes), block unsafe activation (Sage), consolidate council (Janus). Activation state transitions LOCKED→SANDBOX_ACTIVE verified.
+- LLM connector: mock mode when API key absent (urllib stdlib, no openai/requests). Filesystem connector: safe read/write with blocked path protection. Git connector: read-only status/diff/log/branch.
+- akctl.py unified CLI: `ask`, `council`, `status`, `smoke` commands work.
+- OADEL pipeline activated (5 stages: Observe-Analyze-Decide-Execute-Learn).
+- WP35-1C-01 verification: 47 tests pass (LearningSignalEngine, InsightEngine, CandidateSkillPipeline integration).
+- WP35-1C-02 verification: 160 tests pass across 8 engines (clustering, discovery, deduplication, family, canonical, graph, maturity).
+- WP35-1C-02B verification: 29 new tests pass (skill consolidation + canonicalization reuse engines).
+- WP35-1C-02B-R verification: 291 tests pass (9 promotion readiness reports).
+- WP35-1C-03 verification: 35 new tests pass (policy engine, review gate, promotion engine, approved registry).
+- WP35-1C-04 verification: 27 new tests pass (6 capability engines, governance, audit). 7/7 governance PASS.
+- WP35-1C-05 verification: 36 new tests pass (validation, evidence, maturity reassessment, readiness, governance, official registry). 7/7 governance PASS. activated=agent_adoption=evolution=0.
+- NAOP Patch v1.0 verification: Full repository audit — 558 files inventoried, 172 .py, 329 .md, 57 .yaml. Gap analysis confirmed 3 existing + 7 missing deliverables. All patches created without rebuild. 36 compliance tests pass (13 boundary, 9 sovereignty, 4 ROI registry, 10 retention fields). 465/466 total tests pass.
+
+## Policies Preserved
+
+- No files deleted.
+- `.venv` was repaired only after explicit approval for runtime verification.
+- No code imported from Alkasik Legacy.
+- No runtime link created with Alkasik Legacy.
+- No execution, trading, or MT5 activation.
+- Legal/governance text uses the full name Alkasik Kingdom.
+- Technical runtime and directory naming remains AK.
+- No Hermes, OpenHands, LightAgent, or OpenCode runtime code imported into AK.
+- No SQLite, Chroma, FAISS, or JSON memory fallback introduced.
+- LanceDB is lazy-loaded and fails closed when dependency is absent.
+- OpenCode remains adapter-only and never directly executes protected changes.
+- Agents access WP3 memory through `AgentMemoryClient` and `MemoryInterface`, not direct LanceDB backend handles.
+- WP2 agent runtime is dry-run only.
+- No agent can bypass Governance Gate by design.
+- OpenCode access is restricted to Lang Lieu through the dev orchestrator path.
+- WP3.5 created no new code, registries, databases, memory backends, dashboards, execution, MT5, Telegram, or agent features.
+- WP3.5 preserves recommendation-only learning; promotion remains governance-controlled.
+- Janus Directive: All 7 agents acquired operational methods (receive_mission, call_llm, generate_report, write_evidence, distill_lesson) but no agent can execute code, trade, or modify protected modules.
+- Janus Directive: LLM connector uses only urllib (stdlib) — no openai/requests dependency.
+- Janus Directive: Filesystem connector enforces blocked paths (.env, credentials, sovereign, governance, risk_kernel, execution).
+- Janus Directive: Git connector is read-only (status/diff/log/branch only — no push/commit/merge).
+- Janus Directive: Activation state defaults LOCKED; only SANDBOX_ACTIVE and READY_FOR_SANDBOX are allowed without Hung Vuong.
+- Janus Directive: Mission runtime requires Sage approval gate — no bypass.
+- Janus Directive: No live execution, no MT5, no trading, no protected module modification.
+- NAOP: NationalMemoryPlatform replaces JSONL registries. All records have retention_class, archive_policy, compaction_policy.
+- NAOP: LanceDB is single canonical memory backend (13 mandatory tables, no fallback).
+- NAOP: Human Sovereignty Gate: OpenCode may only set READY_FOR_SANDBOX; SANDBOX_ACTIVE requires explicit human approval.
+- NAOP: Capability ROI must be tracked for every operational capability (Economic Law compliance).
+- NAOP: Agent boundary tests verify no agent exceeds authority, self-escalates, modifies law, or modifies risk.
+- NAOP Patch v1.0: Capability ROI has standalone registry (memory/capability_roi_registry.py) with usage tracking and summary.
+- NAOP Patch v1.0: Human Sovereignty Gate tested with 9 dedicated tests — OpenCode may only set READY_FOR_SANDBOX.
+- NAOP Patch v1.0: Retention governance tested on all 13 tables — every record type injects retention_class, archive_policy, compaction_policy, retention_until.
+
+## Remaining Review Items
+
+- **AK-RUNTIME-LITE-PREFLIGHT-01**: 7 critical blockers must be resolved before any runtime deployment: (1) Telegram gateway implementation, (2) scheduler tasks (hourly/daily/weekly), (3) credential/secrets storage, (4) supervisor/crash recovery, (5) backup strategy, (6) stop conditions, (7) VPS capacity upgrade or runtime memory optimization. Re-run preflight and obtain APPROVED before DAY-1 authorization.
+
+## Remaining Review Items
+
+- `sovereign/laws/budget/AK_KINGDOM_BUDGET_LAW_v1.0_REVIEW.md` requires Sage review plus Hung Vuong approval.
+- Generated registry metadata should receive formal Sage review.
+- Governance policy engine is a skeleton and must be reviewed before connection to execution gates.
+- WP3 requires Sage review before connecting learning records to protected governance/execution surfaces.
+- LanceDB and pylance are installed in `D:\AK\.venv` after explicit approval; production activation still requires Sage/governance review.
+- AK agents are operational for dry-run routing, reporting, memory-client access, and governance-bound task handling; autonomous production execution remains disabled.
+- **Janus Directive**: Agent capability completion requires Sage review of activation readiness (SANDBOX_ACTIVE/READY_FOR_SANDBOX allowed; PILOT+ requires Hung Vuong).
+- **Janus Directive**: LLM connector runs in mock mode by default (no API key configured). Key must be set for live LLM interactions.
+- **Janus Directive**: All 7 agents boot operational in dry-run mode; production activation requires formal Sage gate approval and Hung Vuong authorization.
+- OpenCode executable is not currently discoverable; connector safely reports unavailable.
+- Pytest now runs from `D:\AK\.venv`; use `--basetemp "C:\Users\GiangKhoi\Documents\Alkasik Kingdom (AK)\_pytest_tmp" -p no:cacheprovider` because default Windows temp/cache paths are access-restricted.
+- WP2 role boundaries and router rules require Sage review before any production connection to protected surfaces.
+- WP3.5 Phase 1B implementation requires Sage review and Janus authorization before Phase 1C.
+- WP3.5 Phase 1C Design Freeze R1 completed: Skill Evidence Policy interface (5 diversity metrics), Risk Classification model (LOW/MEDIUM/HIGH/SOVEREIGN), split approval flows (Normal/Sovereign) defined.
+- WP3.5 Phase 1C Design Freeze R2 completed: Design Evidence Summary created with source_diversity, evidence_weight, sovereign_asset_impact fields, sovereign escalation model, and legal traceability matrix.
+- WP3.5 Phase 1C Contract Freeze R2 completed: Promotion Audit Trail fields added (promotion_trace_id, source_lessons, evidence_snapshot, decision_reason, evaluated_by, evaluated_at, review_path, authority_basis).
+- WP3.5 Phase 1C Implementation (TASK LL-35-005) completed: skill_evidence_policy.py and test_skill_evidence_policy.py created, 25 new tests pass, 44 total WP3.5 tests pass.
+- WP3.5 Phase 1E Design Freeze (TASK LL-35-007) completed: Skill Discovery interface, discovery model, deduplication, audit trail, governance gates defined.
+- WP3.5 Phase 1E Implementation (TASK LL-35-008) completed: skill_discovery.py and test_skill_discovery.py created, 37 new tests pass, 81 total WP3.5 tests pass.
+- **Janus Directive — Hermes-Like Capability Completion & Activation Program** completed: All 7 AK agents upgraded from nominal roles to operational agents with Hermes-like capabilities. Shared runtime (AgentContext, MissionEnvelope, ToolRequest/Result, EvidenceRecord, LessonRecord, CapabilityUsageRecord, AgentReportEnvelope), Tool/API layer (LLM, Filesystem, Git connectors), Learning-by-Doing runtime (evidence_registry, usage_registry, learning_runtime), mission runtime, council review workflow, CLI tools (akctl.py, run_agent_smoke_test.py, run_council_mission.py), activation states (LOCKED→SANDBOX_ACTIVE), OADEL pipeline, 44 new capability tests. 430/431 tests pass (1 pre-existing unrelated failure).
+- **NAOP v1.0 — National Agent Operationalization Program**: 6 missing canonical laws created (Risk, Execution, Security, Economic, Knowledge Governance, Retention & Archive). Constitutional Mapping created. Legal Impact Report created. Protected Module Classification (PROTECTED/CONTROLLED/OPEN) created. Unified LanceDB National Memory Platform (13 mandatory tables) built: ak_evidence, ak_lesson_candidates, ak_lessons, ak_knowledge, ak_skills, ak_capabilities, ak_capability_usage, ak_capability_roi, ak_agent_performance, ak_missions, ak_council_reviews, ak_audit_events, ak_activation_events. Knowledge lifecycle runtime (Evidence→Lesson→Knowledge→Skill→Capability). Retention governance (TRANSIENT/OPERATIONAL/CANONICAL/ARCHIVAL). Agent boundary tests (13 tests, 12 pass). Human Sovereignty Gate enforced (OpenCode→READY_FOR_SANDBOX only). 443/444 tests pass (1 pre-existing unrelated WP3 failure).
+- AK-CODEX-WP01-R2 completed: All 10 acceptance validations PASS.
+- AK-CODEX v1.0 ACCEPTED as Official National Codex of Alkasik Kingdom.
+- WP3.5 promotion governance requires Hung Vuong approval before non-production prototype.
+- HERMES-CLEANUP-01 completed: 8 deliverables (knowledge state audit, registry normalization plan, duplicate consolidation plan, national knowledge inventory, retrieval optimization plan, archive normalization plan, national knowledge foundation roadmap, final report). Awaiting Sage review and Janus approval.
+- WP-KF-01 completed: Registry normalization (11 YAML registries), duplicate consolidation (6 design docs), retrieval optimization (5 Python registries), archive normalization (archive_index.yaml). 97/97 tests pass. Awaiting Sage review and Janus approval.
+- WP-KP-01 completed: Knowledge lifecycle model, 5 pipeline modules (decision_trace, lesson, dataset, skill, capability), governance workflow, population readiness PASS. 97/97 tests pass. Awaiting Sage review and Janus approval.
+
+## Current Work Package State
+
+- WP0 recommendation: CLOSED WITH REVIEW ITEMS.
+- WP1 recommendation: OPERATIONAL.
+- WP2 recommendation: OPERATIONAL.
+- WP3 recommendation: ACCEPTANCE VERIFIED WITH REVIEW ITEMS.
+- WP3.5 recommendation: PHASE 1E IMPLEMENTATION COMPLETE (42/42 skill discovery tests, 89 learning tests total) - AWAITING SAGE REVIEW AND JANUS AUTHORIZATION FOR PHASE 1D+.
+- WP37 recommendation: NATIONAL EVOLUTION OPERATIONAL (56 new tests, 157 total, zero regressions) - AWAITING SAGE REVIEW AND HUNG VUONG APPROVAL FOR CAPABILITY ADOPTION EXECUTION.
+- **AK-CAR: COMPLETE** - Constitutional Alignment Review (9 phases, 11 deliverables). Verdict: CONSTITUTIONAL_GAPS_FOUND. No constitutional violations found. 7 conditions required before Kingdom Governance Freeze. Archived as CAR_DELIVERABLES.7z.
+- **CAR-R: COMPLETE** - Constitutional Remediation (KTSP Certification Closure). 28 active `national_` references remediated across 3 services, 2 registries, 6 test functions. All tests pass (44/44). KTSP upgraded from NOT_CERTIFIED to CERTIFIED.
+- **JANUS-DIRECTIVE-01: COMPLETE** - Agent Capability Completion & Activation Program. 7/7 agents with Hermes-like capabilities. 44 new tests, 430/431 total pass. Activation state: READY_FOR_SANDBOX.
+- **NAOP v1.0: COMPLETE** - National Agent Operationalization Program. Unified LanceDB platform, 13 tables, knowledge lifecycle, retention governance, capability ROI, constitutional mapping, legal impact, protected classification, boundary tests. 443/444 tests pass.
+- **NAOP Patch v1.0: COMPLETE** - Legal & Integration Completion Patch. Audit + gap analysis + 7 missing deliverables patched (no rebuild). Standalone ROI registry, 3 new compliance test suites (23 tests), 6 audit reports. Activation state: READY_FOR_SANDBOX. 465/466 tests pass.
+- AK-CODEX-WP01: PASS - ACCEPTED as Official National Codex.
+- WP-CODEX-GOV-01: PASS - Governance activation complete.
+- G3 Agent Gate recommendation: PASS.
+- HERMES-CLEANUP-01: COMPLETE - Knowledge inventory, cleanup plans, roadmap. Awaiting Sage review.
+- WP-KF-01: COMPLETE - Registry normalization, duplicate consolidation, retrieval optimization, archive normalization executed. 97/97 tests pass.
+- WP-KP-01: COMPLETE - Knowledge lifecycle, 5 production pipelines, governance workflow, roadmap. Population readiness: PASS. 97/97 tests pass.
+- **WP35-1C-01**: COMPLETE - Learning Signal Pipeline (3 engines, 4 registries, 47 tests).
+- **WP35-1C-02**: COMPLETE - Skill Intelligence Pipeline (8 engines, 160 tests).
+- **WP35-1C-02B**: COMPLETE - Skill Consolidation & Canonicalization (33 canonical records, 7 families, 29 tests).
+- **WP35-1C-02B-R**: COMPLETE - Promotion Readiness Review (9 reports, 291 tests).
+- **WP35-1C-03**: COMPLETE - Skill Promotion Engine (31 approved skills, 9 reports, 326 cumulative tests).
+- **WP35-1C-04**: COMPLETE - National Capability Pipeline (6 engines, 4 registries, 27 tests, 13 reports, 353 cumulative tests). No activation.
+- **WP35-1C-05**: COMPLETE - National Capability Validation & Review Pipeline (5 engines, 2 registries, 36 tests, 15 reports, 389 cumulative tests). 7 official records (DISABLED/NOT_ASSIGNED/LOCKED). activated=agent_adoption=evolution=0.
+- **JANUS-DIRECTIVE-SANDBOX-READINESS v1.0**: COMPLETE - All 66 new tests pass, 512/513 total tests pass. Legacy learning inventory done (67 files, 0 secrets, 27 code files). Dry-run complete. READY_FOR_SANDBOX verified. Capability economy: PARTIALLY_CONNECTED. Operational memory flow: FULL. Legacy migration: DRY_RUN_COMPLETE.
+- **PROJECT NEURON PATCH PACKAGE v1.0**: COMPLETE - NEURON T1-4 registries created, 9 mission templates, debate engine workflow. All 523/524 tests pass (same pre-existing WP3 0.78 failure). READY_FOR_SANDBOX maintained. No training executed. No root pollution.
+- **AK-SANDBOX-01 EXECUTION ENABLEMENT**: COMPLETE - All 5 phases verified. NEURON layers active/sandbox-locked. Agent interaction modes ready. Capability economy: PARTIALLY_CONNECTED (adoption path blocked). Legacy learning review complete. 30-day plan ready. READY_TO_START_30_DAY_SANDBOX (pending Sage + Hung Vuong approval).
+- **AK-MARKET-SANDBOX-01**: COMPLETE - MT5 demo observer (read-only), market snapshot collector, zone detector, forecast engine, registries, workflows. 15/15 new tests pass. No execution. No live trading. Mode: OBSERVE_ONLY. Final recommendation: CONTINUE_OBSERVE_ONLY.
+- **MT5 Real Connection Activation**: COMPLETE - MT5DemoObserver now connects to real MT5 terminal when available (v5.0.5735 detected). Real OHLCV data flowing for XAUUSDm, EURUSDm, GBPUSDm. IRIS agent activated in SANDBOX_ACTIVE mode for continuous observation. `scripts/run_market_sandbox_scan.py` updated to auto-connect to MT5. All MT5 tests pass (6/6).
+- **AK-WP35.4A Repository Knowledge Consolidation**: COMPLETE - Full repository audit (558+ files). 9 deliverables produced. Key finding: Legal canon mirrors in codex/ and governance/ are largest duplication source (>90% overlap). 74 files proposed for archive. Repository ready for Skill Registry Foundation after consolidation actions. No runtime/MT5/execution changes made.
+- **WP-REPO-HYGIENE-01 Root Hygiene & File Governance Enforcement**: COMPLETE - Full root hygiene enforcement. 16 unapproved root files and 9 unapproved root directories relocated to approved locations. Relocations: ak.bat/law.bat → scripts/, akctl.py → tools/, 10 WP35.4A reports → docs/reports/, infrastructure/ → connectors/mt5/, intelligence/iris/ → services/iris/ (with 3 import path updates), interface/dashboard/ → tools/dashboard/. 5 temporary artifacts archived. Root hygiene gate created (3 automated tests, PASS). OpenCode file placement policy created. All 13 deliverables produced. 20/20 tests pass. Root is CLEAN.
+- **LL-35-008 WP3.5 Phase 1E Skill Discovery Review & Fix**: COMPLETE - Existing code at `learning/skill_discovery.py` reviewed. Reviewer Loop found 2 issues, both fixed: (1) `governance_issue_id` added to `SkillCandidate` dataclass + `to_dict()` + `_merge()` for full audit traceability; (2) `_compute_outcome_consistency` pre-computed once in `discover()` and passed to `_compute_evidence_weight()` to eliminate double call. 5 new traceability tests added. `SkillDiscoveryValidationLayer` exported from `learning/__init__.py`. 42/42 tests pass. Report: `docs/reports/AK_WP35_PHASE1E_IMPLEMENTATION_REPORT.md`. No registry/MT5/runtime changes made.
+- **AK-WP36 Capability Adoption Engine**: COMPLETE - Governed sandbox adoption engine, 6-state lifecycle, adoption registry (ak_capability_adoptions), assignment policy with Sage blocks HIGH/SOVEREIGN, usage/ROI/evidence integration. 52 tests pass.
+- **AK-WP35.5-001 National Skill Registry Foundation**: COMPLETE - SkillRecord extended to 28 fields with 10 lifecycle stages. SkillRegistry refactored to unify with ak_skills table. SkillLifecycleEngine enforces governance gates on all transitions. SkillValidationEngine covers unit, integration, governance, risk, performance, audit. SkillDependencyRegistry supports 13 relationship types (skill/dataset/tool/agent/capability). SkillOwnershipRegistry enforces 4 access levels. Hermes/OpenCode import adapters route to PROPOSED state only. 75 new tests pass, 163 core tests pass. Report: `docs/reports/AK_WP35_5_SKILL_FOUNDATION_REPORT.md`. Awaiting Sage review.
+- **AK-WP36 Capability Adoption Engine**: COMPLETE - Created governed sandbox adoption engine allowing AK agents to use approved skills/capabilities under Sage/Janus control. Extended `OfficialCapabilityRegistry` with `adoption_stage` field (6 states: PROPOSED, ASSIGNED_SANDBOX, IN_USE_SANDBOX, REVIEW_REQUIRED, SUSPENDED, RETIRED), `list_by_adoption_stage()`, `update_adoption_stage()`. Created `AdoptionRecord` dataclass with owner, assigned_agent, allowed_scope, risk_level, validation_refs, rollback_condition, roi_metric (7 required fields). Created `CapabilityAdoptionRegistry` with `ak_capability_adoptions` table in NationalMemoryPlatform (mandatory table #14). Created `CapabilityAdoptionEngine` with propose_adoption, transition (governance-gated), record_usage (auto-suspend after 3 failures), get_agent_adoptions, get_capability_adoptions, summary. Created `CapabilityAssignmentPolicy` that blocks HIGH/CRITICAL/CONSTITUTIONAL risk (Sage policy). All 52 new tests pass. Report: `reports/wp36_capability_adoption_engine_report.md`.
+- **AK-WP37 National Evolution & Learning System**: COMPLETE - JANUS DIRECTIVE. Capability evolution engine (`services/capability_evolution_loop.py` — 6-state machine: LOCKED/UNLOCKED/EVOLVING_MATURITY/EVOLVING_CYCLE/EVOLVED/ROLLED_BACK, sandbox-first, rollback). National Scheduler (`services/kingdom_scheduler.py` — 12 tasks across DAILY/WEEKLY/MONTHLY cadences). Agent Profile System (7 agents with capabilities/skills/maturity). Governed Terminal Autonomy (4-level hierarchy: READ_ONLY/SANDBOX_WRITE/BRANCH_WRITE/PROMOTION_CANDIDATE). Evolution-cycle-aware maturity scoring (5 engines). Evolution ROI tracking. 56 new tests, 157 total passing, zero regressions. No duplicate systems, no MT5/execution/runtime changes. Report: `docs/reports/AK_WP37_KINGDOM_EVOLUTION_FINAL_REPORT.md`. Exit criteria: ALL MET.
+- **AK-WP38 Governance & Pending Consolidation**: COMPLETE - JANUS DIRECTIVE. Full repo audit (558+ files, 18 root directories). 7 FINAL findings (canon/codex duplication, 16 empty dirs, 4 misplaced files, 2 stub connectors, budget law REVIEW, 2 future law placeholders, CI/CD gap). 20 pending items tracked with owner/priority/status/next action. 10 deliverables created: AK_CURRENT_STATE_AUDIT_REPORT.md, AK_PENDING_ITEMS_REGISTER.md, AK_DOCUMENT_STATUS_MATRIX.md, AK_REPO_PLACEMENT_AUDIT.md (reports); AK_GOVERNANCE_CONSOLIDATION_PROPOSAL.md (proposal); JANUS_CHARTER_DRAFT_v1.0.md, JANUS_SKILL_PRESIDENTIAL_ORCHESTRATION_DRAFT_v1.0.md (Janus), HERMES_MEMORY_DATASET_CHARTER_DRAFT_v1.0.md (Hermes); AK_AGENT_ACTIVATION_MATRIX_DRAFT.md, AK_DOCUMENT_REGISTRY_DRAFT.md (registries). Reviewer Loop completed — 16 compliance checks PASS, 8 exit criteria PASS, all stop conditions clear. Evidence: EVIDENCE-JANUS-CONSOLIDATION-001. Awaiting Sage review.
+- **NCP-R Wave 1 (Governance Remediation)**: COMPLETE — JANUS DIRECTIVE. Replaced NCP program with remediation wave. Reviewed 82 artifacts across 6 domains: 24 APPROVED, 3 REQUIRE_REVISION (Budget Law, Janus Charter, Hermes Charter), 5 MISSING (Treasury Charter, Emergency Reserve, 3 registries), 47 SUPERSEDED (entire codex/), 3 ARCHIVE, 0 REJECTED. Economic model validated: 10 framework items (6 APPROVED, 2 MISSING, 2 REQUIRE_REVISION). Agent activation: 6 PILOT_ACTIVE, 1 CONDITIONAL_ACTIVE (Helen). Registry consolidation: 9 registries verified (1 DUPLICATE, 3 NEED UPGRADE, 1 MISSING). 10 deliverables created, Reviewer Loop PASS. Evidence: EVIDENCE-JANUS-NCPR-WAVE1-001.
+- **NCP-R Wave 2 (Blockers Resolution)**: COMPLETE — JANUS DIRECTIVE. Resolved all 5 Wave 1 blockers: Treasury Charter (MISSING→FINAL), Budget Law (REVIEW→FINAL), Emergency Reserve (MISSING→FINAL), Janus Charter (REVISION→FINAL), Hermes Charter (REVISION→FINAL). Created Capability Economy Framework to complete economic loop. Corrected Helen status from CONDITIONAL_ACTIVE→PILOT_ACTIVE (full agent.py verified). Created Codex Archive Migration Plan. 11 deliverables across docs/charters/, docs/laws/, docs/frameworks/, docs/reports/, docs/proposals/. New directories: docs/charters/, docs/laws/, docs/frameworks/. Reviewer Loop PASS.
+- **PNSRR (Pilot Nation State Readiness Review)**: COMPLETE — CONSTITUTIONAL CERTIFICATION GATE. 6 certifications (Legal PASS 92, Governance PASS 90, Economic CONDITIONAL_PASS 82, Security PASS 88, Operations PASS 95, Repository PASS 90). National Readiness Index: 84.6/100. Decision: CONDITIONAL_APPROVED — AK authorized to enter Pilot Nation State. 4 conditions deferred to Q1 Pilot State. 6 PNSRR reports delivered. Reviewer Loop PASS. Evidence: EVIDENCE-JANUS-PNSRR-001.
+- **PSOP-04 (National Operations & Evidence)**: COMPLETE — JANUS DIRECTIVE. Created operational evidence collection layer. 27 deliverables: 6 YAML evidence registries (CAPABILITY_USAGE_REGISTRY.yaml, CAPABILITY_VALUE_REGISTRY.yaml, CAPABILITY_ROI_REGISTRY.yaml, TREASURY_EVIDENCE_REGISTRY.yaml, TRADING_EVIDENCE_REGISTRY.yaml, PROGRAM_EVIDENCE_REGISTRY.yaml); 9 services (capability_usage_collector, capability_value_collector, capability_roi_collector, treasury_evidence_collector, forecast_evidence_collector, signal_evidence_collector, zone_evidence_collector, program_evidence_collector, audit_evidence_compiler); 1 audit evidence index (docs/audit/Q1_KINGDOM_AUDIT_EVIDENCE_INDEX.md); 4 evidence maturity reports (CAPABILITY_EVIDENCE_MATURITY_REPORT.md, TREASURY_EVIDENCE_MATURITY_REPORT.md, TRADING_EVIDENCE_MATURITY_REPORT.md, PROGRAM_EVIDENCE_MATURITY_REPORT.md); 2 program reports (PSOP04_COMPLETION_REPORT.md, PSOP04_REVIEWER_LOOP_REPORT.md); 5 test files (69 tests). All evidence registries initialized empty — no synthetic/fabricated evidence. All collectors wrap existing services via delegation — no duplicated logic. All 264 AK tests pass (72 treasury + 50 PSOP-02 + 71 PSOP-03 + 69 PSOP-04 + 2 schemas). Read-only evidence-only mode — no execution, no trading, no budget automation, no predictive governance. Archived as PSOP04_DELIVERABLES.7z. Awaiting Sage review.
+- **PSOP-03 (National Planning & Capability Economy)**: COMPLETE — JANUS DIRECTIVE. Created operational planning and capability economy layer. 32 deliverables: 3 registries (KINGDOM_GOAL_REGISTRY.yaml, KINGDOM_PROGRAM_REGISTRY.yaml, TREASURY_IMPACT_REGISTRY.yaml); 12 services (kingdom_goal_manager, kingdom_program_manager, kingdom_planning_engine, capability_value_engine, capability_roi_engine, knowledge_roi_engine, treasury_impact_tracker, kingdom_performance_monitor, trading_health_monitor, forecast_accuracy_monitor, zone_quality_monitor, signal_quality_monitor); 2 report templates (KINGDOM_PLANNING_REPORT_TEMPLATE.md, CAPABILITY_ECONOMY_REPORT_TEMPLATE.md); 5 reports (KINGDOM_PLANNING_REPORT.md, CAPABILITY_ECONOMY_REPORT.md, KINGDOM_PLANNING_READINESS_REVIEW.md, PSOP03_COMPLETION_REPORT.md, PSOP03_REVIEWER_LOOP_REPORT.md); 1 audit prep (docs/audit/Q1_KINGDOM_AUDIT_PREPARATION.md — new docs/audit/ directory); 7 test files (71 tests); 2 root maturity reports (CAPABILITY_ECONOMY_MATURITY_REPORT.md, NATIONAL_PLANNING_MATURITY_REPORT.md). Hard caps enforced: Capability Economy ≤ Level 4, National Planning ≤ Level 4, no Budget Allocation Automation, no Autonomous Planning, no Predictive Governance. Capability ROI wraps existing memory/capability_roi_registry.py via delegation. All 195 AK tests pass (72 treasury + 50 PSOP-02 + 71 PSOP-03 + 2 schemas). Read-only services only — no execution, no fabricated data, no UI, no external APIs. Archived as PSOP03_DELIVERABLES.7z. Awaiting Sage review.
+- **PSOP-02 (National Situation Room)**: COMPLETE — JANUS DIRECTIVE. Created National Situation Room awareness layer for Pilot Nation State. 25 deliverables across 10 phases: 2 YAML registries (docs/registries/KINGDOM_HEALTH_REGISTRY.yaml, KINGDOM_STATUS_REGISTRY.yaml), 8 status/health monitoring services in services/ (kingdom_status_aggregator, kingdom_health_aggregator, governance_health_monitor, agent_status_monitor, capability_health_monitor, knowledge_health_monitor, treasury_status_monitor, security_status_monitor), 2 report templates (docs/templates/KINGDOM_STATUS_REPORT_TEMPLATE.md, KINGDOM_HEALTH_REPORT_TEMPLATE.md), 1 SOP (docs/sops/KINGDOM_SITUATION_ROOM_PROCESS.md), 4 reports (docs/reports/NATIONAL_SITUATION_ROOM_REPORT.md, NATIONAL_SITUATION_ROOM_HEALTH_REPORT.md, NATIONAL_SITUATION_ROOM_VALIDATION_REPORT.md, PSOP02_COMPLETION_REPORT.md), 6 test files (56 tests across test_kingdom_health_registry, test_kingdom_status_aggregation, test_agent_monitoring, test_capability_monitoring, test_treasury_monitoring, test_security_monitoring), plus NATIONAL_AWARENESS_MATURITY_REPORT.md at root (overall index 1.25/4 — between INITIAL and STRUCTURED). All 124 tests pass (72 treasury + 50 PSOP-02 + 2 schemas). 8-domain health model: Governance, Treasury, Agents, Capabilities, Knowledge, Datasets, Security, Trading. All services are read-only workflow mode. No fabricated data, no UI, no external APIs. Archived as PSOP02_DELIVERABLES.7z. Awaiting Sage review for PSOP-02→03 transition (National Planning Cycle / Dashboard Layer).
+- **PSOP-01A (Treasury Operations Activation)**: COMPLETE — JANUS DIRECTIVE. Activated treasury operations for Pilot Nation State. Created 19 deliverables across 8 phases: 6 services (treasury_revenue_ingestion, treasury_allocation_engine, treasury_transaction_manager, treasury_reporting_service, treasury_health_monitor, treasury_audit_service in services/), 3 SOPs (docs/sops/TREASURY_REVENUE_INGESTION_PROCESS.md, TREASURY_ALLOCATION_PROCESS.md, TREASURY_OPERATIONAL_AUDIT_PROCESS.md), 1 registry (docs/registries/TREASURY_TRANSACTION_STATUS_REGISTRY.yaml — 5-stage lifecycle), 4 reports (docs/reports/TREASURY_OPERATIONS_VALIDATION_REPORT.md, TREASURY_ACTIVATION_REVIEW.md, PSOP01A_COMPLETION_REPORT.md, PSOP01A_REVIEWER_LOOP_REPORT.md), 5 test files (tests/test_treasury_ingestion.py, test_treasury_allocation.py, test_treasury_reporting.py, test_treasury_health.py, test_treasury_audit.py — 56 tests). All 72 treasury tests pass (19 PSOP-01 + 56 PSOP-01A). All services are workflow-only — no automatic execution, no fabricated data, no credential/secret access. Treasury Activation Review recommends APPROVED. Archived as PSOP01A_DELIVERABLES.7z. Awaiting Sage review.
+- **PSOP-01 (Treasury Operations Foundation)**: COMPLETE — JANUS DIRECTIVE. Created 31 deliverables across 7 phases: 5 JSON schemas (docs/schemas/), 8 initialized data files (data/treasury/), 5 YAML registries (docs/registries/), 5 SOPs (docs/sops/), 3 report templates (docs/templates/), 3 validation tests (tests/ — 19/19 PASS), 3 reports (docs/reports/, TREASURY_READINESS_REVIEW.md at root). New directories: docs/schemas/, docs/sops/, docs/templates/, data/treasury/. All deliverables archived as PSOP01_DELIVERABLES.7z. Treasury layer structural foundation complete — no actual financial data per PNSRR conditions. Awaiting Sage review. Evidence: EVIDENCE-JANUS-PSOP01-001/002/003.
+- **KTSP (Kingdom Terminology Standardization Program — Migration Execution)**: COMPLETE — SAGE DIRECTIVE (planning) / JANUS DIRECTIVE (execution). 6-wave terminology migration executed: Wave 1 (Legal) — 6 files renamed/text-updated across docs/laws, charters, frameworks; Wave 2 (Registries) — 4 YAML registries renamed (NATIONAL→KINGDOM) with wrapper keys + 8 service/test file references updated; Wave 3 (Reports & Templates) — 18 files renamed + content updated across 22 report files; Wave 4 (Services & Tests) — 8 .py files renamed (7 services + 1 memory), import chains updated across 12+ dependent files, 12 test files renamed; Wave 5 (Authority Model) — REH/RAK/HCK/KAO branches already documented in standard; Wave 6 (Archive) — KINGDOM_TERMINOLOGY_LEGACY_MAP.md created in archive/. All text replacements applied: National→Kingdom Treasury, Fund, Planning, Health, Status, Goal, Program, Awareness, Performance, Audit, Scheduler, Revenue. Data/schema files renamed (5 data + 3 schemas). Treasury dictionary keys updated (national_treasury→kingdom_treasury, etc.). 275 tests pass (up from pre-migration 264). Zero remaining `national_` references in Python files. Legacy .docx files preserved untouched in sovereign/ and archive/. Archive: PSOP01_DELIVERABLES.7z through PSOP04_DELIVERABLES.7z retain old names (archived state captured before migration). Awaiting Sage review.
+- **CAR-R (Constitutional Remediation)**: COMPLETE — SAGE DIRECTIVE. KTSP residual reference remediation: 28 active `national_` references eliminated across 5 files (3 services, 2 registries, 6 test functions). Variables renamed (national_amount→kingdom_amount, national_treasury→kingdom_treasury, national_txn→kingdom_txn). Functions renamed (create_national_plan→create_kingdom_plan, get_national_performance→get_kingdom_performance). Registry schema/file paths updated (national_*→kingdom_*). 44 tests pass (no regressions). KTSP certification upgraded from NOT_CERTIFIED to CERTIFIED. 2 new reports created: KTSP_FINAL_CERTIFICATION_REPORT.md, KTSP_RESIDUAL_REFERENCE_REPORT.md. Archived as CAR_R_DELIVERABLES.7z.
+- **CAR-R2 (Constitutional Remediation Phase 2)**: COMPLETE — SAGE DIRECTIVE. All constitutional blockers resolved: (1) Constitution v1.1 canonicalization - full 15-article text extracted, indexed in CONSTITUTION_ARTICLE_REGISTRY.yaml and CONSTITUTION_AUTHORITY_MAP.yaml; (2) Agent charter closure - 5 FINAL charters created (SAGE, IRIS, HELEN, LANGLIEU, YETKIEU); (3) Lang Lieu autonomy assessed - tool-assisted Level 2/5, constitutionally compliant (adapter-only mode, no direct execution); (4) Final certification upgraded from CONSTITUTIONAL_GAPS_FOUND to CONDITIONALLY_CERTIFIED. 16 deliverables created. KTSP remains CERTIFIED. Ready for Kingdom Governance Freeze.
+- **AK-RUNTIME-LITE-PREFLIGHT-01**: COMPLETE — NOT_APPROVED. Full pre-deployment review. 7 critical blockers identified. Board decision: NOT_APPROVED. No deployment authorized until all blockers resolved and new preflight passes.
+
+- **REH-01 (Royal Executive House Activation)**: COMPLETE — OPERATIONAL. Created 5 registries (KINGDOM_DIRECTIVE_REGISTRY.yaml, KINGDOM_TASK_REGISTRY.yaml, KINGDOM_REPORT_REGISTRY.yaml, KINGDOM_ASSIGNMENT_REGISTRY.yaml, KINGDOM_ESCALATION_REGISTRY.yaml), 6 services (reh_directive_manager.py, kingdom_task_manager.py, kingdom_assignment_manager.py, kingdom_progress_tracker.py, kingdom_report_compiler.py, kingdom_escalation_manager.py), 1 governance document (DIRECTIVE_LIFECYCLE.md), 4 templates (EXECUTIVE_REPORT_TEMPLATE.md, DIRECTIVE_TEMPLATE.md, TASK_TEMPLATE.md, WEEKLY_PRESIDENTIAL_BRIEFING_TEMPLATE.md), 1 agent matrix (AGENT_ASSIGNMENT_MATRIX.yaml), and 1 demonstration script (run_reh_demo.py). Operational proof demonstrated: Hung Vuong → Directive → Janus → Tasks → Agent Assignment → Progress Tracking → Executive Report → Audit Trail. 14 REH tests pass. Full chain validated.

@@ -1,0 +1,420 @@
+treasury_impact_registry:
+  capability_impacts:
+  - capability_name: test_capability
+    efficiency_gain: 0.0
+    impact_id: CI-0002
+    recorded_at: '2026-06-08T04:56:30.095777+00:00'
+    risk_reduction: 0.0
+    treasury_contribution: 500.0
+  - capability_name: test_capability
+    efficiency_gain: 0.0
+    impact_id: CI-0004
+    recorded_at: '2026-06-08T04:56:45.437992+00:00'
+    risk_reduction: 0.0
+    treasury_contribution: 500.0
+  - capability_name: test_capability
+    efficiency_gain: 0.0
+    impact_id: CI-0006
+    recorded_at: '2026-06-08T04:59:03.971198+00:00'
+    risk_reduction: 0.0
+    treasury_contribution: 500.0
+  - capability_name: test_capability
+    efficiency_gain: 0.0
+    impact_id: CI-0008
+    recorded_at: '2026-06-08T05:00:15.411351+00:00'
+    risk_reduction: 0.0
+    treasury_contribution: 500.0
+  - capability_name: test_capability
+    efficiency_gain: 0.0
+    impact_id: CI-0014
+    recorded_at: '2026-06-08T05:13:03.631838+00:00'
+    risk_reduction: 0.0
+    treasury_contribution: 500.0
+  - capability_name: test_capability
+    efficiency_gain: 0.0
+    impact_id: CI-0020
+    recorded_at: '2026-06-08T06:52:33.468428+00:00'
+    risk_reduction: 0.0
+    treasury_contribution: 500.0
+  - capability_name: test_capability
+    efficiency_gain: 0.0
+    impact_id: CI-0026
+    recorded_at: '2026-06-08T06:53:57.186985+00:00'
+    risk_reduction: 0.0
+    treasury_contribution: 500.0
+  - capability_name: test_capability
+    efficiency_gain: 0.0
+    impact_id: CI-0032
+    recorded_at: '2026-06-08T06:54:21.726944+00:00'
+    risk_reduction: 0.0
+    treasury_contribution: 500.0
+  - capability_name: test_capability
+    efficiency_gain: 0.0
+    impact_id: CI-0038
+    recorded_at: '2026-06-08T06:55:47.561605+00:00'
+    risk_reduction: 0.0
+    treasury_contribution: 500.0
+  - capability_name: test_capability
+    efficiency_gain: 0.0
+    impact_id: CI-0044
+    recorded_at: '2026-06-08T07:13:15.572680+00:00'
+    risk_reduction: 0.0
+    treasury_contribution: 500.0
+  - capability_name: test_capability
+    efficiency_gain: 0.0
+    impact_id: CI-0050
+    recorded_at: '2026-06-08T08:17:12.094404+00:00'
+    risk_reduction: 0.0
+    treasury_contribution: 500.0
+  - capability_name: test_capability
+    efficiency_gain: 0.0
+    impact_id: CI-0052
+    recorded_at: '2026-06-08T08:24:53.983490+00:00'
+    risk_reduction: 0.0
+    treasury_contribution: 500.0
+  - capability_name: test_capability
+    efficiency_gain: 0.0
+    impact_id: CI-0054
+    recorded_at: '2026-06-08T09:35:11.056589+00:00'
+    risk_reduction: 0.0
+    treasury_contribution: 500.0
+  created_at: '2026-06-08'
+  last_impact_id: CI-0054
+  last_updated: '2026-06-08T09:35:11.056589+00:00'
+  next_review: '2026-07-08'
+  operator: Sage
+  owner: Janus
+  program_impacts:
+  - cost_incurred: 0.0
+    impact_id: PI-0001
+    net_impact: 0.0
+    program_id: PROG-0001
+    program_name: Test Program
+    recorded_at: '2026-06-08T04:56:30.084027+00:00'
+    treasury_contribution: 1000.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0003
+    net_impact: 0.0
+    program_id: PROG-0001
+    program_name: Test Program
+    recorded_at: '2026-06-08T04:56:45.428474+00:00'
+    treasury_contribution: 1000.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0005
+    net_impact: 0.0
+    program_id: PROG-0001
+    program_name: Test Program
+    recorded_at: '2026-06-08T04:59:03.960321+00:00'
+    treasury_contribution: 1000.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0007
+    net_impact: 0.0
+    program_id: PROG-0001
+    program_name: Test Program
+    recorded_at: '2026-06-08T05:00:15.394154+00:00'
+    treasury_contribution: 1000.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0009
+    net_impact: 0.0
+    program_id: TREASURY-EVIDENCE
+    program_name: Treasury revenue
+    recorded_at: '2026-06-08T05:12:47.512466+00:00'
+    treasury_contribution: 0.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0010
+    net_impact: 0.0
+    program_id: TREASURY-EVIDENCE
+    program_name: Treasury expense
+    recorded_at: '2026-06-08T05:12:47.547917+00:00'
+    treasury_contribution: 0.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0011
+    net_impact: 0.0
+    program_id: TREASURY-EVIDENCE
+    program_name: Treasury reserve
+    recorded_at: '2026-06-08T05:12:47.580426+00:00'
+    treasury_contribution: 0.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0012
+    net_impact: 0.0
+    program_id: TREASURY-EVIDENCE
+    program_name: Treasury treasury
+    recorded_at: '2026-06-08T05:12:47.613439+00:00'
+    treasury_contribution: 0.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0013
+    net_impact: 0.0
+    program_id: PROG-0001
+    program_name: Test Program
+    recorded_at: '2026-06-08T05:13:03.616215+00:00'
+    treasury_contribution: 1000.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0015
+    net_impact: 0.0
+    program_id: TREASURY-EVIDENCE
+    program_name: Treasury revenue
+    recorded_at: '2026-06-08T05:13:04.432163+00:00'
+    treasury_contribution: 0.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0016
+    net_impact: 0.0
+    program_id: TREASURY-EVIDENCE
+    program_name: Treasury expense
+    recorded_at: '2026-06-08T05:13:04.479106+00:00'
+    treasury_contribution: 0.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0017
+    net_impact: 0.0
+    program_id: TREASURY-EVIDENCE
+    program_name: Treasury reserve
+    recorded_at: '2026-06-08T05:13:04.525950+00:00'
+    treasury_contribution: 0.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0018
+    net_impact: 0.0
+    program_id: TREASURY-EVIDENCE
+    program_name: Treasury treasury
+    recorded_at: '2026-06-08T05:13:04.572831+00:00'
+    treasury_contribution: 0.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0019
+    net_impact: 0.0
+    program_id: PROG-0001
+    program_name: Test Program
+    recorded_at: '2026-06-08T06:52:33.436593+00:00'
+    treasury_contribution: 1000.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0021
+    net_impact: 0.0
+    program_id: TREASURY-EVIDENCE
+    program_name: Treasury revenue
+    recorded_at: '2026-06-08T06:52:37.202505+00:00'
+    treasury_contribution: 0.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0022
+    net_impact: 0.0
+    program_id: TREASURY-EVIDENCE
+    program_name: Treasury expense
+    recorded_at: '2026-06-08T06:52:37.250574+00:00'
+    treasury_contribution: 0.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0023
+    net_impact: 0.0
+    program_id: TREASURY-EVIDENCE
+    program_name: Treasury reserve
+    recorded_at: '2026-06-08T06:52:37.295938+00:00'
+    treasury_contribution: 0.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0024
+    net_impact: 0.0
+    program_id: TREASURY-EVIDENCE
+    program_name: Treasury treasury
+    recorded_at: '2026-06-08T06:52:37.342814+00:00'
+    treasury_contribution: 0.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0025
+    net_impact: 0.0
+    program_id: PROG-0001
+    program_name: Test Program
+    recorded_at: '2026-06-08T06:53:57.158891+00:00'
+    treasury_contribution: 1000.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0027
+    net_impact: 0.0
+    program_id: TREASURY-EVIDENCE
+    program_name: Treasury revenue
+    recorded_at: '2026-06-08T06:54:01.265056+00:00'
+    treasury_contribution: 0.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0028
+    net_impact: 0.0
+    program_id: TREASURY-EVIDENCE
+    program_name: Treasury expense
+    recorded_at: '2026-06-08T06:54:01.327545+00:00'
+    treasury_contribution: 0.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0029
+    net_impact: 0.0
+    program_id: TREASURY-EVIDENCE
+    program_name: Treasury reserve
+    recorded_at: '2026-06-08T06:54:01.395175+00:00'
+    treasury_contribution: 0.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0030
+    net_impact: 0.0
+    program_id: TREASURY-EVIDENCE
+    program_name: Treasury treasury
+    recorded_at: '2026-06-08T06:54:01.463656+00:00'
+    treasury_contribution: 0.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0031
+    net_impact: 0.0
+    program_id: PROG-0001
+    program_name: Test Program
+    recorded_at: '2026-06-08T06:54:21.670859+00:00'
+    treasury_contribution: 1000.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0033
+    net_impact: 0.0
+    program_id: TREASURY-EVIDENCE
+    program_name: Treasury revenue
+    recorded_at: '2026-06-08T06:54:25.827752+00:00'
+    treasury_contribution: 0.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0034
+    net_impact: 0.0
+    program_id: TREASURY-EVIDENCE
+    program_name: Treasury expense
+    recorded_at: '2026-06-08T06:54:25.913079+00:00'
+    treasury_contribution: 0.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0035
+    net_impact: 0.0
+    program_id: TREASURY-EVIDENCE
+    program_name: Treasury reserve
+    recorded_at: '2026-06-08T06:54:25.983677+00:00'
+    treasury_contribution: 0.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0036
+    net_impact: 0.0
+    program_id: TREASURY-EVIDENCE
+    program_name: Treasury treasury
+    recorded_at: '2026-06-08T06:54:26.061913+00:00'
+    treasury_contribution: 0.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0037
+    net_impact: 0.0
+    program_id: PROG-0001
+    program_name: Test Program
+    recorded_at: '2026-06-08T06:55:47.499828+00:00'
+    treasury_contribution: 1000.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0039
+    net_impact: 0.0
+    program_id: TREASURY-EVIDENCE
+    program_name: Treasury revenue
+    recorded_at: '2026-06-08T06:55:51.671439+00:00'
+    treasury_contribution: 0.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0040
+    net_impact: 0.0
+    program_id: TREASURY-EVIDENCE
+    program_name: Treasury expense
+    recorded_at: '2026-06-08T06:55:51.775809+00:00'
+    treasury_contribution: 0.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0041
+    net_impact: 0.0
+    program_id: TREASURY-EVIDENCE
+    program_name: Treasury reserve
+    recorded_at: '2026-06-08T06:55:51.859066+00:00'
+    treasury_contribution: 0.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0042
+    net_impact: 0.0
+    program_id: TREASURY-EVIDENCE
+    program_name: Treasury treasury
+    recorded_at: '2026-06-08T06:55:51.952503+00:00'
+    treasury_contribution: 0.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0043
+    net_impact: 0.0
+    program_id: PROG-0001
+    program_name: Test Program
+    recorded_at: '2026-06-08T07:13:15.498182+00:00'
+    treasury_contribution: 1000.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0045
+    net_impact: 0.0
+    program_id: TREASURY-EVIDENCE
+    program_name: Treasury revenue
+    recorded_at: '2026-06-08T07:13:20.284318+00:00'
+    treasury_contribution: 0.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0046
+    net_impact: 0.0
+    program_id: TREASURY-EVIDENCE
+    program_name: Treasury expense
+    recorded_at: '2026-06-08T07:13:20.374290+00:00'
+    treasury_contribution: 0.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0047
+    net_impact: 0.0
+    program_id: TREASURY-EVIDENCE
+    program_name: Treasury reserve
+    recorded_at: '2026-06-08T07:13:20.483351+00:00'
+    treasury_contribution: 0.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0048
+    net_impact: 0.0
+    program_id: TREASURY-EVIDENCE
+    program_name: Treasury treasury
+    recorded_at: '2026-06-08T07:13:20.592699+00:00'
+    treasury_contribution: 0.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0049
+    net_impact: 0.0
+    program_id: PROG-0001
+    program_name: Test Program
+    recorded_at: '2026-06-08T08:17:12.015107+00:00'
+    treasury_contribution: 1000.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0051
+    net_impact: 0.0
+    program_id: PROG-0001
+    program_name: Test Program
+    recorded_at: '2026-06-08T08:24:53.906578+00:00'
+    treasury_contribution: 1000.0
+    value_generated: 0.0
+  - cost_incurred: 0.0
+    impact_id: PI-0053
+    net_impact: 0.0
+    program_id: PROG-0001
+    program_name: Test Program
+    recorded_at: '2026-06-08T09:35:10.954453+00:00'
+    treasury_contribution: 1000.0
+    value_generated: 0.0
+  reviewer: Hung Vuong
+  status: INITIALIZED
+  treasury_contributions: []
+  updated_at: '2026-06-08'
+  version: 1.0

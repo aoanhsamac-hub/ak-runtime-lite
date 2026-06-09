@@ -1,0 +1,97 @@
+kingdom_health_registry:
+  created_at: '2026-06-08'
+  current_overall_status: HEALTHY
+  health_domains:
+    agents_health:
+      description: Agent activation and operational status
+      last_checked: '2026-06-08T14:35:46.686591+00:00'
+      metrics:
+      - activation_status
+      - capability_status
+      - dependency_status
+      score: 100
+      status: HEALTHY
+    capability_health:
+      description: Capability maturity and adoption
+      last_checked: '2026-06-08T14:35:46.686591+00:00'
+      metrics:
+      - maturity_level
+      - adoption_count
+      - evolution_status
+      score: 100
+      status: HEALTHY
+    dataset_health:
+      description: Dataset registry status
+      last_checked: '2026-06-08T14:35:46.686591+00:00'
+      metrics:
+      - dataset_count
+      - registry_status
+      - governance_compliance
+      score: 100
+      status: HEALTHY
+    governance_health:
+      description: Governance compliance and charter adherence
+      last_checked: '2026-06-08T14:35:46.686591+00:00'
+      metrics:
+      - charter_compliance
+      - registry_compliance
+      - authority_compliance
+      score: 100
+      status: HEALTHY
+    knowledge_health:
+      description: Knowledge asset growth and integrity
+      last_checked: '2026-06-08T14:35:46.686591+00:00'
+      metrics:
+      - knowledge_count
+      - integrity_rate
+      - governance_pass_rate
+      score: 100
+      status: HEALTHY
+    security_health:
+      description: Security posture and compliance
+      last_checked: '2026-06-08T14:35:46.686591+00:00'
+      metrics:
+      - agent_security
+      - infrastructure_health
+      - compliance_health
+      score: 100
+      status: HEALTHY
+    trading_health:
+      description: Trading infrastructure and observation status
+      last_checked: '2026-06-08T14:35:46.686591+00:00'
+      metrics:
+      - mt5_observer_health
+      - market_snapshot_status
+      - zone_detector_status
+      score: 100
+      status: HEALTHY
+    treasury_health:
+      description: Treasury operations and financial status
+      last_checked: '2026-06-08T14:35:46.686591+00:00'
+      metrics:
+      - revenue_health
+      - budget_health
+      - reserve_health
+      score: 100
+      status: HEALTHY
+  last_health_check: '2026-06-08T14:35:46.686591+00:00'
+  operator: Iris
+  overall_score: 100
+  owner: Janus
+  reviewer: Sage
+  status: ACTIVE
+  status_levels:
+  - description: All metrics within target ranges
+    level: HEALTHY
+    score_min: 80
+  - description: One or more metrics approaching threshold
+    level: WATCH
+    score_min: 60
+  - description: One or more metrics outside threshold
+    level: WARNING
+    score_min: 40
+  - description: Critical metric failure requiring escalation
+    level: CRITICAL
+    score_min: 0
+  updated_at: null
+  version: '1.0'

@@ -1,0 +1,16 @@
+kingdom_audit_evidence_index:
+  created_at: '2026-06-08'
+  evidence_sources:
+    agent_evidence: 21
+    capability_evidence: 0
+    planning_evidence: 21
+    reh_evidence: 0
+    situation_room_evidence: 0
+    trading_evidence: 70
+    treasury_evidence: 28
+  last_updated: '2026-06-08T14:35:39.514690+00:00'
+  operator: Kingdom Audit Office
+  owner: Janus
+  reviewer: Sage
+  status: ACTIVE
+  version: 1.0

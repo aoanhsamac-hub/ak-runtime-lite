@@ -1,0 +1,23 @@
+{
+  "schema": "kingdom_expense_schema",
+  "version": "1.0",
+  "description": "Schema for kingdom expense records",
+  "required_fields": [
+    "expense_id", "timestamp", "category", "amount",
+    "authority", "budget_line", "status", "audit_id"
+  ],
+  "fields": {
+    "expense_id": {"type": "string", "format": "EXP-{YYYY}-{NNNN}", "description": "Unique expense identifier"},
+    "timestamp": {"type": "string", "format": "ISO-8601", "description": "Expense recognition timestamp"},
+    "category": {"type": "string", "enum": ["Infrastructure", "Knowledge", "Dataset", "Security", "Operations", "R&D", "StrategicReserve", "EmergencyReserve", "Growth"], "description": "Expense category per Budget Law §3"},
+    "amount": {"type": "number", "minimum": 0, "description": "Expense amount in base currency"},
+    "authority": {"type": "string", "description": "Authorizing agent or person"},
+    "budget_line": {"type": "string", "description": "Budget line item reference"},
+    "description": {"type": "string", "optional": true, "description": "Expense description"},
+    "vendor": {"type": "string", "optional": true, "description": "Payee or vendor"},
+    "status": {"type": "string", "enum": ["APPROVED", "PAID", "PENDING", "DISPUTED", "CANCELLED"], "description": "Expense status"},
+    "audit_id": {"type": "string", "format": "AUDIT-{XXXXXXXX}", "description": "Link to audit record"},
+    "created_at": {"type": "string", "format": "ISO-8601", "description": "Record creation timestamp"},
+    "updated_at": {"type": "string", "format": "ISO-8601", "optional": true, "description": "Last update timestamp"}
+  }
+}

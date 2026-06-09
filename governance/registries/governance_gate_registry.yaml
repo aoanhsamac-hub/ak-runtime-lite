@@ -1,0 +1,23 @@
+governance_gate_registry:
+  status: OPERATIONAL
+  registry_version: "1.0"
+  created_at: "2026-06-07T00:00:00Z"
+  updated_at: "2026-06-07T14:00:00Z"
+  owner_agent: Sage
+  reviewer_agent: Janus
+  default_decision: BLOCK
+  workflow:
+    - Proposal
+    - Issue
+    - Risk Classification
+    - Approval
+    - Governance Gate
+    - Implementation
+    - Verification
+    - Audit
+  block_conditions:
+    - governance_invalid
+    - missing_approver
+    - protected_module_violation
+  protected_modules_registry: governance/registries/protected_modules.yaml
+  approval_matrix: governance/registries/approval_matrix.yaml

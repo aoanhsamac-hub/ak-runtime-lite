@@ -1,0 +1,432 @@
+program_evidence_registry:
+  created_at: '2026-06-08'
+  evidence_records:
+  - evidence_id: PROG-EVID-0001
+    goal_summary:
+      active: 0
+      average_progress: 7.14
+      by_status:
+        APPROVED: 8
+        PROPOSED: 20
+      completed: 0
+      total: 28
+      total_goals: 28
+    program_summary:
+      active: 0
+      average_progress: 18.75
+      by_status:
+        APPROVED: 8
+        PROPOSED: 8
+      completed: 0
+      total: 16
+      total_programs: 16
+    recorded_at: '2026-06-08T05:12:48.037223+00:00'
+  - evidence_id: PROG-EVID-0002
+    goal_summary:
+      active: 0
+      average_progress: 7.14
+      by_status:
+        APPROVED: 8
+        PROPOSED: 20
+      completed: 0
+      total: 28
+      total_goals: 28
+    program_summary:
+      active: 0
+      average_progress: 18.75
+      by_status:
+        APPROVED: 8
+        PROPOSED: 8
+      completed: 0
+      total: 16
+      total_programs: 16
+    recorded_at: '2026-06-08T05:12:48.140274+00:00'
+  - evidence_id: PROG-EVID-0003
+    goal_summary:
+      active: 0
+      average_progress: 7.14
+      by_status:
+        APPROVED: 8
+        PROPOSED: 20
+      completed: 0
+      total: 28
+      total_goals: 28
+    program_summary:
+      active: 0
+      average_progress: 18.75
+      by_status:
+        APPROVED: 8
+        PROPOSED: 8
+      completed: 0
+      total: 16
+      total_programs: 16
+    recorded_at: '2026-06-08T05:12:48.263095+00:00'
+  - evidence_id: PROG-EVID-0004
+    goal_summary:
+      active: 0
+      average_progress: 7.14
+      by_status:
+        APPROVED: 10
+        PROPOSED: 25
+      completed: 0
+      total: 35
+      total_goals: 35
+    program_summary:
+      active: 0
+      average_progress: 18.75
+      by_status:
+        APPROVED: 10
+        PROPOSED: 10
+      completed: 0
+      total: 20
+      total_programs: 20
+    recorded_at: '2026-06-08T05:13:05.371120+00:00'
+  - evidence_id: PROG-EVID-0005
+    goal_summary:
+      active: 0
+      average_progress: 7.14
+      by_status:
+        APPROVED: 10
+        PROPOSED: 25
+      completed: 0
+      total: 35
+      total_goals: 35
+    program_summary:
+      active: 0
+      average_progress: 18.75
+      by_status:
+        APPROVED: 10
+        PROPOSED: 10
+      completed: 0
+      total: 20
+      total_programs: 20
+    recorded_at: '2026-06-08T05:13:05.526785+00:00'
+  - evidence_id: PROG-EVID-0006
+    goal_summary:
+      active: 0
+      average_progress: 7.14
+      by_status:
+        APPROVED: 10
+        PROPOSED: 25
+      completed: 0
+      total: 35
+      total_goals: 35
+    program_summary:
+      active: 0
+      average_progress: 18.75
+      by_status:
+        APPROVED: 10
+        PROPOSED: 10
+      completed: 0
+      total: 20
+      total_programs: 20
+    recorded_at: '2026-06-08T05:13:05.667434+00:00'
+  - evidence_id: PROG-EVID-0007
+    goal_summary:
+      active: 0
+      average_progress: 7.14
+      by_status:
+        APPROVED: 14
+        PROPOSED: 35
+      completed: 0
+      total: 49
+      total_goals: 49
+    program_summary:
+      active: 0
+      average_progress: 18.75
+      by_status:
+        APPROVED: 14
+        PROPOSED: 14
+      completed: 0
+      total: 28
+      total_programs: 28
+    recorded_at: '2026-06-08T06:52:38.265163+00:00'
+  - evidence_id: PROG-EVID-0008
+    goal_summary:
+      active: 0
+      average_progress: 7.14
+      by_status:
+        APPROVED: 14
+        PROPOSED: 35
+      completed: 0
+      total: 49
+      total_goals: 49
+    program_summary:
+      active: 0
+      average_progress: 18.75
+      by_status:
+        APPROVED: 14
+        PROPOSED: 14
+      completed: 0
+      total: 28
+      total_programs: 28
+    recorded_at: '2026-06-08T06:52:38.428276+00:00'
+  - evidence_id: PROG-EVID-0009
+    goal_summary:
+      active: 0
+      average_progress: 7.14
+      by_status:
+        APPROVED: 14
+        PROPOSED: 35
+      completed: 0
+      total: 49
+      total_goals: 49
+    program_summary:
+      active: 0
+      average_progress: 18.75
+      by_status:
+        APPROVED: 14
+        PROPOSED: 14
+      completed: 0
+      total: 28
+      total_programs: 28
+    recorded_at: '2026-06-08T06:52:38.577649+00:00'
+  - evidence_id: PROG-EVID-0010
+    goal_summary:
+      active: 0
+      average_progress: 7.14
+      by_status:
+        APPROVED: 16
+        PROPOSED: 40
+      completed: 0
+      total: 56
+      total_goals: 56
+    program_summary:
+      active: 0
+      average_progress: 18.75
+      by_status:
+        APPROVED: 16
+        PROPOSED: 16
+      completed: 0
+      total: 32
+      total_programs: 32
+    recorded_at: '2026-06-08T06:54:02.686496+00:00'
+  - evidence_id: PROG-EVID-0011
+    goal_summary:
+      active: 0
+      average_progress: 7.14
+      by_status:
+        APPROVED: 16
+        PROPOSED: 40
+      completed: 0
+      total: 56
+      total_goals: 56
+    program_summary:
+      active: 0
+      average_progress: 18.75
+      by_status:
+        APPROVED: 16
+        PROPOSED: 16
+      completed: 0
+      total: 32
+      total_programs: 32
+    recorded_at: '2026-06-08T06:54:02.874102+00:00'
+  - evidence_id: PROG-EVID-0012
+    goal_summary:
+      active: 0
+      average_progress: 7.14
+      by_status:
+        APPROVED: 16
+        PROPOSED: 40
+      completed: 0
+      total: 56
+      total_goals: 56
+    program_summary:
+      active: 0
+      average_progress: 18.75
+      by_status:
+        APPROVED: 16
+        PROPOSED: 16
+      completed: 0
+      total: 32
+      total_programs: 32
+    recorded_at: '2026-06-08T06:54:03.077247+00:00'
+  - evidence_id: PROG-EVID-0013
+    goal_summary:
+      active: 0
+      average_progress: 7.14
+      by_status:
+        APPROVED: 18
+        PROPOSED: 45
+      completed: 0
+      total: 63
+      total_goals: 63
+    program_summary:
+      active: 0
+      average_progress: 18.75
+      by_status:
+        APPROVED: 18
+        PROPOSED: 18
+      completed: 0
+      total: 36
+      total_programs: 36
+    recorded_at: '2026-06-08T06:54:27.659843+00:00'
+  - evidence_id: PROG-EVID-0014
+    goal_summary:
+      active: 0
+      average_progress: 7.14
+      by_status:
+        APPROVED: 18
+        PROPOSED: 45
+      completed: 0
+      total: 63
+      total_goals: 63
+    program_summary:
+      active: 0
+      average_progress: 18.75
+      by_status:
+        APPROVED: 18
+        PROPOSED: 18
+      completed: 0
+      total: 36
+      total_programs: 36
+    recorded_at: '2026-06-08T06:54:27.921091+00:00'
+  - evidence_id: PROG-EVID-0015
+    goal_summary:
+      active: 0
+      average_progress: 7.14
+      by_status:
+        APPROVED: 18
+        PROPOSED: 45
+      completed: 0
+      total: 63
+      total_goals: 63
+    program_summary:
+      active: 0
+      average_progress: 18.75
+      by_status:
+        APPROVED: 18
+        PROPOSED: 18
+      completed: 0
+      total: 36
+      total_programs: 36
+    recorded_at: '2026-06-08T06:54:28.155626+00:00'
+  - evidence_id: PROG-EVID-0016
+    goal_summary:
+      active: 0
+      average_progress: 7.14
+      by_status:
+        APPROVED: 20
+        PROPOSED: 50
+      completed: 0
+      total: 70
+      total_goals: 70
+    program_summary:
+      active: 0
+      average_progress: 18.75
+      by_status:
+        APPROVED: 20
+        PROPOSED: 20
+      completed: 0
+      total: 40
+      total_programs: 40
+    recorded_at: '2026-06-08T06:55:53.889914+00:00'
+  - evidence_id: PROG-EVID-0017
+    goal_summary:
+      active: 0
+      average_progress: 7.14
+      by_status:
+        APPROVED: 20
+        PROPOSED: 50
+      completed: 0
+      total: 70
+      total_goals: 70
+    program_summary:
+      active: 0
+      average_progress: 18.75
+      by_status:
+        APPROVED: 20
+        PROPOSED: 20
+      completed: 0
+      total: 40
+      total_programs: 40
+    recorded_at: '2026-06-08T06:55:54.139545+00:00'
+  - evidence_id: PROG-EVID-0018
+    goal_summary:
+      active: 0
+      average_progress: 7.14
+      by_status:
+        APPROVED: 20
+        PROPOSED: 50
+      completed: 0
+      total: 70
+      total_goals: 70
+    program_summary:
+      active: 0
+      average_progress: 18.75
+      by_status:
+        APPROVED: 20
+        PROPOSED: 20
+      completed: 0
+      total: 40
+      total_programs: 40
+    recorded_at: '2026-06-08T06:55:54.374429+00:00'
+  - evidence_id: PROG-EVID-0019
+    goal_summary:
+      active: 0
+      average_progress: 7.14
+      by_status:
+        APPROVED: 22
+        PROPOSED: 55
+      completed: 0
+      total: 77
+      total_goals: 77
+    program_summary:
+      active: 0
+      average_progress: 18.75
+      by_status:
+        APPROVED: 22
+        PROPOSED: 22
+      completed: 0
+      total: 44
+      total_programs: 44
+    recorded_at: '2026-06-08T07:13:23.082511+00:00'
+  - evidence_id: PROG-EVID-0020
+    goal_summary:
+      active: 0
+      average_progress: 7.14
+      by_status:
+        APPROVED: 22
+        PROPOSED: 55
+      completed: 0
+      total: 77
+      total_goals: 77
+    program_summary:
+      active: 0
+      average_progress: 18.75
+      by_status:
+        APPROVED: 22
+        PROPOSED: 22
+      completed: 0
+      total: 44
+      total_programs: 44
+    recorded_at: '2026-06-08T07:13:23.385510+00:00'
+  - evidence_id: PROG-EVID-0021
+    goal_summary:
+      active: 0
+      average_progress: 7.14
+      by_status:
+        APPROVED: 22
+        PROPOSED: 55
+      completed: 0
+      total: 77
+      total_goals: 77
+    program_summary:
+      active: 0
+      average_progress: 18.75
+      by_status:
+        APPROVED: 22
+        PROPOSED: 22
+      completed: 0
+      total: 44
+      total_programs: 44
+    recorded_at: '2026-06-08T07:13:23.702535+00:00'
+  last_evidence_id: PROG-EVID-0021
+  last_updated: '2026-06-08T07:13:23.702535+00:00'
+  next_review: '2026-07-08'
+  operator: Sage
+  owner: Janus
+  reviewer: Hung Vuong
+  status: ACTIVE
+  updated_at: '2026-06-08'
+  version: 1.0

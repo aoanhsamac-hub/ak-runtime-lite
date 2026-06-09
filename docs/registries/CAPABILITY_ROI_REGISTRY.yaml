@@ -1,0 +1,138 @@
+capability_roi_registry:
+  created_at: '2026-06-08'
+  evidence_records:
+  - capability_name: test_cap
+    cost: 50
+    evidence_id: ROI-EVID-0001
+    recorded_at: '2026-06-08T05:12:43.614587+00:00'
+    roi: 2.0
+    roi_record_id: test_cap
+    usage_reference: null
+    value: 100
+    value_reference: null
+  - capability_name: zero_cost
+    cost: 0
+    evidence_id: ROI-EVID-0002
+    recorded_at: '2026-06-08T05:12:47.430525+00:00'
+    roi: 0.0
+    roi_record_id: zero_cost
+    usage_reference: null
+    value: 100
+    value_reference: null
+  - capability_name: test_cap
+    cost: 50
+    evidence_id: ROI-EVID-0003
+    recorded_at: '2026-06-08T05:13:04.315729+00:00'
+    roi: 2.0
+    roi_record_id: test_cap
+    usage_reference: null
+    value: 100
+    value_reference: null
+  - capability_name: zero_cost
+    cost: 0
+    evidence_id: ROI-EVID-0004
+    recorded_at: '2026-06-08T05:13:04.336212+00:00'
+    roi: 0.0
+    roi_record_id: zero_cost
+    usage_reference: null
+    value: 100
+    value_reference: null
+  - capability_name: test_cap
+    cost: 50
+    evidence_id: ROI-EVID-0005
+    recorded_at: '2026-06-08T06:52:37.061843+00:00'
+    roi: 2.0
+    roi_record_id: test_cap
+    usage_reference: null
+    value: 100
+    value_reference: null
+  - capability_name: zero_cost
+    cost: 0
+    evidence_id: ROI-EVID-0006
+    recorded_at: '2026-06-08T06:52:37.095068+00:00'
+    roi: 0.0
+    roi_record_id: zero_cost
+    usage_reference: null
+    value: 100
+    value_reference: null
+  - capability_name: test_cap
+    cost: 50
+    evidence_id: ROI-EVID-0007
+    recorded_at: '2026-06-08T06:54:01.108845+00:00'
+    roi: 2.0
+    roi_record_id: test_cap
+    usage_reference: null
+    value: 100
+    value_reference: null
+  - capability_name: zero_cost
+    cost: 0
+    evidence_id: ROI-EVID-0008
+    recorded_at: '2026-06-08T06:54:01.148866+00:00'
+    roi: 0.0
+    roi_record_id: zero_cost
+    usage_reference: null
+    value: 100
+    value_reference: null
+  - capability_name: test_cap
+    cost: 50
+    evidence_id: ROI-EVID-0009
+    recorded_at: '2026-06-08T06:54:25.655924+00:00'
+    roi: 2.0
+    roi_record_id: test_cap
+    usage_reference: null
+    value: 100
+    value_reference: null
+  - capability_name: zero_cost
+    cost: 0
+    evidence_id: ROI-EVID-0010
+    recorded_at: '2026-06-08T06:54:25.700330+00:00'
+    roi: 0.0
+    roi_record_id: zero_cost
+    usage_reference: null
+    value: 100
+    value_reference: null
+  - capability_name: test_cap
+    cost: 50
+    evidence_id: ROI-EVID-0011
+    recorded_at: '2026-06-08T06:55:51.483238+00:00'
+    roi: 2.0
+    roi_record_id: test_cap
+    usage_reference: null
+    value: 100
+    value_reference: null
+  - capability_name: zero_cost
+    cost: 0
+    evidence_id: ROI-EVID-0012
+    recorded_at: '2026-06-08T06:55:51.514521+00:00'
+    roi: 0.0
+    roi_record_id: zero_cost
+    usage_reference: null
+    value: 100
+    value_reference: null
+  - capability_name: test_cap
+    cost: 50
+    evidence_id: ROI-EVID-0013
+    recorded_at: '2026-06-08T07:13:20.045747+00:00'
+    roi: 2.0
+    roi_record_id: test_cap
+    usage_reference: null
+    value: 100
+    value_reference: null
+  - capability_name: zero_cost
+    cost: 0
+    evidence_id: ROI-EVID-0014
+    recorded_at: '2026-06-08T07:13:20.077541+00:00'
+    roi: 0.0
+    roi_record_id: zero_cost
+    usage_reference: null
+    value: 100
+    value_reference: null
+  last_evidence_id: ROI-EVID-0014
+  last_updated: '2026-06-08T07:13:20.077541+00:00'
+  next_review: '2026-07-08'
+  operator: Sage
+  owner: Janus
+  reviewer: Hermes
+  status: ACTIVE
+  updated_at: '2026-06-08'
+  version: 1.0

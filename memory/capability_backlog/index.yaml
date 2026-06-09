@@ -1,0 +1,53 @@
+# NEURON Capability Backlog Index
+
+# Generated for sandbox operation - no activation beyond READY_FOR_SANDBOX
+
+items:
+  - capability_name: NEURON_T1_VectorMemory_RAG
+    owner_agent: Hermes
+    activation_state: ACTIVE
+    risk_level: LEVEL_1_MODERATE
+    review_status: SAGE_APPROVED
+    activation_gate: READY_FOR_SANDBOX
+
+  - capability_name: NEURON_T2_PromptEvolution
+    owner_agent: Hermes
+    activation_state: SANDBOX_ONLY
+    risk_level: LEVEL_2_HIGH
+    review_status: SAGE_REVIEW_REQUIRED
+    activation_gate: SANDBOX_ACTIVE
+
+  - capability_name: NEURON_T3_FineTuning
+    owner_agent: Hermes
+    activation_state: TRAINING_LOCKED
+    risk_level: LEVEL_3_SOVEREIGN
+    review_status: SAGE_REVIEW_REQUIRED
+    activation_gate: HUNG_VUONG_APPROVAL
+
+  - capability_name: NEURON_T4_DualBrain
+    owner_agent: Janus
+    activation_state: OBSERVE_ONLY
+    risk_level: LEVEL_3_SOVEREIGN
+    review_status: SAGE_REVIEW_REQUIRED
+    activation_gate: HUNG_VUONG_APPROVAL
+
+  - capability_name: DebateEngine
+    owner_agent: Janus
+    activation_state: ACTIVE
+    risk_level: LEVEL_1_MODERATE
+    review_status: SAGE_APPROVED
+    activation_gate: READY_FOR_SANDBOX
+
+  - capability_name: SkillBenchmarkSystem
+    owner_agent: Hermes
+    activation_state: ACTIVE
+    risk_level: LEVEL_1_MODERATE
+    review_status: SAGE_APPROVED
+    activation_gate: READY_FOR_SANDBOX
+
+  - capability_name: ConfidenceScoringLayer
+    owner_agent: Janus
+    activation_state: ACTIVE
+    risk_level: LEVEL_1_MODERATE
+    review_status: SAGE_APPROVED
+    activation_gate: READY_FOR_SANDBOX

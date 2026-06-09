@@ -1,0 +1,9 @@
+name: debate_engine
+status: active
+description: Multi-agent challenge and counter-argument system
+layers:
+  - proposal: "Agent proposes solution"
+  - challenge: "Other agents challenge"
+  - counter: "Counter-arguments generated"
+  - evidence: "Evidence reviewed"
+  - council_decision: "Janus/Sage final decision"

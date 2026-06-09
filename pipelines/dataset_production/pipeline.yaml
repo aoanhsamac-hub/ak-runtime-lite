@@ -1,0 +1,14 @@
+name: dataset_production
+status: operational
+owner: hermes
+version: "1.0"
+created_at: "2026-06-07T00:00:00Z"
+lifecycle_stage: CANDIDATE_PRODUCTION
+input: data_source_reference
+output: DatasetRecord (APPROVED)
+gates:
+  - governance_gate
+  - risk_gate
+dependencies:
+  - DatasetRegistry
+  - GovernanceContext

@@ -1,0 +1,216 @@
+{
+  "migration_log": [
+    {
+      "kind": "decision_trace",
+      "source": "docs/reports/AK_WP0_LEGAL_GOVERNANCE_BOOTSTRAP_REPORT.md",
+      "record_id": "TRACE-AF58E0B9FAB9",
+      "summary": "Reorganize legal documents into sovereign directory structure"
+    },
+    {
+      "kind": "decision_trace",
+      "source": "docs/reports/AK_WP0_LEGAL_GOVERNANCE_BOOTSTRAP_REPORT.md",
+      "record_id": "TRACE-7D83A71CEA8C",
+      "summary": "Create legal_index.yaml as master legal registry"
+    },
+    {
+      "kind": "decision_trace",
+      "source": "docs/reports/AK_WP1_GOVERNANCE_ENGINE_REPORT.md",
+      "record_id": "TRACE-D0E50A6737E5",
+      "summary": "Implement Governance Engine with approval routing and audit"
+    },
+    {
+      "kind": "decision_trace",
+      "source": "docs/reports/AK_WP2_AGENT_RUNTIME_FRAMEWORK_REPORT.md",
+      "record_id": "TRACE-9ACB4782806F",
+      "summary": "Build 7-agent runtime framework with dry-run only execution"
+    },
+    {
+      "kind": "decision_trace",
+      "source": "docs/reports/AK_WP3_HERMES_NATIVE_MEMORY_PLATFORM_REPORT.md",
+      "record_id": "TRACE-172BCAEC8BBD",
+      "summary": "Adopt LanceDB as exclusive memory backend \u2014 no SQLite/Chroma/FAISS fallback"
+    },
+    {
+      "kind": "decision_trace",
+      "source": "memory/lesson_registry.py",
+      "record_id": "TRACE-822D65E37BC1",
+      "summary": "Create 5 knowledge registries (lesson, skill, capability, dataset, decision trac"
+    },
+    {
+      "kind": "decision_trace",
+      "source": "docs/reports/AK_WP35_LEARNING_INTELLIGENCE_DESIGN_REPORT.md",
+      "record_id": "TRACE-C632491C1630",
+      "summary": "Implement Learning Intelligence Layer \u2014 Phase 1A Learning Metrics"
+    },
+    {
+      "kind": "decision_trace",
+      "source": "tests/learning/test_lesson_evaluator.py",
+      "record_id": "TRACE-0711851CBCB0",
+      "summary": "Implement Learning Intelligence Layer \u2014 Phase 1B Lesson Evaluator"
+    },
+    {
+      "kind": "decision_trace",
+      "source": "docs/reports/AK_WP35_PHASE1C_IMPLEMENTATION_REPORT.md",
+      "record_id": "TRACE-CBECCBA2B59F",
+      "summary": "Implement Learning Intelligence Layer \u2014 Phase 1C Skill Evidence Policy"
+    },
+    {
+      "kind": "decision_trace",
+      "source": "docs/legal/codex/AK_CODEX_ACCEPTANCE_PACKAGE.md",
+      "record_id": "TRACE-63F9D7FAC5DF",
+      "summary": "Accept AK-CODEX v1.0 as Official National Codex"
+    },
+    {
+      "kind": "decision_trace",
+      "source": "docs/reports/WP_KF_01_FINAL_REPORT.md",
+      "record_id": "TRACE-4F0DC0C8CE77",
+      "summary": "Execute WP-KF-01 Knowledge Foundation \u2014 registry normalization and retrieval opt"
+    },
+    {
+      "kind": "decision_trace",
+      "source": "docs/reports/WP_KP_01_FINAL_REPORT.md",
+      "record_id": "TRACE-800171D2A75C",
+      "summary": "Execute WP-KP-01 National Knowledge Production System"
+    },
+    {
+      "kind": "lesson",
+      "source": "docs/reports/AK_WP0_LEGAL_GOVERNANCE_BOOTSTRAP_REPORT.md",
+      "record_id": "LESSON-80501B98D5FF",
+      "summary": "Legal governance requires canonical directory structure"
+    },
+    {
+      "kind": "lesson",
+      "source": "docs/reports/AK_KNOWLEDGE_FOUNDATION_AUDIT.md",
+      "record_id": "LESSON-3700333D13B6",
+      "summary": "Registry consolidation prevents metadata fragmentation"
+    },
+    {
+      "kind": "lesson",
+      "source": "docs/design/AK_KNOWLEDGE_LIFECYCLE_MODEL.md",
+      "record_id": "LESSON-6379CF69C971",
+      "summary": "Knowledge lifecycle must be governance-controlled at every promotion"
+    },
+    {
+      "kind": "lesson",
+      "source": "docs/design/AK_SKILL_DISCOVERY_PIPELINE.md",
+      "record_id": "LESSON-14AE1D12B281",
+      "summary": "Evidence threshold prevents weak skill discovery"
+    },
+    {
+      "kind": "lesson",
+      "source": "memory/lancedb_adapter.py",
+      "record_id": "LESSON-A80920F924A7",
+      "summary": "LanceDB-only backend enforces memory sovereignty"
+    },
+    {
+      "kind": "lesson",
+      "source": "docs/reports/AK_ARCHIVE_NORMALIZATION_EXECUTION_REPORT.md",
+      "record_id": "LESSON-3BBB48CDE9AB",
+      "summary": "Archive before delete preserves audit integrity"
+    },
+    {
+      "kind": "lesson",
+      "source": "memory/agent_memory.py",
+      "record_id": "LESSON-CA1021955ACF",
+      "summary": "Agent memory isolation prevents unauthorized access"
+    },
+    {
+      "kind": "lesson",
+      "source": "docs/reports/AK_DUPLICATE_CONSOLIDATION_REPORT.md",
+      "record_id": "LESSON-45021CEF0C3E",
+      "summary": "Design documents must be superseded by codex standards"
+    },
+    {
+      "kind": "lesson",
+      "source": "memory/lesson_registry.py",
+      "record_id": "LESSON-F6ECA9B11640",
+      "summary": "Boot-time hydration ensures registry data survives restarts"
+    },
+    {
+      "kind": "lesson",
+      "source": "docs/design/AK_CAPABILITY_EVOLUTION_PIPELINE.md",
+      "record_id": "LESSON-729BB0EBCD35",
+      "summary": "Capability maturity assessment prevents premature activation"
+    },
+    {
+      "kind": "dataset",
+      "source": "sovereign/ (constitution, state_corpus, laws, decrees, registries)",
+      "record_id": "DATASET-39E3D86CA15F",
+      "summary": "Sovereign Legal Corpus"
+    },
+    {
+      "kind": "dataset",
+      "source": "docs/legal/codex/ (standards, policies, specifications, registries)",
+      "record_id": "DATASET-0264AF44F527",
+      "summary": "AK-CODEX v1.0 Standards"
+    },
+    {
+      "kind": "dataset",
+      "source": "docs/design/ (learning models, pipeline designs, architecture)",
+      "record_id": "DATASET-EE7901A7A548",
+      "summary": "AK Design Doctrine Corpus"
+    },
+    {
+      "kind": "dataset",
+      "source": "sovereign/registries/ (legal, constitution, state_corpus, hierarchy, directive, treasury)",
+      "record_id": "DATASET-A58C561FC029",
+      "summary": "AK Sovereign Registries"
+    },
+    {
+      "kind": "dataset",
+      "source": "governance/registries/ (protected_modules, approval_matrix, gate_registry, issue_registry)",
+      "record_id": "DATASET-F2D5DA49036B",
+      "summary": "AK Governance Registry Set"
+    },
+    {
+      "kind": "dataset",
+      "source": "pipelines/ (decision_trace, lesson, dataset, skill, capability)",
+      "record_id": "DATASET-994698130670",
+      "summary": "AK National Knowledge Production Pipelines"
+    },
+    {
+      "kind": "skill",
+      "source": "lessons: ['LESSON-A80920F924A7', 'LESSON-CA1021955ACF']",
+      "record_id": "SKILL-2028371E9949",
+      "summary": "memory-sovereignty"
+    },
+    {
+      "kind": "skill",
+      "source": "lessons: ['LESSON-6379CF69C971']",
+      "record_id": "SKILL-532C69DEB240",
+      "summary": "knowledge-lifecycle-governance"
+    },
+    {
+      "kind": "skill",
+      "source": "lessons: ['LESSON-3700333D13B6', 'LESSON-F6ECA9B11640']",
+      "record_id": "SKILL-5880AFFFD2CA",
+      "summary": "registry-consolidation"
+    },
+    {
+      "kind": "skill",
+      "source": "lessons: ['LESSON-14AE1D12B281']",
+      "record_id": "SKILL-45BFE5FA4460",
+      "summary": "evidence-based-skill-discovery"
+    },
+    {
+      "kind": "skill",
+      "source": "lessons: ['LESSON-3BBB48CDE9AB']",
+      "record_id": "SKILL-683E890D08F2",
+      "summary": "archive-preservation"
+    },
+    {
+      "kind": "capability",
+      "source": "skills: ['SKILL-2028371E9949', 'SKILL-532C69DEB240', 'SKILL-5880AFFFD2CA', 'SKILL-45BFE5FA4460', 'SKILL-683E890D08F2']",
+      "record_id": "CAP-7124236314CB",
+      "summary": "knowledge-foundation-management"
+    }
+  ],
+  "summary": {
+    "decision_traces": 12,
+    "lessons": 10,
+    "datasets": 6,
+    "skills": 5,
+    "capabilities": 1,
+    "total": 34
+  }
+}

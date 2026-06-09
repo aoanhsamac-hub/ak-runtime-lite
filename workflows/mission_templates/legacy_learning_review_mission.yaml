@@ -1,0 +1,7 @@
+mission_type: legacy_learning_review_mission
+owner: Hermes
+description: "Review legacy learning artifacts for quarantine/import"
+required_tools: []
+required_evidence: ["legacy_inventory", "classification"]
+activation_required: SANDBOX_ACTIVE
+review_required: Sage

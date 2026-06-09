@@ -1,0 +1,53 @@
+protected_modules:
+  registry_version: "1.0"
+  created_at: "2026-06-07T00:00:00Z"
+  updated_at: "2026-06-07T14:00:00Z"
+  owner_agent: Yet Kieu
+  reviewer_agent: Sage
+  - name: constitution
+    path: sovereign/constitution
+    level: LEVEL_4_CONSTITUTIONAL
+    reviewer: Sage
+    approver: Hung Vuong
+
+  - name: state_corpus
+    path: sovereign/state_corpus
+    level: LEVEL_4_CONSTITUTIONAL
+    reviewer: Sage
+    approver: Hung Vuong
+
+  - name: legal_registry
+    path: sovereign/registries
+    level: LEVEL_3_CRITICAL
+    reviewer: Sage
+    approver: Janus
+
+  - name: governance
+    path: governance
+    level: LEVEL_3_CRITICAL
+    reviewer: Sage
+    approver: Janus
+
+  - name: risk_kernel
+    path: governance/risk_kernel
+    level: LEVEL_4_CONSTITUTIONAL
+    reviewer: Sage
+    approver: Hung Vuong
+
+  - name: execution_gateway
+    path: execution
+    level: LEVEL_3_CRITICAL
+    reviewer: Sage
+    approver: Janus
+
+  - name: security
+    path: infrastructure/security
+    level: LEVEL_3_CRITICAL
+    reviewer: Yet Kieu
+    approver: Sage
+
+  - name: credentials
+    path: .env
+    level: LEVEL_4_CONSTITUTIONAL
+    reviewer: Yet Kieu
+    approver: Hung Vuong

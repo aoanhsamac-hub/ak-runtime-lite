@@ -1,0 +1,25 @@
+{
+  "schema": "kingdom_budget_schema",
+  "version": "1.0",
+  "description": "Schema for national budget line items",
+  "required_fields": [
+    "budget_id", "fiscal_period", "category", "allocated_amount",
+    "authority", "status", "audit_id"
+  ],
+  "fields": {
+    "budget_id": {"type": "string", "format": "BUD-{YYYY}-{NNNN}", "description": "Unique budget identifier"},
+    "fiscal_period": {"type": "string", "enum": ["Monthly", "Quarterly", "Annual"], "description": "Budget period"},
+    "period_start": {"type": "string", "format": "ISO-8601", "description": "Period start date"},
+    "period_end": {"type": "string", "format": "ISO-8601", "description": "Period end date"},
+    "category": {"type": "string", "enum": ["Infrastructure", "Knowledge", "Dataset", "Security", "Operations", "R&D", "StrategicReserve", "EmergencyReserve", "Growth"], "description": "Budget category"},
+    "allocated_amount": {"type": "number", "minimum": 0, "description": "Amount allocated"},
+    "spent_amount": {"type": "number", "minimum": 0, "optional": true, "description": "Amount spent to date"},
+    "remaining_amount": {"type": "number", "optional": true, "description": "Remaining balance"},
+    "authority": {"type": "string", "description": "Approving authority"},
+    "approval_chain": {"type": "array", "items": {"type": "string"}, "description": "List of approvers"},
+    "status": {"type": "string", "enum": ["PROPOSED", "APPROVED", "ACTIVE", "CLOSED", "CANCELLED"], "description": "Budget status"},
+    "audit_id": {"type": "string", "format": "AUDIT-{XXXXXXXX}", "description": "Link to audit record"},
+    "created_at": {"type": "string", "format": "ISO-8601", "description": "Record creation timestamp"},
+    "updated_at": {"type": "string", "format": "ISO-8601", "optional": true, "description": "Last update timestamp"}
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "registry": "kingdom_expenses",
+  "status": "INITIALIZED",
+  "version": "1.0",
+  "created_at": "2026-06-08",
+  "updated_at": null,
+  "schema": "kingdom_expense_schema",
+  "total_expenses": null,
+  "entries": []
+}

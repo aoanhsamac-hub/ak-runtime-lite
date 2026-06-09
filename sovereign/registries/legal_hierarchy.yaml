@@ -1,0 +1,31 @@
+legal_hierarchy:
+  registry_version: "1.0"
+  created_at: "2026-06-07T00:00:00Z"
+  updated_at: "2026-06-07T14:00:00Z"
+  owner_agent: Lang Lieu
+  reviewer_agent: Sage
+  - level: 0
+    type: sovereign_directive
+    name: Alkasik Kingdom Sovereign Directive
+    authority: Hung Vuong
+    rank: highest
+  - level: 1
+    type: constitution
+    name: Alkasik Kingdom Constitution
+    authority: Hung Vuong
+  - level: 2
+    type: state_corpus
+    name: Alkasik Kingdom State Corpus
+    authority: Hung Vuong
+  - level: 3
+    type: law
+    name: Alkasik Kingdom Law
+  - level: 4
+    type: decree
+    name: Alkasik Kingdom Decree
+  - level: 5
+    type: implementation_guide
+    name: Alkasik Kingdom Implementation Guide
+  - level: 6
+    type: proposal
+    name: Alkasik Kingdom Proposal or Amendment

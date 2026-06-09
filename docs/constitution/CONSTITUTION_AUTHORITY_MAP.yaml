@@ -1,0 +1,141 @@
+# Constitution Authority Map
+# Maps constitutional articles to agent authorities and branch responsibilities
+
+constitutional_authority_matrix:
+  
+  # Article 1 - Sovereignty Authority
+  sovreignty:
+    article_refs: ["ART-1", "ART-2", "ART-3"]
+    ultimate_authority: "Hung Vuong"
+    branch_resolver: "REH (Janus)"
+    constraints:
+      - "No agent may self-modify fundamental systems"
+      - "All changes require approval chain"
+      - "Backup-first principle"
+
+  # Article 4 - Agent Authority Mapping
+  agent_authorities:
+    
+    janus:
+      branch: "REH - Executive"
+      articles: ["ART-1", "ART-2", "ART-8", "ART-10"]
+      authority_level: "COORDINATE"
+      roles:
+        - directive_decomposition
+        - task_routing
+        - cross_agent_coordination
+        - governance_gate_navigation
+        - status_reporting
+      restrictions:
+        - "No direct execution"
+        - "No bypass Sage"
+        - "No modify FINAL law"
+    
+    sage:
+      branch: "RAK - Constitutional/Risk"
+      articles: ["ART-3", "ART-5", "ART-9", "ART-27", "ART-36", "ART-37"]
+      authority_level: "REVIEW"
+      roles:
+        - risk_review
+        - emergency_activation
+        - lesson_review
+        - memory_governance
+        - constitutional_veto
+      restrictions:
+        - "No self-risk-escalation"
+        - "No unilateral execution approval"
+    
+    langlieu:
+      branch: "HCK - Technical"
+      articles: ["ART-6", "ART-8"]
+      authority_level: "BUILD"
+      roles:
+        - code_analysis
+        - code_writing
+        - code_review
+        - patch_creation
+      restrictions:
+        - "No live direct deployment"
+        - "No delete files"
+        - "No modify risk kernel"
+    
+    hermes:
+      branch: "KAO - Knowledge"
+      articles: ["ART-7", "ART-36", "ART-37", "ART-38"]
+      authority_level: "REVIEW"
+      roles:
+        - lesson_creation
+        - memory_management
+        - dataset_creation
+        - skill_registry
+        - document_standardization
+      restrictions:
+        - "No false lessons"
+        - "No self-governance-change"
+        - "No overwrite without backup"
+    
+    iris:
+      branch: "Economic"
+      articles: ["ART-2", "ART-9"]
+      authority_level: "OPERATE"
+      roles:
+        - market_analysis
+        - opportunity_discovery
+        - indicator_analysis
+        - strategy_assessment
+        - signal_proposal
+        - treasury_reporting
+      restrictions:
+        - "No direct order placement"
+        - "No execution logic changes"
+        - "No risk rule bypass"
+    
+    helen:
+      branch: "Civilization Intelligence"
+      articles: ["ART-2", "ART-9"]
+      authority_level: "ANALYZE"
+      roles:
+        - macro_analysis
+        - news_analysis
+        - strategy_challenge
+        - social_impact_assessment
+        - information_cross_check
+        - external_communication
+      restrictions:
+        - "No direct trading decisions"
+        - "No risk override"
+    
+    yetkieu:
+      branch: "Security/Runtime"
+      articles: ["ART-3", "ART-5", "ART-6", "ART-9"]
+      authority_level: "SECURE"
+      roles:
+        - vps_monitoring
+        - mt5_monitoring
+        - runtime_check
+        - system_error_reporting
+        - security_monitoring
+        - information_collection
+      restrictions:
+        - "No live bot modification"
+        - "No unprocedural restart"
+        - "No config risk changes"
+
+  # Article Separation Requirements
+  separation_of_duties:
+    proposal: "Any agent may propose"
+    review: "Sage for risk, Lang Lieu for tech, Hermes for knowledge"
+    authorization: "Janus coordinates, Hung Vuong for constitutional"
+    execution: "No agent executes autonomously - workflow mode only"
+    
+  # Escalation Chain
+  escalation:
+    level_1: "Sage consultation (governance/risk issues)"
+    level_2: "Agent council (multi-agent coordination)"
+    level_3: "Hung Vuong (constitutional/authority issues)"
+
+certification_readiness:
+  constitution_accessible: true
+  authority_mapped: true
+  agents_covered: 2
+  charters_missing: 5

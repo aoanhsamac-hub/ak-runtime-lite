@@ -1,0 +1,9 @@
+path,relative_path,extension,size_bytes,modified_time,sha256,eligible,excluded_reason,sensitivity,initial_category
+D:\AK\_pytest_tmp\test_execute_writes_only_to_ak0\legacy\.env,.env,,15,2026-06-07T12:12:47.600339+00:00,,False,excluded_filename,NORMAL,
+D:\AK\_pytest_tmp\test_execute_writes_only_to_ak0\legacy\code.py,code.py,.py,22,2026-06-07T12:12:47.599339+00:00,beb8fd9d42bcabc3dd4c8de3a5201eaf35b11e28c3866dae9f8c3c3bdc115b47,True,,NORMAL,Engineering Knowledge
+D:\AK\_pytest_tmp\test_execute_writes_only_to_ak0\legacy\config.yaml,config.yaml,.yaml,16,2026-06-07T12:12:47.599339+00:00,a2fe2565232c567ce91be06cd185403fc44258b3f7025c0b6abe8e7ff68c0ff8,True,,NORMAL,Engineering Knowledge
+D:\AK\_pytest_tmp\test_execute_writes_only_to_ak0\legacy\data.csv,data.csv,.csv,14,2026-06-07T12:12:47.599339+00:00,fe0afb18aea1a3b389fdf84827d7aa7615ad9296626fb75e83c072021a6a41a7,True,,NORMAL,Engineering Knowledge
+D:\AK\_pytest_tmp\test_execute_writes_only_to_ak0\legacy\normal.txt,normal.txt,.txt,11,2026-06-07T12:12:47.600339+00:00,b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7ace2efcde9,True,,NORMAL,Engineering Knowledge
+D:\AK\_pytest_tmp\test_execute_writes_only_to_ak0\legacy\README.md,README.md,.md,39,2026-06-07T12:12:47.598341+00:00,af48004b8d7428c0e51900ae62c2da072aed40457dfd75a851403b7fabadd57d,True,,NORMAL,Engineering Knowledge
+D:\AK\_pytest_tmp\test_execute_writes_only_to_ak0\legacy\secrets.txt,secrets.txt,.txt,25,2026-06-07T12:12:47.600339+00:00,,False,excluded_pattern:(password|secret|credential|token|api[_]?key|login|account),NORMAL,
+D:\AK\_pytest_tmp\test_execute_writes_only_to_ak0\legacy\docs\report.md,docs/report.md,.md,60,2026-06-07T12:12:47.598341+00:00,b731388e04f3d9e783c01bc3a69891b4396598340e555032279836861aa30364,True,,NORMAL,Trading Knowledge

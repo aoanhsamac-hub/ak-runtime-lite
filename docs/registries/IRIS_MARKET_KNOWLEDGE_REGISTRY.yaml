@@ -1,0 +1,9 @@
+iris_market_knowledge_registry:
+  created_at: '2026-06-08'
+  operator: Hermes
+  owner: Iris
+  reviewer: Sage
+  status: ACTIVE
+  version: 1.0
+  knowledge_records: []
+  last_updated: '2026-06-08T00:00:00+00:00'

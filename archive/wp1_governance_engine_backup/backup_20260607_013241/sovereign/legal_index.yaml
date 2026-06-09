@@ -1,0 +1,156 @@
+index: Alkasik Kingdom Legal Index
+technical_name: AK
+status: ACTIVE
+source_registry: sovereign/registries/legal_registry.yaml
+last_reorganization_report: docs/reports/AK_LEGAL_REORGANIZATION_REPORT.md
+last_bootstrap_report: docs/reports/AK_WP0_LEGAL_GOVERNANCE_BOOTSTRAP_REPORT.md
+archive_backup_root: archive/wp0_bootstrap_backup/backup_20260607_011903
+deletion_policy: no_files_deleted
+documents:
+  - document_name: ALKASIK_CONSTITUTION_v1.1_FINAL.docx
+    document_type: Constitution
+    status: FINAL
+    version: v1.1
+    authority: Hung Vuong
+    canonical_path: sovereign/constitution/ALKASIK_CONSTITUTION_v1.1_FINAL.docx
+    owner_agent: Lang Lieu
+    reviewer_agent: Sage
+    protection_level: LEVEL_4_CONSTITUTIONAL
+    implementation_status: ACTIVE
+  - document_name: ALKASIK_STATE_CORPUS_v1.0 FINAL.docx
+    document_type: State Corpus
+    status: FINAL
+    version: v1.0
+    authority: Hung Vuong
+    canonical_path: sovereign/state_corpus/ALKASIK_STATE_CORPUS_v1.0 FINAL.docx
+    owner_agent: Lang Lieu
+    reviewer_agent: Sage
+    protection_level: LEVEL_4_CONSTITUTIONAL
+    implementation_status: ACTIVE
+  - document_name: ALKASIK Governance Charter v1.1 Final.docx
+    document_type: Governance Charter
+    status: FINAL
+    version: v1.1
+    authority: Hung Vuong
+    canonical_path: sovereign/laws/governance/ALKASIK Governance Charter v1.1 Final.docx
+    owner_agent: Lang Lieu
+    reviewer_agent: Sage
+    protection_level: LEVEL_3_CRITICAL
+    implementation_status: ACTIVE
+  - document_name: ALKASIK RISK LAW v1.0 FINAL.docx
+    document_type: Risk Law
+    status: FINAL
+    version: v1.0
+    authority: Hung Vuong
+    canonical_path: sovereign/laws/risk/ALKASIK RISK LAW v1.0 FINAL.docx
+    owner_agent: Lang Lieu
+    reviewer_agent: Sage
+    protection_level: LEVEL_4_CONSTITUTIONAL
+    implementation_status: ACTIVE
+  - document_name: ALKASIK_AGENT_LAW_v1.0 FINAL.docx
+    document_type: Agent Law
+    status: FINAL
+    version: v1.0
+    authority: Hung Vuong
+    canonical_path: sovereign/laws/agent/ALKASIK_AGENT_LAW_v1.0 FINAL.docx
+    owner_agent: Lang Lieu
+    reviewer_agent: Sage
+    protection_level: LEVEL_3_CRITICAL
+    implementation_status: ACTIVE
+  - document_name: AK_NATIONAL_BUDGET_LAW_v0.1_DRAFT.docx
+    document_type: National Budget Law
+    status: DRAFT
+    version: v0.1
+    authority: UNKNOWN
+    canonical_path: sovereign/laws/budget/AK_NATIONAL_BUDGET_LAW_v0.1_DRAFT.docx
+    owner_agent: Lang Lieu
+    reviewer_agent: Sage
+    protection_level: LEVEL_3_CRITICAL
+    implementation_status: DRAFT_REVIEW_REQUIRED
+  - document_name: ALKASIK EXECUTION LAW v1.0 FINAL.docx
+    document_type: Execution Law
+    status: FINAL
+    version: v1.0
+    authority: Hung Vuong
+    canonical_path: sovereign/laws/execution/ALKASIK EXECUTION LAW v1.0 FINAL.docx
+    owner_agent: Lang Lieu
+    reviewer_agent: Sage
+    protection_level: LEVEL_3_CRITICAL
+    implementation_status: ACTIVE
+  - document_name: ALKASIK_INFORMATION_LAW_v1.0 FINAL.docx
+    document_type: Information Law
+    status: FINAL
+    version: v1.0
+    authority: Hung Vuong
+    canonical_path: sovereign/laws/intelligence/ALKASIK_INFORMATION_LAW_v1.0 FINAL.docx
+    owner_agent: Lang Lieu
+    reviewer_agent: Sage
+    protection_level: LEVEL_3_CRITICAL
+    implementation_status: ACTIVE
+  - document_name: ALKASIK_MEMORY_LAW_v1.0 FINAL.docx
+    document_type: Memory Law
+    status: FINAL
+    version: v1.0
+    authority: Hung Vuong
+    canonical_path: sovereign/laws/memory/ALKASIK_MEMORY_LAW_v1.0 FINAL.docx
+    owner_agent: Lang Lieu
+    reviewer_agent: Sage
+    protection_level: LEVEL_3_CRITICAL
+    implementation_status: ACTIVE
+  - document_name: ALKASIK_SECURITY_LAW_v1.0 FINAL.docx
+    document_type: Security Law
+    status: FINAL
+    version: v1.0
+    authority: Hung Vuong
+    canonical_path: sovereign/laws/security/ALKASIK_SECURITY_LAW_v1.0 FINAL.docx
+    owner_agent: Lang Lieu
+    reviewer_agent: Yet Kieu
+    protection_level: LEVEL_3_CRITICAL
+    implementation_status: ACTIVE
+  - document_name: ALKASIK Economic Law v1.0 FINAL.docx
+    document_type: Economic Law
+    status: FINAL
+    version: v1.0
+    authority: Hung Vuong
+    canonical_path: sovereign/laws/treasury/ALKASIK Economic Law v1.0 FINAL.docx
+    owner_agent: Lang Lieu
+    reviewer_agent: Sage
+    protection_level: LEVEL_3_CRITICAL
+    implementation_status: ACTIVE
+  - document_name: ALKASIK_REPO_GOVERNANCE_DECREE_v1.0_FINAL.docx
+    document_type: Repo Governance Decree
+    status: FINAL
+    version: v1.0
+    authority: Hung Vuong
+    canonical_path: sovereign/decrees/infrastructure/ALKASIK_REPO_GOVERNANCE_DECREE_v1.0_FINAL.docx
+    owner_agent: Lang Lieu
+    reviewer_agent: Sage
+    protection_level: LEVEL_3_CRITICAL
+    implementation_status: ACTIVE
+  - document_name: ALKASIK_KNOWLEDGE_GOVERNANCE_DECREE_v1.0_FINAL.docx
+    document_type: Knowledge Governance Decree
+    status: FINAL
+    version: v1.0
+    authority: Hung Vuong
+    canonical_path: sovereign/decrees/knowledge/ALKASIK_KNOWLEDGE_GOVERNANCE_DECREE_v1.0_FINAL.docx
+    owner_agent: Lang Lieu
+    reviewer_agent: Sage
+    protection_level: LEVEL_3_CRITICAL
+    implementation_status: ACTIVE
+  - document_name: ALKASIK_RETENTION_DECREE_v1.0_FINAL.docx
+    document_type: Retention Decree
+    status: FINAL
+    version: v1.0
+    authority: Hung Vuong
+    canonical_path: sovereign/decrees/retention/ALKASIK_RETENTION_DECREE_v1.0_FINAL.docx
+    owner_agent: Lang Lieu
+    reviewer_agent: Sage
+    protection_level: LEVEL_3_CRITICAL
+    implementation_status: ACTIVE
+review_required:
+  - sovereign/laws/budget/AK_NATIONAL_BUDGET_LAW_v0.1_DRAFT.docx
+quarantine:
+  count: 0
+  path: sovereign/quarantine/
+security_findings:
+  security_finding_redacted: 0

@@ -1,0 +1,21 @@
+# AK National Skill Ownership Registry
+# Governance Authority: Agent Law v1.0, Janus Directive AK-WP35.5-001
+# Last Updated: 2026-06-08
+
+skill_owner_registry:
+  version: "1.0"
+  description: "Agent ownership and access control mappings for all skills"
+  ownership_model:
+    access_levels:
+      - OWNER
+      - PRIMARY_USER
+      - SECONDARY_USER
+      - FORBIDDEN_USER
+    rules:
+      - owner_agent has full control over skill lifecycle
+      - primary_users may use and recommend changes to skill
+      - secondary_users may use skill under supervision
+      - forbidden_users are blocked from all access
+      - owner_agent may not appear in forbidden_users
+      - primary_users and secondary_users may not appear in forbidden_users
+  entries: []

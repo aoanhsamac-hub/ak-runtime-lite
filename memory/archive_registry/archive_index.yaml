@@ -1,0 +1,91 @@
+archive_index:
+  registry_version: "1.0"
+  created_at: "2026-06-07T14:00:00Z"
+  updated_at: "2026-06-07T14:00:00Z"
+  owner_agent: Hermes
+  reviewer_agent: Sage
+  status: ACTIVE
+  entries:
+    - archive_id: ARCH-001
+      name: Legal Reorganization Backup
+      description: Backup of sovereign/laws/ directory during legal reorganization
+      date: "2026-06-07T01:12:03Z"
+      source_path: sovereign/laws/
+      trigger: legal_reorganization
+      work_package: WP0
+      file_count: 8
+      size_bytes: 198451
+      status: PRESERVED
+      lifecycle: archive
+
+    - archive_id: ARCH-002
+      name: WP0 Bootstrap Backup
+      description: Backup of sovereign/legal_index.yaml during WP0 bootstrap
+      date: "2026-06-07T01:19:03Z"
+      source_path: sovereign/legal_index.yaml
+      trigger: wp0_bootstrap
+      work_package: WP0
+      file_count: 1
+      size_bytes: 2278
+      status: PRESERVED
+      lifecycle: archive
+
+    - archive_id: ARCH-003
+      name: WP1 Governance Engine Backup
+      description: Backup of governance engine registries and memory.md
+      date: "2026-06-07T01:32:41Z"
+      source_path: governance/ + sovereign/registries/
+      trigger: wp1_governance_engine
+      work_package: WP1
+      file_count: 3
+      size_bytes: 13547
+      status: PRESERVED
+      lifecycle: archive
+
+    - archive_id: ARCH-004
+      name: WP2 Agent Framework Backup
+      description: Full backup of all 7 agent directories with source code
+      date: "2026-06-07T04:04:10Z"
+      source_path: agents/
+      trigger: wp2_agent_framework
+      work_package: WP2
+      file_count: 15
+      size_bytes: 9885
+      status: PRESERVED
+      lifecycle: archive
+
+    - archive_id: ARCH-005
+      name: WP3.5 Learning Intelligence Design Backup
+      description: Backup of memory.md and learning intelligence design documents
+      date: "2026-06-07T08:58:53Z"
+      source_path: docs/reports/AK_WP35_LEARNING_INTELLIGENCE_DESIGN_REPORT.md
+      trigger: wp35_learning_intelligence_design
+      work_package: WP3.5
+      file_count: 1
+      size_bytes: 9830
+      status: PRESERVED
+      lifecycle: archive
+
+    - archive_id: ARCH-006
+      name: WP3.5 Sage Round 2 Backup
+      description: Backup of Sage review outputs from round 2
+      date: "2026-06-07T09:23:05Z"
+      source_path: docs/reviews/ (Sage round 2 outputs)
+      trigger: wp35_sage_round2
+      work_package: WP3.5
+      file_count: 1
+      size_bytes: 1030
+      status: PRESERVED
+      lifecycle: archive
+
+    - archive_id: ARCH-008
+      name: WP-REPO-HYGIENE-01 Root Cleanup
+      description: Root hygiene enforcement — relocated unapproved root files and directories to approved locations. Includes _pytest_tmp/, audit_output/, backups/, logs/ (empty), test.txt.
+      date: "2026-06-08T10:44:00Z"
+      source_path: ./ (repository root)
+      trigger: wp_repo_hygiene_01
+      work_package: WP-REPO-HYGIENE-01
+      file_count: 5
+      size_bytes: 500000
+      status: PRESERVED
+      lifecycle: archive

@@ -1,0 +1,58 @@
+agent_registry:
+  registry_version: "1.0"
+  created_at: "2026-06-07T00:00:00Z"
+  updated_at: "2026-06-07T14:00:00Z"
+  owner_agent: Janus
+  reviewer_agent: Sage
+  status: OPERATIONAL
+
+agents:
+  janus:
+    status: operational
+    identity: coordination orchestrator
+    role_boundary: agents.role_boundary.janus
+    memory_access: AgentMemoryClient
+    tools: [router, report_aggregator]
+    review_requirements: [Sage]
+  sage:
+    status: operational
+    identity: governance risk court
+    role_boundary: agents.role_boundary.sage
+    memory_access: AgentMemoryClient
+    tools: [risk_classifier, governance_gate]
+    review_requirements: [HungVuong]
+  hermes:
+    status: operational
+    identity: memory corpus steward
+    role_boundary: agents.role_boundary.hermes
+    memory_access: AgentMemoryClient
+    tools: [memory_review, dataset_review]
+    review_requirements: [Sage]
+  iris:
+    status: operational
+    identity: economic intelligence
+    role_boundary: agents.role_boundary.iris
+    memory_access: AgentMemoryClient
+    tools: [analysis, budget_proposal]
+    review_requirements: [Sage]
+  helen:
+    status: operational
+    identity: information intelligence
+    role_boundary: agents.role_boundary.helen
+    memory_access: AgentMemoryClient
+    tools: [information_validation]
+    review_requirements: [Sage]
+  lang_lieu:
+    status: operational
+    identity: engineering architecture
+    role_boundary: agents.role_boundary.lang_lieu
+    memory_access: AgentMemoryClient
+    tools: [dev_orchestrator, opencode_adapter]
+    review_requirements: [Sage]
+  yet_kieu:
+    status: operational
+    identity: security infrastructure
+    role_boundary: agents.role_boundary.yet_kieu
+    memory_access: AgentMemoryClient
+    tools: [security_review, runtime_observation]
+    review_requirements: [Sage]

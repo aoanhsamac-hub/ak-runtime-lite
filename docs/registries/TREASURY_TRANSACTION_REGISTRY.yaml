@@ -1,0 +1,38 @@
+treasury_transaction_registry:
+  status: INITIALIZED
+  version: "1.0"
+  created_at: "2026-06-08"
+  updated_at: null
+  owner: Janus
+  operator: Iris
+  reviewer: Sage
+
+transaction_types:
+  - type: Allocation
+    description: Budget allocation from Kingdom Fund to program
+    schema: treasury_transaction_schema
+    approval: Iris > Janus > Sage > Hung Vuong
+  - type: Transfer
+    description: Fund transfer between treasury accounts
+    schema: treasury_transaction_schema
+    approval: Janus > Sage
+  - type: Withdrawal
+    description: Expense withdrawal from budget account
+    schema: kingdom_expense_schema
+    approval: Iris > Janus
+  - type: Deposit
+    description: Revenue deposit into treasury
+    schema: kingdom_revenue_schema
+    approval: Iris
+  - type: SurplusDistribution
+    description: Surplus distribution to Royal Treasury
+    schema: treasury_transaction_schema
+    approval: Janus > Sage > Hung Vuong
+  - type: EmergencyDrawdown
+    description: Emergency reserve drawdown
+    schema: reserve_transaction_schema
+    approval: Per AK_EMERGENCY_RESERVE_FRAMEWORK
+
+current_transactions: 0
+last_transaction_id: null
+last_transaction_date: null

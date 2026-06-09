@@ -1,0 +1,37 @@
+royal_treasury:
+  status: ACTIVE
+  registry_version: "1.0"
+  created_at: "2026-06-07T00:00:00Z"
+  updated_at: "2026-06-07T14:00:00Z"
+  authority: Hung Vuong
+  owner_agent: Lang Lieu
+  reviewer_agent: Iris
+
+revenue_registry:
+  status: ACTIVE
+  sources:
+    - Trading
+    - Software
+    - SaaS
+    - Consulting
+    - Education
+    - Content
+    - E-Commerce
+    - Licensing
+    - Infrastructure Services
+
+reserve_fund:
+  status: ACTIVE
+  workflow:
+    - Revenue
+    - Reserve Allocation
+    - Operating Budget
+    - Development Budget
+
+future_digital_assets:
+  status: Reserved
+  active: false
+  assets:
+    - $AK
+    - AKC
+    - Future Treasury Assets

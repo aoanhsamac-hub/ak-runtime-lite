@@ -1,0 +1,7 @@
+mission_type: council_decision_mission
+owner: Janus
+description: "Multi-agent council decision process"
+required_tools: []
+required_evidence: ["agent_reports"]
+activation_required: SANDBOX_ACTIVE
+review_required: Sage

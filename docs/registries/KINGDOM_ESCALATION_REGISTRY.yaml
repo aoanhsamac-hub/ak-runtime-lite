@@ -1,0 +1,41 @@
+# Kingdom Escalation Registry
+# Track and manage directive/task escalations
+
+kingdom_escalation_registry:
+  status: INITIALIZED
+  version: "1.0"
+  created_at: "2026-06-08"
+  updated_at: null
+  owner: Janus
+  operator: Janus
+  reviewer: Sage
+
+escalations: []
+
+triggers:
+  - missed_deadline: "Task exceeds deadline by >24h"
+  - authority_conflict: "Agent assigned outside authority"
+  - governance_violation: "Process bypasses review loop"
+  - resource_shortage: "Agent capacity exceeded"
+  - risk_identified: "Risk level >= HIGH"
+  - external_dependency: "Blocked by external system"
+
+levels:
+  1:
+    reviewer: Sage
+    response_time: "4h"
+    authority: "Block or redirect"
+  2:
+    reviewer: Janus
+    response_time: "2h"
+    authority: "Reassign or escalate"
+  3:
+    reviewer: Hung Vuong
+    response_time: "immediate"
+    authority: "Final decision"
+
+statuses:
+  - TRIGGERED: "Escalation condition detected"
+  - REVIEW: "Under review"
+  - RESOLVED: "Escalation resolved"
+  - ARCHIVED: "Escalation documented"

@@ -1,0 +1,19 @@
+state_corpus_registry:
+  canonical_name: Alkasik Kingdom State Corpus
+  status: RATIFIED
+  registry_version: "1.0"
+  created_at: "2026-06-07T00:00:00Z"
+  updated_at: "2026-06-07T14:00:00Z"
+  lock_status: LOCKED
+  authority: Hung Vuong
+  source_directory: sovereign/state_corpus
+  protected: true
+  owner_agent: Lang Lieu
+  reviewer_agent: Sage
+  canonical_documents:
+    - document_name: ALKASIK_STATE_CORPUS_v1.0 FINAL.docx
+      document_type: State Corpus
+      canonical_path: sovereign/state_corpus/ALKASIK_STATE_CORPUS_v1.0 FINAL.docx
+      version: v1.0
+      status: FINAL
+      protection_level: LEVEL_4_CONSTITUTIONAL

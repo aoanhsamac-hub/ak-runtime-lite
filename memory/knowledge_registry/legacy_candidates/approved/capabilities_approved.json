@@ -1,0 +1,35 @@
+[
+  {
+    "candidate_id": "REC-GOVERNANCE_REVIEW",
+    "extracted_title": "Governance Review",
+    "domain": "Multi-Domain",
+    "confidence_score": 85,
+    "approved_at": "2026-06-07T09:22:50Z",
+    "approved_by": "Hermes/Sage/Hung Vuong",
+    "promotion_reason": "High readiness, conf 85 - strategic capability",
+    "status": "APPROVED",
+    "approval_status": "APPROVED"
+  },
+  {
+    "candidate_id": "REC-TRADING_OPERATIONS",
+    "extracted_title": "Trading Operations",
+    "domain": "Multi-Domain",
+    "confidence_score": 82,
+    "approved_at": "2026-06-07T09:22:50Z",
+    "approved_by": "Hermes/Sage/Hung Vuong",
+    "promotion_reason": "High readiness, conf 82 - strategic capability",
+    "status": "APPROVED",
+    "approval_status": "APPROVED"
+  },
+  {
+    "candidate_id": "REC-MARKET_INTELLIGENCE",
+    "extracted_title": "Market Intelligence",
+    "domain": "Multi-Domain",
+    "confidence_score": 80,
+    "approved_at": "2026-06-07T09:22:50Z",
+    "approved_by": "Hermes/Sage/Hung Vuong",
+    "promotion_reason": "High readiness, conf 80 - strategic capability",
+    "status": "APPROVED",
+    "approval_status": "APPROVED"
+  }
+]

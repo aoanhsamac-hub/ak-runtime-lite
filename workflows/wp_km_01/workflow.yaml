@@ -1,0 +1,16 @@
+name: wp_km_01_legacy_knowledge_migration
+status: complete
+entrypoint: workflows.wp_km_01.knowledge_migration
+phases:
+  - legacy_knowledge_discovery
+  - knowledge_classification
+  - candidate_registry_population
+  - knowledge_traceability_mapping
+  - migration_audit
+boundaries:
+  no_fabrication: true
+  no_auto_promotion: true
+  no_synthetic_generation: true
+review_items:
+  - sage_review_required
+  - janus_review_required

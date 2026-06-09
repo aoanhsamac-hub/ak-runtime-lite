@@ -1,0 +1,17 @@
+iris_intelligence_scorecard:
+  created_at: '2026-06-08'
+  operator: Janus
+  owner: Janus
+  reviewer: Hermes
+  status: ACTIVE
+  version: 1.0
+  metrics:
+    forecast_count: 0
+    forecast_accuracy: 0
+    lesson_count: 0
+    knowledge_count: 0
+    skill_proposals: 0
+    pattern_coverage: 0
+    data_coverage: 0
+    learning_velocity: 0
+  last_updated: '2026-06-08T00:00:00+00:00'

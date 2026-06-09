@@ -1,0 +1,65 @@
+treasury_health_registry:
+  created_at: '2026-06-08'
+  current_overall_status: HEALTHY
+  health_categories:
+    audit_health:
+      last_checked: '2026-06-08T07:13:25.050419+00:00'
+      metrics:
+      - audit_completion_rate
+      - finding_count
+      - critical_findings
+      - remediation_rate
+      score: 100
+      status: HEALTHY
+    budget_health:
+      last_checked: '2026-06-08T07:13:25.050419+00:00'
+      metrics:
+      - budget_execution_rate
+      - budget_variance
+      - underspend_rate
+      - overspend_rate
+      score: 100
+      status: HEALTHY
+    reserve_health:
+      last_checked: '2026-06-08T07:13:25.050419+00:00'
+      metrics:
+      - strategic_reserve_ratio
+      - emergency_reserve_ratio
+      - reserve_drawdown_count
+      - reserve_replenishment_rate
+      score: 100
+      status: HEALTHY
+    revenue_health:
+      last_checked: '2026-06-08T07:13:25.050419+00:00'
+      metrics:
+      - total_revenue
+      - revenue_sources_active
+      - revenue_growth
+      - collection_rate
+      score: 100
+      status: HEALTHY
+    treasury_health:
+      last_checked: '2026-06-08T07:13:25.050419+00:00'
+      metrics:
+      - kingdom_treasury_balance
+      - royal_treasury_balance
+      - fund_allocation_rate
+      - transaction_volume
+      score: 100
+      status: HEALTHY
+  last_health_check: '2026-06-08T07:13:25.050419+00:00'
+  operator: Iris
+  owner: Janus
+  reviewer: Sage
+  status: ACTIVE
+  status_levels:
+  - description: All metrics within target ranges
+    level: HEALTHY
+  - description: One or more metrics approaching threshold
+    level: WATCH
+  - description: One or more metrics outside threshold
+    level: WARNING
+  - description: Critical metric failure requiring escalation
+    level: CRITICAL
+  updated_at: null
+  version: '1.0'

@@ -1,0 +1,7 @@
+mission_type: memory_distillation_mission
+owner: Hermes
+description: "Distill lessons from evidence"
+required_tools: ["llm"]
+required_evidence: ["evidence_items"]
+activation_required: SANDBOX_ACTIVE
+review_required: Sage

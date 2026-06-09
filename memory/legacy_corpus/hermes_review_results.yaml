@@ -1,0 +1,48 @@
+# Legacy Learning Hermes Review Results
+
+Date: 2026-06-07 | Priority Order Applied
+Source: D:\Alkasik\learning (67 files inventory)
+
+## Priority 1: Project NEURON (12 files)
+
+| File | Classification | Recommendation |
+|---|---|---|
+| learning/memory_engine/memory_engine.py | MEMORY | SANDBOX_READY |
+| learning/dual_brain_registry.py | ENGINEERING_KNOWLEDGE | SANDBOX_READY |
+| learning/prompt_registry.py | ENGINEERING_KNOWLEDGE | SANDBOX_READY |
+| learning/fine_tuning_registry.py | ENGINEERING_KNOWLEDGE | SANDBOX_READY |
+| learning/capability_backlog.py | ENGINEERING_KNOWLEDGE | SANDBOX_READY |
+| learning/behavior_forecasting/ | MEMORY | SANDBOX_READY |
+| learning/decision_trace/ | DECISION_TRACE | REVIEW |
+| learning/knowledge_graph.json | MEMORY | BACKLOG |
+| learning/internet/memory.py | MEMORY | QUARANTINE |
+
+## Priority 2: Market Learning System (8 files)
+
+| File | Classification | Recommendation |
+|---|---|---|
+| learning/market_intelligence/week1_market_intelligence.md | MARKET_INTELLIGENCE | SANDBOX_READY |
+| learning/datasets/iris_market_research.md | MARKET_INTELLIGENCE | SANDBOX_READY |
+| learning/datasets/market_patterns/ | DATASET | REVIEW |
+| learning/liquidity_intelligence/ | TRADING_STRATEGY_KNOWLEDGE | QUARANTINE (no execution) |
+
+## Priority 3: Agent Learning & Evolution (15 files)
+
+| File | Classification | Recommendation |
+|---|---|---|
+| learning/week*_completion_report.md | LESSON | SANDBOX_READY |
+| learning/system_status_report.md | LESSON | SANDBOX_READY |
+| learning/progress_tracker.md | LESSON | SANDBOX_READY |
+| learning/explainability/ | ENGINEERING_KNOWLEDGE | QUARANTINE |
+| learning/pattern_encoder/ | ENGINEERING_KNOWLEDGE | QUARANTINE |
+
+## Priority 4: General Learning Repository (32 files)
+
+| Action | Count |
+|---|---|
+| SANDBOX_READY | 28 |
+| BACKLOG | 2 |
+| ARCHIVE | 2 |
+| REJECT | 0 |
+
+Total processed: 67 files.

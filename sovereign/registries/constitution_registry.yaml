@@ -1,0 +1,19 @@
+constitution_registry:
+  canonical_name: Alkasik Kingdom Constitution
+  status: ACTIVE
+  registry_version: "1.0"
+  created_at: "2026-06-07T00:00:00Z"
+  updated_at: "2026-06-07T14:00:00Z"
+  constitutional_status: LOCKED
+  authority: Hung Vuong
+  source_directory: sovereign/constitution
+  protected: true
+  owner_agent: Lang Lieu
+  reviewer_agent: Sage
+  canonical_documents:
+    - document_name: ALKASIK_CONSTITUTION_v1.1_FINAL.docx
+      document_type: Constitution
+      canonical_path: sovereign/constitution/ALKASIK_CONSTITUTION_v1.1_FINAL.docx
+      version: v1.1
+      status: FINAL
+      protection_level: LEVEL_4_CONSTITUTIONAL

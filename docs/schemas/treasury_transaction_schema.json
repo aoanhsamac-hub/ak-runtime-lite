@@ -1,0 +1,25 @@
+{
+  "schema": "treasury_transaction_schema",
+  "version": "1.0",
+  "description": "Schema for treasury fund transactions",
+  "required_fields": [
+    "transaction_id", "timestamp", "from_account", "to_account",
+    "amount", "transaction_type", "authority", "status", "audit_id"
+  ],
+  "fields": {
+    "transaction_id": {"type": "string", "format": "TXN-{YYYY}-{NNNN}", "description": "Unique transaction identifier"},
+    "timestamp": {"type": "string", "format": "ISO-8601", "description": "Transaction timestamp"},
+    "from_account": {"type": "string", "enum": ["NationalTreasury", "RoyalTreasury", "NationalFund", "StrategicReserve", "EmergencyReserve", "BudgetAccount"], "description": "Source account"},
+    "to_account": {"type": "string", "enum": ["NationalTreasury", "RoyalTreasury", "NationalFund", "StrategicReserve", "EmergencyReserve", "BudgetAccount"], "description": "Destination account"},
+    "amount": {"type": "number", "minimum": 0, "description": "Transaction amount"},
+    "transaction_type": {"type": "string", "enum": ["Allocation", "Transfer", "Withdrawal", "Deposit", "SurplusDistribution", "EmergencyDrawdown"], "description": "Type of transaction"},
+    "reference": {"type": "string", "optional": true, "description": "Reference document"},
+    "authority": {"type": "string", "description": "Authorizing agent or person"},
+    "approval_chain": {"type": "array", "items": {"type": "string"}, "description": "Approval chain"},
+    "description": {"type": "string", "optional": true, "description": "Transaction description"},
+    "status": {"type": "string", "enum": ["PENDING", "COMPLETED", "FAILED", "REVERSED", "AUDITED"], "description": "Transaction status"},
+    "audit_id": {"type": "string", "format": "AUDIT-{XXXXXXXX}", "description": "Link to audit record"},
+    "created_at": {"type": "string", "format": "ISO-8601", "description": "Record creation timestamp"},
+    "updated_at": {"type": "string", "format": "ISO-8601", "optional": true, "description": "Last update timestamp"}
+  }
+}

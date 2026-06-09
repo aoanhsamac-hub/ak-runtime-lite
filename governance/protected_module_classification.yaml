@@ -1,0 +1,162 @@
+# Protected Module Classification
+# Authority: Janus Directive — NAOP v1.0
+# Date: 2026-06-07
+# Status: FINAL
+
+classification:
+  PROTECTED:
+    description: >
+      Modules that must never be modified without Sage review and Hung Vuong
+      approval. Changes carry constitutional or national risk.
+    modules:
+      - path: sovereign/constitution
+        risk: LEVEL_4_CONSTITUTIONAL
+        reviewers: [Sage]
+        approver: Hung Vuong
+      - path: sovereign/state_corpus
+        risk: LEVEL_4_CONSTITUTIONAL
+        reviewers: [Sage]
+        approver: Hung Vuong
+      - path: governance/risk_kernel
+        risk: LEVEL_4_CONSTITUTIONAL
+        reviewers: [Sage]
+        approver: Hung Vuong
+      - path: execution
+        risk: LEVEL_3_CRITICAL
+        reviewers: [Sage]
+        approver: Janus
+      - path: .env
+        risk: LEVEL_4_CONSTITUTIONAL
+        reviewers: [YetKieu]
+        approver: Hung Vuong
+      - path: infrastructure/security
+        risk: LEVEL_3_CRITICAL
+        reviewers: [YetKieu]
+        approver: Sage
+      - path: sovereign/registries
+        risk: LEVEL_3_CRITICAL
+        reviewers: [Sage]
+        approver: Janus
+
+  CONTROLLED:
+    description: >
+      Modules that require Sage gate approval before modification. Changes carry
+      operational risk but not constitutional risk.
+    modules:
+      - path: agents/runtime.py
+        risk: LEVEL_2_HIGH
+        reviewers: [Sage]
+        approver: Janus
+      - path: agents/runtime_models.py
+        risk: LEVEL_2_HIGH
+        reviewers: [Sage]
+        approver: Janus
+      - path: agents/base.py
+        risk: LEVEL_2_HIGH
+        reviewers: [Sage]
+        approver: Janus
+      - path: agents/janus
+        risk: LEVEL_1_MODERATE
+        reviewers: [Sage]
+        approver: Janus
+      - path: agents/sage
+        risk: LEVEL_1_MODERATE
+        reviewers: [Sage]
+        approver: Janus
+      - path: agents/hermes
+        risk: LEVEL_1_MODERATE
+        reviewers: [Sage]
+        approver: Janus
+      - path: agents/iris
+        risk: LEVEL_1_MODERATE
+        reviewers: [Sage]
+        approver: Janus
+      - path: agents/helen
+        risk: LEVEL_1_MODERATE
+        reviewers: [Sage]
+        approver: Janus
+      - path: agents/lang_lieu
+        risk: LEVEL_1_MODERATE
+        reviewers: [Sage]
+        approver: Janus
+      - path: agents/yet_kieu
+        risk: LEVEL_1_MODERATE
+        reviewers: [Sage]
+        approver: Janus
+      - path: memory
+        risk: LEVEL_2_HIGH
+        reviewers: [Sage, Hermes]
+        approver: Janus
+      - path: workflows/mission_runtime.py
+        risk: LEVEL_2_HIGH
+        reviewers: [Sage]
+        approver: Janus
+      - path: workflows/council_review.py
+        risk: LEVEL_2_HIGH
+        reviewers: [Sage]
+        approver: Janus
+      - path: connectors/llm_connector.py
+        risk: LEVEL_1_MODERATE
+        reviewers: [Sage]
+        approver: Janus
+      - path: connectors/filesystem_connector.py
+        risk: LEVEL_1_MODERATE
+        reviewers: [Sage, YetKieu]
+        approver: Janus
+      - path: connectors/git_connector.py
+        risk: LEVEL_1_MODERATE
+        reviewers: [Sage]
+        approver: Janus
+      - path: governance/protected_module_classification.yaml
+        risk: LEVEL_3_CRITICAL
+        reviewers: [Sage]
+        approver: Janus
+      - path: governance/policy_engine.py
+        risk: LEVEL_3_CRITICAL
+        reviewers: [Sage]
+        approver: Janus
+      - path: governance/governance_gate.py
+        risk: LEVEL_3_CRITICAL
+        reviewers: [Sage]
+        approver: Janus
+      - path: pipelines
+        risk: LEVEL_1_MODERATE
+        reviewers: [Sage]
+        approver: Janus
+
+  OPEN:
+    description: >
+      Modules that carry no or minimal risk. Changes do not require approval.
+    modules:
+      - path: docs
+        risk: LEVEL_0_LOW
+        reviewers: []
+        approver: null
+      - path: tests
+        risk: LEVEL_0_LOW
+        reviewers: []
+        approver: null
+      - path: scripts
+        risk: LEVEL_0_LOW
+        reviewers: []
+        approver: null
+      - path: akctl.py
+        risk: LEVEL_0_LOW
+        reviewers: []
+        approver: null
+
+# Risk Level Reference
+risk_levels:
+  LEVEL_0_LOW: "Standard change, no material risk"
+  LEVEL_1_MODERATE: "Some risk, requires agent review"
+  LEVEL_2_HIGH: "Significant risk, requires Sage review"
+  LEVEL_3_CRITICAL: "National risk, requires Janus + Sage"
+  LEVEL_4_CONSTITUTIONAL: "Constitutional risk, requires Hung Vuong"
+
+# Approval Authority Chain
+authority_chain:
+  LEVEL_0_LOW: null
+  LEVEL_1_MODERATE: "Agent Lead"
+  LEVEL_2_HIGH: "Sage"
+  LEVEL_3_CRITICAL: "Janus"
+  LEVEL_4_CONSTITUTIONAL: "Hung Vuong"

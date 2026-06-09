@@ -1,0 +1,24 @@
+name: observe_analyze_decide_execute_learn
+status: active
+owner: hermes
+stages:
+  observe:
+    description: Collect evidence from agent missions
+    output: evidence_registry
+    responsible: hermes
+  analyze:
+    description: Evaluate evidence quality and classify
+    output: evidence_classification
+    responsible: sage
+  decide:
+    description: Determine next action based on evidence
+    output: mission_plan
+    responsible: janus
+  execute:
+    description: Execute mission with tool/API support
+    output: mission_report
+    responsible: target_agent
+  learn:
+    description: Distill lessons from execution evidence
+    output: lesson_candidates
+    responsible: hermes

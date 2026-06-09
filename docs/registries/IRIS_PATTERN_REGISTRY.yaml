@@ -1,0 +1,44 @@
+iris_pattern_registry:
+  created_at: '2026-06-08'
+  last_updated: '2026-06-08T22:30:13.628608+00:00'
+  operator: Iris
+  owner: Janus
+  patterns:
+  - confidence: 0.8
+    pattern_id: PATTERN-XAUUSDm-BULL-001
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:30:13.595299+00:00'
+    type: trend_continuation
+  - confidence: 0.85
+    pattern_id: PATTERN-XAUUSDm-MOM-001
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:30:13.595299+00:00'
+    type: strong_momentum
+  - confidence: 0.7
+    pattern_id: PATTERN-XAUUSDm-VOL-001
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:30:13.611948+00:00'
+    type: high_volatility
+  - confidence: 0.8
+    pattern_id: PATTERN-XAUUSDm-BULL-001
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:30:13.611948+00:00'
+    type: trend_continuation
+  - confidence: 0.85
+    pattern_id: PATTERN-XAUUSDm-MOM-001
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:30:13.611948+00:00'
+    type: strong_momentum
+  - confidence: 0.8
+    pattern_id: PATTERN-XAUUSDm-BULL-001
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:30:13.628608+00:00'
+    type: trend_continuation
+  - confidence: 0.85
+    pattern_id: PATTERN-XAUUSDm-MOM-001
+    symbol: XAUUSDm
+    timestamp: '2026-06-08T22:30:13.628608+00:00'
+    type: strong_momentum
+  reviewer: Hermes
+  status: ACTIVE
+  version: 1.0

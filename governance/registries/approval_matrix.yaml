@@ -1,0 +1,31 @@
+approval_matrix:
+  registry_version: "1.0"
+  created_at: "2026-06-07T00:00:00Z"
+  updated_at: "2026-06-07T14:00:00Z"
+  owner_agent: Janus
+  reviewer_agent: Sage
+
+LEVEL_0_LOW:
+  approvers:
+    - Janus
+
+LEVEL_1_MODERATE:
+  approvers:
+    - Janus
+    - LangLieu
+
+LEVEL_2_HIGH:
+  approvers:
+    - Janus
+    - LangLieu
+    - Hermes
+
+LEVEL_3_CRITICAL:
+  approvers:
+    - Janus
+    - Sage
+
+LEVEL_4_CONSTITUTIONAL:
+  approvers:
+    - Sage
+    - HungVuong

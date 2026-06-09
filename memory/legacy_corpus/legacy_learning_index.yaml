@@ -1,0 +1,475 @@
+# Legacy Learning Index
+# Generated: 2026-06-07T13:20:43.908086+00:00
+# Source: D:\Alkasik\learning
+# Total: 67 files
+
+files:
+  - path: "__init__.py"
+    category: ENGINEERING_KNOWLEDGE
+    risk: MEDIUM
+    hash: ab2f6bc46fef3faa
+    target: memory/legacy_corpus/quarantine
+    quarantine: true
+    recommendation: QUARANTINE_IMPORT
+  - path: "activation_script.md"
+    category: UNKNOWN
+    risk: LOW
+    hash: a1dfaaf3b9586ec8
+    target: memory/legacy_corpus/quarantine
+    quarantine: false
+    recommendation: REQUIRES_SAGE_REVIEW
+  - path: "agent_tasks_week0.md"
+    category: UNKNOWN
+    risk: LOW
+    hash: 8f81d19c7fcd3672
+    target: memory/legacy_corpus/quarantine
+    quarantine: false
+    recommendation: REQUIRES_SAGE_REVIEW
+  - path: "approved\skills\langgraph_skill_template.json"
+    category: SKILL
+    risk: LOW
+    hash: 0179d5c0cd07650d
+    target: memory/skill_registry
+    quarantine: false
+    recommendation: APPROVED_FOR_REVIEW
+  - path: "approved\skills\mcp_integration_template.json"
+    category: SKILL
+    risk: LOW
+    hash: b912bbb2e0befa37
+    target: memory/skill_registry
+    quarantine: false
+    recommendation: APPROVED_FOR_REVIEW
+  - path: "behavior_forecasting\__init__.py"
+    category: DECISION_TRACE
+    risk: MEDIUM
+    hash: 4a865ddb1e901982
+    target: memory/decision_trace_registry
+    quarantine: true
+    recommendation: QUARANTINE_IMPORT
+  - path: "behavior_forecasting\behavior_forecaster.py"
+    category: DECISION_TRACE
+    risk: MEDIUM
+    hash: 86cc82ce7672a8a4
+    target: memory/decision_trace_registry
+    quarantine: true
+    recommendation: QUARANTINE_IMPORT
+  - path: "cognitive_market_intelligence.py"
+    category: MARKET_INTELLIGENCE
+    risk: MEDIUM
+    hash: f6aeb21c2e46d960
+    target: memory/legacy_corpus/quarantine
+    quarantine: true
+    recommendation: QUARANTINE_IMPORT
+  - path: "config\market_sources_config.yaml"
+    category: MARKET_INTELLIGENCE
+    risk: LOW
+    hash: e922bdd412f14e50
+    target: memory/legacy_corpus/quarantine
+    quarantine: false
+    recommendation: REQUIRES_SAGE_REVIEW
+  - path: "continuous_learning_executor.md"
+    category: UNKNOWN
+    risk: LOW
+    hash: 2ff301a82b1edb53
+    target: memory/legacy_corpus/quarantine
+    quarantine: false
+    recommendation: REQUIRES_SAGE_REVIEW
+  - path: "datasets\dataset_builder_status.json"
+    category: DATASET
+    risk: LOW
+    hash: b73d832c6651dea5
+    target: memory/dataset_registry
+    quarantine: false
+    recommendation: REQUIRES_SAGE_REVIEW
+  - path: "datasets\iris_market_research.md"
+    category: MARKET_INTELLIGENCE
+    risk: LOW
+    hash: 6ad1392f39f80acb
+    target: memory/legacy_corpus/quarantine
+    quarantine: false
+    recommendation: REQUIRES_SAGE_REVIEW
+  - path: "datasets\market_patterns\iris_pattern_database.json"
+    category: MARKET_INTELLIGENCE
+    risk: LOW
+    hash: 7808187eff1effc4
+    target: memory/legacy_corpus/quarantine
+    quarantine: false
+    recommendation: REQUIRES_SAGE_REVIEW
+  - path: "datasets\market_patterns\patterns_config.json"
+    category: MARKET_INTELLIGENCE
+    risk: LOW
+    hash: 99e1b7607d538780
+    target: memory/legacy_corpus/quarantine
+    quarantine: false
+    recommendation: REQUIRES_SAGE_REVIEW
+  - path: "datasets\sandbox\memory_system_patterns.json"
+    category: DATASET
+    risk: LOW
+    hash: ebdf147228dcd4a9
+    target: memory/dataset_registry
+    quarantine: false
+    recommendation: REQUIRES_SAGE_REVIEW
+  - path: "datasets\sandbox\week2_sandbox_results.json"
+    category: DATASET
+    risk: LOW
+    hash: 9faec151bf991675
+    target: memory/dataset_registry
+    quarantine: false
+    recommendation: REQUIRES_SAGE_REVIEW
+  - path: "datasets\sandbox\week3_security_deepdive.json"
+    category: SECURITY_KNOWLEDGE
+    risk: LOW
+    hash: 3672974a46612186
+    target: memory/legacy_corpus/quarantine
+    quarantine: false
+    recommendation: REQUIRES_SAGE_REVIEW
+  - path: "evolution\week5_activation.json"
+    category: CAPABILITY
+    risk: LOW
+    hash: 51674b75c31228eb
+    target: memory/capability_registry
+    quarantine: false
+    recommendation: APPROVED_FOR_REVIEW
+  - path: "execution_adaptation\__init__.py"
+    category: TRADING_STRATEGY_KNOWLEDGE
+    risk: MEDIUM
+    hash: eccc57ba038b2616
+    target: memory/legacy_corpus/quarantine
+    quarantine: true
+    recommendation: QUARANTINE_IMPORT
+  - path: "execution_adaptation\execution_adapter.py"
+    category: TRADING_STRATEGY_KNOWLEDGE
+    risk: MEDIUM
+    hash: 7f24bcca7f3f102c
+    target: memory/legacy_corpus/quarantine
+    quarantine: true
+    recommendation: QUARANTINE_IMPORT
+  - path: "explainability\__init__.py"
+    category: ENGINEERING_KNOWLEDGE
+    risk: MEDIUM
+    hash: 54e7f396d8d09fbb
+    target: memory/legacy_corpus/quarantine
+    quarantine: true
+    recommendation: QUARANTINE_IMPORT
+  - path: "explainability\explainability.py"
+    category: ENGINEERING_KNOWLEDGE
+    risk: MEDIUM
+    hash: 8ad472a833143e95
+    target: memory/legacy_corpus/quarantine
+    quarantine: true
+    recommendation: QUARANTINE_IMPORT
+  - path: "full_activation_report.md"
+    category: LESSON
+    risk: LOW
+    hash: 71ec2ea2800ee8bf
+    target: memory/lesson_registry
+    quarantine: false
+    recommendation: APPROVED_FOR_REVIEW
+  - path: "governance\anti_poisoning_rules.md"
+    category: GOVERNANCE
+    risk: LOW
+    hash: e48a23c985c6b353
+    target: governance/registries
+    quarantine: false
+    recommendation: APPROVED_FOR_REVIEW
+  - path: "governance\behavioral_patterns_helen.md"
+    category: GOVERNANCE
+    risk: LOW
+    hash: 71300a506da07903
+    target: governance/registries
+    quarantine: false
+    recommendation: APPROVED_FOR_REVIEW
+  - path: "governance\operator_safety_rules\initial_rules.yaml"
+    category: SECURITY_KNOWLEDGE
+    risk: LOW
+    hash: 7a58dcfa8afc7f93
+    target: memory/legacy_corpus/quarantine
+    quarantine: false
+    recommendation: REQUIRES_SAGE_REVIEW
+  - path: "governance\production_standards_sage.md"
+    category: GOVERNANCE
+    risk: LOW
+    hash: f717683d2a706d0e
+    target: governance/registries
+    quarantine: false
+    recommendation: APPROVED_FOR_REVIEW
+  - path: "governance\rules_engine\initial_rules.json"
+    category: GOVERNANCE
+    risk: LOW
+    hash: f51f771776f7025b
+    target: governance/registries
+    quarantine: false
+    recommendation: APPROVED_FOR_REVIEW
+  - path: "governance\safety_audit_checklist.md"
+    category: SECURITY_KNOWLEDGE
+    risk: LOW
+    hash: e3d2d4198a3dbb51
+    target: memory/legacy_corpus/quarantine
+    quarantine: false
+    recommendation: REQUIRES_SAGE_REVIEW
+  - path: "inbox\internet\discovery_sources.txt"
+    category: UNKNOWN
+    risk: LOW
+    hash: 5ef8d1a0109a1a15
+    target: memory/legacy_corpus/quarantine
+    quarantine: false
+    recommendation: REQUIRES_SAGE_REVIEW
+  - path: "inbox\internet\week1_intake.json"
+    category: UNKNOWN
+    risk: LOW
+    hash: 7599e2961564731f
+    target: memory/legacy_corpus/quarantine
+    quarantine: false
+    recommendation: REQUIRES_SAGE_REVIEW
+  - path: "internet\lessons\agent_architecture\arxiv_references.json"
+    category: MEMORY
+    risk: LOW
+    hash: 2e40b4c7dfeca6f1
+    target: memory/legacy_corpus/quarantine
+    quarantine: false
+    recommendation: REQUIRES_SAGE_REVIEW
+  - path: "internet\metadata\priority_rankings.json"
+    category: DATASET
+    risk: LOW
+    hash: 36451634d0e0e037
+    target: memory/dataset_registry
+    quarantine: false
+    recommendation: REQUIRES_SAGE_REVIEW
+  - path: "liquidity_intelligence\__init__.py"
+    category: MARKET_INTELLIGENCE
+    risk: MEDIUM
+    hash: bcc3957d06fcb39f
+    target: memory/legacy_corpus/quarantine
+    quarantine: true
+    recommendation: QUARANTINE_IMPORT
+  - path: "liquidity_intelligence\liquidity_intelligence.py"
+    category: MARKET_INTELLIGENCE
+    risk: MEDIUM
+    hash: 79a006261c81bd92
+    target: memory/legacy_corpus/quarantine
+    quarantine: true
+    recommendation: QUARANTINE_IMPORT
+  - path: "memory_engine\__init__.py"
+    category: MEMORY
+    risk: MEDIUM
+    hash: 79ad79dee36cbdc6
+    target: memory/legacy_corpus/quarantine
+    quarantine: true
+    recommendation: QUARANTINE_IMPORT
+  - path: "memory_engine\memory_engine.py"
+    category: MEMORY
+    risk: MEDIUM
+    hash: 6a439a4f85123a23
+    target: memory/legacy_corpus/quarantine
+    quarantine: true
+    recommendation: QUARANTINE_IMPORT
+  - path: "multi_timeframe_cognition\__init__.py"
+    category: ENGINEERING_KNOWLEDGE
+    risk: MEDIUM
+    hash: 8f8c19d8b2f92cbb
+    target: memory/legacy_corpus/quarantine
+    quarantine: true
+    recommendation: QUARANTINE_IMPORT
+  - path: "multi_timeframe_cognition\multi_timeframe_cognition.py"
+    category: ENGINEERING_KNOWLEDGE
+    risk: MEDIUM
+    hash: e4f3eb75e240a7d7
+    target: memory/legacy_corpus/quarantine
+    quarantine: true
+    recommendation: QUARANTINE_IMPORT
+  - path: "narrative_tracker\__init__.py"
+    category: ENGINEERING_KNOWLEDGE
+    risk: MEDIUM
+    hash: 57c84e8c8eb5c971
+    target: memory/legacy_corpus/quarantine
+    quarantine: true
+    recommendation: QUARANTINE_IMPORT
+  - path: "narrative_tracker\narrative_tracker.py"
+    category: ENGINEERING_KNOWLEDGE
+    risk: MEDIUM
+    hash: 83733ab01c45c588
+    target: memory/legacy_corpus/quarantine
+    quarantine: true
+    recommendation: QUARANTINE_IMPORT
+  - path: "pattern_encoder\__init__.py"
+    category: DECISION_TRACE
+    risk: MEDIUM
+    hash: 537bb72fea50b651
+    target: memory/decision_trace_registry
+    quarantine: true
+    recommendation: QUARANTINE_IMPORT
+  - path: "pattern_encoder\pattern_encoder.py"
+    category: DECISION_TRACE
+    risk: MEDIUM
+    hash: c1174c94bf179775
+    target: memory/decision_trace_registry
+    quarantine: true
+    recommendation: QUARANTINE_IMPORT
+  - path: "processed\concepts_extracted.json"
+    category: UNKNOWN
+    risk: LOW
+    hash: 29541666ef3b939c
+    target: memory/legacy_corpus/quarantine
+    quarantine: false
+    recommendation: REQUIRES_SAGE_REVIEW
+  - path: "progress_tracker.md"
+    category: LESSON
+    risk: LOW
+    hash: 93189bf2ee4032f2
+    target: memory/lesson_registry
+    quarantine: false
+    recommendation: APPROVED_FOR_REVIEW
+  - path: "regime_classifier\__init__.py"
+    category: ENGINEERING_KNOWLEDGE
+    risk: MEDIUM
+    hash: 739bc44f93c6fdde
+    target: memory/legacy_corpus/quarantine
+    quarantine: true
+    recommendation: QUARANTINE_IMPORT
+  - path: "regime_classifier\regime_classifier.py"
+    category: ENGINEERING_KNOWLEDGE
+    risk: MEDIUM
+    hash: 0737b18254b0143e
+    target: memory/legacy_corpus/quarantine
+    quarantine: true
+    recommendation: QUARANTINE_IMPORT
+  - path: "routing\rules_engine\initial_routing.json"
+    category: GOVERNANCE
+    risk: LOW
+    hash: 88e265763f4a52fa
+    target: governance/registries
+    quarantine: false
+    recommendation: APPROVED_FOR_REVIEW
+  - path: "scheduler\adaptive_week3.md"
+    category: INFRASTRUCTURE_KNOWLEDGE
+    risk: LOW
+    hash: fed834389c7dc9fd
+    target: memory/legacy_corpus/quarantine
+    quarantine: false
+    recommendation: REQUIRES_SAGE_REVIEW
+  - path: "scheduler\learning_schedule.json"
+    category: INFRASTRUCTURE_KNOWLEDGE
+    risk: LOW
+    hash: b096a5caf52d1adc
+    target: memory/legacy_corpus/quarantine
+    quarantine: false
+    recommendation: REQUIRES_SAGE_REVIEW
+  - path: "similarity_search\__init__.py"
+    category: ENGINEERING_KNOWLEDGE
+    risk: MEDIUM
+    hash: 74054e49a88bc06b
+    target: memory/legacy_corpus/quarantine
+    quarantine: true
+    recommendation: QUARANTINE_IMPORT
+  - path: "similarity_search\similarity_search.py"
+    category: ENGINEERING_KNOWLEDGE
+    risk: MEDIUM
+    hash: bf4d5e6317038900
+    target: memory/legacy_corpus/quarantine
+    quarantine: true
+    recommendation: QUARANTINE_IMPORT
+  - path: "structure_encoder\__init__.py"
+    category: ENGINEERING_KNOWLEDGE
+    risk: MEDIUM
+    hash: c0935f4eb66727f5
+    target: memory/legacy_corpus/quarantine
+    quarantine: true
+    recommendation: QUARANTINE_IMPORT
+  - path: "structure_encoder\structure_encoder.py"
+    category: ENGINEERING_KNOWLEDGE
+    risk: MEDIUM
+    hash: 0a639e276efc2a3f
+    target: memory/legacy_corpus/quarantine
+    quarantine: true
+    recommendation: QUARANTINE_IMPORT
+  - path: "structure_memory\__init__.py"
+    category: MEMORY
+    risk: MEDIUM
+    hash: c15d78e002a2a3e0
+    target: memory/legacy_corpus/quarantine
+    quarantine: true
+    recommendation: QUARANTINE_IMPORT
+  - path: "structure_memory\structure_memory.py"
+    category: MEMORY
+    risk: MEDIUM
+    hash: 249b9e2c91c46d64
+    target: memory/legacy_corpus/quarantine
+    quarantine: true
+    recommendation: QUARANTINE_IMPORT
+  - path: "system_status_report.md"
+    category: LESSON
+    risk: LOW
+    hash: c6846279f9332264
+    target: memory/lesson_registry
+    quarantine: false
+    recommendation: APPROVED_FOR_REVIEW
+  - path: "week0_status_report.md"
+    category: LESSON
+    risk: LOW
+    hash: 453cb7476e6fbfa0
+    target: memory/lesson_registry
+    quarantine: false
+    recommendation: APPROVED_FOR_REVIEW
+  - path: "week1_completion_report.md"
+    category: LESSON
+    risk: LOW
+    hash: a061f2d8cf4919cf
+    target: memory/lesson_registry
+    quarantine: false
+    recommendation: APPROVED_FOR_REVIEW
+  - path: "week1_execution_scripts.ps1"
+    category: TRADING_STRATEGY_KNOWLEDGE
+    risk: MEDIUM
+    hash: 41fef2619933b8eb
+    target: memory/legacy_corpus/quarantine
+    quarantine: true
+    recommendation: QUARANTINE_IMPORT
+  - path: "week1_hermes_tasks.md"
+    category: UNKNOWN
+    risk: LOW
+    hash: 8117e84941ca379d
+    target: memory/legacy_corpus/quarantine
+    quarantine: false
+    recommendation: REQUIRES_SAGE_REVIEW
+  - path: "week1_initiation_log.md"
+    category: UNKNOWN
+    risk: LOW
+    hash: cd2697498282889d
+    target: memory/legacy_corpus/quarantine
+    quarantine: false
+    recommendation: REQUIRES_SAGE_REVIEW
+  - path: "week2_completion_report.md"
+    category: LESSON
+    risk: LOW
+    hash: 4629ba0a392f30b8
+    target: memory/lesson_registry
+    quarantine: false
+    recommendation: APPROVED_FOR_REVIEW
+  - path: "week3_completion_report.md"
+    category: LESSON
+    risk: LOW
+    hash: e34977bd2a293aac
+    target: memory/lesson_registry
+    quarantine: false
+    recommendation: APPROVED_FOR_REVIEW
+  - path: "week4_completion_report.md"
+    category: LESSON
+    risk: LOW
+    hash: f417f2a189dbf0c1
+    target: memory/lesson_registry
+    quarantine: false
+    recommendation: APPROVED_FOR_REVIEW
+  - path: "week4_tasks.md"
+    category: UNKNOWN
+    risk: LOW
+    hash: cd23ed5761d62629
+    target: memory/legacy_corpus/quarantine
+    quarantine: false
+    recommendation: REQUIRES_SAGE_REVIEW
+  - path: "week5_autonomous_activation.md"
+    category: UNKNOWN
+    risk: LOW
+    hash: 3072b5a33a22a715
+    target: memory/legacy_corpus/quarantine
+    quarantine: false
+    recommendation: REQUIRES_SAGE_REVIEW

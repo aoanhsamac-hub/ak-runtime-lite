@@ -1,0 +1,17 @@
+{
+  "directive": "WP-KR-01",
+  "promoted_at": "2026-06-07T09:22:50Z",
+  "approved_by": [
+    "Hermes",
+    "Sage",
+    "Hung Vuong"
+  ],
+  "total_approved": 124,
+  "breakdown": {
+    "lessons": 101,
+    "decision_traces": 6,
+    "datasets": 10,
+    "skills": 4,
+    "capabilities": 3
+  }
+}

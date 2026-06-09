@@ -1,0 +1,192 @@
+kingdom_market_forecast_registry:
+  created_at: '2026-06-08'
+  forecast_records:
+  - confidence: 0.0
+    forecast_direction: neutral
+    forecast_horizon: 1-H1
+    forecast_id: FCST-XAUUSDm-H1-0001
+    forecast_reason: Zone 0.00-0.00 detected, state=unknown
+    market_state: unknown
+    regime: unknown
+    status: PENDING_VALIDATION
+    symbol: XAUUSDm
+    timeframe: H1
+    timestamp: '2026-06-08T12:26:15.691244+00:00'
+    zone_high: 0.0
+    zone_low: 0.0
+  - confidence: 0.0
+    forecast_direction: neutral
+    forecast_horizon: 1-H1
+    forecast_id: FCST-EURUSDm-H1-0002
+    forecast_reason: Zone 0.00-0.00 detected, state=unknown
+    market_state: unknown
+    regime: unknown
+    status: PENDING_VALIDATION
+    symbol: EURUSDm
+    timeframe: H1
+    timestamp: '2026-06-08T12:26:15.691244+00:00'
+    zone_high: 0.0
+    zone_low: 0.0
+  - confidence: 0.0
+    forecast_direction: neutral
+    forecast_horizon: 1-H1
+    forecast_id: FCST-GBPUSDm-H1-0003
+    forecast_reason: Zone 0.00-0.00 detected, state=unknown
+    market_state: unknown
+    regime: unknown
+    status: PENDING_VALIDATION
+    symbol: GBPUSDm
+    timeframe: H1
+    timestamp: '2026-06-08T12:26:15.706878+00:00'
+    zone_high: 0.0
+    zone_low: 0.0
+  - confidence: 0.0
+    forecast_direction: neutral
+    forecast_horizon: 1-H1
+    forecast_id: FCST-XAUUSDm-H1-0004
+    forecast_reason: Zone 0.00-0.00 detected, state=unknown
+    market_state: unknown
+    regime: unknown
+    status: PENDING_VALIDATION
+    symbol: XAUUSDm
+    timeframe: H1
+    timestamp: '2026-06-08T12:26:15.722491+00:00'
+    zone_high: 0.0
+    zone_low: 0.0
+  - confidence: 0.0
+    forecast_direction: neutral
+    forecast_horizon: 1-H1
+    forecast_id: FCST-XAUUSDm-H1-0005
+    forecast_reason: Zone 0.00-0.00 detected, state=unknown
+    market_state: unknown
+    regime: unknown
+    status: PENDING_VALIDATION
+    symbol: XAUUSDm
+    timeframe: H1
+    timestamp: '2026-06-08T12:26:15.753773+00:00'
+    zone_high: 0.0
+    zone_low: 0.0
+  - confidence: 0.0
+    forecast_direction: neutral
+    forecast_horizon: 1-H1
+    forecast_id: FCST-XAUUSDm-H1-0006
+    forecast_reason: Zone 0.00-0.00 detected, state=unknown
+    market_state: unknown
+    regime: unknown
+    status: PENDING_VALIDATION
+    symbol: XAUUSDm
+    timeframe: H1
+    timestamp: '2026-06-08T12:26:15.784987+00:00'
+    zone_high: 0.0
+    zone_low: 0.0
+  - confidence: 0.0
+    forecast_direction: neutral
+    forecast_horizon: 1-H1
+    forecast_id: FCST-XAUUSDm-H1-0007
+    forecast_reason: Zone 0.00-0.00 detected, state=unknown
+    market_state: unknown
+    regime: unknown
+    status: PENDING_VALIDATION
+    symbol: XAUUSDm
+    timeframe: H1
+    timestamp: '2026-06-08T12:26:15.816236+00:00'
+    zone_high: 0.0
+    zone_low: 0.0
+  - confidence: 0.0
+    forecast_direction: neutral
+    forecast_horizon: 1-H1
+    forecast_id: FCST-XAUUSDm-H1-0008
+    forecast_reason: Zone 0.00-0.00 detected, state=unknown
+    market_state: unknown
+    regime: unknown
+    status: PENDING_VALIDATION
+    symbol: XAUUSDm
+    timeframe: H1
+    timestamp: '2026-06-08T13:51:37.921204+00:00'
+    zone_high: 0.0
+    zone_low: 0.0
+  - confidence: 0.0
+    forecast_direction: neutral
+    forecast_horizon: 1-H1
+    forecast_id: FCST-EURUSDm-H1-0009
+    forecast_reason: Zone 0.00-0.00 detected, state=unknown
+    market_state: unknown
+    regime: unknown
+    status: PENDING_VALIDATION
+    symbol: EURUSDm
+    timeframe: H1
+    timestamp: '2026-06-08T13:51:37.936836+00:00'
+    zone_high: 0.0
+    zone_low: 0.0
+  - confidence: 0.0
+    forecast_direction: neutral
+    forecast_horizon: 1-H1
+    forecast_id: FCST-GBPUSDm-H1-0010
+    forecast_reason: Zone 0.00-0.00 detected, state=unknown
+    market_state: unknown
+    regime: unknown
+    status: PENDING_VALIDATION
+    symbol: GBPUSDm
+    timeframe: H1
+    timestamp: '2026-06-08T13:51:37.973738+00:00'
+    zone_high: 0.0
+    zone_low: 0.0
+  - confidence: 0.0
+    forecast_direction: neutral
+    forecast_horizon: 1-H1
+    forecast_id: FCST-XAUUSDm-H1-0011
+    forecast_reason: Zone 0.00-0.00 detected, state=unknown
+    market_state: unknown
+    regime: unknown
+    status: PENDING_VALIDATION
+    symbol: XAUUSDm
+    timeframe: H1
+    timestamp: '2026-06-08T13:51:38.005949+00:00'
+    zone_high: 0.0
+    zone_low: 0.0
+  - confidence: 0.0
+    forecast_direction: neutral
+    forecast_horizon: 1-H1
+    forecast_id: FCST-XAUUSDm-H1-0012
+    forecast_reason: Zone 0.00-0.00 detected, state=unknown
+    market_state: unknown
+    regime: unknown
+    status: PENDING_VALIDATION
+    symbol: XAUUSDm
+    timeframe: H1
+    timestamp: '2026-06-08T13:51:38.061841+00:00'
+    zone_high: 0.0
+    zone_low: 0.0
+  - confidence: 0.0
+    forecast_direction: neutral
+    forecast_horizon: 1-H1
+    forecast_id: FCST-XAUUSDm-H1-0013
+    forecast_reason: Zone 0.00-0.00 detected, state=unknown
+    market_state: unknown
+    regime: unknown
+    status: PENDING_VALIDATION
+    symbol: XAUUSDm
+    timeframe: H1
+    timestamp: '2026-06-08T13:51:38.108741+00:00'
+    zone_high: 0.0
+    zone_low: 0.0
+  - confidence: 0.0
+    forecast_direction: neutral
+    forecast_horizon: 1-H1
+    forecast_id: FCST-XAUUSDm-H1-0014
+    forecast_reason: Zone 0.00-0.00 detected, state=unknown
+    market_state: unknown
+    regime: unknown
+    status: PENDING_VALIDATION
+    symbol: XAUUSDm
+    timeframe: H1
+    timestamp: '2026-06-08T13:51:38.139989+00:00'
+    zone_high: 0.0
+    zone_low: 0.0
+  last_forecast_id: FCST-XAUUSDm-H1-0014
+  last_updated: '2026-06-08T13:51:38.162758+00:00'
+  operator: Iris
+  owner: Janus
+  reviewer: Helen
+  status: ACTIVE
+  version: 1.0

@@ -1,0 +1,50 @@
+# AK National Skill Lifecycle Registry
+# Governance Authority: Knowledge Governance Decree, Janus Directive AK-WP35.5-001
+# Last Updated: 2026-06-08
+
+skill_lifecycle_registry:
+  version: "1.0"
+  description: "Lifecycle state definitions and transition rules for all AK skills"
+  lifecycle_stages:
+    - PROPOSED
+    - DISCOVERED
+    - SANDBOXED
+    - VALIDATED
+    - APPROVED
+    - ACTIVE
+    - SUSPENDED
+    - DEPRECATED
+    - RETIRED
+    - ARCHIVED
+  transition_rules:
+    PROPOSED:
+      can_transition_to: [DISCOVERED]
+      governance_gate: auto
+    DISCOVERED:
+      can_transition_to: [SANDBOXED, PROPOSED]
+      governance_gate: sage_review
+    SANDBOXED:
+      can_transition_to: [VALIDATED, DISCOVERED, PROPOSED]
+      governance_gate: validation_engine
+    VALIDATED:
+      can_transition_to: [APPROVED, SANDBOXED]
+      governance_gate: independent_review_gate
+    APPROVED:
+      can_transition_to: [ACTIVE, VALIDATED, SUSPENDED]
+      governance_gate: human_sovereignty_gate
+    ACTIVE:
+      can_transition_to: [SUSPENDED, DEPRECATED, APPROVED]
+      governance_gate: risk_kernel
+    SUSPENDED:
+      can_transition_to: [ACTIVE, DEPRECATED, RETIRED]
+      governance_gate: remediation_review
+    DEPRECATED:
+      can_transition_to: [RETIRED, SUSPENDED, ACTIVE]
+      governance_gate: owner_or_sage
+    RETIRED:
+      can_transition_to: [ARCHIVED]
+      governance_gate: auto
+    ARCHIVED:
+      can_transition_to: []
+      governance_gate: none
+  entries: []

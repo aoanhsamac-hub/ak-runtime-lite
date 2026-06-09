@@ -1,0 +1,8 @@
+pydantic
+pyyaml
+fastapi
+uvicorn
+pytest
+python-dotenv
+lancedb
+pylance

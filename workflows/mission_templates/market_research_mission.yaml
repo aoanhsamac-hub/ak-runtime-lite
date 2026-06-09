@@ -1,0 +1,7 @@
+mission_type: market_research_mission
+owner: Iris
+description: "Research market topics and produce intelligence"
+required_tools: ["llm"]
+required_evidence: ["market_data", "research_output"]
+activation_required: SANDBOX_ACTIVE
+review_required: Sage

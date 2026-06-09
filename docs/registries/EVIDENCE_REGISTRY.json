@@ -1,0 +1,1300 @@
+{
+  "evidence_registry": {
+    "evidence_records": [
+      {
+        "evidence_id": "EVID-0001",
+        "timestamp": "2026-06-09T13:38:14.014512+00:00",
+        "evidence_packages": {
+          "forecast_evidence": {
+            "total_forecasts": 1638,
+            "by_status": {
+              "VALIDATED": 1638
+            },
+            "by_symbol": {
+              "XAUUSDm": 273,
+              "EURUSDm": 273,
+              "GBPUSDm": 273,
+              "USDJPYm": 273,
+              "USDCADm": 273,
+              "EURGBPm": 273
+            },
+            "last_run": "2026-06-09T13:38:13.347994+00:00"
+          },
+          "reality_evidence": {
+            "total_benchmarks": 1638,
+            "last_run": "2026-06-09T13:38:13.581167+00:00"
+          },
+          "lesson_evidence": {
+            "total_lessons": 1638,
+            "by_category": {
+              "neutral": 1638
+            },
+            "last_run": "2026-06-09T13:38:13.848173+00:00"
+          },
+          "runtime_evidence": {
+            "running": false,
+            "components": {},
+            "all_healthy": true,
+            "restart_count": 0,
+            "can_restart": true,
+            "uptime": "2026-06-09T13:38:14.014512+00:00"
+          }
+        },
+        "handler_type": "day1_evidence_handler",
+        "append_only": true,
+        "immutable": true
+      },
+      {
+        "evidence_id": "EVID-0002",
+        "timestamp": "2026-06-09T13:38:15.032225+00:00",
+        "evidence_packages": {
+          "forecast_evidence": {
+            "total_forecasts": 1656,
+            "by_status": {
+              "VALIDATED": 1656
+            },
+            "by_symbol": {
+              "XAUUSDm": 276,
+              "EURUSDm": 276,
+              "GBPUSDm": 276,
+              "USDJPYm": 276,
+              "USDCADm": 276,
+              "EURGBPm": 276
+            },
+            "last_run": "2026-06-09T13:38:14.382806+00:00"
+          },
+          "reality_evidence": {
+            "total_benchmarks": 1656,
+            "last_run": "2026-06-09T13:38:14.686755+00:00"
+          },
+          "lesson_evidence": {
+            "total_lessons": 1656,
+            "by_category": {
+              "neutral": 1656
+            },
+            "last_run": "2026-06-09T13:38:14.917969+00:00"
+          },
+          "runtime_evidence": {
+            "running": false,
+            "components": {},
+            "all_healthy": true,
+            "restart_count": 0,
+            "can_restart": true,
+            "uptime": "2026-06-09T13:38:15.032225+00:00"
+          }
+        },
+        "handler_type": "day1_evidence_handler",
+        "append_only": true,
+        "immutable": true
+      },
+      {
+        "evidence_id": "EVID-0003",
+        "timestamp": "2026-06-09T13:38:15.847196+00:00",
+        "evidence_packages": {
+          "forecast_evidence": {
+            "total_forecasts": 1674,
+            "by_status": {
+              "VALIDATED": 1674
+            },
+            "by_symbol": {
+              "XAUUSDm": 279,
+              "EURUSDm": 279,
+              "GBPUSDm": 279,
+              "USDJPYm": 279,
+              "USDCADm": 279,
+              "EURGBPm": 279
+            },
+            "last_run": "2026-06-09T13:38:15.315255+00:00"
+          },
+          "reality_evidence": {
+            "total_benchmarks": 1674,
+            "last_run": "2026-06-09T13:38:15.515284+00:00"
+          },
+          "lesson_evidence": {
+            "total_lessons": 1674,
+            "by_category": {
+              "neutral": 1674
+            },
+            "last_run": "2026-06-09T13:38:15.715158+00:00"
+          },
+          "runtime_evidence": {
+            "running": false,
+            "components": {},
+            "all_healthy": true,
+            "restart_count": 0,
+            "can_restart": true,
+            "uptime": "2026-06-09T13:38:15.846330+00:00"
+          }
+        },
+        "handler_type": "day1_evidence_handler",
+        "append_only": true,
+        "immutable": true
+      },
+      {
+        "evidence_id": "EVID-0004",
+        "timestamp": "2026-06-09T13:38:16.759650+00:00",
+        "evidence_packages": {
+          "forecast_evidence": {
+            "total_forecasts": 1692,
+            "by_status": {
+              "VALIDATED": 1692
+            },
+            "by_symbol": {
+              "XAUUSDm": 282,
+              "EURUSDm": 282,
+              "GBPUSDm": 282,
+              "USDJPYm": 282,
+              "USDCADm": 282,
+              "EURGBPm": 282
+            },
+            "last_run": "2026-06-09T13:38:16.115521+00:00"
+          },
+          "reality_evidence": {
+            "total_benchmarks": 1692,
+            "last_run": "2026-06-09T13:38:16.364357+00:00"
+          },
+          "lesson_evidence": {
+            "total_lessons": 1692,
+            "by_category": {
+              "neutral": 1692
+            },
+            "last_run": "2026-06-09T13:38:16.615361+00:00"
+          },
+          "runtime_evidence": {
+            "running": false,
+            "components": {},
+            "all_healthy": true,
+            "restart_count": 0,
+            "can_restart": true,
+            "uptime": "2026-06-09T13:38:16.758650+00:00"
+          }
+        },
+        "handler_type": "day1_evidence_handler",
+        "append_only": true,
+        "immutable": true
+      },
+      {
+        "evidence_id": "EVID-0005",
+        "timestamp": "2026-06-09T13:38:17.638984+00:00",
+        "evidence_packages": {
+          "forecast_evidence": {
+            "total_forecasts": 1710,
+            "by_status": {
+              "VALIDATED": 1710
+            },
+            "by_symbol": {
+              "XAUUSDm": 285,
+              "EURUSDm": 285,
+              "GBPUSDm": 285,
+              "USDJPYm": 285,
+              "USDCADm": 285,
+              "EURGBPm": 285
+            },
+            "last_run": "2026-06-09T13:38:17.065642+00:00"
+          },
+          "reality_evidence": {
+            "total_benchmarks": 1710,
+            "last_run": "2026-06-09T13:38:17.282023+00:00"
+          },
+          "lesson_evidence": {
+            "total_lessons": 1710,
+            "by_category": {
+              "neutral": 1710
+            },
+            "last_run": "2026-06-09T13:38:17.503866+00:00"
+          },
+          "runtime_evidence": {
+            "running": false,
+            "components": {},
+            "all_healthy": true,
+            "restart_count": 0,
+            "can_restart": true,
+            "uptime": "2026-06-09T13:38:17.638984+00:00"
+          }
+        },
+        "handler_type": "day1_evidence_handler",
+        "append_only": true,
+        "immutable": true
+      },
+      {
+        "evidence_id": "EVID-0006",
+        "timestamp": "2026-06-09T13:38:18.528492+00:00",
+        "evidence_packages": {
+          "forecast_evidence": {
+            "total_forecasts": 1728,
+            "by_status": {
+              "VALIDATED": 1728
+            },
+            "by_symbol": {
+              "XAUUSDm": 288,
+              "EURUSDm": 288,
+              "GBPUSDm": 288,
+              "USDJPYm": 288,
+              "USDCADm": 288,
+              "EURGBPm": 288
+            },
+            "last_run": "2026-06-09T13:38:17.934817+00:00"
+          },
+          "reality_evidence": {
+            "total_benchmarks": 1728,
+            "last_run": "2026-06-09T13:38:18.165162+00:00"
+          },
+          "lesson_evidence": {
+            "total_lessons": 1728,
+            "by_category": {
+              "neutral": 1728
+            },
+            "last_run": "2026-06-09T13:38:18.388663+00:00"
+          },
+          "runtime_evidence": {
+            "running": false,
+            "components": {},
+            "all_healthy": true,
+            "restart_count": 0,
+            "can_restart": true,
+            "uptime": "2026-06-09T13:38:18.527489+00:00"
+          }
+        },
+        "handler_type": "day1_evidence_handler",
+        "append_only": true,
+        "immutable": true
+      },
+      {
+        "evidence_id": "EVID-0007",
+        "timestamp": "2026-06-09T13:38:19.525440+00:00",
+        "evidence_packages": {
+          "forecast_evidence": {
+            "total_forecasts": 1746,
+            "by_status": {
+              "VALIDATED": 1746
+            },
+            "by_symbol": {
+              "XAUUSDm": 291,
+              "EURUSDm": 291,
+              "GBPUSDm": 291,
+              "USDJPYm": 291,
+              "USDCADm": 291,
+              "EURGBPm": 291
+            },
+            "last_run": "2026-06-09T13:38:18.858960+00:00"
+          },
+          "reality_evidence": {
+            "total_benchmarks": 1746,
+            "last_run": "2026-06-09T13:38:19.128046+00:00"
+          },
+          "lesson_evidence": {
+            "total_lessons": 1746,
+            "by_category": {
+              "neutral": 1746
+            },
+            "last_run": "2026-06-09T13:38:19.384425+00:00"
+          },
+          "runtime_evidence": {
+            "running": false,
+            "components": {},
+            "all_healthy": true,
+            "restart_count": 0,
+            "can_restart": true,
+            "uptime": "2026-06-09T13:38:19.525440+00:00"
+          }
+        },
+        "handler_type": "day1_evidence_handler",
+        "append_only": true,
+        "immutable": true
+      },
+      {
+        "evidence_id": "EVID-0008",
+        "timestamp": "2026-06-09T13:38:20.394482+00:00",
+        "evidence_packages": {
+          "forecast_evidence": {
+            "total_forecasts": 1764,
+            "by_status": {
+              "VALIDATED": 1764
+            },
+            "by_symbol": {
+              "XAUUSDm": 294,
+              "EURUSDm": 294,
+              "GBPUSDm": 294,
+              "USDJPYm": 294,
+              "USDCADm": 294,
+              "EURGBPm": 294
+            },
+            "last_run": "2026-06-09T13:38:19.835070+00:00"
+          },
+          "reality_evidence": {
+            "total_benchmarks": 1764,
+            "last_run": "2026-06-09T13:38:20.062387+00:00"
+          },
+          "lesson_evidence": {
+            "total_lessons": 1764,
+            "by_category": {
+              "neutral": 1764
+            },
+            "last_run": "2026-06-09T13:38:20.284944+00:00"
+          },
+          "runtime_evidence": {
+            "running": false,
+            "components": {},
+            "all_healthy": true,
+            "restart_count": 0,
+            "can_restart": true,
+            "uptime": "2026-06-09T13:38:20.394482+00:00"
+          }
+        },
+        "handler_type": "day1_evidence_handler",
+        "append_only": true,
+        "immutable": true
+      },
+      {
+        "evidence_id": "EVID-0009",
+        "timestamp": "2026-06-09T13:38:21.355183+00:00",
+        "evidence_packages": {
+          "forecast_evidence": {
+            "total_forecasts": 1782,
+            "by_status": {
+              "VALIDATED": 1782
+            },
+            "by_symbol": {
+              "XAUUSDm": 297,
+              "EURUSDm": 297,
+              "GBPUSDm": 297,
+              "USDJPYm": 297,
+              "USDCADm": 297,
+              "EURGBPm": 297
+            },
+            "last_run": "2026-06-09T13:38:20.693795+00:00"
+          },
+          "reality_evidence": {
+            "total_benchmarks": 1782,
+            "last_run": "2026-06-09T13:38:20.926843+00:00"
+          },
+          "lesson_evidence": {
+            "total_lessons": 1782,
+            "by_category": {
+              "neutral": 1782
+            },
+            "last_run": "2026-06-09T13:38:21.181615+00:00"
+          },
+          "runtime_evidence": {
+            "running": false,
+            "components": {},
+            "all_healthy": true,
+            "restart_count": 0,
+            "can_restart": true,
+            "uptime": "2026-06-09T13:38:21.354182+00:00"
+          }
+        },
+        "handler_type": "day1_evidence_handler",
+        "append_only": true,
+        "immutable": true
+      },
+      {
+        "evidence_id": "EVID-0010",
+        "timestamp": "2026-06-09T13:38:22.539803+00:00",
+        "evidence_packages": {
+          "forecast_evidence": {
+            "total_forecasts": 1800,
+            "by_status": {
+              "VALIDATED": 1800
+            },
+            "by_symbol": {
+              "XAUUSDm": 300,
+              "EURUSDm": 300,
+              "GBPUSDm": 300,
+              "USDJPYm": 300,
+              "USDCADm": 300,
+              "EURGBPm": 300
+            },
+            "last_run": "2026-06-09T13:38:21.751958+00:00"
+          },
+          "reality_evidence": {
+            "total_benchmarks": 1800,
+            "last_run": "2026-06-09T13:38:22.104970+00:00"
+          },
+          "lesson_evidence": {
+            "total_lessons": 1800,
+            "by_category": {
+              "neutral": 1800
+            },
+            "last_run": "2026-06-09T13:38:22.360011+00:00"
+          },
+          "runtime_evidence": {
+            "running": false,
+            "components": {},
+            "all_healthy": true,
+            "restart_count": 0,
+            "can_restart": true,
+            "uptime": "2026-06-09T13:38:22.537805+00:00"
+          }
+        },
+        "handler_type": "day1_evidence_handler",
+        "append_only": true,
+        "immutable": true
+      },
+      {
+        "evidence_id": "EVID-0011",
+        "timestamp": "2026-06-09T13:38:23.523763+00:00",
+        "evidence_packages": {
+          "forecast_evidence": {
+            "total_forecasts": 1818,
+            "by_status": {
+              "VALIDATED": 1818
+            },
+            "by_symbol": {
+              "XAUUSDm": 303,
+              "EURUSDm": 303,
+              "GBPUSDm": 303,
+              "USDJPYm": 303,
+              "USDCADm": 303,
+              "EURGBPm": 303
+            },
+            "last_run": "2026-06-09T13:38:22.893335+00:00"
+          },
+          "reality_evidence": {
+            "total_benchmarks": 1818,
+            "last_run": "2026-06-09T13:38:23.147362+00:00"
+          },
+          "lesson_evidence": {
+            "total_lessons": 1818,
+            "by_category": {
+              "neutral": 1818
+            },
+            "last_run": "2026-06-09T13:38:23.389605+00:00"
+          },
+          "runtime_evidence": {
+            "running": false,
+            "components": {},
+            "all_healthy": true,
+            "restart_count": 0,
+            "can_restart": true,
+            "uptime": "2026-06-09T13:38:23.522763+00:00"
+          }
+        },
+        "handler_type": "day1_evidence_handler",
+        "append_only": true,
+        "immutable": true
+      },
+      {
+        "evidence_id": "EVID-0012",
+        "timestamp": "2026-06-09T13:38:24.604041+00:00",
+        "evidence_packages": {
+          "forecast_evidence": {
+            "total_forecasts": 1836,
+            "by_status": {
+              "VALIDATED": 1836
+            },
+            "by_symbol": {
+              "XAUUSDm": 306,
+              "EURUSDm": 306,
+              "GBPUSDm": 306,
+              "USDJPYm": 306,
+              "USDCADm": 306,
+              "EURGBPm": 306
+            },
+            "last_run": "2026-06-09T13:38:23.859000+00:00"
+          },
+          "reality_evidence": {
+            "total_benchmarks": 1836,
+            "last_run": "2026-06-09T13:38:24.144243+00:00"
+          },
+          "lesson_evidence": {
+            "total_lessons": 1836,
+            "by_category": {
+              "neutral": 1836
+            },
+            "last_run": "2026-06-09T13:38:24.438666+00:00"
+          },
+          "runtime_evidence": {
+            "running": false,
+            "components": {},
+            "all_healthy": true,
+            "restart_count": 0,
+            "can_restart": true,
+            "uptime": "2026-06-09T13:38:24.602021+00:00"
+          }
+        },
+        "handler_type": "day1_evidence_handler",
+        "append_only": true,
+        "immutable": true
+      },
+      {
+        "evidence_id": "EVID-0013",
+        "timestamp": "2026-06-09T13:38:26.393343+00:00",
+        "evidence_packages": {
+          "forecast_evidence": {
+            "total_forecasts": 1854,
+            "by_status": {
+              "VALIDATED": 1854
+            },
+            "by_symbol": {
+              "XAUUSDm": 309,
+              "EURUSDm": 309,
+              "GBPUSDm": 309,
+              "USDJPYm": 309,
+              "USDCADm": 309,
+              "EURGBPm": 309
+            },
+            "last_run": "2026-06-09T13:38:25.206783+00:00"
+          },
+          "reality_evidence": {
+            "total_benchmarks": 1854,
+            "last_run": "2026-06-09T13:38:25.694611+00:00"
+          },
+          "lesson_evidence": {
+            "total_lessons": 1854,
+            "by_category": {
+              "neutral": 1854
+            },
+            "last_run": "2026-06-09T13:38:26.168001+00:00"
+          },
+          "runtime_evidence": {
+            "running": false,
+            "components": {},
+            "all_healthy": true,
+            "restart_count": 0,
+            "can_restart": true,
+            "uptime": "2026-06-09T13:38:26.390340+00:00"
+          }
+        },
+        "handler_type": "day1_evidence_handler",
+        "append_only": true,
+        "immutable": true
+      },
+      {
+        "evidence_id": "EVID-0014",
+        "timestamp": "2026-06-09T13:38:27.852221+00:00",
+        "evidence_packages": {
+          "forecast_evidence": {
+            "total_forecasts": 1872,
+            "by_status": {
+              "VALIDATED": 1872
+            },
+            "by_symbol": {
+              "XAUUSDm": 312,
+              "EURUSDm": 312,
+              "GBPUSDm": 312,
+              "USDJPYm": 312,
+              "USDCADm": 312,
+              "EURGBPm": 312
+            },
+            "last_run": "2026-06-09T13:38:27.067525+00:00"
+          },
+          "reality_evidence": {
+            "total_benchmarks": 1872,
+            "last_run": "2026-06-09T13:38:27.384305+00:00"
+          },
+          "lesson_evidence": {
+            "total_lessons": 1872,
+            "by_category": {
+              "neutral": 1872
+            },
+            "last_run": "2026-06-09T13:38:27.685388+00:00"
+          },
+          "runtime_evidence": {
+            "running": false,
+            "components": {},
+            "all_healthy": true,
+            "restart_count": 0,
+            "can_restart": true,
+            "uptime": "2026-06-09T13:38:27.850205+00:00"
+          }
+        },
+        "handler_type": "day1_evidence_handler",
+        "append_only": true,
+        "immutable": true
+      },
+      {
+        "evidence_id": "EVID-0015",
+        "timestamp": "2026-06-09T13:38:29.411337+00:00",
+        "evidence_packages": {
+          "forecast_evidence": {
+            "total_forecasts": 1890,
+            "by_status": {
+              "VALIDATED": 1890
+            },
+            "by_symbol": {
+              "XAUUSDm": 315,
+              "EURUSDm": 315,
+              "GBPUSDm": 315,
+              "USDJPYm": 315,
+              "USDCADm": 315,
+              "EURGBPm": 315
+            },
+            "last_run": "2026-06-09T13:38:28.250323+00:00"
+          },
+          "reality_evidence": {
+            "total_benchmarks": 1890,
+            "last_run": "2026-06-09T13:38:28.745122+00:00"
+          },
+          "lesson_evidence": {
+            "total_lessons": 1890,
+            "by_category": {
+              "neutral": 1890
+            },
+            "last_run": "2026-06-09T13:38:29.189779+00:00"
+          },
+          "runtime_evidence": {
+            "running": false,
+            "components": {},
+            "all_healthy": true,
+            "restart_count": 0,
+            "can_restart": true,
+            "uptime": "2026-06-09T13:38:29.410335+00:00"
+          }
+        },
+        "handler_type": "day1_evidence_handler",
+        "append_only": true,
+        "immutable": true
+      },
+      {
+        "evidence_id": "EVID-0016",
+        "timestamp": "2026-06-09T13:38:30.818689+00:00",
+        "evidence_packages": {
+          "forecast_evidence": {
+            "total_forecasts": 1908,
+            "by_status": {
+              "VALIDATED": 1908
+            },
+            "by_symbol": {
+              "XAUUSDm": 318,
+              "EURUSDm": 318,
+              "GBPUSDm": 318,
+              "USDJPYm": 318,
+              "USDCADm": 318,
+              "EURGBPm": 318
+            },
+            "last_run": "2026-06-09T13:38:29.938812+00:00"
+          },
+          "reality_evidence": {
+            "total_benchmarks": 1908,
+            "last_run": "2026-06-09T13:38:30.286339+00:00"
+          },
+          "lesson_evidence": {
+            "total_lessons": 1908,
+            "by_category": {
+              "neutral": 1908
+            },
+            "last_run": "2026-06-09T13:38:30.643589+00:00"
+          },
+          "runtime_evidence": {
+            "running": false,
+            "components": {},
+            "all_healthy": true,
+            "restart_count": 0,
+            "can_restart": true,
+            "uptime": "2026-06-09T13:38:30.818689+00:00"
+          }
+        },
+        "handler_type": "day1_evidence_handler",
+        "append_only": true,
+        "immutable": true
+      },
+      {
+        "evidence_id": "EVID-0017",
+        "timestamp": "2026-06-09T13:38:32.252940+00:00",
+        "evidence_packages": {
+          "forecast_evidence": {
+            "total_forecasts": 1926,
+            "by_status": {
+              "VALIDATED": 1926
+            },
+            "by_symbol": {
+              "XAUUSDm": 321,
+              "EURUSDm": 321,
+              "GBPUSDm": 321,
+              "USDJPYm": 321,
+              "USDCADm": 321,
+              "EURGBPm": 321
+            },
+            "last_run": "2026-06-09T13:38:31.369909+00:00"
+          },
+          "reality_evidence": {
+            "total_benchmarks": 1926,
+            "last_run": "2026-06-09T13:38:31.713626+00:00"
+          },
+          "lesson_evidence": {
+            "total_lessons": 1926,
+            "by_category": {
+              "neutral": 1926
+            },
+            "last_run": "2026-06-09T13:38:32.051949+00:00"
+          },
+          "runtime_evidence": {
+            "running": false,
+            "components": {},
+            "all_healthy": true,
+            "restart_count": 0,
+            "can_restart": true,
+            "uptime": "2026-06-09T13:38:32.248877+00:00"
+          }
+        },
+        "handler_type": "day1_evidence_handler",
+        "append_only": true,
+        "immutable": true
+      },
+      {
+        "evidence_id": "EVID-0018",
+        "timestamp": "2026-06-09T13:38:33.753572+00:00",
+        "evidence_packages": {
+          "forecast_evidence": {
+            "total_forecasts": 1944,
+            "by_status": {
+              "VALIDATED": 1944
+            },
+            "by_symbol": {
+              "XAUUSDm": 324,
+              "EURUSDm": 324,
+              "GBPUSDm": 324,
+              "USDJPYm": 324,
+              "USDCADm": 324,
+              "EURGBPm": 324
+            },
+            "last_run": "2026-06-09T13:38:32.784956+00:00"
+          },
+          "reality_evidence": {
+            "total_benchmarks": 1944,
+            "last_run": "2026-06-09T13:38:33.133953+00:00"
+          },
+          "lesson_evidence": {
+            "total_lessons": 1944,
+            "by_category": {
+              "neutral": 1944
+            },
+            "last_run": "2026-06-09T13:38:33.534706+00:00"
+          },
+          "runtime_evidence": {
+            "running": false,
+            "components": {},
+            "all_healthy": true,
+            "restart_count": 0,
+            "can_restart": true,
+            "uptime": "2026-06-09T13:38:33.737945+00:00"
+          }
+        },
+        "handler_type": "day1_evidence_handler",
+        "append_only": true,
+        "immutable": true
+      },
+      {
+        "evidence_id": "EVID-0019",
+        "timestamp": "2026-06-09T13:38:35.048764+00:00",
+        "evidence_packages": {
+          "forecast_evidence": {
+            "total_forecasts": 1962,
+            "by_status": {
+              "VALIDATED": 1962
+            },
+            "by_symbol": {
+              "XAUUSDm": 327,
+              "EURUSDm": 327,
+              "GBPUSDm": 327,
+              "USDJPYm": 327,
+              "USDCADm": 327,
+              "EURGBPm": 327
+            },
+            "last_run": "2026-06-09T13:38:34.252178+00:00"
+          },
+          "reality_evidence": {
+            "total_benchmarks": 1962,
+            "last_run": "2026-06-09T13:38:34.564682+00:00"
+          },
+          "lesson_evidence": {
+            "total_lessons": 1962,
+            "by_category": {
+              "neutral": 1962
+            },
+            "last_run": "2026-06-09T13:38:34.876874+00:00"
+          },
+          "runtime_evidence": {
+            "running": false,
+            "components": {},
+            "all_healthy": true,
+            "restart_count": 0,
+            "can_restart": true,
+            "uptime": "2026-06-09T13:38:35.048764+00:00"
+          }
+        },
+        "handler_type": "day1_evidence_handler",
+        "append_only": true,
+        "immutable": true
+      },
+      {
+        "evidence_id": "EVID-0020",
+        "timestamp": "2026-06-09T13:38:36.486051+00:00",
+        "evidence_packages": {
+          "forecast_evidence": {
+            "total_forecasts": 1980,
+            "by_status": {
+              "VALIDATED": 1980
+            },
+            "by_symbol": {
+              "XAUUSDm": 330,
+              "EURUSDm": 330,
+              "GBPUSDm": 330,
+              "USDJPYm": 330,
+              "USDCADm": 330,
+              "EURGBPm": 330
+            },
+            "last_run": "2026-06-09T13:38:35.595431+00:00"
+          },
+          "reality_evidence": {
+            "total_benchmarks": 1980,
+            "last_run": "2026-06-09T13:38:35.970427+00:00"
+          },
+          "lesson_evidence": {
+            "total_lessons": 1980,
+            "by_category": {
+              "neutral": 1980
+            },
+            "last_run": "2026-06-09T13:38:36.298561+00:00"
+          },
+          "runtime_evidence": {
+            "running": false,
+            "components": {},
+            "all_healthy": true,
+            "restart_count": 0,
+            "can_restart": true,
+            "uptime": "2026-06-09T13:38:36.486051+00:00"
+          }
+        },
+        "handler_type": "day1_evidence_handler",
+        "append_only": true,
+        "immutable": true
+      },
+      {
+        "evidence_id": "EVID-0021",
+        "timestamp": "2026-06-09T13:38:37.885092+00:00",
+        "evidence_packages": {
+          "forecast_evidence": {
+            "total_forecasts": 1998,
+            "by_status": {
+              "VALIDATED": 1998
+            },
+            "by_symbol": {
+              "XAUUSDm": 333,
+              "EURUSDm": 333,
+              "GBPUSDm": 333,
+              "USDJPYm": 333,
+              "USDCADm": 333,
+              "EURGBPm": 333
+            },
+            "last_run": "2026-06-09T13:38:37.031070+00:00"
+          },
+          "reality_evidence": {
+            "total_benchmarks": 1998,
+            "last_run": "2026-06-09T13:38:37.343569+00:00"
+          },
+          "lesson_evidence": {
+            "total_lessons": 1998,
+            "by_category": {
+              "neutral": 1998
+            },
+            "last_run": "2026-06-09T13:38:37.689978+00:00"
+          },
+          "runtime_evidence": {
+            "running": false,
+            "components": {},
+            "all_healthy": true,
+            "restart_count": 0,
+            "can_restart": true,
+            "uptime": "2026-06-09T13:38:37.869473+00:00"
+          }
+        },
+        "handler_type": "day1_evidence_handler",
+        "append_only": true,
+        "immutable": true
+      },
+      {
+        "evidence_id": "EVID-0022",
+        "timestamp": "2026-06-09T13:38:39.631236+00:00",
+        "evidence_packages": {
+          "forecast_evidence": {
+            "total_forecasts": 2016,
+            "by_status": {
+              "VALIDATED": 2016
+            },
+            "by_symbol": {
+              "XAUUSDm": 336,
+              "EURUSDm": 336,
+              "GBPUSDm": 336,
+              "USDJPYm": 336,
+              "USDCADm": 336,
+              "EURGBPm": 336
+            },
+            "last_run": "2026-06-09T13:38:38.484494+00:00"
+          },
+          "reality_evidence": {
+            "total_benchmarks": 2016,
+            "last_run": "2026-06-09T13:38:38.965619+00:00"
+          },
+          "lesson_evidence": {
+            "total_lessons": 2016,
+            "by_category": {
+              "neutral": 2016
+            },
+            "last_run": "2026-06-09T13:38:39.427664+00:00"
+          },
+          "runtime_evidence": {
+            "running": false,
+            "components": {},
+            "all_healthy": true,
+            "restart_count": 0,
+            "can_restart": true,
+            "uptime": "2026-06-09T13:38:39.631236+00:00"
+          }
+        },
+        "handler_type": "day1_evidence_handler",
+        "append_only": true,
+        "immutable": true
+      },
+      {
+        "evidence_id": "EVID-0023",
+        "timestamp": "2026-06-09T13:38:41.020258+00:00",
+        "evidence_packages": {
+          "forecast_evidence": {
+            "total_forecasts": 2034,
+            "by_status": {
+              "VALIDATED": 2034
+            },
+            "by_symbol": {
+              "XAUUSDm": 339,
+              "EURUSDm": 339,
+              "GBPUSDm": 339,
+              "USDJPYm": 339,
+              "USDCADm": 339,
+              "EURGBPm": 339
+            },
+            "last_run": "2026-06-09T13:38:40.160373+00:00"
+          },
+          "reality_evidence": {
+            "total_benchmarks": 2034,
+            "last_run": "2026-06-09T13:38:40.504115+00:00"
+          },
+          "lesson_evidence": {
+            "total_lessons": 2034,
+            "by_category": {
+              "neutral": 2034
+            },
+            "last_run": "2026-06-09T13:38:40.816621+00:00"
+          },
+          "runtime_evidence": {
+            "running": false,
+            "components": {},
+            "all_healthy": true,
+            "restart_count": 0,
+            "can_restart": true,
+            "uptime": "2026-06-09T13:38:41.020258+00:00"
+          }
+        },
+        "handler_type": "day1_evidence_handler",
+        "append_only": true,
+        "immutable": true
+      },
+      {
+        "evidence_id": "EVID-0024",
+        "timestamp": "2026-06-09T13:38:42.395152+00:00",
+        "evidence_packages": {
+          "forecast_evidence": {
+            "total_forecasts": 2052,
+            "by_status": {
+              "VALIDATED": 2052
+            },
+            "by_symbol": {
+              "XAUUSDm": 342,
+              "EURUSDm": 342,
+              "GBPUSDm": 342,
+              "USDJPYm": 342,
+              "USDCADm": 342,
+              "EURGBPm": 342
+            },
+            "last_run": "2026-06-09T13:38:41.576975+00:00"
+          },
+          "reality_evidence": {
+            "total_benchmarks": 2052,
+            "last_run": "2026-06-09T13:38:41.895119+00:00"
+          },
+          "lesson_evidence": {
+            "total_lessons": 2052,
+            "by_category": {
+              "neutral": 2052
+            },
+            "last_run": "2026-06-09T13:38:42.207664+00:00"
+          },
+          "runtime_evidence": {
+            "running": false,
+            "components": {},
+            "all_healthy": true,
+            "restart_count": 0,
+            "can_restart": true,
+            "uptime": "2026-06-09T13:38:42.379500+00:00"
+          }
+        },
+        "handler_type": "day1_evidence_handler",
+        "append_only": true,
+        "immutable": true
+      },
+      {
+        "evidence_id": "EVID-0025",
+        "timestamp": "2026-06-09T13:38:43.864662+00:00",
+        "evidence_packages": {
+          "forecast_evidence": {
+            "total_forecasts": 2070,
+            "by_status": {
+              "VALIDATED": 2070
+            },
+            "by_symbol": {
+              "XAUUSDm": 345,
+              "EURUSDm": 345,
+              "GBPUSDm": 345,
+              "USDJPYm": 345,
+              "USDCADm": 345,
+              "EURGBPm": 345
+            },
+            "last_run": "2026-06-09T13:38:43.086464+00:00"
+          },
+          "reality_evidence": {
+            "total_benchmarks": 2070,
+            "last_run": "2026-06-09T13:38:43.397738+00:00"
+          },
+          "lesson_evidence": {
+            "total_lessons": 2070,
+            "by_category": {
+              "neutral": 2070
+            },
+            "last_run": "2026-06-09T13:38:43.698045+00:00"
+          },
+          "runtime_evidence": {
+            "running": false,
+            "components": {},
+            "all_healthy": true,
+            "restart_count": 0,
+            "can_restart": true,
+            "uptime": "2026-06-09T13:38:43.864662+00:00"
+          }
+        },
+        "handler_type": "day1_evidence_handler",
+        "append_only": true,
+        "immutable": true
+      },
+      {
+        "evidence_id": "EVID-0026",
+        "timestamp": "2026-06-09T13:38:45.114616+00:00",
+        "evidence_packages": {
+          "forecast_evidence": {
+            "total_forecasts": 2088,
+            "by_status": {
+              "VALIDATED": 2088
+            },
+            "by_symbol": {
+              "XAUUSDm": 348,
+              "EURUSDm": 348,
+              "GBPUSDm": 348,
+              "USDJPYm": 348,
+              "USDCADm": 348,
+              "EURGBPm": 348
+            },
+            "last_run": "2026-06-09T13:38:44.364362+00:00"
+          },
+          "reality_evidence": {
+            "total_benchmarks": 2088,
+            "last_run": "2026-06-09T13:38:44.631486+00:00"
+          },
+          "lesson_evidence": {
+            "total_lessons": 2088,
+            "by_category": {
+              "neutral": 2088
+            },
+            "last_run": "2026-06-09T13:38:44.948080+00:00"
+          },
+          "runtime_evidence": {
+            "running": false,
+            "components": {},
+            "all_healthy": true,
+            "restart_count": 0,
+            "can_restart": true,
+            "uptime": "2026-06-09T13:38:45.114616+00:00"
+          }
+        },
+        "handler_type": "day1_evidence_handler",
+        "append_only": true,
+        "immutable": true
+      },
+      {
+        "evidence_id": "EVID-0027",
+        "timestamp": "2026-06-09T13:38:46.364806+00:00",
+        "evidence_packages": {
+          "forecast_evidence": {
+            "total_forecasts": 2106,
+            "by_status": {
+              "VALIDATED": 2106
+            },
+            "by_symbol": {
+              "XAUUSDm": 351,
+              "EURUSDm": 351,
+              "GBPUSDm": 351,
+              "USDJPYm": 351,
+              "USDCADm": 351,
+              "EURGBPm": 351
+            },
+            "last_run": "2026-06-09T13:38:45.598395+00:00"
+          },
+          "reality_evidence": {
+            "total_benchmarks": 2106,
+            "last_run": "2026-06-09T13:38:45.903944+00:00"
+          },
+          "lesson_evidence": {
+            "total_lessons": 2106,
+            "by_category": {
+              "neutral": 2106
+            },
+            "last_run": "2026-06-09T13:38:46.198137+00:00"
+          },
+          "runtime_evidence": {
+            "running": false,
+            "components": {},
+            "all_healthy": true,
+            "restart_count": 0,
+            "can_restart": true,
+            "uptime": "2026-06-09T13:38:46.364806+00:00"
+          }
+        },
+        "handler_type": "day1_evidence_handler",
+        "append_only": true,
+        "immutable": true
+      },
+      {
+        "evidence_id": "EVID-0028",
+        "timestamp": "2026-06-09T13:38:47.670441+00:00",
+        "evidence_packages": {
+          "forecast_evidence": {
+            "total_forecasts": 2124,
+            "by_status": {
+              "VALIDATED": 2124
+            },
+            "by_symbol": {
+              "XAUUSDm": 354,
+              "EURUSDm": 354,
+              "GBPUSDm": 354,
+              "USDJPYm": 354,
+              "USDCADm": 354,
+              "EURGBPm": 354
+            },
+            "last_run": "2026-06-09T13:38:46.848124+00:00"
+          },
+          "reality_evidence": {
+            "total_benchmarks": 2124,
+            "last_run": "2026-06-09T13:38:47.164491+00:00"
+          },
+          "lesson_evidence": {
+            "total_lessons": 2124,
+            "by_category": {
+              "neutral": 2124
+            },
+            "last_run": "2026-06-09T13:38:47.481230+00:00"
+          },
+          "runtime_evidence": {
+            "running": false,
+            "components": {},
+            "all_healthy": true,
+            "restart_count": 0,
+            "can_restart": true,
+            "uptime": "2026-06-09T13:38:47.668651+00:00"
+          }
+        },
+        "handler_type": "day1_evidence_handler",
+        "append_only": true,
+        "immutable": true
+      },
+      {
+        "evidence_id": "EVID-0029",
+        "timestamp": "2026-06-09T13:38:49.064653+00:00",
+        "evidence_packages": {
+          "forecast_evidence": {
+            "total_forecasts": 2142,
+            "by_status": {
+              "VALIDATED": 2142
+            },
+            "by_symbol": {
+              "XAUUSDm": 357,
+              "EURUSDm": 357,
+              "GBPUSDm": 357,
+              "USDJPYm": 357,
+              "USDCADm": 357,
+              "EURGBPm": 357
+            },
+            "last_run": "2026-06-09T13:38:48.220411+00:00"
+          },
+          "reality_evidence": {
+            "total_benchmarks": 2142,
+            "last_run": "2026-06-09T13:38:48.531838+00:00"
+          },
+          "lesson_evidence": {
+            "total_lessons": 2142,
+            "by_category": {
+              "neutral": 2142
+            },
+            "last_run": "2026-06-09T13:38:48.848146+00:00"
+          },
+          "runtime_evidence": {
+            "running": false,
+            "components": {},
+            "all_healthy": true,
+            "restart_count": 0,
+            "can_restart": true,
+            "uptime": "2026-06-09T13:38:49.062915+00:00"
+          }
+        },
+        "handler_type": "day1_evidence_handler",
+        "append_only": true,
+        "immutable": true
+      },
+      {
+        "evidence_id": "EVID-0030",
+        "timestamp": "2026-06-09T13:38:50.416757+00:00",
+        "evidence_packages": {
+          "forecast_evidence": {
+            "total_forecasts": 2160,
+            "by_status": {
+              "VALIDATED": 2160
+            },
+            "by_symbol": {
+              "XAUUSDm": 360,
+              "EURUSDm": 360,
+              "GBPUSDm": 360,
+              "USDJPYm": 360,
+              "USDCADm": 360,
+              "EURGBPm": 360
+            },
+            "last_run": "2026-06-09T13:38:49.620485+00:00"
+          },
+          "reality_evidence": {
+            "total_benchmarks": 2160,
+            "last_run": "2026-06-09T13:38:49.914655+00:00"
+          },
+          "lesson_evidence": {
+            "total_lessons": 2160,
+            "by_category": {
+              "neutral": 2160
+            },
+            "last_run": "2026-06-09T13:38:50.237197+00:00"
+          },
+          "runtime_evidence": {
+            "running": false,
+            "components": {},
+            "all_healthy": true,
+            "restart_count": 0,
+            "can_restart": true,
+            "uptime": "2026-06-09T13:38:50.415757+00:00"
+          }
+        },
+        "handler_type": "day1_evidence_handler",
+        "append_only": true,
+        "immutable": true
+      }
+    ],
+    "last_updated": "",
+    "status": "ACTIVE",
+    "last_run": "2026-06-09T13:38:50.416757+00:00",
+    "evidence_count": 30
+  }
+}

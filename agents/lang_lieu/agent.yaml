@@ -1,0 +1,6 @@
+id: lang_lieu
+title: "Engineering & Architecture"
+status: operational
+authority: custodian
+language: vi
+default_mode: propose_only

@@ -1,0 +1,70 @@
+kingdom_assignment_registry:
+  agent_capacity:
+    helen: 6
+    hermes: 8
+    iris: 6
+    janus: 10
+    lang_lieu: 7
+    sage: 5
+    yet_kieu: 5
+  assignment_rules:
+  - authority_must_match_charter: true
+  - no_double_assignment: true
+  - escalation_on_conflict: true
+  - audit_on_assignment: true
+  assignments:
+  - agent: hermes
+    assigned_at: '2026-06-08T11:10:06.374678+00:00'
+    audit_trail:
+    - ASSIGNED:hermes
+    status: ACTIVE
+    task_id: TASK-0011
+  - agent: iris
+    assigned_at: '2026-06-08T11:10:06.390302+00:00'
+    audit_trail:
+    - ASSIGNED:iris
+    status: ACTIVE
+    task_id: TASK-0012
+  - agent: hermes
+    assigned_at: '2026-06-08T11:10:06.421128+00:00'
+    audit_trail:
+    - ASSIGNED:hermes
+    status: ACTIVE
+    task_id: TASK-0013
+  - agent: hermes
+    assigned_at: '2026-06-08T11:11:39.581349+00:00'
+    audit_trail:
+    - ASSIGNED:hermes
+    status: ACTIVE
+    task_id: TASK-0014
+  - agent: iris
+    assigned_at: '2026-06-08T11:11:39.612631+00:00'
+    audit_trail:
+    - ASSIGNED:iris
+    status: ACTIVE
+    task_id: TASK-0015
+  - agent: hermes
+    assigned_at: '2026-06-08T11:11:39.659608+00:00'
+    audit_trail:
+    - ASSIGNED:hermes
+    status: ACTIVE
+    task_id: TASK-0016
+  - agent: hermes
+    assigned_at: '2026-06-08T11:15:53.998775+00:00'
+    audit_trail:
+    - ASSIGNED:hermes
+    status: ACTIVE
+    task_id: TASK-0022
+  - agent: hermes
+    assigned_at: '2026-06-08T11:19:44.108897+00:00'
+    audit_trail:
+    - ASSIGNED:hermes
+    status: ACTIVE
+    task_id: TASK-0030
+  created_at: '2026-06-08'
+  operator: Janus
+  owner: Janus
+  reviewer: Sage
+  status: INITIALIZED
+  updated_at: '2026-06-08T11:19:44.108897+00:00'
+  version: '1.0'

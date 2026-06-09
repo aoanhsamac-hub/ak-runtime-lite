@@ -1,0 +1,3764 @@
+{
+  "skills_count": 17,
+  "caps_count": 7,
+  "canon_count": 7,
+  "graph_nodes": 14,
+  "graph_edges": 7,
+  "scenarios": [
+    {
+      "scenario_id": "SCEN-468A94E7E877",
+      "capability_id": "CCAP-A4DA1BF3BDD5",
+      "capability_name": "Trading Capability",
+      "objective": "Validate Trading Capability documentation completeness and consistency",
+      "scenario_type": "DOCUMENTATION",
+      "mode": "DOCUMENT_REVIEW",
+      "input": "Canonical capability record: CCAP-A4DA1BF3BDD5",
+      "expected_output": "Complete documentation with evidence, skills, and traceability",
+      "validation_method": "Document review by Hermes",
+      "success_criteria": "All required fields present and validated",
+      "failure_criteria": "Missing critical fields or inconsistent data",
+      "risk_controls": [
+        "No live execution",
+        "No data mutation"
+      ],
+      "prohibited_actions": [
+        "LIVE",
+        "PRODUCTION",
+        "EXECUTION",
+        "MT5"
+      ],
+      "status": "PENDING",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "owner_agent": "Sage"
+    },
+    {
+      "scenario_id": "SCEN-073DD26DD004",
+      "capability_id": "CCAP-A4DA1BF3BDD5",
+      "capability_name": "Trading Capability",
+      "objective": "Validate Trading Capability governance compliance",
+      "scenario_type": "GOVERNANCE_SIMULATION",
+      "mode": "SIMULATION",
+      "input": "Governance record for CCAP-A4DA1BF3BDD5",
+      "expected_output": "All governance gates PASS",
+      "validation_method": "Governance gate simulation",
+      "success_criteria": "Governance report all_passed=True",
+      "failure_criteria": "Any governance gate fails",
+      "risk_controls": [
+        "No activation",
+        "No agent adoption"
+      ],
+      "prohibited_actions": [
+        "AGENT_ADOPTION",
+        "AUTONOMOUS_EVOLUTION"
+      ],
+      "status": "PENDING",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "owner_agent": "Sage"
+    },
+    {
+      "scenario_id": "SCEN-E3EDBFC07B81",
+      "capability_id": "CCAP-A4DA1BF3BDD5",
+      "capability_name": "Trading Capability",
+      "objective": "Backtest-only validation for Trading Capability",
+      "scenario_type": "BACKTEST_ONLY",
+      "mode": "BACKTEST_ONLY",
+      "input": "Historical data simulation for Trading Capability",
+      "expected_output": "Validated operational profile without live execution",
+      "validation_method": "Backtest simulation",
+      "success_criteria": "Simulation completes without errors",
+      "failure_criteria": "Attempts live execution or MT5 interaction",
+      "risk_controls": [
+        "No live trading",
+        "No MT5",
+        "No production runtime"
+      ],
+      "prohibited_actions": [
+        "LIVE",
+        "PRODUCTION",
+        "EXECUTION",
+        "MT5"
+      ],
+      "status": "PENDING",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "owner_agent": "Sage"
+    },
+    {
+      "scenario_id": "SCEN-6556F06121C8",
+      "capability_id": "CCAP-57B493ECFF32",
+      "capability_name": "Risk Capability",
+      "objective": "Validate Risk Capability documentation completeness and consistency",
+      "scenario_type": "DOCUMENTATION",
+      "mode": "DOCUMENT_REVIEW",
+      "input": "Canonical capability record: CCAP-57B493ECFF32",
+      "expected_output": "Complete documentation with evidence, skills, and traceability",
+      "validation_method": "Document review by Hermes",
+      "success_criteria": "All required fields present and validated",
+      "failure_criteria": "Missing critical fields or inconsistent data",
+      "risk_controls": [
+        "No live execution",
+        "No data mutation"
+      ],
+      "prohibited_actions": [
+        "LIVE",
+        "PRODUCTION",
+        "EXECUTION",
+        "MT5"
+      ],
+      "status": "PENDING",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "owner_agent": "Sage"
+    },
+    {
+      "scenario_id": "SCEN-8795D8B95498",
+      "capability_id": "CCAP-57B493ECFF32",
+      "capability_name": "Risk Capability",
+      "objective": "Validate Risk Capability governance compliance",
+      "scenario_type": "GOVERNANCE_SIMULATION",
+      "mode": "SIMULATION",
+      "input": "Governance record for CCAP-57B493ECFF32",
+      "expected_output": "All governance gates PASS",
+      "validation_method": "Governance gate simulation",
+      "success_criteria": "Governance report all_passed=True",
+      "failure_criteria": "Any governance gate fails",
+      "risk_controls": [
+        "No activation",
+        "No agent adoption"
+      ],
+      "prohibited_actions": [
+        "AGENT_ADOPTION",
+        "AUTONOMOUS_EVOLUTION"
+      ],
+      "status": "PENDING",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "owner_agent": "Sage"
+    },
+    {
+      "scenario_id": "SCEN-E1475DE1F0C6",
+      "capability_id": "CCAP-57B493ECFF32",
+      "capability_name": "Risk Capability",
+      "objective": "Backtest-only validation for Risk Capability",
+      "scenario_type": "BACKTEST_ONLY",
+      "mode": "BACKTEST_ONLY",
+      "input": "Historical data simulation for Risk Capability",
+      "expected_output": "Validated operational profile without live execution",
+      "validation_method": "Backtest simulation",
+      "success_criteria": "Simulation completes without errors",
+      "failure_criteria": "Attempts live execution or MT5 interaction",
+      "risk_controls": [
+        "No live trading",
+        "No MT5",
+        "No production runtime"
+      ],
+      "prohibited_actions": [
+        "LIVE",
+        "PRODUCTION",
+        "EXECUTION",
+        "MT5"
+      ],
+      "status": "PENDING",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "owner_agent": "Sage"
+    },
+    {
+      "scenario_id": "SCEN-9948880B597E",
+      "capability_id": "CCAP-6AC5084422DC",
+      "capability_name": "Execution Capability",
+      "objective": "Validate Execution Capability documentation completeness and consistency",
+      "scenario_type": "DOCUMENTATION",
+      "mode": "DOCUMENT_REVIEW",
+      "input": "Canonical capability record: CCAP-6AC5084422DC",
+      "expected_output": "Complete documentation with evidence, skills, and traceability",
+      "validation_method": "Document review by Hermes",
+      "success_criteria": "All required fields present and validated",
+      "failure_criteria": "Missing critical fields or inconsistent data",
+      "risk_controls": [
+        "No live execution",
+        "No data mutation"
+      ],
+      "prohibited_actions": [
+        "LIVE",
+        "PRODUCTION",
+        "EXECUTION",
+        "MT5"
+      ],
+      "status": "PENDING",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "owner_agent": "Sage"
+    },
+    {
+      "scenario_id": "SCEN-2CC259E8A79F",
+      "capability_id": "CCAP-6AC5084422DC",
+      "capability_name": "Execution Capability",
+      "objective": "Validate Execution Capability governance compliance",
+      "scenario_type": "GOVERNANCE_SIMULATION",
+      "mode": "SIMULATION",
+      "input": "Governance record for CCAP-6AC5084422DC",
+      "expected_output": "All governance gates PASS",
+      "validation_method": "Governance gate simulation",
+      "success_criteria": "Governance report all_passed=True",
+      "failure_criteria": "Any governance gate fails",
+      "risk_controls": [
+        "No activation",
+        "No agent adoption"
+      ],
+      "prohibited_actions": [
+        "AGENT_ADOPTION",
+        "AUTONOMOUS_EVOLUTION"
+      ],
+      "status": "PENDING",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "owner_agent": "Sage"
+    },
+    {
+      "scenario_id": "SCEN-4064932812D2",
+      "capability_id": "CCAP-6AC5084422DC",
+      "capability_name": "Execution Capability",
+      "objective": "Backtest-only validation for Execution Capability",
+      "scenario_type": "BACKTEST_ONLY",
+      "mode": "BACKTEST_ONLY",
+      "input": "Historical data simulation for Execution Capability",
+      "expected_output": "Validated operational profile without live execution",
+      "validation_method": "Backtest simulation",
+      "success_criteria": "Simulation completes without errors",
+      "failure_criteria": "Attempts live execution or MT5 interaction",
+      "risk_controls": [
+        "No live trading",
+        "No MT5",
+        "No production runtime"
+      ],
+      "prohibited_actions": [
+        "LIVE",
+        "PRODUCTION",
+        "EXECUTION",
+        "MT5"
+      ],
+      "status": "PENDING",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "owner_agent": "Sage"
+    },
+    {
+      "scenario_id": "SCEN-D77658E160E6",
+      "capability_id": "CCAP-8F70CB8ACDF3",
+      "capability_name": "Governance Capability",
+      "objective": "Validate Governance Capability documentation completeness and consistency",
+      "scenario_type": "DOCUMENTATION",
+      "mode": "DOCUMENT_REVIEW",
+      "input": "Canonical capability record: CCAP-8F70CB8ACDF3",
+      "expected_output": "Complete documentation with evidence, skills, and traceability",
+      "validation_method": "Document review by Hermes",
+      "success_criteria": "All required fields present and validated",
+      "failure_criteria": "Missing critical fields or inconsistent data",
+      "risk_controls": [
+        "No live execution",
+        "No data mutation"
+      ],
+      "prohibited_actions": [
+        "LIVE",
+        "PRODUCTION",
+        "EXECUTION",
+        "MT5"
+      ],
+      "status": "PENDING",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "owner_agent": "Sage"
+    },
+    {
+      "scenario_id": "SCEN-514852A165FF",
+      "capability_id": "CCAP-8F70CB8ACDF3",
+      "capability_name": "Governance Capability",
+      "objective": "Validate Governance Capability governance compliance",
+      "scenario_type": "GOVERNANCE_SIMULATION",
+      "mode": "SIMULATION",
+      "input": "Governance record for CCAP-8F70CB8ACDF3",
+      "expected_output": "All governance gates PASS",
+      "validation_method": "Governance gate simulation",
+      "success_criteria": "Governance report all_passed=True",
+      "failure_criteria": "Any governance gate fails",
+      "risk_controls": [
+        "No activation",
+        "No agent adoption"
+      ],
+      "prohibited_actions": [
+        "AGENT_ADOPTION",
+        "AUTONOMOUS_EVOLUTION"
+      ],
+      "status": "PENDING",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "owner_agent": "Sage"
+    },
+    {
+      "scenario_id": "SCEN-27E6269CB4E2",
+      "capability_id": "CCAP-874ED287ECB1",
+      "capability_name": "Memory Capability",
+      "objective": "Validate Memory Capability documentation completeness and consistency",
+      "scenario_type": "DOCUMENTATION",
+      "mode": "DOCUMENT_REVIEW",
+      "input": "Canonical capability record: CCAP-874ED287ECB1",
+      "expected_output": "Complete documentation with evidence, skills, and traceability",
+      "validation_method": "Document review by Hermes",
+      "success_criteria": "All required fields present and validated",
+      "failure_criteria": "Missing critical fields or inconsistent data",
+      "risk_controls": [
+        "No live execution",
+        "No data mutation"
+      ],
+      "prohibited_actions": [
+        "LIVE",
+        "PRODUCTION",
+        "EXECUTION",
+        "MT5"
+      ],
+      "status": "PENDING",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "owner_agent": "Sage"
+    },
+    {
+      "scenario_id": "SCEN-AF2487935EA8",
+      "capability_id": "CCAP-874ED287ECB1",
+      "capability_name": "Memory Capability",
+      "objective": "Validate Memory Capability governance compliance",
+      "scenario_type": "GOVERNANCE_SIMULATION",
+      "mode": "SIMULATION",
+      "input": "Governance record for CCAP-874ED287ECB1",
+      "expected_output": "All governance gates PASS",
+      "validation_method": "Governance gate simulation",
+      "success_criteria": "Governance report all_passed=True",
+      "failure_criteria": "Any governance gate fails",
+      "risk_controls": [
+        "No activation",
+        "No agent adoption"
+      ],
+      "prohibited_actions": [
+        "AGENT_ADOPTION",
+        "AUTONOMOUS_EVOLUTION"
+      ],
+      "status": "PENDING",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "owner_agent": "Sage"
+    },
+    {
+      "scenario_id": "SCEN-8E42C7E72E13",
+      "capability_id": "CCAP-DCA86505E743",
+      "capability_name": "Engineering Capability",
+      "objective": "Validate Engineering Capability documentation completeness and consistency",
+      "scenario_type": "DOCUMENTATION",
+      "mode": "DOCUMENT_REVIEW",
+      "input": "Canonical capability record: CCAP-DCA86505E743",
+      "expected_output": "Complete documentation with evidence, skills, and traceability",
+      "validation_method": "Document review by Hermes",
+      "success_criteria": "All required fields present and validated",
+      "failure_criteria": "Missing critical fields or inconsistent data",
+      "risk_controls": [
+        "No live execution",
+        "No data mutation"
+      ],
+      "prohibited_actions": [
+        "LIVE",
+        "PRODUCTION",
+        "EXECUTION",
+        "MT5"
+      ],
+      "status": "PENDING",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "owner_agent": "Sage"
+    },
+    {
+      "scenario_id": "SCEN-059813E1C359",
+      "capability_id": "CCAP-DCA86505E743",
+      "capability_name": "Engineering Capability",
+      "objective": "Validate Engineering Capability governance compliance",
+      "scenario_type": "GOVERNANCE_SIMULATION",
+      "mode": "SIMULATION",
+      "input": "Governance record for CCAP-DCA86505E743",
+      "expected_output": "All governance gates PASS",
+      "validation_method": "Governance gate simulation",
+      "success_criteria": "Governance report all_passed=True",
+      "failure_criteria": "Any governance gate fails",
+      "risk_controls": [
+        "No activation",
+        "No agent adoption"
+      ],
+      "prohibited_actions": [
+        "AGENT_ADOPTION",
+        "AUTONOMOUS_EVOLUTION"
+      ],
+      "status": "PENDING",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "owner_agent": "Sage"
+    },
+    {
+      "scenario_id": "SCEN-5F8063109C7E",
+      "capability_id": "CCAP-0B7A337A68C4",
+      "capability_name": "Agent Capability",
+      "objective": "Validate Agent Capability documentation completeness and consistency",
+      "scenario_type": "DOCUMENTATION",
+      "mode": "DOCUMENT_REVIEW",
+      "input": "Canonical capability record: CCAP-0B7A337A68C4",
+      "expected_output": "Complete documentation with evidence, skills, and traceability",
+      "validation_method": "Document review by Hermes",
+      "success_criteria": "All required fields present and validated",
+      "failure_criteria": "Missing critical fields or inconsistent data",
+      "risk_controls": [
+        "No live execution",
+        "No data mutation"
+      ],
+      "prohibited_actions": [
+        "LIVE",
+        "PRODUCTION",
+        "EXECUTION",
+        "MT5"
+      ],
+      "status": "PENDING",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "owner_agent": "Sage"
+    },
+    {
+      "scenario_id": "SCEN-1624797A65B0",
+      "capability_id": "CCAP-0B7A337A68C4",
+      "capability_name": "Agent Capability",
+      "objective": "Validate Agent Capability governance compliance",
+      "scenario_type": "GOVERNANCE_SIMULATION",
+      "mode": "SIMULATION",
+      "input": "Governance record for CCAP-0B7A337A68C4",
+      "expected_output": "All governance gates PASS",
+      "validation_method": "Governance gate simulation",
+      "success_criteria": "Governance report all_passed=True",
+      "failure_criteria": "Any governance gate fails",
+      "risk_controls": [
+        "No activation",
+        "No agent adoption"
+      ],
+      "prohibited_actions": [
+        "AGENT_ADOPTION",
+        "AUTONOMOUS_EVOLUTION"
+      ],
+      "status": "PENDING",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "owner_agent": "Sage"
+    }
+  ],
+  "validations": [
+    {
+      "scenario_id": "SCEN-468A94E7E877",
+      "capability_id": "CCAP-A4DA1BF3BDD5",
+      "capability_name": "Trading Capability",
+      "objective": "Validate Trading Capability documentation completeness and consistency",
+      "mode": "DOCUMENT_REVIEW",
+      "status": "PASSED",
+      "details": "Validation completed in DOCUMENT_REVIEW mode for Trading Capability"
+    },
+    {
+      "scenario_id": "SCEN-073DD26DD004",
+      "capability_id": "CCAP-A4DA1BF3BDD5",
+      "capability_name": "Trading Capability",
+      "objective": "Validate Trading Capability governance compliance",
+      "mode": "SIMULATION",
+      "status": "PASSED",
+      "details": "Validation completed in SIMULATION mode for Trading Capability"
+    },
+    {
+      "scenario_id": "SCEN-E3EDBFC07B81",
+      "capability_id": "CCAP-A4DA1BF3BDD5",
+      "capability_name": "Trading Capability",
+      "objective": "Backtest-only validation for Trading Capability",
+      "mode": "BACKTEST_ONLY",
+      "status": "PASSED",
+      "details": "Validation completed in BACKTEST_ONLY mode for Trading Capability"
+    },
+    {
+      "scenario_id": "SCEN-6556F06121C8",
+      "capability_id": "CCAP-57B493ECFF32",
+      "capability_name": "Risk Capability",
+      "objective": "Validate Risk Capability documentation completeness and consistency",
+      "mode": "DOCUMENT_REVIEW",
+      "status": "PASSED",
+      "details": "Validation completed in DOCUMENT_REVIEW mode for Risk Capability"
+    },
+    {
+      "scenario_id": "SCEN-8795D8B95498",
+      "capability_id": "CCAP-57B493ECFF32",
+      "capability_name": "Risk Capability",
+      "objective": "Validate Risk Capability governance compliance",
+      "mode": "SIMULATION",
+      "status": "PASSED",
+      "details": "Validation completed in SIMULATION mode for Risk Capability"
+    },
+    {
+      "scenario_id": "SCEN-E1475DE1F0C6",
+      "capability_id": "CCAP-57B493ECFF32",
+      "capability_name": "Risk Capability",
+      "objective": "Backtest-only validation for Risk Capability",
+      "mode": "BACKTEST_ONLY",
+      "status": "PASSED",
+      "details": "Validation completed in BACKTEST_ONLY mode for Risk Capability"
+    },
+    {
+      "scenario_id": "SCEN-9948880B597E",
+      "capability_id": "CCAP-6AC5084422DC",
+      "capability_name": "Execution Capability",
+      "objective": "Validate Execution Capability documentation completeness and consistency",
+      "mode": "DOCUMENT_REVIEW",
+      "status": "PASSED",
+      "details": "Validation completed in DOCUMENT_REVIEW mode for Execution Capability"
+    },
+    {
+      "scenario_id": "SCEN-2CC259E8A79F",
+      "capability_id": "CCAP-6AC5084422DC",
+      "capability_name": "Execution Capability",
+      "objective": "Validate Execution Capability governance compliance",
+      "mode": "SIMULATION",
+      "status": "PASSED",
+      "details": "Validation completed in SIMULATION mode for Execution Capability"
+    },
+    {
+      "scenario_id": "SCEN-4064932812D2",
+      "capability_id": "CCAP-6AC5084422DC",
+      "capability_name": "Execution Capability",
+      "objective": "Backtest-only validation for Execution Capability",
+      "mode": "BACKTEST_ONLY",
+      "status": "PASSED",
+      "details": "Validation completed in BACKTEST_ONLY mode for Execution Capability"
+    },
+    {
+      "scenario_id": "SCEN-D77658E160E6",
+      "capability_id": "CCAP-8F70CB8ACDF3",
+      "capability_name": "Governance Capability",
+      "objective": "Validate Governance Capability documentation completeness and consistency",
+      "mode": "DOCUMENT_REVIEW",
+      "status": "PASSED",
+      "details": "Validation completed in DOCUMENT_REVIEW mode for Governance Capability"
+    },
+    {
+      "scenario_id": "SCEN-514852A165FF",
+      "capability_id": "CCAP-8F70CB8ACDF3",
+      "capability_name": "Governance Capability",
+      "objective": "Validate Governance Capability governance compliance",
+      "mode": "SIMULATION",
+      "status": "PASSED",
+      "details": "Validation completed in SIMULATION mode for Governance Capability"
+    },
+    {
+      "scenario_id": "SCEN-27E6269CB4E2",
+      "capability_id": "CCAP-874ED287ECB1",
+      "capability_name": "Memory Capability",
+      "objective": "Validate Memory Capability documentation completeness and consistency",
+      "mode": "DOCUMENT_REVIEW",
+      "status": "PASSED",
+      "details": "Validation completed in DOCUMENT_REVIEW mode for Memory Capability"
+    },
+    {
+      "scenario_id": "SCEN-AF2487935EA8",
+      "capability_id": "CCAP-874ED287ECB1",
+      "capability_name": "Memory Capability",
+      "objective": "Validate Memory Capability governance compliance",
+      "mode": "SIMULATION",
+      "status": "PASSED",
+      "details": "Validation completed in SIMULATION mode for Memory Capability"
+    },
+    {
+      "scenario_id": "SCEN-8E42C7E72E13",
+      "capability_id": "CCAP-DCA86505E743",
+      "capability_name": "Engineering Capability",
+      "objective": "Validate Engineering Capability documentation completeness and consistency",
+      "mode": "DOCUMENT_REVIEW",
+      "status": "PASSED",
+      "details": "Validation completed in DOCUMENT_REVIEW mode for Engineering Capability"
+    },
+    {
+      "scenario_id": "SCEN-059813E1C359",
+      "capability_id": "CCAP-DCA86505E743",
+      "capability_name": "Engineering Capability",
+      "objective": "Validate Engineering Capability governance compliance",
+      "mode": "SIMULATION",
+      "status": "PASSED",
+      "details": "Validation completed in SIMULATION mode for Engineering Capability"
+    },
+    {
+      "scenario_id": "SCEN-5F8063109C7E",
+      "capability_id": "CCAP-0B7A337A68C4",
+      "capability_name": "Agent Capability",
+      "objective": "Validate Agent Capability documentation completeness and consistency",
+      "mode": "DOCUMENT_REVIEW",
+      "status": "PASSED",
+      "details": "Validation completed in DOCUMENT_REVIEW mode for Agent Capability"
+    },
+    {
+      "scenario_id": "SCEN-1624797A65B0",
+      "capability_id": "CCAP-0B7A337A68C4",
+      "capability_name": "Agent Capability",
+      "objective": "Validate Agent Capability governance compliance",
+      "mode": "SIMULATION",
+      "status": "PASSED",
+      "details": "Validation completed in SIMULATION mode for Agent Capability"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "EVID-C74792C12AC3",
+      "capability_id": "CCAP-A4DA1BF3BDD5",
+      "scenario_id": "SCEN-468A94E7E877",
+      "evidence_type": "VALIDATION_RESULT",
+      "result": "PASSED",
+      "metric": 1.0,
+      "source_artifacts": [
+        "SCEN-468A94E7E877"
+      ],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-603FD624A607",
+      "capability_id": "CCAP-A4DA1BF3BDD5",
+      "scenario_id": "SCEN-468A94E7E877",
+      "evidence_type": "DOCUMENTATION",
+      "result": "FOUND",
+      "metric": 1.0,
+      "source_artifacts": [],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-CB332A435A88",
+      "capability_id": "CCAP-A4DA1BF3BDD5",
+      "scenario_id": "SCEN-073DD26DD004",
+      "evidence_type": "VALIDATION_RESULT",
+      "result": "PASSED",
+      "metric": 1.0,
+      "source_artifacts": [
+        "SCEN-073DD26DD004"
+      ],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-9418E03A1CBB",
+      "capability_id": "CCAP-A4DA1BF3BDD5",
+      "scenario_id": "SCEN-073DD26DD004",
+      "evidence_type": "DOCUMENTATION",
+      "result": "FOUND",
+      "metric": 1.0,
+      "source_artifacts": [],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-E276A3F260A6",
+      "capability_id": "CCAP-A4DA1BF3BDD5",
+      "scenario_id": "SCEN-E3EDBFC07B81",
+      "evidence_type": "VALIDATION_RESULT",
+      "result": "PASSED",
+      "metric": 1.0,
+      "source_artifacts": [
+        "SCEN-E3EDBFC07B81"
+      ],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-CFFA47A79779",
+      "capability_id": "CCAP-A4DA1BF3BDD5",
+      "scenario_id": "SCEN-E3EDBFC07B81",
+      "evidence_type": "DOCUMENTATION",
+      "result": "FOUND",
+      "metric": 1.0,
+      "source_artifacts": [],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-BF2673038083",
+      "capability_id": "CCAP-57B493ECFF32",
+      "scenario_id": "SCEN-6556F06121C8",
+      "evidence_type": "VALIDATION_RESULT",
+      "result": "PASSED",
+      "metric": 1.0,
+      "source_artifacts": [
+        "SCEN-6556F06121C8"
+      ],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-640F38DC6E19",
+      "capability_id": "CCAP-57B493ECFF32",
+      "scenario_id": "SCEN-6556F06121C8",
+      "evidence_type": "DOCUMENTATION",
+      "result": "FOUND",
+      "metric": 1.0,
+      "source_artifacts": [],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-CEB872D503D1",
+      "capability_id": "CCAP-57B493ECFF32",
+      "scenario_id": "SCEN-8795D8B95498",
+      "evidence_type": "VALIDATION_RESULT",
+      "result": "PASSED",
+      "metric": 1.0,
+      "source_artifacts": [
+        "SCEN-8795D8B95498"
+      ],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-6ADE2BE25C74",
+      "capability_id": "CCAP-57B493ECFF32",
+      "scenario_id": "SCEN-8795D8B95498",
+      "evidence_type": "DOCUMENTATION",
+      "result": "FOUND",
+      "metric": 1.0,
+      "source_artifacts": [],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-F93427742559",
+      "capability_id": "CCAP-57B493ECFF32",
+      "scenario_id": "SCEN-E1475DE1F0C6",
+      "evidence_type": "VALIDATION_RESULT",
+      "result": "PASSED",
+      "metric": 1.0,
+      "source_artifacts": [
+        "SCEN-E1475DE1F0C6"
+      ],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-2B23024BA2A0",
+      "capability_id": "CCAP-57B493ECFF32",
+      "scenario_id": "SCEN-E1475DE1F0C6",
+      "evidence_type": "DOCUMENTATION",
+      "result": "FOUND",
+      "metric": 1.0,
+      "source_artifacts": [],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-933D8690487B",
+      "capability_id": "CCAP-6AC5084422DC",
+      "scenario_id": "SCEN-9948880B597E",
+      "evidence_type": "VALIDATION_RESULT",
+      "result": "PASSED",
+      "metric": 1.0,
+      "source_artifacts": [
+        "SCEN-9948880B597E"
+      ],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-B14B7A42FC34",
+      "capability_id": "CCAP-6AC5084422DC",
+      "scenario_id": "SCEN-9948880B597E",
+      "evidence_type": "DOCUMENTATION",
+      "result": "FOUND",
+      "metric": 1.0,
+      "source_artifacts": [],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-0405F3D0C5D8",
+      "capability_id": "CCAP-6AC5084422DC",
+      "scenario_id": "SCEN-2CC259E8A79F",
+      "evidence_type": "VALIDATION_RESULT",
+      "result": "PASSED",
+      "metric": 1.0,
+      "source_artifacts": [
+        "SCEN-2CC259E8A79F"
+      ],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-D6AC3C822B35",
+      "capability_id": "CCAP-6AC5084422DC",
+      "scenario_id": "SCEN-2CC259E8A79F",
+      "evidence_type": "DOCUMENTATION",
+      "result": "FOUND",
+      "metric": 1.0,
+      "source_artifacts": [],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-AF72739AD243",
+      "capability_id": "CCAP-6AC5084422DC",
+      "scenario_id": "SCEN-4064932812D2",
+      "evidence_type": "VALIDATION_RESULT",
+      "result": "PASSED",
+      "metric": 1.0,
+      "source_artifacts": [
+        "SCEN-4064932812D2"
+      ],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-F7BCFB52A6CE",
+      "capability_id": "CCAP-6AC5084422DC",
+      "scenario_id": "SCEN-4064932812D2",
+      "evidence_type": "DOCUMENTATION",
+      "result": "FOUND",
+      "metric": 1.0,
+      "source_artifacts": [],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-5F2787207C4D",
+      "capability_id": "CCAP-8F70CB8ACDF3",
+      "scenario_id": "SCEN-D77658E160E6",
+      "evidence_type": "VALIDATION_RESULT",
+      "result": "PASSED",
+      "metric": 1.0,
+      "source_artifacts": [
+        "SCEN-D77658E160E6"
+      ],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-C7ADA2D4A0B2",
+      "capability_id": "CCAP-8F70CB8ACDF3",
+      "scenario_id": "SCEN-D77658E160E6",
+      "evidence_type": "DOCUMENTATION",
+      "result": "FOUND",
+      "metric": 1.0,
+      "source_artifacts": [],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-B1CB93C465A5",
+      "capability_id": "CCAP-8F70CB8ACDF3",
+      "scenario_id": "SCEN-514852A165FF",
+      "evidence_type": "VALIDATION_RESULT",
+      "result": "PASSED",
+      "metric": 1.0,
+      "source_artifacts": [
+        "SCEN-514852A165FF"
+      ],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-351EB5FF6E70",
+      "capability_id": "CCAP-8F70CB8ACDF3",
+      "scenario_id": "SCEN-514852A165FF",
+      "evidence_type": "DOCUMENTATION",
+      "result": "FOUND",
+      "metric": 1.0,
+      "source_artifacts": [],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-010FF6E67312",
+      "capability_id": "CCAP-874ED287ECB1",
+      "scenario_id": "SCEN-27E6269CB4E2",
+      "evidence_type": "VALIDATION_RESULT",
+      "result": "PASSED",
+      "metric": 1.0,
+      "source_artifacts": [
+        "SCEN-27E6269CB4E2"
+      ],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-3B324D057F42",
+      "capability_id": "CCAP-874ED287ECB1",
+      "scenario_id": "SCEN-27E6269CB4E2",
+      "evidence_type": "DOCUMENTATION",
+      "result": "FOUND",
+      "metric": 1.0,
+      "source_artifacts": [],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-A00FE49831A6",
+      "capability_id": "CCAP-874ED287ECB1",
+      "scenario_id": "SCEN-AF2487935EA8",
+      "evidence_type": "VALIDATION_RESULT",
+      "result": "PASSED",
+      "metric": 1.0,
+      "source_artifacts": [
+        "SCEN-AF2487935EA8"
+      ],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-D5AC7095A388",
+      "capability_id": "CCAP-874ED287ECB1",
+      "scenario_id": "SCEN-AF2487935EA8",
+      "evidence_type": "DOCUMENTATION",
+      "result": "FOUND",
+      "metric": 1.0,
+      "source_artifacts": [],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-FAF71AFBE6BD",
+      "capability_id": "CCAP-DCA86505E743",
+      "scenario_id": "SCEN-8E42C7E72E13",
+      "evidence_type": "VALIDATION_RESULT",
+      "result": "PASSED",
+      "metric": 1.0,
+      "source_artifacts": [
+        "SCEN-8E42C7E72E13"
+      ],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-748AD8FB3590",
+      "capability_id": "CCAP-DCA86505E743",
+      "scenario_id": "SCEN-8E42C7E72E13",
+      "evidence_type": "DOCUMENTATION",
+      "result": "FOUND",
+      "metric": 1.0,
+      "source_artifacts": [],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-6D1459749BF9",
+      "capability_id": "CCAP-DCA86505E743",
+      "scenario_id": "SCEN-059813E1C359",
+      "evidence_type": "VALIDATION_RESULT",
+      "result": "PASSED",
+      "metric": 1.0,
+      "source_artifacts": [
+        "SCEN-059813E1C359"
+      ],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-8657A0587719",
+      "capability_id": "CCAP-DCA86505E743",
+      "scenario_id": "SCEN-059813E1C359",
+      "evidence_type": "DOCUMENTATION",
+      "result": "FOUND",
+      "metric": 1.0,
+      "source_artifacts": [],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-0B1B7A39D708",
+      "capability_id": "CCAP-0B7A337A68C4",
+      "scenario_id": "SCEN-5F8063109C7E",
+      "evidence_type": "VALIDATION_RESULT",
+      "result": "PASSED",
+      "metric": 1.0,
+      "source_artifacts": [
+        "SCEN-5F8063109C7E"
+      ],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-5113C9883818",
+      "capability_id": "CCAP-0B7A337A68C4",
+      "scenario_id": "SCEN-5F8063109C7E",
+      "evidence_type": "DOCUMENTATION",
+      "result": "FOUND",
+      "metric": 1.0,
+      "source_artifacts": [],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-1A0535E11121",
+      "capability_id": "CCAP-0B7A337A68C4",
+      "scenario_id": "SCEN-1624797A65B0",
+      "evidence_type": "VALIDATION_RESULT",
+      "result": "PASSED",
+      "metric": 1.0,
+      "source_artifacts": [
+        "SCEN-1624797A65B0"
+      ],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    },
+    {
+      "evidence_id": "EVID-D29632CD2287",
+      "capability_id": "CCAP-0B7A337A68C4",
+      "scenario_id": "SCEN-1624797A65B0",
+      "evidence_type": "DOCUMENTATION",
+      "result": "FOUND",
+      "metric": 1.0,
+      "source_artifacts": [],
+      "source_hashes": [],
+      "confidence": 1.0,
+      "risk_observation": "",
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "reviewer_agent": "Sage",
+      "audit_trace_id": ""
+    }
+  ],
+  "evidence_map": {
+    "CCAP-A4DA1BF3BDD5": {
+      "capability_id": "CCAP-A4DA1BF3BDD5",
+      "has_evidence": true,
+      "evidence_count": 6,
+      "avg_confidence": 1.0,
+      "avg_metric": 1.0,
+      "evidence_types": [
+        "DOCUMENTATION",
+        "VALIDATION_RESULT"
+      ],
+      "sufficient": true,
+      "gap": null
+    },
+    "CCAP-57B493ECFF32": {
+      "capability_id": "CCAP-57B493ECFF32",
+      "has_evidence": true,
+      "evidence_count": 6,
+      "avg_confidence": 1.0,
+      "avg_metric": 1.0,
+      "evidence_types": [
+        "DOCUMENTATION",
+        "VALIDATION_RESULT"
+      ],
+      "sufficient": true,
+      "gap": null
+    },
+    "CCAP-6AC5084422DC": {
+      "capability_id": "CCAP-6AC5084422DC",
+      "has_evidence": true,
+      "evidence_count": 6,
+      "avg_confidence": 1.0,
+      "avg_metric": 1.0,
+      "evidence_types": [
+        "DOCUMENTATION",
+        "VALIDATION_RESULT"
+      ],
+      "sufficient": true,
+      "gap": null
+    },
+    "CCAP-8F70CB8ACDF3": {
+      "capability_id": "CCAP-8F70CB8ACDF3",
+      "has_evidence": true,
+      "evidence_count": 4,
+      "avg_confidence": 1.0,
+      "avg_metric": 1.0,
+      "evidence_types": [
+        "DOCUMENTATION",
+        "VALIDATION_RESULT"
+      ],
+      "sufficient": true,
+      "gap": null
+    },
+    "CCAP-874ED287ECB1": {
+      "capability_id": "CCAP-874ED287ECB1",
+      "has_evidence": true,
+      "evidence_count": 4,
+      "avg_confidence": 1.0,
+      "avg_metric": 1.0,
+      "evidence_types": [
+        "DOCUMENTATION",
+        "VALIDATION_RESULT"
+      ],
+      "sufficient": true,
+      "gap": null
+    },
+    "CCAP-DCA86505E743": {
+      "capability_id": "CCAP-DCA86505E743",
+      "has_evidence": true,
+      "evidence_count": 4,
+      "avg_confidence": 1.0,
+      "avg_metric": 1.0,
+      "evidence_types": [
+        "DOCUMENTATION",
+        "VALIDATION_RESULT"
+      ],
+      "sufficient": true,
+      "gap": null
+    },
+    "CCAP-0B7A337A68C4": {
+      "capability_id": "CCAP-0B7A337A68C4",
+      "has_evidence": true,
+      "evidence_count": 4,
+      "avg_confidence": 1.0,
+      "avg_metric": 1.0,
+      "evidence_types": [
+        "DOCUMENTATION",
+        "VALIDATION_RESULT"
+      ],
+      "sufficient": true,
+      "gap": null
+    }
+  },
+  "base_maturity": [
+    {
+      "capability_id": "CCAP-A4DA1BF3BDD5",
+      "capability_name": "Trading Capability",
+      "domain": "Trading",
+      "maturity_level": "SOVEREIGN",
+      "maturity_score": 0.93,
+      "evidence_depth": 2,
+      "cross_domain_adoption": 1,
+      "skill_support": 0.3333333333333333,
+      "governance_confidence": 0.79,
+      "reuse_value": 0.44999999999999996
+    },
+    {
+      "capability_id": "CCAP-57B493ECFF32",
+      "capability_name": "Risk Capability",
+      "domain": "Risk",
+      "maturity_level": "SOVEREIGN",
+      "maturity_score": 0.92,
+      "evidence_depth": 2,
+      "cross_domain_adoption": 1,
+      "skill_support": 0.3333333333333333,
+      "governance_confidence": 0.77,
+      "reuse_value": 0.44999999999999996
+    },
+    {
+      "capability_id": "CCAP-6AC5084422DC",
+      "capability_name": "Execution Capability",
+      "domain": "Execution",
+      "maturity_level": "SOVEREIGN",
+      "maturity_score": 0.93,
+      "evidence_depth": 2,
+      "cross_domain_adoption": 1,
+      "skill_support": 0.3333333333333333,
+      "governance_confidence": 0.81,
+      "reuse_value": 0.44999999999999996
+    },
+    {
+      "capability_id": "CCAP-8F70CB8ACDF3",
+      "capability_name": "Governance Capability",
+      "domain": "Governance",
+      "maturity_level": "SOVEREIGN",
+      "maturity_score": 0.93,
+      "evidence_depth": 2,
+      "cross_domain_adoption": 1,
+      "skill_support": 0.3333333333333333,
+      "governance_confidence": 0.82,
+      "reuse_value": 0.44999999999999996
+    },
+    {
+      "capability_id": "CCAP-874ED287ECB1",
+      "capability_name": "Memory Capability",
+      "domain": "Memory",
+      "maturity_level": "SOVEREIGN",
+      "maturity_score": 0.94,
+      "evidence_depth": 2,
+      "cross_domain_adoption": 1,
+      "skill_support": 0.3333333333333333,
+      "governance_confidence": 0.83,
+      "reuse_value": 0.44999999999999996
+    },
+    {
+      "capability_id": "CCAP-DCA86505E743",
+      "capability_name": "Engineering Capability",
+      "domain": "Engineering",
+      "maturity_level": "SOVEREIGN",
+      "maturity_score": 0.94,
+      "evidence_depth": 2,
+      "cross_domain_adoption": 1,
+      "skill_support": 0.3333333333333333,
+      "governance_confidence": 0.86,
+      "reuse_value": 0.44999999999999996
+    },
+    {
+      "capability_id": "CCAP-0B7A337A68C4",
+      "capability_name": "Agent Capability",
+      "domain": "Agent",
+      "maturity_level": "SOVEREIGN",
+      "maturity_score": 0.93,
+      "evidence_depth": 2,
+      "cross_domain_adoption": 1,
+      "skill_support": 0.3333333333333333,
+      "governance_confidence": 0.8,
+      "reuse_value": 0.44999999999999996
+    }
+  ],
+  "base_readiness": [
+    {
+      "capability_id": "CCAP-A4DA1BF3BDD5",
+      "capability_name": "Trading Capability",
+      "decision": "NOT_READY",
+      "reason": "Evidence=0.25, confidence=0.79 \u2014 not ready",
+      "evidence_score": 0.25,
+      "confidence_score": 0.79,
+      "governance_score": 0.79,
+      "risk_score": 1,
+      "maturity_score": 0.93,
+      "reuse_score": 0.44999999999999996
+    },
+    {
+      "capability_id": "CCAP-57B493ECFF32",
+      "capability_name": "Risk Capability",
+      "decision": "NOT_READY",
+      "reason": "Evidence=0.25, confidence=0.77 \u2014 not ready",
+      "evidence_score": 0.25,
+      "confidence_score": 0.77,
+      "governance_score": 0.77,
+      "risk_score": 1,
+      "maturity_score": 0.92,
+      "reuse_score": 0.44999999999999996
+    },
+    {
+      "capability_id": "CCAP-6AC5084422DC",
+      "capability_name": "Execution Capability",
+      "decision": "NOT_READY",
+      "reason": "Evidence=0.25, confidence=0.81 \u2014 not ready",
+      "evidence_score": 0.25,
+      "confidence_score": 0.81,
+      "governance_score": 0.81,
+      "risk_score": 1,
+      "maturity_score": 0.93,
+      "reuse_score": 0.44999999999999996
+    },
+    {
+      "capability_id": "CCAP-8F70CB8ACDF3",
+      "capability_name": "Governance Capability",
+      "decision": "NOT_READY",
+      "reason": "Evidence=0.25, confidence=0.82 \u2014 not ready",
+      "evidence_score": 0.25,
+      "confidence_score": 0.82,
+      "governance_score": 0.82,
+      "risk_score": 1,
+      "maturity_score": 0.93,
+      "reuse_score": 0.44999999999999996
+    },
+    {
+      "capability_id": "CCAP-874ED287ECB1",
+      "capability_name": "Memory Capability",
+      "decision": "NOT_READY",
+      "reason": "Evidence=0.25, confidence=0.83 \u2014 not ready",
+      "evidence_score": 0.25,
+      "confidence_score": 0.83,
+      "governance_score": 0.83,
+      "risk_score": 1,
+      "maturity_score": 0.94,
+      "reuse_score": 0.44999999999999996
+    },
+    {
+      "capability_id": "CCAP-DCA86505E743",
+      "capability_name": "Engineering Capability",
+      "decision": "NOT_READY",
+      "reason": "Evidence=0.25, confidence=0.86 \u2014 not ready",
+      "evidence_score": 0.25,
+      "confidence_score": 0.86,
+      "governance_score": 0.86,
+      "risk_score": 1,
+      "maturity_score": 0.94,
+      "reuse_score": 0.44999999999999996
+    },
+    {
+      "capability_id": "CCAP-0B7A337A68C4",
+      "capability_name": "Agent Capability",
+      "decision": "NOT_READY",
+      "reason": "Evidence=0.25, confidence=0.8 \u2014 not ready",
+      "evidence_score": 0.25,
+      "confidence_score": 0.8,
+      "governance_score": 0.8,
+      "risk_score": 1,
+      "maturity_score": 0.93,
+      "reuse_score": 0.44999999999999996
+    }
+  ],
+  "maturity_reassessment": [
+    {
+      "capability_id": "CCAP-A4DA1BF3BDD5",
+      "capability_name": "Trading Capability",
+      "domain": "Trading",
+      "evidence_depth": 1.0,
+      "skill_support": 0.89,
+      "trace_support": 0.15,
+      "validation_results": 1.0,
+      "risk_profile": 0.7,
+      "reuse_value": 0.35,
+      "governance_confidence": 0.78,
+      "maturity_level": "ADVANCED",
+      "maturity_score": 0.74,
+      "previous_maturity": ""
+    },
+    {
+      "capability_id": "CCAP-57B493ECFF32",
+      "capability_name": "Risk Capability",
+      "domain": "Risk",
+      "evidence_depth": 1.0,
+      "skill_support": 0.87,
+      "trace_support": 0.15,
+      "validation_results": 1.0,
+      "risk_profile": 0.7,
+      "reuse_value": 0.35,
+      "governance_confidence": 0.77,
+      "maturity_level": "ADVANCED",
+      "maturity_score": 0.74,
+      "previous_maturity": ""
+    },
+    {
+      "capability_id": "CCAP-6AC5084422DC",
+      "capability_name": "Execution Capability",
+      "domain": "Execution",
+      "evidence_depth": 1.0,
+      "skill_support": 0.91,
+      "trace_support": 0.15,
+      "validation_results": 1.0,
+      "risk_profile": 0.7,
+      "reuse_value": 0.35,
+      "governance_confidence": 0.79,
+      "maturity_level": "ADVANCED",
+      "maturity_score": 0.75,
+      "previous_maturity": ""
+    },
+    {
+      "capability_id": "CCAP-8F70CB8ACDF3",
+      "capability_name": "Governance Capability",
+      "domain": "Governance",
+      "evidence_depth": 1.0,
+      "skill_support": 0.92,
+      "trace_support": 0.15,
+      "validation_results": 1.0,
+      "risk_profile": 0.7,
+      "reuse_value": 0.35,
+      "governance_confidence": 0.79,
+      "maturity_level": "ADVANCED",
+      "maturity_score": 0.75,
+      "previous_maturity": ""
+    },
+    {
+      "capability_id": "CCAP-874ED287ECB1",
+      "capability_name": "Memory Capability",
+      "domain": "Memory",
+      "evidence_depth": 1.0,
+      "skill_support": 0.93,
+      "trace_support": 0.15,
+      "validation_results": 1.0,
+      "risk_profile": 0.7,
+      "reuse_value": 0.35,
+      "governance_confidence": 0.79,
+      "maturity_level": "ADVANCED",
+      "maturity_score": 0.75,
+      "previous_maturity": ""
+    },
+    {
+      "capability_id": "CCAP-DCA86505E743",
+      "capability_name": "Engineering Capability",
+      "domain": "Engineering",
+      "evidence_depth": 1.0,
+      "skill_support": 0.96,
+      "trace_support": 0.15,
+      "validation_results": 1.0,
+      "risk_profile": 0.7,
+      "reuse_value": 0.35,
+      "governance_confidence": 0.8,
+      "maturity_level": "ADVANCED",
+      "maturity_score": 0.76,
+      "previous_maturity": ""
+    },
+    {
+      "capability_id": "CCAP-0B7A337A68C4",
+      "capability_name": "Agent Capability",
+      "domain": "Agent",
+      "evidence_depth": 1.0,
+      "skill_support": 0.9,
+      "trace_support": 0.15,
+      "validation_results": 1.0,
+      "risk_profile": 0.7,
+      "reuse_value": 0.35,
+      "governance_confidence": 0.78,
+      "maturity_level": "ADVANCED",
+      "maturity_score": 0.75,
+      "previous_maturity": ""
+    }
+  ],
+  "readiness_reassessment": [
+    {
+      "capability_id": "CCAP-A4DA1BF3BDD5",
+      "capability_name": "Trading Capability",
+      "domain": "Trading",
+      "decision": "PROMOTION_READY",
+      "reason": "All readiness criteria met",
+      "evidence_score": 1.0,
+      "validation_score": 1.0,
+      "skill_support_score": 0.89,
+      "trace_support_score": 0.15,
+      "governance_score": 0.78,
+      "risk_score": 0.8,
+      "maturity_score": 0.74,
+      "reuse_score": 0.35,
+      "hermes_outcome": "RECOMMEND_PROMOTION",
+      "hermes_reviewer": "Hermes",
+      "sage_outcome": "GOVERNANCE_APPROVED_FOR_PROMOTION",
+      "sage_reviewer": "Sage"
+    },
+    {
+      "capability_id": "CCAP-57B493ECFF32",
+      "capability_name": "Risk Capability",
+      "domain": "Risk",
+      "decision": "PROMOTION_READY",
+      "reason": "All readiness criteria met",
+      "evidence_score": 1.0,
+      "validation_score": 1.0,
+      "skill_support_score": 0.87,
+      "trace_support_score": 0.15,
+      "governance_score": 0.77,
+      "risk_score": 0.8,
+      "maturity_score": 0.74,
+      "reuse_score": 0.35,
+      "hermes_outcome": "RECOMMEND_PROMOTION",
+      "hermes_reviewer": "Hermes",
+      "sage_outcome": "GOVERNANCE_APPROVED_FOR_PROMOTION",
+      "sage_reviewer": "Sage"
+    },
+    {
+      "capability_id": "CCAP-6AC5084422DC",
+      "capability_name": "Execution Capability",
+      "domain": "Execution",
+      "decision": "PROMOTION_READY",
+      "reason": "All readiness criteria met",
+      "evidence_score": 1.0,
+      "validation_score": 1.0,
+      "skill_support_score": 0.91,
+      "trace_support_score": 0.15,
+      "governance_score": 0.79,
+      "risk_score": 0.8,
+      "maturity_score": 0.75,
+      "reuse_score": 0.35,
+      "hermes_outcome": "RECOMMEND_PROMOTION",
+      "hermes_reviewer": "Hermes",
+      "sage_outcome": "GOVERNANCE_APPROVED_FOR_PROMOTION",
+      "sage_reviewer": "Sage"
+    },
+    {
+      "capability_id": "CCAP-8F70CB8ACDF3",
+      "capability_name": "Governance Capability",
+      "domain": "Governance",
+      "decision": "PROMOTION_READY",
+      "reason": "All readiness criteria met",
+      "evidence_score": 1.0,
+      "validation_score": 1.0,
+      "skill_support_score": 0.92,
+      "trace_support_score": 0.15,
+      "governance_score": 0.79,
+      "risk_score": 0.8,
+      "maturity_score": 0.75,
+      "reuse_score": 0.35,
+      "hermes_outcome": "RECOMMEND_PROMOTION",
+      "hermes_reviewer": "Hermes",
+      "sage_outcome": "GOVERNANCE_APPROVED_FOR_PROMOTION",
+      "sage_reviewer": "Sage"
+    },
+    {
+      "capability_id": "CCAP-874ED287ECB1",
+      "capability_name": "Memory Capability",
+      "domain": "Memory",
+      "decision": "PROMOTION_READY",
+      "reason": "All readiness criteria met",
+      "evidence_score": 1.0,
+      "validation_score": 1.0,
+      "skill_support_score": 0.93,
+      "trace_support_score": 0.15,
+      "governance_score": 0.79,
+      "risk_score": 0.8,
+      "maturity_score": 0.75,
+      "reuse_score": 0.35,
+      "hermes_outcome": "RECOMMEND_PROMOTION",
+      "hermes_reviewer": "Hermes",
+      "sage_outcome": "GOVERNANCE_APPROVED_FOR_PROMOTION",
+      "sage_reviewer": "Sage"
+    },
+    {
+      "capability_id": "CCAP-DCA86505E743",
+      "capability_name": "Engineering Capability",
+      "domain": "Engineering",
+      "decision": "PROMOTION_READY",
+      "reason": "All readiness criteria met",
+      "evidence_score": 1.0,
+      "validation_score": 1.0,
+      "skill_support_score": 0.96,
+      "trace_support_score": 0.15,
+      "governance_score": 0.8,
+      "risk_score": 0.8,
+      "maturity_score": 0.76,
+      "reuse_score": 0.35,
+      "hermes_outcome": "RECOMMEND_PROMOTION",
+      "hermes_reviewer": "Hermes",
+      "sage_outcome": "GOVERNANCE_APPROVED_FOR_PROMOTION",
+      "sage_reviewer": "Sage"
+    },
+    {
+      "capability_id": "CCAP-0B7A337A68C4",
+      "capability_name": "Agent Capability",
+      "domain": "Agent",
+      "decision": "PROMOTION_READY",
+      "reason": "All readiness criteria met",
+      "evidence_score": 1.0,
+      "validation_score": 1.0,
+      "skill_support_score": 0.9,
+      "trace_support_score": 0.15,
+      "governance_score": 0.78,
+      "risk_score": 0.8,
+      "maturity_score": 0.75,
+      "reuse_score": 0.35,
+      "hermes_outcome": "RECOMMEND_PROMOTION",
+      "hermes_reviewer": "Hermes",
+      "sage_outcome": "GOVERNANCE_APPROVED_FOR_PROMOTION",
+      "sage_reviewer": "Sage"
+    }
+  ],
+  "hermes_reviews": {
+    "CCAP-A4DA1BF3BDD5": {
+      "outcome": "RECOMMEND_PROMOTION"
+    },
+    "CCAP-57B493ECFF32": {
+      "outcome": "RECOMMEND_PROMOTION"
+    },
+    "CCAP-6AC5084422DC": {
+      "outcome": "RECOMMEND_PROMOTION"
+    },
+    "CCAP-8F70CB8ACDF3": {
+      "outcome": "RECOMMEND_PROMOTION"
+    },
+    "CCAP-874ED287ECB1": {
+      "outcome": "RECOMMEND_PROMOTION"
+    },
+    "CCAP-DCA86505E743": {
+      "outcome": "RECOMMEND_PROMOTION"
+    },
+    "CCAP-0B7A337A68C4": {
+      "outcome": "RECOMMEND_PROMOTION"
+    }
+  },
+  "sage_reviews": {
+    "CCAP-A4DA1BF3BDD5": {
+      "outcome": "GOVERNANCE_APPROVED_FOR_PROMOTION"
+    },
+    "CCAP-57B493ECFF32": {
+      "outcome": "GOVERNANCE_APPROVED_FOR_PROMOTION"
+    },
+    "CCAP-6AC5084422DC": {
+      "outcome": "GOVERNANCE_APPROVED_FOR_PROMOTION"
+    },
+    "CCAP-8F70CB8ACDF3": {
+      "outcome": "GOVERNANCE_APPROVED_FOR_PROMOTION"
+    },
+    "CCAP-874ED287ECB1": {
+      "outcome": "GOVERNANCE_APPROVED_FOR_PROMOTION"
+    },
+    "CCAP-DCA86505E743": {
+      "outcome": "GOVERNANCE_APPROVED_FOR_PROMOTION"
+    },
+    "CCAP-0B7A337A68C4": {
+      "outcome": "GOVERNANCE_APPROVED_FOR_PROMOTION"
+    }
+  },
+  "decision_package": [
+    {
+      "capability_id": "CCAP-A4DA1BF3BDD5",
+      "name": "Trading Capability",
+      "domain": "Trading",
+      "hermes_outcome": "RECOMMEND_PROMOTION",
+      "sage_outcome": "GOVERNANCE_APPROVED_FOR_PROMOTION",
+      "readiness_decision": "PROMOTION_READY",
+      "final_decision": "APPROVE_AS_OFFICIAL_CAPABILITY",
+      "evidence_count": 6,
+      "avg_confidence": 1.0,
+      "maturity_level": "ADVANCED",
+      "maturity_score": 0.74
+    },
+    {
+      "capability_id": "CCAP-57B493ECFF32",
+      "name": "Risk Capability",
+      "domain": "Risk",
+      "hermes_outcome": "RECOMMEND_PROMOTION",
+      "sage_outcome": "GOVERNANCE_APPROVED_FOR_PROMOTION",
+      "readiness_decision": "PROMOTION_READY",
+      "final_decision": "APPROVE_AS_OFFICIAL_CAPABILITY",
+      "evidence_count": 6,
+      "avg_confidence": 1.0,
+      "maturity_level": "ADVANCED",
+      "maturity_score": 0.74
+    },
+    {
+      "capability_id": "CCAP-6AC5084422DC",
+      "name": "Execution Capability",
+      "domain": "Execution",
+      "hermes_outcome": "RECOMMEND_PROMOTION",
+      "sage_outcome": "GOVERNANCE_APPROVED_FOR_PROMOTION",
+      "readiness_decision": "PROMOTION_READY",
+      "final_decision": "APPROVE_AS_OFFICIAL_CAPABILITY",
+      "evidence_count": 6,
+      "avg_confidence": 1.0,
+      "maturity_level": "ADVANCED",
+      "maturity_score": 0.75
+    },
+    {
+      "capability_id": "CCAP-8F70CB8ACDF3",
+      "name": "Governance Capability",
+      "domain": "Governance",
+      "hermes_outcome": "RECOMMEND_PROMOTION",
+      "sage_outcome": "GOVERNANCE_APPROVED_FOR_PROMOTION",
+      "readiness_decision": "PROMOTION_READY",
+      "final_decision": "APPROVE_AS_OFFICIAL_CAPABILITY",
+      "evidence_count": 4,
+      "avg_confidence": 1.0,
+      "maturity_level": "ADVANCED",
+      "maturity_score": 0.75
+    },
+    {
+      "capability_id": "CCAP-874ED287ECB1",
+      "name": "Memory Capability",
+      "domain": "Memory",
+      "hermes_outcome": "RECOMMEND_PROMOTION",
+      "sage_outcome": "GOVERNANCE_APPROVED_FOR_PROMOTION",
+      "readiness_decision": "PROMOTION_READY",
+      "final_decision": "APPROVE_AS_OFFICIAL_CAPABILITY",
+      "evidence_count": 4,
+      "avg_confidence": 1.0,
+      "maturity_level": "ADVANCED",
+      "maturity_score": 0.75
+    },
+    {
+      "capability_id": "CCAP-DCA86505E743",
+      "name": "Engineering Capability",
+      "domain": "Engineering",
+      "hermes_outcome": "RECOMMEND_PROMOTION",
+      "sage_outcome": "GOVERNANCE_APPROVED_FOR_PROMOTION",
+      "readiness_decision": "PROMOTION_READY",
+      "final_decision": "APPROVE_AS_OFFICIAL_CAPABILITY",
+      "evidence_count": 4,
+      "avg_confidence": 1.0,
+      "maturity_level": "ADVANCED",
+      "maturity_score": 0.76
+    },
+    {
+      "capability_id": "CCAP-0B7A337A68C4",
+      "name": "Agent Capability",
+      "domain": "Agent",
+      "hermes_outcome": "RECOMMEND_PROMOTION",
+      "sage_outcome": "GOVERNANCE_APPROVED_FOR_PROMOTION",
+      "readiness_decision": "PROMOTION_READY",
+      "final_decision": "APPROVE_AS_OFFICIAL_CAPABILITY",
+      "evidence_count": 4,
+      "avg_confidence": 1.0,
+      "maturity_level": "ADVANCED",
+      "maturity_score": 0.75
+    }
+  ],
+  "official_records": [
+    {
+      "official_capability_id": "OCAP-39D02BA4E9EA",
+      "canonical_capability_id": "CCAP-A4DA1BF3BDD5",
+      "name": "Trading Capability",
+      "description": "Trading capability",
+      "domain": "Trading",
+      "source_capability_ids": [
+        "CCAP-A4DA1BF3BDD5"
+      ],
+      "hermes_recommendation": "RECOMMEND_PROMOTION",
+      "hermes_reviewer": "Hermes",
+      "sage_recommendation": "GOVERNANCE_APPROVED_FOR_PROMOTION",
+      "sage_reviewer": "Sage",
+      "hung_vuong_decision": "APPROVE_AS_OFFICIAL_CAPABILITY",
+      "status": "APPROVED_AS_OFFICIAL",
+      "activation_status": "DISABLED",
+      "agent_adoption_status": "NOT_ASSIGNED",
+      "evolution_status": "LOCKED",
+      "evidence_summary": "Evidence: 6 records, 1.0 confidence",
+      "risk_summary": "LEVEL_1_MODERATE",
+      "promotion_recommendation": "PROMOTION_READY",
+      "future_activation_conditions": [
+        "Sage governance approval",
+        "Hung Vuong authorization"
+      ],
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "owner_agent": "Sage",
+      "reviewer_agent": "Hung Vuong"
+    },
+    {
+      "official_capability_id": "OCAP-B9A1C8211970",
+      "canonical_capability_id": "CCAP-57B493ECFF32",
+      "name": "Risk Capability",
+      "description": "Risk capability",
+      "domain": "Risk",
+      "source_capability_ids": [
+        "CCAP-57B493ECFF32"
+      ],
+      "hermes_recommendation": "RECOMMEND_PROMOTION",
+      "hermes_reviewer": "Hermes",
+      "sage_recommendation": "GOVERNANCE_APPROVED_FOR_PROMOTION",
+      "sage_reviewer": "Sage",
+      "hung_vuong_decision": "APPROVE_AS_OFFICIAL_CAPABILITY",
+      "status": "APPROVED_AS_OFFICIAL",
+      "activation_status": "DISABLED",
+      "agent_adoption_status": "NOT_ASSIGNED",
+      "evolution_status": "LOCKED",
+      "evidence_summary": "Evidence: 6 records, 1.0 confidence",
+      "risk_summary": "LEVEL_1_MODERATE",
+      "promotion_recommendation": "PROMOTION_READY",
+      "future_activation_conditions": [
+        "Sage governance approval",
+        "Hung Vuong authorization"
+      ],
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "owner_agent": "Sage",
+      "reviewer_agent": "Hung Vuong"
+    },
+    {
+      "official_capability_id": "OCAP-A69AAA58841D",
+      "canonical_capability_id": "CCAP-6AC5084422DC",
+      "name": "Execution Capability",
+      "description": "Execution capability",
+      "domain": "Execution",
+      "source_capability_ids": [
+        "CCAP-6AC5084422DC"
+      ],
+      "hermes_recommendation": "RECOMMEND_PROMOTION",
+      "hermes_reviewer": "Hermes",
+      "sage_recommendation": "GOVERNANCE_APPROVED_FOR_PROMOTION",
+      "sage_reviewer": "Sage",
+      "hung_vuong_decision": "APPROVE_AS_OFFICIAL_CAPABILITY",
+      "status": "APPROVED_AS_OFFICIAL",
+      "activation_status": "DISABLED",
+      "agent_adoption_status": "NOT_ASSIGNED",
+      "evolution_status": "LOCKED",
+      "evidence_summary": "Evidence: 6 records, 1.0 confidence",
+      "risk_summary": "LEVEL_1_MODERATE",
+      "promotion_recommendation": "PROMOTION_READY",
+      "future_activation_conditions": [
+        "Sage governance approval",
+        "Hung Vuong authorization"
+      ],
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "owner_agent": "Sage",
+      "reviewer_agent": "Hung Vuong"
+    },
+    {
+      "official_capability_id": "OCAP-0B2C34D10E05",
+      "canonical_capability_id": "CCAP-8F70CB8ACDF3",
+      "name": "Governance Capability",
+      "description": "Governance capability",
+      "domain": "Governance",
+      "source_capability_ids": [
+        "CCAP-8F70CB8ACDF3"
+      ],
+      "hermes_recommendation": "RECOMMEND_PROMOTION",
+      "hermes_reviewer": "Hermes",
+      "sage_recommendation": "GOVERNANCE_APPROVED_FOR_PROMOTION",
+      "sage_reviewer": "Sage",
+      "hung_vuong_decision": "APPROVE_AS_OFFICIAL_CAPABILITY",
+      "status": "APPROVED_AS_OFFICIAL",
+      "activation_status": "DISABLED",
+      "agent_adoption_status": "NOT_ASSIGNED",
+      "evolution_status": "LOCKED",
+      "evidence_summary": "Evidence: 4 records, 1.0 confidence",
+      "risk_summary": "LEVEL_1_MODERATE",
+      "promotion_recommendation": "PROMOTION_READY",
+      "future_activation_conditions": [
+        "Sage governance approval",
+        "Hung Vuong authorization"
+      ],
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "owner_agent": "Sage",
+      "reviewer_agent": "Hung Vuong"
+    },
+    {
+      "official_capability_id": "OCAP-FA03D9920391",
+      "canonical_capability_id": "CCAP-874ED287ECB1",
+      "name": "Memory Capability",
+      "description": "Memory capability",
+      "domain": "Memory",
+      "source_capability_ids": [
+        "CCAP-874ED287ECB1"
+      ],
+      "hermes_recommendation": "RECOMMEND_PROMOTION",
+      "hermes_reviewer": "Hermes",
+      "sage_recommendation": "GOVERNANCE_APPROVED_FOR_PROMOTION",
+      "sage_reviewer": "Sage",
+      "hung_vuong_decision": "APPROVE_AS_OFFICIAL_CAPABILITY",
+      "status": "APPROVED_AS_OFFICIAL",
+      "activation_status": "DISABLED",
+      "agent_adoption_status": "NOT_ASSIGNED",
+      "evolution_status": "LOCKED",
+      "evidence_summary": "Evidence: 4 records, 1.0 confidence",
+      "risk_summary": "LEVEL_1_MODERATE",
+      "promotion_recommendation": "PROMOTION_READY",
+      "future_activation_conditions": [
+        "Sage governance approval",
+        "Hung Vuong authorization"
+      ],
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "owner_agent": "Sage",
+      "reviewer_agent": "Hung Vuong"
+    },
+    {
+      "official_capability_id": "OCAP-2196ECF64722",
+      "canonical_capability_id": "CCAP-DCA86505E743",
+      "name": "Engineering Capability",
+      "description": "Engineering capability",
+      "domain": "Engineering",
+      "source_capability_ids": [
+        "CCAP-DCA86505E743"
+      ],
+      "hermes_recommendation": "RECOMMEND_PROMOTION",
+      "hermes_reviewer": "Hermes",
+      "sage_recommendation": "GOVERNANCE_APPROVED_FOR_PROMOTION",
+      "sage_reviewer": "Sage",
+      "hung_vuong_decision": "APPROVE_AS_OFFICIAL_CAPABILITY",
+      "status": "APPROVED_AS_OFFICIAL",
+      "activation_status": "DISABLED",
+      "agent_adoption_status": "NOT_ASSIGNED",
+      "evolution_status": "LOCKED",
+      "evidence_summary": "Evidence: 4 records, 1.0 confidence",
+      "risk_summary": "LEVEL_1_MODERATE",
+      "promotion_recommendation": "PROMOTION_READY",
+      "future_activation_conditions": [
+        "Sage governance approval",
+        "Hung Vuong authorization"
+      ],
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "owner_agent": "Sage",
+      "reviewer_agent": "Hung Vuong"
+    },
+    {
+      "official_capability_id": "OCAP-09178ECFC6DA",
+      "canonical_capability_id": "CCAP-0B7A337A68C4",
+      "name": "Agent Capability",
+      "description": "Agent capability",
+      "domain": "Agent",
+      "source_capability_ids": [
+        "CCAP-0B7A337A68C4"
+      ],
+      "hermes_recommendation": "RECOMMEND_PROMOTION",
+      "hermes_reviewer": "Hermes",
+      "sage_recommendation": "GOVERNANCE_APPROVED_FOR_PROMOTION",
+      "sage_reviewer": "Sage",
+      "hung_vuong_decision": "APPROVE_AS_OFFICIAL_CAPABILITY",
+      "status": "APPROVED_AS_OFFICIAL",
+      "activation_status": "DISABLED",
+      "agent_adoption_status": "NOT_ASSIGNED",
+      "evolution_status": "LOCKED",
+      "evidence_summary": "Evidence: 4 records, 1.0 confidence",
+      "risk_summary": "LEVEL_1_MODERATE",
+      "promotion_recommendation": "PROMOTION_READY",
+      "future_activation_conditions": [
+        "Sage governance approval",
+        "Hung Vuong authorization"
+      ],
+      "created_at": "2026-06-07T11:02:38.466456+00:00",
+      "owner_agent": "Sage",
+      "reviewer_agent": "Hung Vuong"
+    }
+  ],
+  "governance": {
+    "CCAP-A4DA1BF3BDD5": {
+      "all_passed": true,
+      "summary": "16/16 gates passed for capability_validation:CCAP-A4DA1BF3BDD5"
+    },
+    "CCAP-57B493ECFF32": {
+      "all_passed": true,
+      "summary": "16/16 gates passed for capability_validation:CCAP-57B493ECFF32"
+    },
+    "CCAP-6AC5084422DC": {
+      "all_passed": true,
+      "summary": "16/16 gates passed for capability_validation:CCAP-6AC5084422DC"
+    },
+    "CCAP-8F70CB8ACDF3": {
+      "all_passed": true,
+      "summary": "16/16 gates passed for capability_validation:CCAP-8F70CB8ACDF3"
+    },
+    "CCAP-874ED287ECB1": {
+      "all_passed": true,
+      "summary": "16/16 gates passed for capability_validation:CCAP-874ED287ECB1"
+    },
+    "CCAP-DCA86505E743": {
+      "all_passed": true,
+      "summary": "16/16 gates passed for capability_validation:CCAP-DCA86505E743"
+    },
+    "CCAP-0B7A337A68C4": {
+      "all_passed": true,
+      "summary": "16/16 gates passed for capability_validation:CCAP-0B7A337A68C4"
+    }
+  },
+  "audit_events": [
+    {
+      "event_id": "AUDIT-CD02DE14821E",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_PIPELINE_RUN",
+      "record_type": "pipeline",
+      "record_id": "",
+      "details": {
+        "phase": "start"
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-ACB64E3C4C7D",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_DISCOVERED",
+      "record_type": "capability_candidate",
+      "record_id": "CAPC-C6446429EA5E",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-6D3ED2815F72",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_DISCOVERED",
+      "record_type": "capability_candidate",
+      "record_id": "CAPC-B797D05F5C09",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-5452B3B5A8D7",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_DISCOVERED",
+      "record_type": "capability_candidate",
+      "record_id": "CAPC-46A517B2FB17",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-CBAEA866A9F9",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_DISCOVERED",
+      "record_type": "capability_candidate",
+      "record_id": "CAPC-18B9A261B8A6",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-D690F009F222",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_DISCOVERED",
+      "record_type": "capability_candidate",
+      "record_id": "CAPC-3A5757BC0550",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-723CEE5777A8",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_DISCOVERED",
+      "record_type": "capability_candidate",
+      "record_id": "CAPC-5A1E403B5DF7",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-37866B2A60E8",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_DISCOVERED",
+      "record_type": "capability_candidate",
+      "record_id": "CAPC-B5B04E502A3C",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-970BBC9BE811",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_FAMILY_CREATED",
+      "record_type": "capability_family",
+      "record_id": "CPF-B5623796EACE",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-C20AC0B83E16",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_FAMILY_CREATED",
+      "record_type": "capability_family",
+      "record_id": "CPF-9B3A7AA5F82A",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-8BE45441944E",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_FAMILY_CREATED",
+      "record_type": "capability_family",
+      "record_id": "CPF-9722BDF6019F",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-724A48F0A514",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_FAMILY_CREATED",
+      "record_type": "capability_family",
+      "record_id": "CPF-32F2DDCEA98E",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-A438C6968F1B",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_FAMILY_CREATED",
+      "record_type": "capability_family",
+      "record_id": "CPF-0D19A03D4A39",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-3A7000D364F9",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_FAMILY_CREATED",
+      "record_type": "capability_family",
+      "record_id": "CPF-58EBE135D6A2",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-CC075D9D74E7",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_FAMILY_CREATED",
+      "record_type": "capability_family",
+      "record_id": "CPF-6DF500825706",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-D9E7E8EBDD91",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_CANONICAL_CLASSIFIED",
+      "record_type": "canonical_capability",
+      "record_id": "CCAP-A4DA1BF3BDD5",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-B6CF341BDC5D",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_CANONICAL_CLASSIFIED",
+      "record_type": "canonical_capability",
+      "record_id": "CCAP-57B493ECFF32",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-4CE377816374",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_CANONICAL_CLASSIFIED",
+      "record_type": "canonical_capability",
+      "record_id": "CCAP-6AC5084422DC",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-0F11C04A6413",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_CANONICAL_CLASSIFIED",
+      "record_type": "canonical_capability",
+      "record_id": "CCAP-8F70CB8ACDF3",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-15A3CC52C6DD",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_CANONICAL_CLASSIFIED",
+      "record_type": "canonical_capability",
+      "record_id": "CCAP-874ED287ECB1",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-532207BE221F",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_CANONICAL_CLASSIFIED",
+      "record_type": "canonical_capability",
+      "record_id": "CCAP-DCA86505E743",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-263303DE25CC",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_CANONICAL_CLASSIFIED",
+      "record_type": "canonical_capability",
+      "record_id": "CCAP-0B7A337A68C4",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-260DDAE9F4EE",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_GRAPH_EDGE_CREATED",
+      "record_type": "graph_edge",
+      "record_id": "",
+      "details": {
+        "source": "CCAP-A4DA1BF3BDD5"
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-D4106AAF3019",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_GRAPH_EDGE_CREATED",
+      "record_type": "graph_edge",
+      "record_id": "",
+      "details": {
+        "source": "CCAP-57B493ECFF32"
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-B2AF546314F2",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_GRAPH_EDGE_CREATED",
+      "record_type": "graph_edge",
+      "record_id": "",
+      "details": {
+        "source": "CCAP-6AC5084422DC"
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-4507159C3895",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_GRAPH_EDGE_CREATED",
+      "record_type": "graph_edge",
+      "record_id": "",
+      "details": {
+        "source": "CCAP-8F70CB8ACDF3"
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-9D8FAFB25DE5",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_GRAPH_EDGE_CREATED",
+      "record_type": "graph_edge",
+      "record_id": "",
+      "details": {
+        "source": "CCAP-874ED287ECB1"
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-59999CF0FA0C",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_GRAPH_EDGE_CREATED",
+      "record_type": "graph_edge",
+      "record_id": "",
+      "details": {
+        "source": "CCAP-DCA86505E743"
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-005E68033391",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_GRAPH_EDGE_CREATED",
+      "record_type": "graph_edge",
+      "record_id": "",
+      "details": {
+        "source": "CCAP-0B7A337A68C4"
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-820F913BCF96",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_MATURITY_ASSESSED",
+      "record_type": "maturity",
+      "record_id": "CCAP-A4DA1BF3BDD5",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-1E905D811A49",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_MATURITY_ASSESSED",
+      "record_type": "maturity",
+      "record_id": "CCAP-57B493ECFF32",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-F1D0C3A8A36C",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_MATURITY_ASSESSED",
+      "record_type": "maturity",
+      "record_id": "CCAP-6AC5084422DC",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-78A5887E2B91",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_MATURITY_ASSESSED",
+      "record_type": "maturity",
+      "record_id": "CCAP-8F70CB8ACDF3",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-AE95C75F302A",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_MATURITY_ASSESSED",
+      "record_type": "maturity",
+      "record_id": "CCAP-874ED287ECB1",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-AB979849CEB4",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_MATURITY_ASSESSED",
+      "record_type": "maturity",
+      "record_id": "CCAP-DCA86505E743",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-D809D8153E38",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_MATURITY_ASSESSED",
+      "record_type": "maturity",
+      "record_id": "CCAP-0B7A337A68C4",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-E3B937A1B683",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_READINESS_ASSESSED",
+      "record_type": "readiness",
+      "record_id": "CCAP-A4DA1BF3BDD5",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-EB6E7A5528F1",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_READINESS_ASSESSED",
+      "record_type": "readiness",
+      "record_id": "CCAP-57B493ECFF32",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-D85334DA9BB7",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_READINESS_ASSESSED",
+      "record_type": "readiness",
+      "record_id": "CCAP-6AC5084422DC",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-66585E07CDFF",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_READINESS_ASSESSED",
+      "record_type": "readiness",
+      "record_id": "CCAP-8F70CB8ACDF3",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-6D6FB27C4EC3",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_READINESS_ASSESSED",
+      "record_type": "readiness",
+      "record_id": "CCAP-874ED287ECB1",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-528546BB9F83",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_READINESS_ASSESSED",
+      "record_type": "readiness",
+      "record_id": "CCAP-DCA86505E743",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-891A12B31D9F",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_READINESS_ASSESSED",
+      "record_type": "readiness",
+      "record_id": "CCAP-0B7A337A68C4",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-10D1D54B9F38",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "CAPABILITY_PIPELINE_RUN",
+      "record_type": "pipeline",
+      "record_id": "",
+      "details": {
+        "phase": "base_complete"
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-47927C9AC183",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "SCENARIO_CREATED",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-468A94E7E877",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-8243A8D506AC",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "SCENARIO_CREATED",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-073DD26DD004",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-437A3C623425",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "SCENARIO_CREATED",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-E3EDBFC07B81",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-DCFABA0C706C",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "SCENARIO_CREATED",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-6556F06121C8",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-A3EED56370A4",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "SCENARIO_CREATED",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-8795D8B95498",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-EDA288640772",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "SCENARIO_CREATED",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-E1475DE1F0C6",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-64A682196935",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "SCENARIO_CREATED",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-9948880B597E",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-A03A332B58A0",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "SCENARIO_CREATED",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-2CC259E8A79F",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-6075060EA43C",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "SCENARIO_CREATED",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-4064932812D2",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-8E5FBB0AF52F",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "SCENARIO_CREATED",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-D77658E160E6",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-8405FD3A1C33",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "SCENARIO_CREATED",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-514852A165FF",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-A4829A89AFD3",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "SCENARIO_CREATED",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-27E6269CB4E2",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-94EBFB9CFE78",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "SCENARIO_CREATED",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-AF2487935EA8",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-BA7BED06D9A1",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "SCENARIO_CREATED",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-8E42C7E72E13",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-46E3366D6805",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "SCENARIO_CREATED",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-059813E1C359",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-E54EEE4051C1",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "SCENARIO_CREATED",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-5F8063109C7E",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-E5FAC920E3BD",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "SCENARIO_CREATED",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-1624797A65B0",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-B38665672EC9",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "VALIDATION_RUN",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-468A94E7E877",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-7CFF2A0982E4",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "VALIDATION_RUN",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-073DD26DD004",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-EAF42ACABD10",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "VALIDATION_RUN",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-E3EDBFC07B81",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-3A285466902F",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "VALIDATION_RUN",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-6556F06121C8",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-9AEA96FD790F",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "VALIDATION_RUN",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-8795D8B95498",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-95CC048647C4",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "VALIDATION_RUN",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-E1475DE1F0C6",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-D7FE7AFB2ADF",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "VALIDATION_RUN",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-9948880B597E",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-56127E022BAA",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "VALIDATION_RUN",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-2CC259E8A79F",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-E55B99C618FD",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "VALIDATION_RUN",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-4064932812D2",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-1AACDA74A161",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "VALIDATION_RUN",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-D77658E160E6",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-F72F4F0DCE14",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "VALIDATION_RUN",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-514852A165FF",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-02ED4560C7F5",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "VALIDATION_RUN",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-27E6269CB4E2",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-14C1BC1427E2",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "VALIDATION_RUN",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-AF2487935EA8",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-CD0E16B0D358",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "VALIDATION_RUN",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-8E42C7E72E13",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-6F7A79D3E6E6",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "VALIDATION_RUN",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-059813E1C359",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-DAA992703292",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "VALIDATION_RUN",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-5F8063109C7E",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-B9D128E30C64",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "VALIDATION_RUN",
+      "record_type": "validation_scenario",
+      "record_id": "SCEN-1624797A65B0",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-A297AC448A60",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-C74792C12AC3",
+      "details": {
+        "capability_id": "CCAP-A4DA1BF3BDD5",
+        "scenario_id": "SCEN-468A94E7E877",
+        "evidence_type": "VALIDATION_RESULT",
+        "result": "PASSED",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-B385E43454DB",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-603FD624A607",
+      "details": {
+        "capability_id": "CCAP-A4DA1BF3BDD5",
+        "scenario_id": "SCEN-468A94E7E877",
+        "evidence_type": "DOCUMENTATION",
+        "result": "FOUND",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-3037534E8E3A",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-CB332A435A88",
+      "details": {
+        "capability_id": "CCAP-A4DA1BF3BDD5",
+        "scenario_id": "SCEN-073DD26DD004",
+        "evidence_type": "VALIDATION_RESULT",
+        "result": "PASSED",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-802C0FF61214",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-9418E03A1CBB",
+      "details": {
+        "capability_id": "CCAP-A4DA1BF3BDD5",
+        "scenario_id": "SCEN-073DD26DD004",
+        "evidence_type": "DOCUMENTATION",
+        "result": "FOUND",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-EA0179D04096",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-E276A3F260A6",
+      "details": {
+        "capability_id": "CCAP-A4DA1BF3BDD5",
+        "scenario_id": "SCEN-E3EDBFC07B81",
+        "evidence_type": "VALIDATION_RESULT",
+        "result": "PASSED",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-A37329C5665D",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-CFFA47A79779",
+      "details": {
+        "capability_id": "CCAP-A4DA1BF3BDD5",
+        "scenario_id": "SCEN-E3EDBFC07B81",
+        "evidence_type": "DOCUMENTATION",
+        "result": "FOUND",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-90115AE726AE",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-BF2673038083",
+      "details": {
+        "capability_id": "CCAP-57B493ECFF32",
+        "scenario_id": "SCEN-6556F06121C8",
+        "evidence_type": "VALIDATION_RESULT",
+        "result": "PASSED",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-C50186896717",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-640F38DC6E19",
+      "details": {
+        "capability_id": "CCAP-57B493ECFF32",
+        "scenario_id": "SCEN-6556F06121C8",
+        "evidence_type": "DOCUMENTATION",
+        "result": "FOUND",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-B04862D11B22",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-CEB872D503D1",
+      "details": {
+        "capability_id": "CCAP-57B493ECFF32",
+        "scenario_id": "SCEN-8795D8B95498",
+        "evidence_type": "VALIDATION_RESULT",
+        "result": "PASSED",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-65662A384FA6",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-6ADE2BE25C74",
+      "details": {
+        "capability_id": "CCAP-57B493ECFF32",
+        "scenario_id": "SCEN-8795D8B95498",
+        "evidence_type": "DOCUMENTATION",
+        "result": "FOUND",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-50BF28C6CB4D",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-F93427742559",
+      "details": {
+        "capability_id": "CCAP-57B493ECFF32",
+        "scenario_id": "SCEN-E1475DE1F0C6",
+        "evidence_type": "VALIDATION_RESULT",
+        "result": "PASSED",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-5192B6525011",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-2B23024BA2A0",
+      "details": {
+        "capability_id": "CCAP-57B493ECFF32",
+        "scenario_id": "SCEN-E1475DE1F0C6",
+        "evidence_type": "DOCUMENTATION",
+        "result": "FOUND",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-D493988A0510",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-933D8690487B",
+      "details": {
+        "capability_id": "CCAP-6AC5084422DC",
+        "scenario_id": "SCEN-9948880B597E",
+        "evidence_type": "VALIDATION_RESULT",
+        "result": "PASSED",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-3BE64CB4B3DD",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-B14B7A42FC34",
+      "details": {
+        "capability_id": "CCAP-6AC5084422DC",
+        "scenario_id": "SCEN-9948880B597E",
+        "evidence_type": "DOCUMENTATION",
+        "result": "FOUND",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-B969C1C316A4",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-0405F3D0C5D8",
+      "details": {
+        "capability_id": "CCAP-6AC5084422DC",
+        "scenario_id": "SCEN-2CC259E8A79F",
+        "evidence_type": "VALIDATION_RESULT",
+        "result": "PASSED",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-7757B3618253",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-D6AC3C822B35",
+      "details": {
+        "capability_id": "CCAP-6AC5084422DC",
+        "scenario_id": "SCEN-2CC259E8A79F",
+        "evidence_type": "DOCUMENTATION",
+        "result": "FOUND",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-F921C1C1AD7C",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-AF72739AD243",
+      "details": {
+        "capability_id": "CCAP-6AC5084422DC",
+        "scenario_id": "SCEN-4064932812D2",
+        "evidence_type": "VALIDATION_RESULT",
+        "result": "PASSED",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-FBBC140C9C15",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-F7BCFB52A6CE",
+      "details": {
+        "capability_id": "CCAP-6AC5084422DC",
+        "scenario_id": "SCEN-4064932812D2",
+        "evidence_type": "DOCUMENTATION",
+        "result": "FOUND",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-676F09757932",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-5F2787207C4D",
+      "details": {
+        "capability_id": "CCAP-8F70CB8ACDF3",
+        "scenario_id": "SCEN-D77658E160E6",
+        "evidence_type": "VALIDATION_RESULT",
+        "result": "PASSED",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-FBAD071C0497",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-C7ADA2D4A0B2",
+      "details": {
+        "capability_id": "CCAP-8F70CB8ACDF3",
+        "scenario_id": "SCEN-D77658E160E6",
+        "evidence_type": "DOCUMENTATION",
+        "result": "FOUND",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-4FB4432CB3CF",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-B1CB93C465A5",
+      "details": {
+        "capability_id": "CCAP-8F70CB8ACDF3",
+        "scenario_id": "SCEN-514852A165FF",
+        "evidence_type": "VALIDATION_RESULT",
+        "result": "PASSED",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-7296A2BC06B7",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-351EB5FF6E70",
+      "details": {
+        "capability_id": "CCAP-8F70CB8ACDF3",
+        "scenario_id": "SCEN-514852A165FF",
+        "evidence_type": "DOCUMENTATION",
+        "result": "FOUND",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-3E38D4D194C9",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-010FF6E67312",
+      "details": {
+        "capability_id": "CCAP-874ED287ECB1",
+        "scenario_id": "SCEN-27E6269CB4E2",
+        "evidence_type": "VALIDATION_RESULT",
+        "result": "PASSED",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-9314811CBC71",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-3B324D057F42",
+      "details": {
+        "capability_id": "CCAP-874ED287ECB1",
+        "scenario_id": "SCEN-27E6269CB4E2",
+        "evidence_type": "DOCUMENTATION",
+        "result": "FOUND",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-CA400A00D2C0",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-A00FE49831A6",
+      "details": {
+        "capability_id": "CCAP-874ED287ECB1",
+        "scenario_id": "SCEN-AF2487935EA8",
+        "evidence_type": "VALIDATION_RESULT",
+        "result": "PASSED",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-6B3487139C92",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-D5AC7095A388",
+      "details": {
+        "capability_id": "CCAP-874ED287ECB1",
+        "scenario_id": "SCEN-AF2487935EA8",
+        "evidence_type": "DOCUMENTATION",
+        "result": "FOUND",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-73ACEE0C665F",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-FAF71AFBE6BD",
+      "details": {
+        "capability_id": "CCAP-DCA86505E743",
+        "scenario_id": "SCEN-8E42C7E72E13",
+        "evidence_type": "VALIDATION_RESULT",
+        "result": "PASSED",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-0985AD8D16ED",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-748AD8FB3590",
+      "details": {
+        "capability_id": "CCAP-DCA86505E743",
+        "scenario_id": "SCEN-8E42C7E72E13",
+        "evidence_type": "DOCUMENTATION",
+        "result": "FOUND",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-34CE0E9C270C",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-6D1459749BF9",
+      "details": {
+        "capability_id": "CCAP-DCA86505E743",
+        "scenario_id": "SCEN-059813E1C359",
+        "evidence_type": "VALIDATION_RESULT",
+        "result": "PASSED",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-F9A8C74BE818",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-8657A0587719",
+      "details": {
+        "capability_id": "CCAP-DCA86505E743",
+        "scenario_id": "SCEN-059813E1C359",
+        "evidence_type": "DOCUMENTATION",
+        "result": "FOUND",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-C86713164909",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-0B1B7A39D708",
+      "details": {
+        "capability_id": "CCAP-0B7A337A68C4",
+        "scenario_id": "SCEN-5F8063109C7E",
+        "evidence_type": "VALIDATION_RESULT",
+        "result": "PASSED",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-F4EE14025AF1",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-5113C9883818",
+      "details": {
+        "capability_id": "CCAP-0B7A337A68C4",
+        "scenario_id": "SCEN-5F8063109C7E",
+        "evidence_type": "DOCUMENTATION",
+        "result": "FOUND",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-6A602E52D118",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-1A0535E11121",
+      "details": {
+        "capability_id": "CCAP-0B7A337A68C4",
+        "scenario_id": "SCEN-1624797A65B0",
+        "evidence_type": "VALIDATION_RESULT",
+        "result": "PASSED",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-E6C501C9078E",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "EVIDENCE_RECORDED",
+      "record_type": "evidence",
+      "record_id": "EVID-D29632CD2287",
+      "details": {
+        "capability_id": "CCAP-0B7A337A68C4",
+        "scenario_id": "SCEN-1624797A65B0",
+        "evidence_type": "DOCUMENTATION",
+        "result": "FOUND",
+        "metric": 1.0
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-F5495430F174",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "MATURITY_REASSESSED",
+      "record_type": "maturity_reassessment",
+      "record_id": "CCAP-A4DA1BF3BDD5",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-94A06C7BB72A",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "MATURITY_REASSESSED",
+      "record_type": "maturity_reassessment",
+      "record_id": "CCAP-57B493ECFF32",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-15305A2574B5",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "MATURITY_REASSESSED",
+      "record_type": "maturity_reassessment",
+      "record_id": "CCAP-6AC5084422DC",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-0C4ED1143E9C",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "MATURITY_REASSESSED",
+      "record_type": "maturity_reassessment",
+      "record_id": "CCAP-8F70CB8ACDF3",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-87025C4B4DCC",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "MATURITY_REASSESSED",
+      "record_type": "maturity_reassessment",
+      "record_id": "CCAP-874ED287ECB1",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-E51B2636AFCF",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "MATURITY_REASSESSED",
+      "record_type": "maturity_reassessment",
+      "record_id": "CCAP-DCA86505E743",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-E994D743F47D",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "MATURITY_REASSESSED",
+      "record_type": "maturity_reassessment",
+      "record_id": "CCAP-0B7A337A68C4",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-26D53DD7EF32",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "HERMES_REVIEW_COMPLETED",
+      "record_type": "hermes_review",
+      "record_id": "CCAP-A4DA1BF3BDD5",
+      "details": {
+        "outcome": "RECOMMEND_PROMOTION"
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-02EE8AF0279B",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "HERMES_REVIEW_COMPLETED",
+      "record_type": "hermes_review",
+      "record_id": "CCAP-57B493ECFF32",
+      "details": {
+        "outcome": "RECOMMEND_PROMOTION"
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-09C26C89BA27",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "HERMES_REVIEW_COMPLETED",
+      "record_type": "hermes_review",
+      "record_id": "CCAP-6AC5084422DC",
+      "details": {
+        "outcome": "RECOMMEND_PROMOTION"
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-0D9C686F1FEE",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "HERMES_REVIEW_COMPLETED",
+      "record_type": "hermes_review",
+      "record_id": "CCAP-8F70CB8ACDF3",
+      "details": {
+        "outcome": "RECOMMEND_PROMOTION"
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-537774F1F805",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "HERMES_REVIEW_COMPLETED",
+      "record_type": "hermes_review",
+      "record_id": "CCAP-874ED287ECB1",
+      "details": {
+        "outcome": "RECOMMEND_PROMOTION"
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-3FD67A260FBC",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "HERMES_REVIEW_COMPLETED",
+      "record_type": "hermes_review",
+      "record_id": "CCAP-DCA86505E743",
+      "details": {
+        "outcome": "RECOMMEND_PROMOTION"
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-12221A7F89F7",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "HERMES_REVIEW_COMPLETED",
+      "record_type": "hermes_review",
+      "record_id": "CCAP-0B7A337A68C4",
+      "details": {
+        "outcome": "RECOMMEND_PROMOTION"
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-C9F6641FFE69",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "SAGE_REVIEW_COMPLETED",
+      "record_type": "sage_review",
+      "record_id": "CCAP-A4DA1BF3BDD5",
+      "details": {
+        "outcome": "GOVERNANCE_APPROVED_FOR_PROMOTION"
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-53FE00210A84",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "SAGE_REVIEW_COMPLETED",
+      "record_type": "sage_review",
+      "record_id": "CCAP-57B493ECFF32",
+      "details": {
+        "outcome": "GOVERNANCE_APPROVED_FOR_PROMOTION"
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-2FACF2FA2757",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "SAGE_REVIEW_COMPLETED",
+      "record_type": "sage_review",
+      "record_id": "CCAP-6AC5084422DC",
+      "details": {
+        "outcome": "GOVERNANCE_APPROVED_FOR_PROMOTION"
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-E8ECB576A1D5",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "SAGE_REVIEW_COMPLETED",
+      "record_type": "sage_review",
+      "record_id": "CCAP-8F70CB8ACDF3",
+      "details": {
+        "outcome": "GOVERNANCE_APPROVED_FOR_PROMOTION"
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-098F998F6481",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "SAGE_REVIEW_COMPLETED",
+      "record_type": "sage_review",
+      "record_id": "CCAP-874ED287ECB1",
+      "details": {
+        "outcome": "GOVERNANCE_APPROVED_FOR_PROMOTION"
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-0A1D2A873D93",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "SAGE_REVIEW_COMPLETED",
+      "record_type": "sage_review",
+      "record_id": "CCAP-DCA86505E743",
+      "details": {
+        "outcome": "GOVERNANCE_APPROVED_FOR_PROMOTION"
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-C36BEACF9262",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "SAGE_REVIEW_COMPLETED",
+      "record_type": "sage_review",
+      "record_id": "CCAP-0B7A337A68C4",
+      "details": {
+        "outcome": "GOVERNANCE_APPROVED_FOR_PROMOTION"
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-614F712EAB4C",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "READINESS_REASSESSED",
+      "record_type": "readiness_reassessment",
+      "record_id": "CCAP-A4DA1BF3BDD5",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-72723519A35A",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "READINESS_REASSESSED",
+      "record_type": "readiness_reassessment",
+      "record_id": "CCAP-57B493ECFF32",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-ACDBB1D7A438",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "READINESS_REASSESSED",
+      "record_type": "readiness_reassessment",
+      "record_id": "CCAP-6AC5084422DC",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-385A97FA55CB",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "READINESS_REASSESSED",
+      "record_type": "readiness_reassessment",
+      "record_id": "CCAP-8F70CB8ACDF3",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-485253A4ABFB",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "READINESS_REASSESSED",
+      "record_type": "readiness_reassessment",
+      "record_id": "CCAP-874ED287ECB1",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-0A67A20C75F8",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "READINESS_REASSESSED",
+      "record_type": "readiness_reassessment",
+      "record_id": "CCAP-DCA86505E743",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-A9E327E37E26",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "READINESS_REASSESSED",
+      "record_type": "readiness_reassessment",
+      "record_id": "CCAP-0B7A337A68C4",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-41D696A41D31",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "DECISION_PACKAGE_CREATED",
+      "record_type": "decision_package",
+      "record_id": "",
+      "details": {
+        "count": 7
+      },
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-49E76D3B9AB3",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "OFFICIAL_CAPABILITY_RECORD_PREPARED",
+      "record_type": "official_capability",
+      "record_id": "OCAP-39D02BA4E9EA",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-5F33ADAA9F35",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "OFFICIAL_CAPABILITY_RECORD_PREPARED",
+      "record_type": "official_capability",
+      "record_id": "OCAP-B9A1C8211970",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-8E88F9553423",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "OFFICIAL_CAPABILITY_RECORD_PREPARED",
+      "record_type": "official_capability",
+      "record_id": "OCAP-A69AAA58841D",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-92BA6808CB05",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "OFFICIAL_CAPABILITY_RECORD_PREPARED",
+      "record_type": "official_capability",
+      "record_id": "OCAP-0B2C34D10E05",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-D085614104D7",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "OFFICIAL_CAPABILITY_RECORD_PREPARED",
+      "record_type": "official_capability",
+      "record_id": "OCAP-FA03D9920391",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-0BE516D10E77",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "OFFICIAL_CAPABILITY_RECORD_PREPARED",
+      "record_type": "official_capability",
+      "record_id": "OCAP-2196ECF64722",
+      "details": {},
+      "status": "recorded"
+    },
+    {
+      "event_id": "AUDIT-D92303651AFD",
+      "timestamp": "2026-06-07T11:02:38.466456+00:00",
+      "agent": "Sage",
+      "action": "OFFICIAL_CAPABILITY_RECORD_PREPARED",
+      "record_type": "official_capability",
+      "record_id": "OCAP-09178ECFC6DA",
+      "details": {},
+      "status": "recorded"
+    }
+  ],
+  "decisions": {
+    "PROMOTION_READY": 7
+  },
+  "rec_prom": 7,
+  "gov_approved": 7,
+  "approved_count": 7,
+  "passed": 17,
+  "total_evidence": 34
+}

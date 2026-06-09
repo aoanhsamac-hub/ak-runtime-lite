@@ -1,0 +1,470 @@
+kingdom_task_registry:
+  created_at: '2026-06-08'
+  operator: Janus
+  owner: Janus
+  reviewer: Sage
+  status: INITIALIZED
+  tasks:
+  - audit_trail:
+    - TASK_CREATED:2026-06-08T10:36:31.923030+00:00
+    created_at: '2026-06-08T10:36:31.923030+00:00'
+    directive_id: DIR-0001
+    due_date: '2026-06-09'
+    owner: hermes
+    priority: HIGH
+    progress: 0.0
+    start_date: null
+    status: NOT_STARTED
+    task_id: TASK-0001
+    title: Create trading forecast registry
+    updated_at: '2026-06-08T10:36:31.923030+00:00'
+  - audit_trail:
+    - TASK_CREATED:2026-06-08T10:36:31.931045+00:00
+    created_at: '2026-06-08T10:36:31.931045+00:00'
+    directive_id: DIR-0001
+    due_date: '2026-06-09'
+    owner: iris
+    priority: HIGH
+    progress: 0.0
+    start_date: null
+    status: NOT_STARTED
+    task_id: TASK-0002
+    title: Run MT5 observation loop
+    updated_at: '2026-06-08T10:36:31.931045+00:00'
+  - audit_trail:
+    - TASK_CREATED:2026-06-08T10:36:31.942030+00:00
+    created_at: '2026-06-08T10:36:31.942030+00:00'
+    directive_id: DIR-0001
+    due_date: '2026-06-09'
+    owner: hermes
+    priority: MEDIUM
+    progress: 0.0
+    start_date: null
+    status: NOT_STARTED
+    task_id: TASK-0003
+    title: Track capability usage
+    updated_at: '2026-06-08T10:36:31.942030+00:00'
+  - audit_trail:
+    - TASK_CREATED:2026-06-08T11:03:52.746666+00:00
+    created_at: '2026-06-08T11:03:52.746666+00:00'
+    directive_id: DIR-0002
+    due_date: '2026-06-09'
+    owner: hermes
+    priority: HIGH
+    progress: 0.0
+    start_date: null
+    status: NOT_STARTED
+    task_id: TASK-0004
+    title: Create trading forecast registry
+    updated_at: '2026-06-08T11:03:52.746666+00:00'
+  - audit_trail:
+    - TASK_CREATED:2026-06-08T11:03:52.765341+00:00
+    created_at: '2026-06-08T11:03:52.765341+00:00'
+    directive_id: DIR-0002
+    due_date: '2026-06-09'
+    owner: iris
+    priority: HIGH
+    progress: 0.0
+    start_date: null
+    status: NOT_STARTED
+    task_id: TASK-0005
+    title: Run MT5 observation loop
+    updated_at: '2026-06-08T11:03:52.765341+00:00'
+  - audit_trail:
+    - TASK_CREATED:2026-06-08T11:03:52.785468+00:00
+    created_at: '2026-06-08T11:03:52.785468+00:00'
+    directive_id: DIR-0002
+    due_date: '2026-06-09'
+    owner: hermes
+    priority: MEDIUM
+    progress: 0.0
+    start_date: null
+    status: NOT_STARTED
+    task_id: TASK-0006
+    title: Track capability usage
+    updated_at: '2026-06-08T11:03:52.785468+00:00'
+  - audit_trail:
+    - TASK_CREATED:2026-06-08T11:04:32.030410+00:00
+    created_at: '2026-06-08T11:04:32.030410+00:00'
+    directive_id: DIR-0001
+    due_date: '2026-07-01'
+    owner: hermes
+    priority: HIGH
+    progress: 0.0
+    start_date: null
+    status: NOT_STARTED
+    task_id: TASK-0007
+    title: Test
+    updated_at: '2026-06-08T11:04:32.030410+00:00'
+  - audit_trail:
+    - TASK_CREATED:2026-06-08T11:06:38.671627+00:00
+    created_at: '2026-06-08T11:06:38.671627+00:00'
+    directive_id: DIR-0003
+    due_date: '2026-06-09'
+    owner: hermes
+    priority: HIGH
+    progress: 0.0
+    start_date: null
+    status: NOT_STARTED
+    task_id: TASK-0008
+    title: Create trading forecast registry
+    updated_at: '2026-06-08T11:06:38.671627+00:00'
+  - audit_trail:
+    - TASK_CREATED:2026-06-08T11:06:38.702144+00:00
+    created_at: '2026-06-08T11:06:38.702144+00:00'
+    directive_id: DIR-0003
+    due_date: '2026-06-09'
+    owner: iris
+    priority: HIGH
+    progress: 0.0
+    start_date: null
+    status: NOT_STARTED
+    task_id: TASK-0009
+    title: Run MT5 observation loop
+    updated_at: '2026-06-08T11:06:38.702144+00:00'
+  - audit_trail:
+    - TASK_CREATED:2026-06-08T11:06:38.733421+00:00
+    created_at: '2026-06-08T11:06:38.733421+00:00'
+    directive_id: DIR-0003
+    due_date: '2026-06-09'
+    owner: hermes
+    priority: MEDIUM
+    progress: 0.0
+    start_date: null
+    status: NOT_STARTED
+    task_id: TASK-0010
+    title: Track capability usage
+    updated_at: '2026-06-08T11:06:38.733421+00:00'
+  - assigned_to: hermes
+    audit_trail:
+    - TASK_CREATED:2026-06-08T11:10:06.266766+00:00
+    - TASK_ASSIGNED:hermes
+    - TASK_UPDATED:IN_PROGRESS
+    created_at: '2026-06-08T11:10:06.266766+00:00'
+    directive_id: DIR-0004
+    due_date: '2026-06-09'
+    owner: hermes
+    priority: HIGH
+    progress: 33.0
+    start_date: '2026-06-08T11:10:06.359053+00:00'
+    status: IN_PROGRESS
+    task_id: TASK-0011
+    title: Create trading forecast registry
+    updated_at: '2026-06-08T11:10:06.452434+00:00'
+  - assigned_to: iris
+    audit_trail:
+    - TASK_CREATED:2026-06-08T11:10:06.302013+00:00
+    - TASK_ASSIGNED:iris
+    - TASK_UPDATED:IN_PROGRESS
+    created_at: '2026-06-08T11:10:06.302013+00:00'
+    directive_id: DIR-0004
+    due_date: '2026-06-09'
+    owner: iris
+    priority: HIGH
+    progress: 33.0
+    start_date: '2026-06-08T11:10:06.390302+00:00'
+    status: IN_PROGRESS
+    task_id: TASK-0012
+    title: Run MT5 observation loop
+    updated_at: '2026-06-08T11:10:06.483699+00:00'
+  - assigned_to: hermes
+    audit_trail:
+    - TASK_CREATED:2026-06-08T11:10:06.327802+00:00
+    - TASK_ASSIGNED:hermes
+    - TASK_UPDATED:IN_PROGRESS
+    created_at: '2026-06-08T11:10:06.327802+00:00'
+    directive_id: DIR-0004
+    due_date: '2026-06-09'
+    owner: hermes
+    priority: MEDIUM
+    progress: 33.0
+    start_date: '2026-06-08T11:10:06.421128+00:00'
+    status: IN_PROGRESS
+    task_id: TASK-0013
+    title: Track capability usage
+    updated_at: '2026-06-08T11:10:06.514935+00:00'
+  - assigned_to: hermes
+    audit_trail:
+    - TASK_CREATED:2026-06-08T11:11:39.439283+00:00
+    - TASK_ASSIGNED:hermes
+    - TASK_UPDATED:IN_PROGRESS
+    created_at: '2026-06-08T11:11:39.439283+00:00'
+    directive_id: DIR-0005
+    due_date: '2026-06-09'
+    owner: hermes
+    priority: HIGH
+    progress: 33.0
+    start_date: '2026-06-08T11:11:39.565722+00:00'
+    status: IN_PROGRESS
+    task_id: TASK-0014
+    title: Create trading forecast registry
+    updated_at: '2026-06-08T11:11:39.706490+00:00'
+  - assigned_to: iris
+    audit_trail:
+    - TASK_CREATED:2026-06-08T11:11:39.471965+00:00
+    - TASK_ASSIGNED:iris
+    - TASK_UPDATED:IN_PROGRESS
+    created_at: '2026-06-08T11:11:39.471965+00:00'
+    directive_id: DIR-0005
+    due_date: '2026-06-09'
+    owner: iris
+    priority: HIGH
+    progress: 33.0
+    start_date: '2026-06-08T11:11:39.596974+00:00'
+    status: IN_PROGRESS
+    task_id: TASK-0015
+    title: Run MT5 observation loop
+    updated_at: '2026-06-08T11:11:39.737725+00:00'
+  - assigned_to: hermes
+    audit_trail:
+    - TASK_CREATED:2026-06-08T11:11:39.518880+00:00
+    - TASK_ASSIGNED:hermes
+    - TASK_UPDATED:IN_PROGRESS
+    created_at: '2026-06-08T11:11:39.518880+00:00'
+    directive_id: DIR-0005
+    due_date: '2026-06-09'
+    owner: hermes
+    priority: MEDIUM
+    progress: 33.0
+    start_date: '2026-06-08T11:11:39.643942+00:00'
+    status: IN_PROGRESS
+    task_id: TASK-0016
+    title: Track capability usage
+    updated_at: '2026-06-08T11:11:39.753352+00:00'
+  - audit_trail:
+    - TASK_CREATED:2026-06-08T11:15:53.546724+00:00
+    created_at: '2026-06-08T11:15:53.546724+00:00'
+    directive_id: DIR-0001
+    due_date: '2026-07-01'
+    owner: hermes
+    priority: HIGH
+    progress: 0.0
+    start_date: null
+    status: NOT_STARTED
+    task_id: TASK-0017
+    title: Test Task
+    updated_at: '2026-06-08T11:15:53.546724+00:00'
+  - audit_trail:
+    - TASK_CREATED:2026-06-08T11:15:53.593625+00:00
+    - TASK_UPDATED:NOT_STARTED
+    created_at: '2026-06-08T11:15:53.593625+00:00'
+    directive_id: DIR-0001
+    due_date: '2026-07-01'
+    owner: iris
+    priority: MEDIUM
+    progress: 50.0
+    start_date: null
+    status: NOT_STARTED
+    task_id: TASK-0018
+    title: Progress Test
+    updated_at: '2026-06-08T11:15:53.624889+00:00'
+  - audit_trail:
+    - TASK_CREATED:2026-06-08T11:15:53.687120+00:00
+    - TASK_UPDATED:COMPLETE
+    created_at: '2026-06-08T11:15:53.687120+00:00'
+    directive_id: DIR-0001
+    due_date: '2026-07-01'
+    owner: helen
+    priority: LOW
+    progress: 0.0
+    start_date: null
+    status: COMPLETE
+    task_id: TASK-0019
+    title: Status Test
+    updated_at: '2026-06-08T11:15:53.718358+00:00'
+  - audit_trail:
+    - TASK_CREATED:2026-06-08T11:15:53.791113+00:00
+    - TASK_UPDATED:COMPLETE
+    created_at: '2026-06-08T11:15:53.791113+00:00'
+    directive_id: DIR-0001
+    due_date: '2026-07-01'
+    owner: yet_kieu
+    priority: CRITICAL
+    progress: 100.0
+    start_date: null
+    status: COMPLETE
+    task_id: TASK-0020
+    title: Close Test
+    updated_at: '2026-06-08T11:15:53.826913+00:00'
+  - audit_trail:
+    - TASK_CREATED:2026-06-08T11:15:53.873788+00:00
+    created_at: '2026-06-08T11:15:53.873788+00:00'
+    directive_id: DIR-0001
+    due_date: '2026-07-01'
+    owner: lang_lieu
+    priority: HIGH
+    progress: 0.0
+    start_date: null
+    status: NOT_STARTED
+    task_id: TASK-0021
+    title: Audit Test
+    updated_at: '2026-06-08T11:15:53.873788+00:00'
+  - assigned_to: hermes
+    audit_trail:
+    - TASK_CREATED:2026-06-08T11:15:53.936290+00:00
+    - TASK_ASSIGNED:hermes
+    created_at: '2026-06-08T11:15:53.936290+00:00'
+    directive_id: DIR-0001
+    due_date: '2026-07-01'
+    owner: hermes
+    priority: HIGH
+    progress: 0.0
+    start_date: '2026-06-08T11:15:53.983107+00:00'
+    status: IN_PROGRESS
+    task_id: TASK-0022
+    title: Assign Test
+    updated_at: '2026-06-08T11:15:53.983107+00:00'
+  - audit_trail:
+    - TASK_CREATED:2026-06-08T11:15:54.108169+00:00
+    - TASK_UPDATED:NOT_STARTED
+    created_at: '2026-06-08T11:15:54.108169+00:00'
+    directive_id: DIR-PROG-01
+    due_date: '2026-07-01'
+    owner: hermes
+    priority: HIGH
+    progress: 50.0
+    start_date: null
+    status: NOT_STARTED
+    task_id: TASK-0023
+    title: Task 1
+    updated_at: '2026-06-08T11:15:54.217546+00:00'
+  - audit_trail:
+    - TASK_CREATED:2026-06-08T11:15:54.170625+00:00
+    - TASK_UPDATED:NOT_STARTED
+    created_at: '2026-06-08T11:15:54.170625+00:00'
+    directive_id: DIR-PROG-01
+    due_date: '2026-07-01'
+    owner: iris
+    priority: MEDIUM
+    progress: 75.0
+    start_date: null
+    status: NOT_STARTED
+    task_id: TASK-0024
+    title: Task 2
+    updated_at: '2026-06-08T11:15:54.248820+00:00'
+  - audit_trail:
+    - TASK_CREATED:2026-06-08T11:19:43.498952+00:00
+    created_at: '2026-06-08T11:19:43.498952+00:00'
+    directive_id: DIR-0001
+    due_date: '2026-07-01'
+    owner: hermes
+    priority: HIGH
+    progress: 0.0
+    start_date: null
+    status: NOT_STARTED
+    task_id: TASK-0025
+    title: Test Task
+    updated_at: '2026-06-08T11:19:43.498952+00:00'
+  - audit_trail:
+    - TASK_CREATED:2026-06-08T11:19:43.561451+00:00
+    - TASK_UPDATED:NOT_STARTED
+    created_at: '2026-06-08T11:19:43.561451+00:00'
+    directive_id: DIR-0001
+    due_date: '2026-07-01'
+    owner: iris
+    priority: MEDIUM
+    progress: 50.0
+    start_date: null
+    status: NOT_STARTED
+    task_id: TASK-0026
+    title: Progress Test
+    updated_at: '2026-06-08T11:19:43.623967+00:00'
+  - audit_trail:
+    - TASK_CREATED:2026-06-08T11:19:43.700990+00:00
+    - TASK_UPDATED:COMPLETE
+    created_at: '2026-06-08T11:19:43.700990+00:00'
+    directive_id: DIR-0001
+    due_date: '2026-07-01'
+    owner: helen
+    priority: LOW
+    progress: 0.0
+    start_date: null
+    status: COMPLETE
+    task_id: TASK-0027
+    title: Status Test
+    updated_at: '2026-06-08T11:19:43.748720+00:00'
+  - audit_trail:
+    - TASK_CREATED:2026-06-08T11:19:43.811386+00:00
+    - TASK_UPDATED:COMPLETE
+    created_at: '2026-06-08T11:19:43.811386+00:00'
+    directive_id: DIR-0001
+    due_date: '2026-07-01'
+    owner: yet_kieu
+    priority: CRITICAL
+    progress: 100.0
+    start_date: null
+    status: COMPLETE
+    task_id: TASK-0028
+    title: Close Test
+    updated_at: '2026-06-08T11:19:43.858301+00:00'
+  - audit_trail:
+    - TASK_CREATED:2026-06-08T11:19:43.952107+00:00
+    created_at: '2026-06-08T11:19:43.952107+00:00'
+    directive_id: DIR-0001
+    due_date: '2026-07-01'
+    owner: lang_lieu
+    priority: HIGH
+    progress: 0.0
+    start_date: null
+    status: NOT_STARTED
+    task_id: TASK-0029
+    title: Audit Test
+    updated_at: '2026-06-08T11:19:43.952107+00:00'
+  - assigned_to: hermes
+    audit_trail:
+    - TASK_CREATED:2026-06-08T11:19:44.030747+00:00
+    - TASK_ASSIGNED:hermes
+    created_at: '2026-06-08T11:19:44.030747+00:00'
+    directive_id: DIR-0001
+    due_date: '2026-07-01'
+    owner: hermes
+    priority: HIGH
+    progress: 0.0
+    start_date: '2026-06-08T11:19:44.077632+00:00'
+    status: IN_PROGRESS
+    task_id: TASK-0030
+    title: Assign Test
+    updated_at: '2026-06-08T11:19:44.077632+00:00'
+  - audit_trail:
+    - TASK_CREATED:2026-06-08T11:19:44.187285+00:00
+    - TASK_UPDATED:NOT_STARTED
+    created_at: '2026-06-08T11:19:44.187285+00:00'
+    directive_id: DIR-PROG-01
+    due_date: '2026-07-01'
+    owner: hermes
+    priority: HIGH
+    progress: 50.0
+    start_date: null
+    status: NOT_STARTED
+    task_id: TASK-0031
+    title: Task 1
+    updated_at: '2026-06-08T11:19:44.327578+00:00'
+  - audit_trail:
+    - TASK_CREATED:2026-06-08T11:19:44.265104+00:00
+    - TASK_UPDATED:NOT_STARTED
+    created_at: '2026-06-08T11:19:44.265104+00:00'
+    directive_id: DIR-PROG-01
+    due_date: '2026-07-01'
+    owner: iris
+    priority: MEDIUM
+    progress: 75.0
+    start_date: null
+    status: NOT_STARTED
+    task_id: TASK-0032
+    title: Task 2
+    updated_at: '2026-06-08T11:19:44.374122+00:00'
+  updated_at: null
+  version: '1.0'
+priorities:
+- CRITICAL: 1
+- HIGH: 2
+- MEDIUM: 3
+- LOW: 4
+statuses:
+- NOT_STARTED: Task created, not yet started
+- IN_PROGRESS: Task actively executing
+- BLOCKED: Task blocked by dependency or governance
+- REVIEW: Task complete, awaiting review
+- COMPLETE: Task verified complete
+- ARCHIVED: Task archived with directive
+tasks: []

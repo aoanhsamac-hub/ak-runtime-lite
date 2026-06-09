@@ -1,0 +1,7 @@
+mission_type: engineering_review_mission
+owner: Lang_Lieu
+description: "Engineering review and implementation planning"
+required_tools: ["llm"]
+required_evidence: ["code_review", "plan"]
+activation_required: SANDBOX_ACTIVE
+review_required: Sage

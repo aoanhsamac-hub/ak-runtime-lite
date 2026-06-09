@@ -1,0 +1,57 @@
+kingdom_status_registry:
+  created_at: '2026-06-08'
+  current_phase: PSOP-02
+  domains:
+    agents:
+      description: Agent activation and operational readiness
+      detail: All 7 agents operational
+      last_updated: '2026-06-08T09:35:14.671176+00:00'
+      status: HEALTHY
+    capabilities:
+      description: Capability maturity and adoption
+      detail: 'Capability registries found: 3/3 (capability_registry_dir, official_capability_registry,
+        capability_pipeline_dir)'
+      last_updated: '2026-06-08T09:35:14.671176+00:00'
+      status: HEALTHY
+    datasets:
+      description: Dataset registry and governance
+      detail: 6/7 knowledge registries present
+      last_updated: '2026-06-08T09:35:14.671176+00:00'
+      status: WATCH
+    governance:
+      description: Governance compliance and charter health
+      detail: All charters and registries present
+      last_updated: '2026-06-08T09:35:14.671176+00:00'
+      status: HEALTHY
+    knowledge:
+      description: Knowledge asset integrity and growth
+      detail: 6/7 knowledge registries present
+      last_updated: '2026-06-08T09:35:14.671176+00:00'
+      status: WATCH
+    security:
+      description: Security posture and compliance
+      detail: All 5 security checks passed
+      last_updated: '2026-06-08T09:35:14.671176+00:00'
+      status: HEALTHY
+    trading:
+      description: Trading infrastructure and observation
+      detail: All 5 security checks passed
+      last_updated: '2026-06-08T09:35:14.671176+00:00'
+      status: HEALTHY
+    treasury:
+      description: Treasury operations and financial health
+      detail: 5/5 treasury domains scored, average 100/100
+      last_updated: '2026-06-08T09:35:14.671176+00:00'
+      status: HEALTHY
+  last_aggregated: '2026-06-08T09:35:14.671176+00:00'
+  next_review: null
+  operator: Iris
+  overall_status: WATCH
+  owner: Janus
+  reviewer: Sage
+  status: ACTIVE
+  status_overrides:
+    description: Manual overrides for domain status (WATCH/WARNING/CRITICAL only)
+    entries: []
+  updated_at: null
+  version: '1.0'

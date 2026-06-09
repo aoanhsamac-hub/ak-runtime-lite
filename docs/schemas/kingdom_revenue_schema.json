@@ -1,0 +1,23 @@
+{
+  "schema": "kingdom_revenue_schema",
+  "version": "1.0",
+  "description": "Schema for kingdom revenue records",
+  "required_fields": [
+    "revenue_id", "timestamp", "source", "category", "amount",
+    "authority", "reference", "status", "audit_id"
+  ],
+  "fields": {
+    "revenue_id": {"type": "string", "format": "REV-{YYYY}-{NNNN}", "description": "Unique revenue identifier"},
+    "timestamp": {"type": "string", "format": "ISO-8601", "description": "Revenue recognition timestamp"},
+    "source": {"type": "string", "enum": ["Trading", "Investment", "Service", "Technology", "Licensing", "Consulting", "Education", "Content", "E-Commerce", "Infrastructure", "Other"], "description": "Revenue source per Budget Law"},
+    "category": {"type": "string", "enum": ["Operating", "Capital", "Extraordinary"], "description": "Revenue category"},
+    "amount": {"type": "number", "minimum": 0, "description": "Revenue amount in base currency"},
+    "authority": {"type": "string", "description": "Authorizing agent or person"},
+    "reference": {"type": "string", "description": "Reference document or transaction ID"},
+    "description": {"type": "string", "optional": true, "description": "Optional description"},
+    "status": {"type": "string", "enum": ["RECORDED", "VERIFIED", "SETTLED", "DISPUTED"], "description": "Revenue status"},
+    "audit_id": {"type": "string", "format": "AUDIT-{XXXXXXXX}", "description": "Link to audit record"},
+    "created_at": {"type": "string", "format": "ISO-8601", "description": "Record creation timestamp"},
+    "updated_at": {"type": "string", "format": "ISO-8601", "optional": true, "description": "Last update timestamp"}
+  }
+}

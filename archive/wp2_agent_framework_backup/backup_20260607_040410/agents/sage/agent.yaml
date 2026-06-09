@@ -1,0 +1,6 @@
+id: sage
+title: "Supreme Governance & Risk Court"
+status: bootstrap
+authority: custodian
+language: vi
+default_mode: propose_only

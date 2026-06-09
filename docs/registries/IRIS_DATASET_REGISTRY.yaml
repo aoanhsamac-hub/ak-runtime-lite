@@ -1,0 +1,27 @@
+iris_dataset_registry:
+  created_at: '2026-06-08'
+  datasets:
+  - dataset_id: IRIS-DATASET-XAUUSDm-H1-20260609
+    is_valid: false
+    issues:
+    - Empty dataset
+    quality_score: 90
+    record_count: 0
+    symbol: XAUUSDm
+    timeframe: H1
+    validated_at: '2026-06-08T22:30:13.495289+00:00'
+  - dataset_id: IRIS-DATASET-XAUUSDm-H1-20260609
+    is_valid: false
+    issues:
+    - Empty dataset
+    quality_score: 90
+    record_count: 0
+    symbol: XAUUSDm
+    timeframe: H1
+    validated_at: '2026-06-08T22:30:13.695217+00:00'
+  last_updated: '2026-06-08T22:30:13.711867+00:00'
+  operator: Iris
+  owner: Janus
+  reviewer: Hermes
+  status: ACTIVE
+  version: 1.0

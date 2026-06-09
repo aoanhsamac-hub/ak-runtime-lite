@@ -1,0 +1,48 @@
+{
+  "registry": "kingdom_budget",
+  "status": "INITIALIZED",
+  "version": "1.0",
+  "created_at": "2026-06-08",
+  "updated_at": null,
+  "schema": "kingdom_budget_schema",
+  "fiscal_year": null,
+  "categories": {
+    "Infrastructure": {
+      "allocated": null,
+      "spent": null
+    },
+    "Knowledge": {
+      "allocated": null,
+      "spent": null
+    },
+    "Dataset": {
+      "allocated": null,
+      "spent": null
+    },
+    "Security": {
+      "allocated": null,
+      "spent": null
+    },
+    "Operations": {
+      "allocated": null,
+      "spent": null
+    },
+    "R&D": {
+      "allocated": null,
+      "spent": null
+    },
+    "StrategicReserve": {
+      "allocated": null,
+      "spent": null
+    },
+    "EmergencyReserve": {
+      "allocated": null,
+      "spent": null
+    },
+    "Growth": {
+      "allocated": null,
+      "spent": null
+    }
+  },
+  "entries": []
+}

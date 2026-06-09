@@ -1,0 +1,152 @@
+capability_value_registry:
+  created_at: '2026-06-08'
+  evidence_records:
+  - capability_name: test_cap
+    evidence_id: VALUE-EVID-0001
+    measurable_outcome: outcome_achieved
+    recorded_at: '2026-06-08T05:12:43.598888+00:00'
+    supporting_evidence:
+    - ref1
+    value_assessment:
+      adoption_count: 0
+      adoption_value: 0
+      assessed_at: '2026-06-08T05:12:43.614587+00:00'
+      cap_level: 0
+      capability_name: test_cap
+      evolution_cycle: 0
+      outcome_quality: 0.0
+      quality_value: 0.0
+      task_completion_rate: 0.0
+      total_value: 0.0
+      usage_count: 0
+      usage_value: 0
+    value_created: 0.0
+  - capability_name: test_cap
+    evidence_id: VALUE-EVID-0002
+    measurable_outcome: outcome_achieved
+    recorded_at: '2026-06-08T05:13:04.299195+00:00'
+    supporting_evidence:
+    - ref1
+    value_assessment:
+      adoption_count: 0
+      adoption_value: 0
+      assessed_at: '2026-06-08T05:13:04.299195+00:00'
+      cap_level: 0
+      capability_name: test_cap
+      evolution_cycle: 0
+      outcome_quality: 0.0
+      quality_value: 0.0
+      task_completion_rate: 0.0
+      total_value: 0.0
+      usage_count: 0
+      usage_value: 0
+    value_created: 0.0
+  - capability_name: test_cap
+    evidence_id: VALUE-EVID-0003
+    measurable_outcome: outcome_achieved
+    recorded_at: '2026-06-08T06:52:37.046155+00:00'
+    supporting_evidence:
+    - ref1
+    value_assessment:
+      adoption_count: 0
+      adoption_value: 0
+      assessed_at: '2026-06-08T06:52:37.046155+00:00'
+      cap_level: 0
+      capability_name: test_cap
+      evolution_cycle: 0
+      outcome_quality: 0.0
+      quality_value: 0.0
+      task_completion_rate: 0.0
+      total_value: 0.0
+      usage_count: 0
+      usage_value: 0
+    value_created: 0.0
+  - capability_name: test_cap
+    evidence_id: VALUE-EVID-0004
+    measurable_outcome: outcome_achieved
+    recorded_at: '2026-06-08T06:54:01.093191+00:00'
+    supporting_evidence:
+    - ref1
+    value_assessment:
+      adoption_count: 0
+      adoption_value: 0
+      assessed_at: '2026-06-08T06:54:01.093191+00:00'
+      cap_level: 0
+      capability_name: test_cap
+      evolution_cycle: 0
+      outcome_quality: 0.0
+      quality_value: 0.0
+      task_completion_rate: 0.0
+      total_value: 0.0
+      usage_count: 0
+      usage_value: 0
+    value_created: 0.0
+  - capability_name: test_cap
+    evidence_id: VALUE-EVID-0005
+    measurable_outcome: outcome_achieved
+    recorded_at: '2026-06-08T06:54:25.640315+00:00'
+    supporting_evidence:
+    - ref1
+    value_assessment:
+      adoption_count: 0
+      adoption_value: 0
+      assessed_at: '2026-06-08T06:54:25.640315+00:00'
+      cap_level: 0
+      capability_name: test_cap
+      evolution_cycle: 0
+      outcome_quality: 0.0
+      quality_value: 0.0
+      task_completion_rate: 0.0
+      total_value: 0.0
+      usage_count: 0
+      usage_value: 0
+    value_created: 0.0
+  - capability_name: test_cap
+    evidence_id: VALUE-EVID-0006
+    measurable_outcome: outcome_achieved
+    recorded_at: '2026-06-08T06:55:51.451994+00:00'
+    supporting_evidence:
+    - ref1
+    value_assessment:
+      adoption_count: 0
+      adoption_value: 0
+      assessed_at: '2026-06-08T06:55:51.451994+00:00'
+      cap_level: 0
+      capability_name: test_cap
+      evolution_cycle: 0
+      outcome_quality: 0.0
+      quality_value: 0.0
+      task_completion_rate: 0.0
+      total_value: 0.0
+      usage_count: 0
+      usage_value: 0
+    value_created: 0.0
+  - capability_name: test_cap
+    evidence_id: VALUE-EVID-0007
+    measurable_outcome: outcome_achieved
+    recorded_at: '2026-06-08T07:13:20.015992+00:00'
+    supporting_evidence:
+    - ref1
+    value_assessment:
+      adoption_count: 0
+      adoption_value: 0
+      assessed_at: '2026-06-08T07:13:20.015992+00:00'
+      cap_level: 0
+      capability_name: test_cap
+      evolution_cycle: 0
+      outcome_quality: 0.0
+      quality_value: 0.0
+      task_completion_rate: 0.0
+      total_value: 0.0
+      usage_count: 0
+      usage_value: 0
+    value_created: 0.0
+  last_evidence_id: VALUE-EVID-0007
+  last_updated: '2026-06-08T07:13:20.015992+00:00'
+  next_review: '2026-07-08'
+  operator: Sage
+  owner: Janus
+  reviewer: Hermes
+  status: ACTIVE
+  updated_at: '2026-06-08'
+  version: 1.0

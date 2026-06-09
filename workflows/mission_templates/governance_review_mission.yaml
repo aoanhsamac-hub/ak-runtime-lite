@@ -1,0 +1,7 @@
+mission_type: governance_review_mission
+owner: Sage
+description: "Governance compliance review"
+required_tools: []
+required_evidence: ["compliance_checklist"]
+activation_required: SANDBOX_ACTIVE
+review_required: Sage

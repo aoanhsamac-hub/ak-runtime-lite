@@ -1,0 +1,17 @@
+{
+  "batch_id": "WP-LKI-01-20260607-121247",
+  "created_at": "2026-06-07T12:12:47.616339+00:00",
+  "dry_run": false,
+  "summary": {
+    "total_candidates": 0,
+    "decision_trace_candidates": 0,
+    "lesson_candidates": 0,
+    "dataset_candidates": 0,
+    "skill_candidates": 0,
+    "capability_candidates": 0,
+    "quarantine": 6,
+    "archive_only": 0,
+    "rejected": 0,
+    "duplicates_found": 0
+  }
+}

@@ -1,0 +1,49 @@
+iris_forecast_benchmark_registry:
+  benchmarks:
+  - benchmark_id: BENCH-test-001
+    benchmarked_at: '2026-06-08T22:30:13.645123+00:00'
+    confidence_calibration: 0.8
+    direction_accuracy: 0.0
+    forecast_id: test-001
+    overall_accuracy: 0.33
+    structure_accuracy: 0.5
+    zone_accuracy: 0.5
+  - benchmark_id: BENCH-test-002
+    benchmarked_at: '2026-06-08T22:30:13.660134+00:00'
+    confidence_calibration: 0
+    direction_accuracy: 0.5
+    forecast_id: test-002
+    overall_accuracy: 0.5
+    structure_accuracy: 0.5
+    zone_accuracy: 0.5
+  - benchmark_id: BENCH-test-003
+    benchmarked_at: '2026-06-08T22:30:13.661915+00:00'
+    confidence_calibration: 0
+    direction_accuracy: 0.0
+    forecast_id: test-003
+    overall_accuracy: 0.33
+    structure_accuracy: 0.5
+    zone_accuracy: 0.5
+  - benchmark_id: BENCH-test-004
+    benchmarked_at: '2026-06-08T22:30:13.661915+00:00'
+    confidence_calibration: 0
+    direction_accuracy: 0.0
+    forecast_id: test-004
+    overall_accuracy: 0.33
+    structure_accuracy: 0.5
+    zone_accuracy: 0.5
+  - benchmark_id: BENCH-test-005
+    benchmarked_at: '2026-06-08T22:30:13.678479+00:00'
+    confidence_calibration: 0
+    direction_accuracy: 0.0
+    forecast_id: test-005
+    overall_accuracy: 0.33
+    structure_accuracy: 0.5
+    zone_accuracy: 0.5
+  created_at: '2026-06-08'
+  last_updated: '2026-06-08T22:30:13.678479+00:00'
+  operator: Iris
+  owner: Janus
+  reviewer: Hermes
+  status: ACTIVE
+  version: 1.0

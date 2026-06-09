@@ -1,0 +1,77 @@
+# Agent Assignment Matrix
+
+# Maps agents to their capabilities and current load
+
+agents:
+  janus:
+    branch: REH
+    capabilities:
+      - directive_coordination
+      - task_generation
+      - progress_tracking
+      - report_compilation
+    capacity: 10
+    current_load: 0
+
+  sage:
+    branch: RAK
+    capabilities:
+      - risk_review
+      - governance_audit
+      - lesson_review
+    capacity: 5
+    current_load: 0
+
+  hermes:
+    branch: KAO
+    capabilities:
+      - knowledge_management
+      - memory_operations
+      - lesson_creation
+      - capability_governance
+    capacity: 8
+    current_load: 0
+
+  iris:
+    branch: Economic
+    capabilities:
+      - market_analysis
+      - treasury_operations
+      - forecast_generation
+    capacity: 6
+    current_load: 0
+
+  helen:
+    branch: Civilization
+    capabilities:
+      - macro_analysis
+      - news_validation
+      - social_impact
+    capacity: 6
+    current_load: 0
+
+  lang_lieu:
+    branch: HCK
+    capabilities:
+      - code_analysis
+      - code_writing
+      - patch_creation
+      - architecture_review
+    capacity: 7
+    current_load: 0
+
+  yet_kieu:
+    branch: Security
+    capabilities:
+      - vps_monitoring
+      - mt5_monitoring
+      - security_audit
+      - threat_detection
+    capacity: 5
+    current_load: 0
+
+assignment_rules:
+  - authority_must_match_charter: true
+  - no_cross_branch_assignment: true
+  - capacity_enforced: true
+  - audit_trail_required: true

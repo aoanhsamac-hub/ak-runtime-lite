@@ -1,0 +1,27 @@
+# AK National Skill Dependency Registry
+# Governance Authority: Knowledge Governance Decree, Janus Directive AK-WP35.5-001
+# Last Updated: 2026-06-08
+
+skill_dependency_registry:
+  version: "1.0"
+  description: "Dependency graph registry for all AK skills"
+  relationship_types:
+    skill_skill:
+      - depends_on
+      - conflicts_with
+      - supersedes
+      - enhances
+    skill_dataset:
+      - requires_dataset
+      - produces_dataset
+    skill_tool:
+      - requires_tool
+      - provides_tool
+    skill_agent:
+      - assigned_to
+      - executable_by
+      - monitored_by
+    skill_capability:
+      - part_of_capability
+      - enables_capability
+  entries: []

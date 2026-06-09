@@ -1,0 +1,18 @@
+directive_registry:
+  status: ACTIVE
+  registry_version: "1.0"
+  created_at: "2026-06-07T00:00:00Z"
+  updated_at: "2026-06-07T14:00:00Z"
+  authority: Hung Vuong
+  owner_agent: Lang Lieu
+  reviewer_agent: Sage
+  directive_classes:
+    normal_directive:
+      description: Standard operational directive
+      records: []
+    supreme_directive:
+      description: Highest sovereign directive
+      records: []
+    termination_order:
+      description: Preserve, freeze, archive, terminate
+      records: []

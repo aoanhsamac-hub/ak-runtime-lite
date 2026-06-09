@@ -1,0 +1,37 @@
+treasury_report_registry:
+  status: INITIALIZED
+  version: "1.0"
+  created_at: "2026-06-08"
+  updated_at: null
+  owner: Janus
+  operator: Iris
+  reviewer: Sage
+
+report_types:
+  - type: Monthly Treasury Report
+    frequency: Monthly
+    template: docs/templates/MONTHLY_TREASURY_REPORT_TEMPLATE.md
+    owner: Iris
+    reviewer: Janus
+    approver: Hung Vuong
+    status: TEMPLATE_READY
+
+  - type: Quarterly Treasury Report
+    frequency: Quarterly
+    template: docs/templates/QUARTERLY_TREASURY_REPORT_TEMPLATE.md
+    owner: Iris
+    reviewer: Sage
+    approver: Hung Vuong
+    status: TEMPLATE_READY
+
+  - type: Treasury Health Report
+    frequency: Monthly
+    template: docs/templates/TREASURY_HEALTH_REPORT_TEMPLATE.md
+    owner: Iris
+    reviewer: Janus
+    approver: Sage
+    status: TEMPLATE_READY
+
+generated_reports: 0
+last_report_date: null
+next_report_date: null

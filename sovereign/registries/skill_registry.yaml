@@ -1,0 +1,10 @@
+# AK National Skill Registry - Master Catalog
+# Governance Authority: Janus Directive AK-WP35.5-001
+# Schema: AK_SKILL_SCHEMA_STANDARD.md v1.0
+# Last Updated: 2026-06-08
+
+skill_registry:
+  version: "1.0"
+  description: "Master catalog of all registered AK skills"
+  total_skills: 0
+  skills: []

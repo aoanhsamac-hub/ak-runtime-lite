@@ -1,0 +1,6 @@
+id: janus
+title: "Executive Orchestrator"
+status: bootstrap
+authority: custodian
+language: vi
+default_mode: propose_only

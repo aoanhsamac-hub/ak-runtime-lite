@@ -1,0 +1,78 @@
+hermes_import_authorization_registry:
+  created_at: '2026-06-08'
+  operator: Janus
+  owner: Sage
+  reviewer: Sage
+  status: ACTIVE
+  version: 1.0
+  authorized_imports:
+    - capability_id: CORE-001
+      capability_name: Skill Lifecycle
+      decision: ACCEPTED
+      authority: Already Operational
+      reviewer: Sage
+      status: COMPLETE
+      approval_date: '2026-06-08'
+      implementation_owner: Hermes
+      review_requirements: None
+    - capability_id: CORE-002
+      capability_name: Knowledge Compression
+      decision: ACCEPTED
+      authority: Already Operational
+      reviewer: Sage
+      status: COMPLETE
+      approval_date: '2026-06-08'
+      implementation_owner: Hermes
+      review_requirements: None
+    - capability_id: CORE-003
+      capability_name: Cross-Agent Sharing
+      decision: ACCEPTED
+      authority: Already Operational
+      reviewer: Sage
+      status: COMPLETE
+      approval_date: '2026-06-08'
+      implementation_owner: Hermes
+      review_requirements: None
+    - capability_id: CORE-004
+      capability_name: Capability Adoption
+      decision: ACCEPTED
+      authority: Already Operational
+      reviewer: Sage
+      status: COMPLETE
+      approval_date: '2026-06-08'
+      implementation_owner: Hermes
+      review_requirements: None
+    - capability_id: CORE-005
+      capability_name: ROI Attribution
+      decision: ACCEPTED
+      authority: Already Operational
+      reviewer: Sage
+      status: COMPLETE
+      approval_date: '2026-06-08'
+      implementation_owner: Hermes
+      review_requirements: None
+  rejected_imports:
+    - capability_id: EXT-003
+      capability_name: Autonomous Capability Expansion
+      decision: REJECTED
+      authority: STOP CONDITION
+      reviewer: Sage
+      status: BLOCKED
+      rejection_reason: Authority bypass violation
+      review_requirements: None
+  deferred_imports:
+    - capability_id: EXT-001
+      capability_name: Meta-Learning Optimization
+      decision: DEFERRED
+      authority: Level 3 Required
+      reviewer: Sage
+      status: PENDING
+      review_requirements: Governance review required
+    - capability_id: EXT-002
+      capability_name: Strategic Capability Prediction
+      decision: DEFERRED
+      authority: Level 3 Required
+      reviewer: Sage
+      status: PENDING
+      review_requirements: Lookahead bias safeguards
+  last_updated: '2026-06-08T00:00:00+00:00'

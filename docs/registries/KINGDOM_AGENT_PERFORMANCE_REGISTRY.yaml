@@ -1,0 +1,152 @@
+kingdom_agent_performance_registry:
+  created_at: '2026-06-08'
+  last_updated: '2026-06-08T14:35:38.805875+00:00'
+  operator: Janus
+  owner: Sage
+  performance_records:
+  - agent_name: janus
+    capability_growth: 0
+    compliance_score: 100
+    evidence_contribution: 0
+    is_operational: true
+    knowledge_contribution: 0
+    learning_output: 0
+    operational_output: 0
+    performance_id: PERF-janus-20260609
+    task_completion: 0
+    timestamp: '2026-06-08T14:35:37.639807+00:00'
+  - agent_name: hermes
+    capability_growth: 0
+    compliance_score: 100
+    evidence_contribution: 0
+    is_operational: true
+    knowledge_contribution: 0
+    learning_output: 0
+    operational_output: 0
+    performance_id: PERF-hermes-20260609
+    task_completion: 0
+    timestamp: '2026-06-08T14:35:37.717931+00:00'
+  - agent_name: janus
+    capability_growth: 0
+    compliance_score: 100
+    evidence_contribution: 0
+    is_operational: true
+    knowledge_contribution: 0
+    learning_output: 0
+    operational_output: 0
+    performance_id: PERF-janus-20260609
+    task_completion: 0
+    timestamp: '2026-06-08T14:35:37.820252+00:00'
+  - agent_name: sage
+    capability_growth: 0
+    compliance_score: 100
+    evidence_contribution: 0
+    is_operational: true
+    knowledge_contribution: 0
+    learning_output: 0
+    operational_output: 0
+    performance_id: PERF-sage-20260609
+    task_completion: 0
+    timestamp: '2026-06-08T14:35:37.889836+00:00'
+  - agent_name: hermes
+    capability_growth: 0
+    compliance_score: 100
+    evidence_contribution: 0
+    is_operational: true
+    knowledge_contribution: 0
+    learning_output: 0
+    operational_output: 0
+    performance_id: PERF-hermes-20260609
+    task_completion: 0
+    timestamp: '2026-06-08T14:35:37.967972+00:00'
+  - agent_name: iris
+    capability_growth: 0
+    compliance_score: 100
+    evidence_contribution: 0
+    is_operational: true
+    knowledge_contribution: 0
+    learning_output: 0
+    operational_output: 0
+    performance_id: PERF-iris-20260609
+    task_completion: 0
+    timestamp: '2026-06-08T14:35:38.062305+00:00'
+  - agent_name: helen
+    capability_growth: 0
+    compliance_score: 100
+    evidence_contribution: 0
+    is_operational: true
+    knowledge_contribution: 0
+    learning_output: 0
+    operational_output: 0
+    performance_id: PERF-helen-20260609
+    task_completion: 0
+    timestamp: '2026-06-08T14:35:38.145979+00:00'
+  - agent_name: lang_lieu
+    capability_growth: 0
+    compliance_score: 100
+    evidence_contribution: 0
+    is_operational: true
+    knowledge_contribution: 0
+    learning_output: 0
+    operational_output: 0
+    performance_id: PERF-lang_lieu-20260609
+    task_completion: 0
+    timestamp: '2026-06-08T14:35:38.217809+00:00'
+  - agent_name: yet_kieu
+    capability_growth: 0
+    compliance_score: 100
+    evidence_contribution: 0
+    is_operational: true
+    knowledge_contribution: 0
+    learning_output: 0
+    operational_output: 0
+    performance_id: PERF-yet_kieu-20260609
+    task_completion: 0
+    timestamp: '2026-06-08T14:35:38.374059+00:00'
+  - agent_name: janus
+    capability_growth: 0
+    compliance_score: 100
+    evidence_contribution: 0
+    is_operational: true
+    knowledge_contribution: 0
+    learning_output: 0
+    operational_output: 0
+    performance_id: PERF-janus-20260609
+    task_completion: 0
+    timestamp: '2026-06-08T14:35:38.474120+00:00'
+  - agent_name: janus
+    capability_growth: 0
+    compliance_score: 100
+    evidence_contribution: 0
+    is_operational: true
+    knowledge_contribution: 0
+    learning_output: 0
+    operational_output: 0
+    performance_id: PERF-janus-20260609
+    task_completion: 0
+    timestamp: '2026-06-08T14:35:38.578725+00:00'
+  - agent_name: hermes
+    capability_growth: 0
+    compliance_score: 100
+    evidence_contribution: 0
+    is_operational: true
+    knowledge_contribution: 0
+    learning_output: 0
+    operational_output: 0
+    performance_id: PERF-hermes-20260609
+    task_completion: 0
+    timestamp: '2026-06-08T14:35:38.670949+00:00'
+  - agent_name: janus
+    capability_growth: 0
+    compliance_score: 100
+    evidence_contribution: 0
+    is_operational: true
+    knowledge_contribution: 0
+    learning_output: 0
+    operational_output: 0
+    performance_id: PERF-janus-20260609
+    task_completion: 0
+    timestamp: '2026-06-08T14:35:38.789868+00:00'
+  reviewer: Sage
+  status: ACTIVE
+  version: 1.0

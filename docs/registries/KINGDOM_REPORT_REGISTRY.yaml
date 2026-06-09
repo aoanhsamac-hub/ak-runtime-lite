@@ -1,0 +1,26 @@
+# Kingdom Report Registry
+# Executive reports generated from directive/task completion
+
+kingdom_report_registry:
+  status: INITIALIZED
+  version: "1.0"
+  created_at: "2026-06-08"
+  updated_at: null
+  owner: Janus
+  operator: Janus
+  reviewer: Sage
+
+reports: []
+
+types:
+  - EXECUTIVE: "Weekly/Monthly executive summary"
+  - DIRECTIVE: "Directive completion report"
+  - TASK: "Task completion report"
+  - PROGRESS: "Weekly progress update"
+  - ESCALATION: "Escalation report"
+
+statuses:
+  - DRAFT: "Report being prepared"
+  - REVIEW: "Report awaiting Sage review"
+  - APPROVED: "Report approved for archive"
+  - ARCHIVED: "Report archived in evidence"

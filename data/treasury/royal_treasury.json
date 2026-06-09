@@ -1,0 +1,30 @@
+{
+  "registry": "royal_treasury",
+  "status": "ACTIVE",
+  "version": "1.0",
+  "created_at": "2026-06-08",
+  "updated_at": "2026-06-08T09:35:10.843091+00:00",
+  "schema": "treasury_transaction_schema",
+  "owner": "Hung Vuong",
+  "allocation": "8% of National Revenue",
+  "entries": [
+    {
+      "transaction_id": "TXN-2026-0001",
+      "timestamp": "2026-06-08T09:35:10.843091+00:00",
+      "from_account": "RevenueIngestion",
+      "to_account": "RoyalTreasury",
+      "amount": 80000.0,
+      "transaction_type": "Allocation",
+      "reference": "REV-2026-0011",
+      "authority": "Janus",
+      "approval_chain": [
+        "Janus"
+      ],
+      "description": "8% allocation from revenue REV-2026-0011",
+      "status": "COMPLETED",
+      "audit_id": "AUDIT-ALLOC-20260608093510",
+      "created_at": "2026-06-08T09:35:10.843091+00:00",
+      "updated_at": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+# AK National Skill Retirement Registry
+# Governance Authority: Retention Governance Decree, Janus Directive AK-WP35.5-001
+# Last Updated: 2026-06-08
+
+skill_retirement_registry:
+  version: "1.0"
+  description: "Retirement conditions, policies, and historical records for all AK skills"
+  retirement_policies:
+    retention_period_days: 365
+    archive_after_retirement_days: 90
+    auto_archive: true
+    deletion_policy: "ARCHIVE_ONLY"
+  default_stop_conditions:
+    - "governance_violation"
+    - "risk_threshold_exceeded"
+    - "owner_request"
+    - "superseded_by_newer_skill"
+  entries: []

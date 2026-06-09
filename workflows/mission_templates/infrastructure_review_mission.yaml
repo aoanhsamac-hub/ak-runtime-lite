@@ -1,0 +1,7 @@
+mission_type: infrastructure_review_mission
+owner: Yet_Kieu
+description: "Infrastructure state review and security posture"
+required_tools: []
+required_evidence: ["infra_status", "security_findings"]
+activation_required: SANDBOX_ACTIVE
+review_required: Sage

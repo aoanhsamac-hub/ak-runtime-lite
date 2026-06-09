@@ -1,0 +1,12 @@
+{
+  "registry": "emergency_reserve",
+  "status": "INITIALIZED",
+  "version": "1.0",
+  "created_at": "2026-06-08",
+  "updated_at": null,
+  "schema": "reserve_transaction_schema",
+  "framework": "AK_EMERGENCY_RESERVE_FRAMEWORK_v1.0_FINAL",
+  "target_balance": null,
+  "current_balance": null,
+  "entries": []
+}

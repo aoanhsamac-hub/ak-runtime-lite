@@ -1,0 +1,7 @@
+mission_type: technology_research_mission
+owner: Helen
+description: "Research technology topics and produce intelligence"
+required_tools: ["llm"]
+required_evidence: ["research_output"]
+activation_required: SANDBOX_ACTIVE
+review_required: Sage

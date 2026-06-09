@@ -1,0 +1,63 @@
+treasury_account_registry:
+  status: ACTIVE
+  version: "1.0"
+  created_at: "2026-06-08"
+  updated_at: null
+  owner: Janus
+  operator: Iris
+  reviewer: Sage
+
+accounts:
+  - account_id: NAT-001
+    name: Kingdom Treasury
+    type: Primary
+    parent: null
+    allocation: 92%
+    owner: Janus
+    status: INITIALIZED
+    data_file: data/treasury/kingdom_treasury.json
+
+  - account_id: ROY-001
+    name: Royal Treasury
+    type: Sovereign
+    parent: null
+    allocation: 8%
+    owner: Hung Vuong
+    status: INITIALIZED
+    data_file: data/treasury/royal_treasury.json
+
+  - account_id: NFD-001
+    name: Kingdom Fund
+    type: Fund
+    parent: NAT-001
+    allocation: 100%
+    owner: Janus
+    status: INITIALIZED
+    data_file: data/treasury/kingdom_fund.json
+
+  - account_id: RES-STR-001
+    name: Strategic Reserve
+    type: Reserve
+    parent: NAT-001
+    allocation: 10% monthly
+    owner: Janus
+    status: INITIALIZED
+    data_file: data/treasury/strategic_reserve.json
+
+  - account_id: RES-EMR-001
+    name: Emergency Reserve
+    type: Reserve
+    parent: NAT-001
+    allocation: 5% monthly
+    owner: Janus
+    status: INITIALIZED
+    data_file: data/treasury/emergency_reserve.json
+
+  - account_id: BUD-MGMT
+    name: Budget Account
+    type: Budget
+    parent: NFD-001
+    allocation: Variable
+    owner: Janus
+    status: INITIALIZED
+    data_file: data/treasury/kingdom_budget.json

@@ -1,0 +1,17 @@
+{
+  "registry": "kingdom_fund",
+  "status": "INITIALIZED",
+  "version": "1.0",
+  "created_at": "2026-06-08",
+  "updated_at": null,
+  "schema": "treasury_transaction_schema",
+  "parent": "Kingdom Treasury",
+  "sub_accounts": [
+    "Operating Budget",
+    "Development Budget",
+    "Strategic Reserve",
+    "Emergency Reserve",
+    "Growth Fund"
+  ],
+  "entries": []
+}

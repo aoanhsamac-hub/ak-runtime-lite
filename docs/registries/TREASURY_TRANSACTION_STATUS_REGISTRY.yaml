@@ -1,0 +1,35 @@
+treasury_transaction_status_registry:
+  status: ACTIVE
+  version: "1.0"
+  created_at: "2026-06-08"
+  updated_at: null
+  owner: Iris
+  operator: Iris
+  reviewer: Sage
+
+transaction_lifecycle:
+  - stage: PROPOSED
+    description: Transaction proposed, awaiting validation
+    allowed_actions: [validate, cancel]
+    next_stage: VALIDATED
+  - stage: VALIDATED
+    description: Transaction validated, awaiting approval
+    allowed_actions: [approve, reject]
+    next_stage: APPROVED
+  - stage: APPROVED
+    description: Transaction approved, awaiting recording
+    allowed_actions: [record, reverse]
+    next_stage: RECORDED
+  - stage: RECORDED
+    description: Transaction recorded on ledger, awaiting audit
+    allowed_actions: [audit, reverse]
+    next_stage: AUDITED
+  - stage: AUDITED
+    description: Transaction audited and finalized
+    allowed_actions: [archive, report]
+    next_stage: null
+
+current_transactions: 0
+last_transaction_id: null
+last_transaction_date: null
+transactions: []

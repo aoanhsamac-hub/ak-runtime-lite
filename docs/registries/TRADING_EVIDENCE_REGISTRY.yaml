@@ -1,0 +1,873 @@
+trading_evidence_registry:
+  created_at: '2026-06-08'
+  evidence_records:
+  - detail: Forecast accuracy not calculable — no actual trades to validate against.
+    evidence_id: TRADING-EVID-0001
+    evidence_type: forecast_accuracy
+    monitor_result:
+      accuracy: null
+      detail: Forecast accuracy not calculable — no actual trades to validate against.
+      forecast_available: true
+      forecast_count: 0
+      generated_at: '2026-06-08T05:12:47.666467+00:00'
+      score: 0
+      status: INITIALIZED
+    recorded_at: '2026-06-08T05:12:47.668176+00:00'
+  - detail: Signal quality not calculable — no real signals to evaluate.
+    evidence_id: TRADING-EVID-0002
+    evidence_type: signal_quality
+    monitor_status: INITIALIZED
+    recorded_at: '2026-06-08T05:12:47.678072+00:00'
+    signal_count: 0
+    signal_pipelines_found:
+    - learning_signal_engine
+    - signal_clustering_engine
+    - insight_discovery_engine
+  - detail: Zone quality not calculable — no trading zones generated.
+    evidence_id: TRADING-EVID-0003
+    evidence_type: zone_quality
+    monitor_status: INITIALIZED
+    recorded_at: '2026-06-08T05:12:47.682905+00:00'
+    zone_count: 0
+    zone_types_found: []
+  - detail: Forecast accuracy not calculable — no actual trades to validate against.
+    evidence_id: TRADING-EVID-0004
+    evidence_type: forecast_accuracy
+    monitor_result:
+      accuracy: null
+      detail: Forecast accuracy not calculable — no actual trades to validate against.
+      forecast_available: true
+      forecast_count: 0
+      generated_at: '2026-06-08T05:12:47.699487+00:00'
+      score: 0
+      status: INITIALIZED
+    recorded_at: '2026-06-08T05:12:47.705223+00:00'
+  - detail: Signal quality not calculable — no real signals to evaluate.
+    evidence_id: TRADING-EVID-0005
+    evidence_type: signal_quality
+    monitor_result:
+      detail: Signal quality not calculable — no real signals to evaluate.
+      generated_at: '2026-06-08T05:12:47.714666+00:00'
+      score: 0
+      signal_count: 0
+      signal_pipelines_found:
+      - learning_signal_engine
+      - signal_clustering_engine
+      - insight_discovery_engine
+      status: INITIALIZED
+    recorded_at: '2026-06-08T05:12:47.715664+00:00'
+  - detail: Zone quality not calculable — no trading zones generated.
+    evidence_id: TRADING-EVID-0006
+    evidence_type: zone_quality
+    monitor_result:
+      detail: Zone quality not calculable — no trading zones generated.
+      generated_at: '2026-06-08T05:12:47.715664+00:00'
+      score: 0
+      status: INITIALIZED
+      zone_count: 0
+      zone_types_found: []
+    recorded_at: '2026-06-08T05:12:47.731371+00:00'
+  - detail: INITIALIZED
+    evidence_id: TRADING-EVID-0007
+    evidence_type: trading_health
+    monitor_result:
+      all_checks_passed: true
+      checks:
+        market_health:
+          detail: No market data available. Read-only health check only.
+          score: 0
+          status: INITIALIZED
+        no_execution_guard:
+          detail: 'No trading execution modes detected. Forbidden modes: [''LIVE'',
+            ''PRODUCTION'', ''EXECUTION'', ''ORDER_PLACEMENT'', ''STRATEGY_MODIFICATION'']'
+          score: 100
+          status: PASS
+        observation_coverage:
+          detail: No observation coverage data.
+          score: 0
+          status: INITIALIZED
+        zone_detector:
+          detail: ZoneDetector available but no trading zones computed.
+          score: 0
+          status: INITIALIZED
+      domain_count: 4
+      generated_at: '2026-06-08T05:12:47.746967+00:00'
+      score: 0
+      status: INITIALIZED
+    recorded_at: '2026-06-08T05:12:47.746967+00:00'
+  - detail: Forecast accuracy not calculable — no actual trades to validate against.
+    evidence_id: TRADING-EVID-0008
+    evidence_type: forecast_accuracy
+    monitor_result:
+      accuracy: null
+      detail: Forecast accuracy not calculable — no actual trades to validate against.
+      forecast_available: true
+      forecast_count: 0
+      generated_at: '2026-06-08T05:12:47.762591+00:00'
+      score: 0
+      status: INITIALIZED
+    recorded_at: '2026-06-08T05:12:47.784731+00:00'
+  - detail: Signal quality not calculable — no real signals to evaluate.
+    evidence_id: TRADING-EVID-0009
+    evidence_type: signal_quality
+    monitor_status: INITIALIZED
+    recorded_at: '2026-06-08T05:12:47.811868+00:00'
+    signal_count: 0
+    signal_pipelines_found:
+    - learning_signal_engine
+    - signal_clustering_engine
+    - insight_discovery_engine
+  - detail: Zone quality not calculable — no trading zones generated.
+    evidence_id: TRADING-EVID-0010
+    evidence_type: zone_quality
+    monitor_status: INITIALIZED
+    recorded_at: '2026-06-08T05:12:47.853770+00:00'
+    zone_count: 0
+    zone_types_found: []
+  - detail: Forecast accuracy not calculable — no actual trades to validate against.
+    evidence_id: TRADING-EVID-0011
+    evidence_type: forecast_accuracy
+    monitor_result:
+      accuracy: null
+      detail: Forecast accuracy not calculable — no actual trades to validate against.
+      forecast_available: true
+      forecast_count: 0
+      generated_at: '2026-06-08T05:13:04.654473+00:00'
+      score: 0
+      status: INITIALIZED
+    recorded_at: '2026-06-08T05:13:04.662816+00:00'
+  - detail: Signal quality not calculable — no real signals to evaluate.
+    evidence_id: TRADING-EVID-0012
+    evidence_type: signal_quality
+    monitor_status: INITIALIZED
+    recorded_at: '2026-06-08T05:13:04.709747+00:00'
+    signal_count: 0
+    signal_pipelines_found:
+    - learning_signal_engine
+    - signal_clustering_engine
+    - insight_discovery_engine
+  - detail: Zone quality not calculable — no trading zones generated.
+    evidence_id: TRADING-EVID-0013
+    evidence_type: zone_quality
+    monitor_status: INITIALIZED
+    recorded_at: '2026-06-08T05:13:04.740964+00:00'
+    zone_count: 0
+    zone_types_found: []
+  - detail: Forecast accuracy not calculable — no actual trades to validate against.
+    evidence_id: TRADING-EVID-0014
+    evidence_type: forecast_accuracy
+    monitor_result:
+      accuracy: null
+      detail: Forecast accuracy not calculable — no actual trades to validate against.
+      forecast_available: true
+      forecast_count: 0
+      generated_at: '2026-06-08T05:13:04.772261+00:00'
+      score: 0
+      status: INITIALIZED
+    recorded_at: '2026-06-08T05:13:04.787838+00:00'
+  - detail: Signal quality not calculable — no real signals to evaluate.
+    evidence_id: TRADING-EVID-0015
+    evidence_type: signal_quality
+    monitor_result:
+      detail: Signal quality not calculable — no real signals to evaluate.
+      generated_at: '2026-06-08T05:13:04.819122+00:00'
+      score: 0
+      signal_count: 0
+      signal_pipelines_found:
+      - learning_signal_engine
+      - signal_clustering_engine
+      - insight_discovery_engine
+      status: INITIALIZED
+    recorded_at: '2026-06-08T05:13:04.834750+00:00'
+  - detail: Zone quality not calculable — no trading zones generated.
+    evidence_id: TRADING-EVID-0016
+    evidence_type: zone_quality
+    monitor_result:
+      detail: Zone quality not calculable — no trading zones generated.
+      generated_at: '2026-06-08T05:13:04.928496+00:00'
+      score: 0
+      status: INITIALIZED
+      zone_count: 0
+      zone_types_found: []
+    recorded_at: '2026-06-08T05:13:04.944122+00:00'
+  - detail: INITIALIZED
+    evidence_id: TRADING-EVID-0017
+    evidence_type: trading_health
+    monitor_result:
+      all_checks_passed: true
+      checks:
+        market_health:
+          detail: No market data available. Read-only health check only.
+          score: 0
+          status: INITIALIZED
+        no_execution_guard:
+          detail: 'No trading execution modes detected. Forbidden modes: [''LIVE'',
+            ''PRODUCTION'', ''EXECUTION'', ''ORDER_PLACEMENT'', ''STRATEGY_MODIFICATION'']'
+          score: 100
+          status: PASS
+        observation_coverage:
+          detail: No observation coverage data.
+          score: 0
+          status: INITIALIZED
+        zone_detector:
+          detail: ZoneDetector available but no trading zones computed.
+          score: 0
+          status: INITIALIZED
+      domain_count: 4
+      generated_at: '2026-06-08T05:13:04.975337+00:00'
+      score: 0
+      status: INITIALIZED
+    recorded_at: '2026-06-08T05:13:05.006587+00:00'
+  - detail: Forecast accuracy not calculable — no actual trades to validate against.
+    evidence_id: TRADING-EVID-0018
+    evidence_type: forecast_accuracy
+    monitor_result:
+      accuracy: null
+      detail: Forecast accuracy not calculable — no actual trades to validate against.
+      forecast_available: true
+      forecast_count: 0
+      generated_at: '2026-06-08T05:13:05.037841+00:00'
+      score: 0
+      status: INITIALIZED
+    recorded_at: '2026-06-08T05:13:05.069119+00:00'
+  - detail: Signal quality not calculable — no real signals to evaluate.
+    evidence_id: TRADING-EVID-0019
+    evidence_type: signal_quality
+    monitor_status: INITIALIZED
+    recorded_at: '2026-06-08T05:13:05.131610+00:00'
+    signal_count: 0
+    signal_pipelines_found:
+    - learning_signal_engine
+    - signal_clustering_engine
+    - insight_discovery_engine
+  - detail: Zone quality not calculable — no trading zones generated.
+    evidence_id: TRADING-EVID-0020
+    evidence_type: zone_quality
+    monitor_status: INITIALIZED
+    recorded_at: '2026-06-08T05:13:05.194088+00:00'
+    zone_count: 0
+    zone_types_found: []
+  - detail: Forecast accuracy not calculable — no actual trades to validate against.
+    evidence_id: TRADING-EVID-0021
+    evidence_type: forecast_accuracy
+    monitor_result:
+      accuracy: null
+      detail: Forecast accuracy not calculable — no actual trades to validate against.
+      forecast_available: true
+      forecast_count: 0
+      generated_at: '2026-06-08T06:52:37.420944+00:00'
+      score: 0
+      status: INITIALIZED
+    recorded_at: '2026-06-08T06:52:37.451754+00:00'
+  - detail: Signal quality not calculable — no real signals to evaluate.
+    evidence_id: TRADING-EVID-0022
+    evidence_type: signal_quality
+    monitor_status: INITIALIZED
+    recorded_at: '2026-06-08T06:52:37.499156+00:00'
+    signal_count: 0
+    signal_pipelines_found:
+    - learning_signal_engine
+    - signal_clustering_engine
+    - insight_discovery_engine
+  - detail: Zone quality not calculable — no trading zones generated.
+    evidence_id: TRADING-EVID-0023
+    evidence_type: zone_quality
+    monitor_status: INITIALIZED
+    recorded_at: '2026-06-08T06:52:37.561666+00:00'
+    zone_count: 0
+    zone_types_found: []
+  - detail: Forecast accuracy not calculable — no actual trades to validate against.
+    evidence_id: TRADING-EVID-0024
+    evidence_type: forecast_accuracy
+    monitor_result:
+      accuracy: null
+      detail: Forecast accuracy not calculable — no actual trades to validate against.
+      forecast_available: true
+      forecast_count: 0
+      generated_at: '2026-06-08T06:52:37.608507+00:00'
+      score: 0
+      status: INITIALIZED
+    recorded_at: '2026-06-08T06:52:37.624130+00:00'
+  - detail: Signal quality not calculable — no real signals to evaluate.
+    evidence_id: TRADING-EVID-0025
+    evidence_type: signal_quality
+    monitor_result:
+      detail: Signal quality not calculable — no real signals to evaluate.
+      generated_at: '2026-06-08T06:52:37.670981+00:00'
+      score: 0
+      signal_count: 0
+      signal_pipelines_found:
+      - learning_signal_engine
+      - signal_clustering_engine
+      - insight_discovery_engine
+      status: INITIALIZED
+    recorded_at: '2026-06-08T06:52:37.702663+00:00'
+  - detail: Zone quality not calculable — no trading zones generated.
+    evidence_id: TRADING-EVID-0026
+    evidence_type: zone_quality
+    monitor_result:
+      detail: Zone quality not calculable — no trading zones generated.
+      generated_at: '2026-06-08T06:52:37.733929+00:00'
+      score: 0
+      status: INITIALIZED
+      zone_count: 0
+      zone_types_found: []
+    recorded_at: '2026-06-08T06:52:37.765174+00:00'
+  - detail: INITIALIZED
+    evidence_id: TRADING-EVID-0027
+    evidence_type: trading_health
+    monitor_result:
+      all_checks_passed: true
+      checks:
+        market_health:
+          detail: No market data available. Read-only health check only.
+          score: 0
+          status: INITIALIZED
+        no_execution_guard:
+          detail: 'No trading execution modes detected. Forbidden modes: [''LIVE'',
+            ''PRODUCTION'', ''EXECUTION'', ''ORDER_PLACEMENT'', ''STRATEGY_MODIFICATION'']'
+          score: 100
+          status: PASS
+        observation_coverage:
+          detail: No observation coverage data.
+          score: 0
+          status: INITIALIZED
+        zone_detector:
+          detail: ZoneDetector available but no trading zones computed.
+          score: 0
+          status: INITIALIZED
+      domain_count: 4
+      generated_at: '2026-06-08T06:52:37.812613+00:00'
+      score: 0
+      status: INITIALIZED
+    recorded_at: '2026-06-08T06:52:37.843912+00:00'
+  - detail: Forecast accuracy not calculable — no actual trades to validate against.
+    evidence_id: TRADING-EVID-0028
+    evidence_type: forecast_accuracy
+    monitor_result:
+      accuracy: null
+      detail: Forecast accuracy not calculable — no actual trades to validate against.
+      forecast_available: true
+      forecast_count: 0
+      generated_at: '2026-06-08T06:52:37.890812+00:00'
+      score: 0
+      status: INITIALIZED
+    recorded_at: '2026-06-08T06:52:37.920587+00:00'
+  - detail: Signal quality not calculable — no real signals to evaluate.
+    evidence_id: TRADING-EVID-0029
+    evidence_type: signal_quality
+    monitor_status: INITIALIZED
+    recorded_at: '2026-06-08T06:52:37.999626+00:00'
+    signal_count: 0
+    signal_pipelines_found:
+    - learning_signal_engine
+    - signal_clustering_engine
+    - insight_discovery_engine
+  - detail: Zone quality not calculable — no trading zones generated.
+    evidence_id: TRADING-EVID-0030
+    evidence_type: zone_quality
+    monitor_status: INITIALIZED
+    recorded_at: '2026-06-08T06:52:38.077453+00:00'
+    zone_count: 0
+    zone_types_found: []
+  - detail: Forecast accuracy not calculable — no actual trades to validate against.
+    evidence_id: TRADING-EVID-0031
+    evidence_type: forecast_accuracy
+    monitor_result:
+      accuracy: null
+      detail: Forecast accuracy not calculable — no actual trades to validate against.
+      forecast_available: true
+      forecast_count: 0
+      generated_at: '2026-06-08T06:54:01.561735+00:00'
+      score: 0
+      status: INITIALIZED
+    recorded_at: '2026-06-08T06:54:01.577406+00:00'
+  - detail: Signal quality not calculable — no real signals to evaluate.
+    evidence_id: TRADING-EVID-0032
+    evidence_type: signal_quality
+    monitor_status: INITIALIZED
+    recorded_at: '2026-06-08T06:54:01.671144+00:00'
+    signal_count: 0
+    signal_pipelines_found:
+    - learning_signal_engine
+    - signal_clustering_engine
+    - insight_discovery_engine
+  - detail: Zone quality not calculable — no trading zones generated.
+    evidence_id: TRADING-EVID-0033
+    evidence_type: zone_quality
+    monitor_status: INITIALIZED
+    recorded_at: '2026-06-08T06:54:01.749256+00:00'
+    zone_count: 0
+    zone_types_found: []
+  - detail: Forecast accuracy not calculable — no actual trades to validate against.
+    evidence_id: TRADING-EVID-0034
+    evidence_type: forecast_accuracy
+    monitor_result:
+      accuracy: null
+      detail: Forecast accuracy not calculable — no actual trades to validate against.
+      forecast_available: true
+      forecast_count: 0
+      generated_at: '2026-06-08T06:54:01.811757+00:00'
+      score: 0
+      status: INITIALIZED
+    recorded_at: '2026-06-08T06:54:01.850747+00:00'
+  - detail: Signal quality not calculable — no real signals to evaluate.
+    evidence_id: TRADING-EVID-0035
+    evidence_type: signal_quality
+    monitor_result:
+      detail: Signal quality not calculable — no real signals to evaluate.
+      generated_at: '2026-06-08T06:54:01.905752+00:00'
+      score: 0
+      signal_count: 0
+      signal_pipelines_found:
+      - learning_signal_engine
+      - signal_clustering_engine
+      - insight_discovery_engine
+      status: INITIALIZED
+    recorded_at: '2026-06-08T06:54:01.936965+00:00'
+  - detail: Zone quality not calculable — no trading zones generated.
+    evidence_id: TRADING-EVID-0036
+    evidence_type: zone_quality
+    monitor_result:
+      detail: Zone quality not calculable — no trading zones generated.
+      generated_at: '2026-06-08T06:54:01.983708+00:00'
+      score: 0
+      status: INITIALIZED
+      zone_count: 0
+      zone_types_found: []
+    recorded_at: '2026-06-08T06:54:02.015461+00:00'
+  - detail: INITIALIZED
+    evidence_id: TRADING-EVID-0037
+    evidence_type: trading_health
+    monitor_result:
+      all_checks_passed: true
+      checks:
+        market_health:
+          detail: No market data available. Read-only health check only.
+          score: 0
+          status: INITIALIZED
+        no_execution_guard:
+          detail: 'No trading execution modes detected. Forbidden modes: [''LIVE'',
+            ''PRODUCTION'', ''EXECUTION'', ''ORDER_PLACEMENT'', ''STRATEGY_MODIFICATION'']'
+          score: 100
+          status: PASS
+        observation_coverage:
+          detail: No observation coverage data.
+          score: 0
+          status: INITIALIZED
+        zone_detector:
+          detail: ZoneDetector available but no trading zones computed.
+          score: 0
+          status: INITIALIZED
+      domain_count: 4
+      generated_at: '2026-06-08T06:54:02.077472+00:00'
+      score: 0
+      status: INITIALIZED
+    recorded_at: '2026-06-08T06:54:02.108747+00:00'
+  - detail: Forecast accuracy not calculable — no actual trades to validate against.
+    evidence_id: TRADING-EVID-0038
+    evidence_type: forecast_accuracy
+    monitor_result:
+      accuracy: null
+      detail: Forecast accuracy not calculable — no actual trades to validate against.
+      forecast_available: true
+      forecast_count: 0
+      generated_at: '2026-06-08T06:54:02.179951+00:00'
+      score: 0
+      status: INITIALIZED
+    recorded_at: '2026-06-08T06:54:02.202664+00:00'
+  - detail: Signal quality not calculable — no real signals to evaluate.
+    evidence_id: TRADING-EVID-0039
+    evidence_type: signal_quality
+    monitor_status: INITIALIZED
+    recorded_at: '2026-06-08T06:54:02.312144+00:00'
+    signal_count: 0
+    signal_pipelines_found:
+    - learning_signal_engine
+    - signal_clustering_engine
+    - insight_discovery_engine
+  - detail: Zone quality not calculable — no trading zones generated.
+    evidence_id: TRADING-EVID-0040
+    evidence_type: zone_quality
+    monitor_status: INITIALIZED
+    recorded_at: '2026-06-08T06:54:02.421216+00:00'
+    zone_count: 0
+    zone_types_found: []
+  - detail: Forecast accuracy not calculable — no actual trades to validate against.
+    evidence_id: TRADING-EVID-0041
+    evidence_type: forecast_accuracy
+    monitor_result:
+      accuracy: null
+      detail: Forecast accuracy not calculable — no actual trades to validate against.
+      forecast_available: true
+      forecast_count: 0
+      generated_at: '2026-06-08T06:54:26.194459+00:00'
+      score: 0
+      status: INITIALIZED
+    recorded_at: '2026-06-08T06:54:26.242393+00:00'
+  - detail: Signal quality not calculable — no real signals to evaluate.
+    evidence_id: TRADING-EVID-0042
+    evidence_type: signal_quality
+    monitor_status: INITIALIZED
+    recorded_at: '2026-06-08T06:54:26.358418+00:00'
+    signal_count: 0
+    signal_pipelines_found:
+    - learning_signal_engine
+    - signal_clustering_engine
+    - insight_discovery_engine
+  - detail: Zone quality not calculable — no trading zones generated.
+    evidence_id: TRADING-EVID-0043
+    evidence_type: zone_quality
+    monitor_status: INITIALIZED
+    recorded_at: '2026-06-08T06:54:26.467831+00:00'
+    zone_count: 0
+    zone_types_found: []
+  - detail: Forecast accuracy not calculable — no actual trades to validate against.
+    evidence_id: TRADING-EVID-0044
+    evidence_type: forecast_accuracy
+    monitor_result:
+      accuracy: null
+      detail: Forecast accuracy not calculable — no actual trades to validate against.
+      forecast_available: true
+      forecast_count: 0
+      generated_at: '2026-06-08T06:54:26.546040+00:00'
+      score: 0
+      status: INITIALIZED
+    recorded_at: '2026-06-08T06:54:26.592915+00:00'
+  - detail: Signal quality not calculable — no real signals to evaluate.
+    evidence_id: TRADING-EVID-0045
+    evidence_type: signal_quality
+    monitor_result:
+      detail: Signal quality not calculable — no real signals to evaluate.
+      generated_at: '2026-06-08T06:54:26.665594+00:00'
+      score: 0
+      signal_count: 0
+      signal_pipelines_found:
+      - learning_signal_engine
+      - signal_clustering_engine
+      - insight_discovery_engine
+      status: INITIALIZED
+    recorded_at: '2026-06-08T06:54:26.702683+00:00'
+  - detail: Zone quality not calculable — no trading zones generated.
+    evidence_id: TRADING-EVID-0046
+    evidence_type: zone_quality
+    monitor_result:
+      detail: Zone quality not calculable — no trading zones generated.
+      generated_at: '2026-06-08T06:54:26.783948+00:00'
+      score: 0
+      status: INITIALIZED
+      zone_count: 0
+      zone_types_found: []
+    recorded_at: '2026-06-08T06:54:26.827312+00:00'
+  - detail: INITIALIZED
+    evidence_id: TRADING-EVID-0047
+    evidence_type: trading_health
+    monitor_result:
+      all_checks_passed: true
+      checks:
+        market_health:
+          detail: No market data available. Read-only health check only.
+          score: 0
+          status: INITIALIZED
+        no_execution_guard:
+          detail: 'No trading execution modes detected. Forbidden modes: [''LIVE'',
+            ''PRODUCTION'', ''EXECUTION'', ''ORDER_PLACEMENT'', ''STRATEGY_MODIFICATION'']'
+          score: 100
+          status: PASS
+        observation_coverage:
+          detail: No observation coverage data.
+          score: 0
+          status: INITIALIZED
+        zone_detector:
+          detail: ZoneDetector available but no trading zones computed.
+          score: 0
+          status: INITIALIZED
+      domain_count: 4
+      generated_at: '2026-06-08T06:54:26.903450+00:00'
+      score: 0
+      status: INITIALIZED
+    recorded_at: '2026-06-08T06:54:26.936717+00:00'
+  - detail: Forecast accuracy not calculable — no actual trades to validate against.
+    evidence_id: TRADING-EVID-0048
+    evidence_type: forecast_accuracy
+    monitor_result:
+      accuracy: null
+      detail: Forecast accuracy not calculable — no actual trades to validate against.
+      forecast_available: true
+      forecast_count: 0
+      generated_at: '2026-06-08T06:54:27.014885+00:00'
+      score: 0
+      status: INITIALIZED
+    recorded_at: '2026-06-08T06:54:27.061745+00:00'
+  - detail: Signal quality not calculable — no real signals to evaluate.
+    evidence_id: TRADING-EVID-0049
+    evidence_type: signal_quality
+    monitor_status: INITIALIZED
+    recorded_at: '2026-06-08T06:54:27.202438+00:00'
+    signal_count: 0
+    signal_pipelines_found:
+    - learning_signal_engine
+    - signal_clustering_engine
+    - insight_discovery_engine
+  - detail: Zone quality not calculable — no trading zones generated.
+    evidence_id: TRADING-EVID-0050
+    evidence_type: zone_quality
+    monitor_status: INITIALIZED
+    recorded_at: '2026-06-08T06:54:27.327179+00:00'
+    zone_count: 0
+    zone_types_found: []
+  - detail: Forecast accuracy not calculable — no actual trades to validate against.
+    evidence_id: TRADING-EVID-0051
+    evidence_type: forecast_accuracy
+    monitor_result:
+      accuracy: null
+      detail: Forecast accuracy not calculable — no actual trades to validate against.
+      forecast_available: true
+      forecast_count: 0
+      generated_at: '2026-06-08T06:55:52.098119+00:00'
+      score: 0
+      status: INITIALIZED
+    recorded_at: '2026-06-08T06:55:52.139469+00:00'
+  - detail: Signal quality not calculable — no real signals to evaluate.
+    evidence_id: TRADING-EVID-0052
+    evidence_type: signal_quality
+    monitor_status: INITIALIZED
+    recorded_at: '2026-06-08T06:55:52.280316+00:00'
+    signal_count: 0
+    signal_pipelines_found:
+    - learning_signal_engine
+    - signal_clustering_engine
+    - insight_discovery_engine
+  - detail: Zone quality not calculable — no trading zones generated.
+    evidence_id: TRADING-EVID-0053
+    evidence_type: zone_quality
+    monitor_status: INITIALIZED
+    recorded_at: '2026-06-08T06:55:52.405458+00:00'
+    zone_count: 0
+    zone_types_found: []
+  - detail: Forecast accuracy not calculable — no actual trades to validate against.
+    evidence_id: TRADING-EVID-0054
+    evidence_type: forecast_accuracy
+    monitor_result:
+      accuracy: null
+      detail: Forecast accuracy not calculable — no actual trades to validate against.
+      forecast_available: true
+      forecast_count: 0
+      generated_at: '2026-06-08T06:55:52.483975+00:00'
+      score: 0
+      status: INITIALIZED
+    recorded_at: '2026-06-08T06:55:52.549457+00:00'
+  - detail: Signal quality not calculable — no real signals to evaluate.
+    evidence_id: TRADING-EVID-0055
+    evidence_type: signal_quality
+    monitor_result:
+      detail: Signal quality not calculable — no real signals to evaluate.
+      generated_at: '2026-06-08T06:55:52.672576+00:00'
+      score: 0
+      signal_count: 0
+      signal_pipelines_found:
+      - learning_signal_engine
+      - signal_clustering_engine
+      - insight_discovery_engine
+      status: INITIALIZED
+    recorded_at: '2026-06-08T06:55:52.735049+00:00'
+  - detail: Zone quality not calculable — no trading zones generated.
+    evidence_id: TRADING-EVID-0056
+    evidence_type: zone_quality
+    monitor_result:
+      detail: Zone quality not calculable — no trading zones generated.
+      generated_at: '2026-06-08T06:55:52.812000+00:00'
+      score: 0
+      status: INITIALIZED
+      zone_count: 0
+      zone_types_found: []
+    recorded_at: '2026-06-08T06:55:52.874154+00:00'
+  - detail: INITIALIZED
+    evidence_id: TRADING-EVID-0057
+    evidence_type: trading_health
+    monitor_result:
+      all_checks_passed: true
+      checks:
+        market_health:
+          detail: No market data available. Read-only health check only.
+          score: 0
+          status: INITIALIZED
+        no_execution_guard:
+          detail: 'No trading execution modes detected. Forbidden modes: [''LIVE'',
+            ''PRODUCTION'', ''EXECUTION'', ''ORDER_PLACEMENT'', ''STRATEGY_MODIFICATION'']'
+          score: 100
+          status: PASS
+        observation_coverage:
+          detail: No observation coverage data.
+          score: 0
+          status: INITIALIZED
+        zone_detector:
+          detail: ZoneDetector available but no trading zones computed.
+          score: 0
+          status: INITIALIZED
+      domain_count: 4
+      generated_at: '2026-06-08T06:55:52.952279+00:00'
+      score: 0
+      status: INITIALIZED
+    recorded_at: '2026-06-08T06:55:53.014781+00:00'
+  - detail: Forecast accuracy not calculable — no actual trades to validate against.
+    evidence_id: TRADING-EVID-0058
+    evidence_type: forecast_accuracy
+    monitor_result:
+      accuracy: null
+      detail: Forecast accuracy not calculable — no actual trades to validate against.
+      forecast_available: true
+      forecast_count: 0
+      generated_at: '2026-06-08T06:55:53.108794+00:00'
+      score: 0
+      status: INITIALIZED
+    recorded_at: '2026-06-08T06:55:53.176462+00:00'
+  - detail: Signal quality not calculable — no real signals to evaluate.
+    evidence_id: TRADING-EVID-0059
+    evidence_type: signal_quality
+    monitor_status: INITIALIZED
+    recorded_at: '2026-06-08T06:55:53.327525+00:00'
+    signal_count: 0
+    signal_pipelines_found:
+    - learning_signal_engine
+    - signal_clustering_engine
+    - insight_discovery_engine
+  - detail: Zone quality not calculable — no trading zones generated.
+    evidence_id: TRADING-EVID-0060
+    evidence_type: zone_quality
+    monitor_status: INITIALIZED
+    recorded_at: '2026-06-08T06:55:53.499589+00:00'
+    zone_count: 0
+    zone_types_found: []
+  - detail: Forecast accuracy not calculable — no actual trades to validate against.
+    evidence_id: TRADING-EVID-0061
+    evidence_type: forecast_accuracy
+    monitor_result:
+      accuracy: null
+      detail: Forecast accuracy not calculable — no actual trades to validate against.
+      forecast_available: true
+      forecast_count: 0
+      generated_at: '2026-06-08T07:13:20.770295+00:00'
+      score: 0
+      status: INITIALIZED
+    recorded_at: '2026-06-08T07:13:20.855497+00:00'
+  - detail: Signal quality not calculable — no real signals to evaluate.
+    evidence_id: TRADING-EVID-0062
+    evidence_type: signal_quality
+    monitor_status: INITIALIZED
+    recorded_at: '2026-06-08T07:13:21.040942+00:00'
+    signal_count: 0
+    signal_pipelines_found:
+    - learning_signal_engine
+    - signal_clustering_engine
+    - insight_discovery_engine
+  - detail: Zone quality not calculable — no trading zones generated.
+    evidence_id: TRADING-EVID-0063
+    evidence_type: zone_quality
+    monitor_status: INITIALIZED
+    recorded_at: '2026-06-08T07:13:21.186687+00:00'
+    zone_count: 0
+    zone_types_found: []
+  - detail: Forecast accuracy not calculable — no actual trades to validate against.
+    evidence_id: TRADING-EVID-0064
+    evidence_type: forecast_accuracy
+    monitor_result:
+      accuracy: null
+      detail: Forecast accuracy not calculable — no actual trades to validate against.
+      forecast_available: true
+      forecast_count: 0
+      generated_at: '2026-06-08T07:13:21.303451+00:00'
+      score: 0
+      status: INITIALIZED
+    recorded_at: '2026-06-08T07:13:21.352710+00:00'
+  - detail: Signal quality not calculable — no real signals to evaluate.
+    evidence_id: TRADING-EVID-0065
+    evidence_type: signal_quality
+    monitor_result:
+      detail: Signal quality not calculable — no real signals to evaluate.
+      generated_at: '2026-06-08T07:13:21.462110+00:00'
+      score: 0
+      signal_count: 0
+      signal_pipelines_found:
+      - learning_signal_engine
+      - signal_clustering_engine
+      - insight_discovery_engine
+      status: INITIALIZED
+    recorded_at: '2026-06-08T07:13:21.537503+00:00'
+  - detail: Zone quality not calculable — no trading zones generated.
+    evidence_id: TRADING-EVID-0066
+    evidence_type: zone_quality
+    monitor_result:
+      detail: Zone quality not calculable — no trading zones generated.
+      generated_at: '2026-06-08T07:13:21.639547+00:00'
+      score: 0
+      status: INITIALIZED
+      zone_count: 0
+      zone_types_found: []
+    recorded_at: '2026-06-08T07:13:21.702051+00:00'
+  - detail: INITIALIZED
+    evidence_id: TRADING-EVID-0067
+    evidence_type: trading_health
+    monitor_result:
+      all_checks_passed: true
+      checks:
+        market_health:
+          detail: No market data available. Read-only health check only.
+          score: 0
+          status: INITIALIZED
+        no_execution_guard:
+          detail: 'No trading execution modes detected. Forbidden modes: [''LIVE'',
+            ''PRODUCTION'', ''EXECUTION'', ''ORDER_PLACEMENT'', ''STRATEGY_MODIFICATION'']'
+          score: 100
+          status: PASS
+        observation_coverage:
+          detail: No observation coverage data.
+          score: 0
+          status: INITIALIZED
+        zone_detector:
+          detail: ZoneDetector available but no trading zones computed.
+          score: 0
+          status: INITIALIZED
+      domain_count: 4
+      generated_at: '2026-06-08T07:13:21.822596+00:00'
+      score: 0
+      status: INITIALIZED
+    recorded_at: '2026-06-08T07:13:21.888888+00:00'
+  - detail: Forecast accuracy not calculable — no actual trades to validate against.
+    evidence_id: TRADING-EVID-0068
+    evidence_type: forecast_accuracy
+    monitor_result:
+      accuracy: null
+      detail: Forecast accuracy not calculable — no actual trades to validate against.
+      forecast_available: true
+      forecast_count: 0
+      generated_at: '2026-06-08T07:13:22.030645+00:00'
+      score: 0
+      status: INITIALIZED
+    recorded_at: '2026-06-08T07:13:22.182089+00:00'
+  - detail: Signal quality not calculable — no real signals to evaluate.
+    evidence_id: TRADING-EVID-0069
+    evidence_type: signal_quality
+    monitor_status: INITIALIZED
+    recorded_at: '2026-06-08T07:13:22.358523+00:00'
+    signal_count: 0
+    signal_pipelines_found:
+    - learning_signal_engine
+    - signal_clustering_engine
+    - insight_discovery_engine
+  - detail: Zone quality not calculable — no trading zones generated.
+    evidence_id: TRADING-EVID-0070
+    evidence_type: zone_quality
+    monitor_status: INITIALIZED
+    recorded_at: '2026-06-08T07:13:22.573560+00:00'
+    zone_count: 0
+    zone_types_found: []
+  last_evidence_id: TRADING-EVID-0070
+  last_updated: '2026-06-08T07:13:22.573560+00:00'
+  next_review: '2026-07-08'
+  operator: Iris
+  owner: Janus
+  reviewer: Helen
+  status: ACTIVE
+  updated_at: '2026-06-08'
+  version: 1.0

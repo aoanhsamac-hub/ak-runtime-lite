@@ -1,0 +1,24 @@
+{
+  "registry": "kingdom_revenue",
+  "status": "ACTIVE",
+  "version": "1.0",
+  "created_at": "2026-06-08",
+  "updated_at": "2026-06-08T07:13:25.452494+00:00",
+  "schema": "kingdom_revenue_schema",
+  "entries": [
+    {
+      "revenue_id": "REV-2026-0001",
+      "timestamp": "2026-06-08T07:13:25.452494+00:00",
+      "source": "Consulting",
+      "category": "Operating",
+      "amount": 7500,
+      "authority": "Sage",
+      "reference": "",
+      "description": "",
+      "status": "RECORDED",
+      "audit_id": "AUDIT-REV-20260608071325",
+      "created_at": "2026-06-08T07:13:25.452494+00:00",
+      "updated_at": null
+    }
+  ]
+}

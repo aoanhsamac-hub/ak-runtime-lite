@@ -1,0 +1,38 @@
+# AK National Skill Validation Registry
+# Governance Authority: Risk Law v1.0, Execution Law v1.0, Janus Directive AK-WP35.5-001
+# Last Updated: 2026-06-08
+
+skill_validation_registry:
+  version: "1.0"
+  description: "Validation rules and requirements for all AK skills"
+  validation_types:
+    unit:
+      description: "Schema compliance, required fields, enum values"
+      required: true
+      gates: []
+    integration:
+      description: "Dependency resolution, tool availability, agent compatibility"
+      required: true
+      gates: []
+    governance:
+      description: "Policy compliance, approval chain, audit requirements"
+      required: true
+      gates:
+        - ownership
+        - review_authority
+        - no_auto_promotion
+    risk:
+      description: "Risk level assessment, mitigation verification, stop conditions"
+      required: true
+      gates: []
+    performance:
+      description: "Metrics thresholds, benchmark comparison, SLA compliance"
+      required: false
+      gates: []
+    audit:
+      description: "Traceability completeness, evidence chain, retention compliance"
+      required: true
+      gates:
+        - traceability
+        - evidence_quality
+  entries: []

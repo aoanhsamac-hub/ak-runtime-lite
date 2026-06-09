@@ -1,0 +1,9 @@
+iris_data_quality_registry:
+  created_at: '2026-06-08'
+  operator: Iris
+  owner: Janus
+  reviewer: Hermes
+  status: ACTIVE
+  version: 1.0
+  quality_records: []
+  last_updated: '2026-06-08T00:00:00+00:00'

@@ -1,0 +1,61 @@
+capability_usage_registry:
+  created_at: '2026-06-08'
+  evidence_records:
+  - agent_id: test_agent
+    capability_name: test_cap
+    evidence_id: USAGE-EVID-0001
+    operation_type: execute
+    outcome: success
+    recorded_at: '2026-06-08T05:12:43.586044+00:00'
+    usage_record_id: ''
+  - agent_id: test_agent
+    capability_name: test_cap
+    evidence_id: USAGE-EVID-0002
+    operation_type: execute
+    outcome: success
+    recorded_at: '2026-06-08T05:13:04.270035+00:00'
+    usage_record_id: ''
+  - agent_id: test_agent
+    capability_name: test_cap
+    evidence_id: USAGE-EVID-0003
+    operation_type: execute
+    outcome: success
+    recorded_at: '2026-06-08T06:52:37.031172+00:00'
+    usage_record_id: ''
+  - agent_id: test_agent
+    capability_name: test_cap
+    evidence_id: USAGE-EVID-0004
+    operation_type: execute
+    outcome: success
+    recorded_at: '2026-06-08T06:54:01.061938+00:00'
+    usage_record_id: ''
+  - agent_id: test_agent
+    capability_name: test_cap
+    evidence_id: USAGE-EVID-0005
+    operation_type: execute
+    outcome: success
+    recorded_at: '2026-06-08T06:54:25.609025+00:00'
+    usage_record_id: ''
+  - agent_id: test_agent
+    capability_name: test_cap
+    evidence_id: USAGE-EVID-0006
+    operation_type: execute
+    outcome: success
+    recorded_at: '2026-06-08T06:55:51.420750+00:00'
+    usage_record_id: ''
+  - agent_id: test_agent
+    capability_name: test_cap
+    evidence_id: USAGE-EVID-0007
+    operation_type: execute
+    outcome: success
+    recorded_at: '2026-06-08T07:13:19.974039+00:00'
+    usage_record_id: ''
+  last_evidence_id: USAGE-EVID-0007
+  last_updated: '2026-06-08T07:13:19.974039+00:00'
+  next_review: '2026-07-08'
+  operator: Sage
+  owner: Janus
+  reviewer: Hermes
+  status: ACTIVE
+  updated_at: '2026-06-08'
+  version: 1.0

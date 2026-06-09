@@ -1,0 +1,99 @@
+# Constitution Article Registry
+# Tracks all articles and their implementation status
+
+constitution_articles:
+  - article_id: "ART-1"
+    title: "Sovereignty"
+    status: "IMPLEMENTED"
+    implementing_laws: ["ALKASIK_AGENT_LAW_v1.0_FINAL.md"]
+    implementing_charters: ["JANUS_CHARTER_v1.0_FINAL.md", "HERMES_CHARTER_v1.0_FINAL.md"]
+
+  - article_id: "ART-2"
+    title: "Supreme Objectives"
+    status: "IMPLEMENTED"
+    implementing_laws: ["ALKASIK_ECONOMIC_LAW_v1.0_FINAL.md"]
+    implementing_frameworks: ["AK_CAPABILITY_ECONOMY_FRAMEWORK_v1.0_FINAL.md"]
+
+  - article_id: "ART-3"
+    title: "Safety Principles"
+    status: "PARTIAL"
+    notes: "Backup-first and test-before-merge enforced in documentation but not as automated gates"
+    implementing_laws: ["ALKASIK_EXECUTION_LAW_v1.0_FINAL.md", "ALKASIK_SECURITY_LAW_v1.0_FINAL.md"]
+
+  - article_id: "ART-4"
+    title: "Agent Authority"
+    status: "PARTIAL"
+    notes: "2/7 agents have FINAL charters"
+    implementing_laws: ["ALKASIK_AGENT_LAW_v1.0_FINAL.md"]
+    missing_charters: ["SAGE_CHARTER", "IRIS_CHARTER", "HELEN_CHARTER", "LANGLIEU_CHARTER", "YETKIEU_CHARTER"]
+
+  - article_id: "ART-5"
+    title: "Risk Kernel"
+    status: "IMPLEMENTED"
+    implementing_laws: ["ALKASIK_RISK_LAW_v1.0_FINAL.md"]
+
+  - article_id: "ART-6"
+    title: "Execution"
+    status: "IMPLEMENTED"
+    implementing_laws: ["ALKASIK_EXECUTION_LAW_v1.0_FINAL.md"]
+
+  - article_id: "ART-7"
+    title: "Memory and Learning"
+    status: "IMPLEMENTED"
+    implementing_laws: ["ALKASIK_MEMORY_LAW_v1.0_FINAL.md"]
+    implementing_frameworks: ["AK_CAPABILITY_ECONOMY_FRAMEWORK_v1.0_FINAL.md"]
+
+  - article_id: "ART-8"
+    title: "Autonomous Coding"
+    status: "MISSING"
+    notes: "Pipeline not implemented as runtime workflow"
+
+  - article_id: "ART-9"
+    title: "Emergency Power"
+    status: "PARTIAL"
+    notes: "Escalation chain exists, automation not implemented"
+    implementing_frameworks: ["AK_EMERGENCY_RESERVE_FRAMEWORK_v1.0_FINAL.md"]
+
+  - article_id: "ART-10"
+    title: "Constitutional Amendments"
+    status: "PARTIAL"
+    notes: "Process documented but not automated"
+
+  - article_id: "ART-27"
+    title: "Separation of Duties"
+    status: "PARTIAL"
+    notes: "Authority model documented, role separation partially implemented"
+
+  - article_id: "ART-36"
+    title: "Memory Governance"
+    status: "IMPLEMENTED"
+    implementing_laws: ["ALKASIK_MEMORY_LAW_v1.0_FINAL.md"]
+
+  - article_id: "ART-37"
+    title: "Lesson Status"
+    status: "IMPLEMENTED"
+    notes: "5 states defined: DRAFT, REVIEWED, APPROVED, DEPRECATED, QUARANTINE"
+
+  - article_id: "ART-38"
+    title: "Knowledge Compression Doctrine"
+    status: "IMPLEMENTED"
+    notes: "Retention and archive governance applied"
+
+  - article_id: "ART-39"
+    title: "Information Classification"
+    status: "PARTIAL"
+    notes: "I0-I9 scale defined, classification enforcement partial"
+
+constitution_accessibility:
+  source_docx: "BINARY_LOCKED"
+  canonical_md: "CREATED"
+  canonical_txt: "CREATED"
+  article_count: 15
+  extractable_status: "FULL"
+
+summary:
+  total_articles: 15
+  implemented: 6
+  partial: 6
+  missing: 3
+  full_compliance_required: 95

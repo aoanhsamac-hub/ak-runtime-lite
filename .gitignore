@@ -1,0 +1,62 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pdb
+
+# Env files
+.env
+.env.*
+
+# Secrets
+secrets/
+secrets*.yaml
+secrets*.json
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Media
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+
+# Archives
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+
+# Installers
+*.exe
+*.msi
+
+# Reports (auto-generated)
+docs/reports/DAY*
+docs/reports/AUTO*
+
+# Evidence (generated runtime)
+evidence/
+
+# Git
+.git/
+
+# Temp
+tmp/
+temp/
