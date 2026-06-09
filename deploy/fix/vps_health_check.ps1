@@ -1,12 +1,16 @@
-# vps_health_check.ps1 — Kiem tra va tu dong khoi dong lai runtime
+# vps_health_check.ps1 — Kiem tra runtime daemon, auto-restart neu die
 $akPath = "C:\AK"
 $logPath = "$akPath\logs"
+$daemonScript = "$akPath\services\runtime_daemon.py"
 
 Write-Host "=== RUNTIME HEALTH CHECK ===" -ForegroundColor Cyan
-$time = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-Write-Host "Time: $time"
+Write-Host "Time: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
 
-# 1. Kiem tra RAM
+# Set env vars
+$env:TELEGRAM_BOT_TOKEN = [Environment]::GetEnvironmentVariable("TELEGRAM_BOT_TOKEN","Machine")
+$env:TELEGRAM_WHITELIST = [Environment]::GetEnvironmentVariable("TELEGRAM_WHITELIST","Machine")
+
+# 1. RAM
 try {
     $ram = Get-CimInstance Win32_OperatingSystem -ErrorAction SilentlyContinue
     $freeRAM = [math]::Round($ram.FreePhysicalMemory/1MB, 1)
@@ -17,48 +21,7 @@ try {
     }
 } catch { Write-Host "RAM: Khong the doc" }
 
-# 2. Kiem tra Python processes
-$required = @(
-    @{name="telegram_gateway"; script="services\telegram_gateway.py"},
-    @{name="kingdom_scheduler"; script="services\kingdom_scheduler.py"},
-    @{name="runtime_supervisor"; script="services\runtime_supervisor.py"}
-)
-
-$processes = Get-Process python* -ErrorAction SilentlyContinue
-$pCount = $processes.Count
-Write-Host "Python processes: $pCount"
-
-$restarted = $false
-foreach ($r in $required) {
-    $found = $false
-    $pids = @()
-    foreach ($p in $processes) {
-        $cmd = ""
-        try { $cmd = $p.CommandLine } catch { try { $cmd = (Get-CimInstance Win32_Process -Filter "ProcessId=$($p.Id)").CommandLine } catch {} }
-        if ($cmd -like "*$($r.script)*") {
-            $found = $true
-            $pids += $p.Id
-        }
-    }
-    if ($found) {
-        Write-Host "  [OK] $($r.name) (PID: $($pids -join ','))" -ForegroundColor Green
-    } else {
-        Write-Host "  [DEAD] $($r.name) — dang khoi dong lai..." -ForegroundColor Red
-        $logFile = "$logPath\$($r.name).log"
-        $script = "$akPath\$($r.script)"
-        if (Test-Path $script) {
-            Start-Process -FilePath "python" -ArgumentList "-u `"$script`"" -WindowStyle Hidden -RedirectStandardOutput "$logFile.out" -RedirectStandardError "$logFile.err"
-            $restarted = $true
-        }
-    }
-}
-
-if ($restarted) {
-    Write-Host "`nCo process duoc khoi dong lai!" -ForegroundColor Yellow
-    & "$akPath\deploy\sync\send_telegram.ps1" -Message "VPS: Runtime process duoc khoi dong lai" -Status warning
-}
-
-# 3. Kiem tra disk
+# 2. Disk
 try {
     $disk = Get-CimInstance Win32_LogicalDisk -Filter "DeviceID='C:'" -ErrorAction SilentlyContinue
     $freeGB = [math]::Round($disk.FreeSpace/1GB, 1)
@@ -69,4 +32,63 @@ try {
     }
 } catch { Write-Host "Disk: Khong the doc" }
 
-Write-Host "`n=== HEALTH CHECK DONE ===" -ForegroundColor Cyan
+# 3. Check daemon
+$daemonPids = @()
+try {
+    $procs = Get-Process python* -ErrorAction SilentlyContinue
+    Write-Host "Python processes: $($procs.Count)"
+    foreach ($p in $procs) {
+        $cmd = ""
+        try { $cmd = $p.CommandLine } catch { try { $cmd = (Get-CimInstance Win32_Process -Filter "ProcessId=$($p.Id)").CommandLine } catch {} }
+        if ($cmd -like "*runtime_daemon*") {
+            $daemonPids += $p.Id
+        }
+    }
+} catch { }
+
+if ($daemonPids.Count -gt 0) {
+    Write-Host "  [OK] Daemon running (PID: $($daemonPids -join ','))" -ForegroundColor Green
+} else {
+    Write-Host "  [DEAD] Daemon not running — restarting..." -ForegroundColor Red
+    try {
+        $logOut = "$logPath\daemon_restart.out"
+        $logErr = "$logPath\daemon_restart.err"
+        $psi = New-Object System.Diagnostics.ProcessStartInfo
+        $psi.FileName = "python"
+        $psi.Arguments = "-u `"$daemonScript`""
+        $psi.WorkingDirectory = $akPath
+        $psi.UseShellExecute = $false
+        $psi.RedirectStandardOutput = $true
+        $psi.RedirectStandardError = $true
+        $psi.WindowStyle = [System.Diagnostics.ProcessWindowStyle]::Hidden
+        $psi.CreateNoWindow = $true
+        $psi.EnvironmentVariables["TELEGRAM_BOT_TOKEN"] = $env:TELEGRAM_BOT_TOKEN
+        $psi.EnvironmentVariables["TELEGRAM_WHITELIST"] = $env:TELEGRAM_WHITELIST
+        $p = [System.Diagnostics.Process]::Start($psi)
+        Start-Sleep -Seconds 3
+        if (!$p.HasExited) {
+            Write-Host "  -> Restarted (PID: $($p.Id))" -ForegroundColor Green
+            & "$akPath\deploy\sync\send_telegram.ps1" -Message "VPS: Daemon duoc khoi dong lai (PID $($p.Id))" -Status warning
+        } else {
+            Write-Host "  -> Restart FAILED" -ForegroundColor Red
+            $p.StandardError.ReadToEnd() | Out-File -FilePath $logErr -Encoding UTF8
+        }
+    } catch {
+        Write-Host "  -> Restart ERROR: $_" -ForegroundColor Red
+    }
+}
+
+# 4. Git status
+try {
+    $gitDir = "$akPath\.git"
+    if (Test-Path $gitDir) {
+        $status = git -C $akPath status --porcelain 2>&1 | Out-String
+        if ($status.Trim()) {
+            Write-Host "Git: co file chua commit" -ForegroundColor Yellow
+        } else {
+            Write-Host "Git: sach" -ForegroundColor Green
+        }
+    }
+} catch { }
+
+Write-Host "=== HEALTH CHECK DONE ===" -ForegroundColor Cyan

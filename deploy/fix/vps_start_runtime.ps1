@@ -1,105 +1,90 @@
-# vps_start_runtime.ps1 — Khoi dong runtime handlers tren VPS (FIXED v2)
+# vps_start_runtime.ps1 — Khoi dong runtime_daemon.py (single daemon process)
 $ErrorActionPreference = "Continue"
 $akPath = "C:\AK"
 $logPath = "$akPath\logs"
-$startTime = Get-Date
+$daemonScript = "$akPath\services\runtime_daemon.py"
 
-Write-Host "=== AK-RUNTIME-HANDLER-AUTOSTART :: START RUNTIME v2 ===" -ForegroundColor Cyan
+Write-Host "=== AK-RUNTIME :: START DAEMON ===" -ForegroundColor Cyan
 New-Item -ItemType Directory -Path $logPath -Force | Out-Null
 
-# Set Telegram env vars cho process hien tai
+# Set env vars
 $env:TELEGRAM_BOT_TOKEN = [Environment]::GetEnvironmentVariable("TELEGRAM_BOT_TOKEN","Machine")
 $env:TELEGRAM_WHITELIST = [Environment]::GetEnvironmentVariable("TELEGRAM_WHITELIST","Machine")
-Write-Host "TELEGRAM_BOT_TOKEN: $([bool]$env:TELEGRAM_BOT_TOKEN)" -ForegroundColor Green
-Write-Host "TELEGRAM_WHITELIST: $($env:TELEGRAM_WHITELIST)" -ForegroundColor Green
 
-# Ham start process
-function Start-AkProcess($name, $scriptFile) {
-    $logOut = "$logPath\$name.out"
-    $logErr = "$logPath\$name.err"
-    
-    # Kiem tra da chay chua
-    $existing = Get-Process python* -ErrorAction SilentlyContinue | Where-Object {
-        $cmd = ""
-        try { $cmd = $_.CommandLine } catch { try { $cmd = (Get-CimInstance Win32_Process -Filter "ProcessId=$($_.Id)").CommandLine } catch {} }
-        $cmd -like "*$scriptFile*"
-    }
-    if ($existing) {
-        Write-Host "  [SKIP] $name da chay (PID: $($existing.Id))" -ForegroundColor Yellow
-        return
-    }
-    
-    Write-Host "  [START] $name..." -ForegroundColor Yellow
-    Write-Host "    File: $akPath\$scriptFile" -ForegroundColor Gray
-    
-    # Chay tu C:\AK de dam bao import path
-    $psi = New-Object System.Diagnostics.ProcessStartInfo
-    $psi.FileName = "python"
-    $psi.Arguments = "-u `"$akPath\$scriptFile`""
-    $psi.WorkingDirectory = $akPath
-    $psi.UseShellExecute = $false
-    $psi.RedirectStandardOutput = $true
-    $psi.RedirectStandardError = $true
-    $psi.WindowStyle = [System.Diagnostics.ProcessWindowStyle]::Hidden
-    $psi.CreateNoWindow = $true
-    $psi.EnvironmentVariables["TELEGRAM_BOT_TOKEN"] = $env:TELEGRAM_BOT_TOKEN
-    $psi.EnvironmentVariables["TELEGRAM_WHITELIST"] = $env:TELEGRAM_WHITELIST
-    
-    $p = [System.Diagnostics.Process]::Start($psi)
-    Start-Sleep -Seconds 3
-    
-    if (!$p.HasExited) {
-        Write-Host "    -> PID: $($p.Id)" -ForegroundColor Green
-    } else {
-        $err = $p.StandardError.ReadToEnd()
-        $out = $p.StandardOutput.ReadToEnd()
-        Write-Host "    -> LOI: Process thoat ngay" -ForegroundColor Red
-        if ($err) { Write-Host "    STDERR: $err" -ForegroundColor Red }
-        if ($out) { Write-Host "    STDOUT: $out" -ForegroundColor Red }
-        $err | Out-File -FilePath $logErr -Encoding UTF8
-        $out | Out-File -FilePath $logOut -Encoding UTF8
-    }
+# Check if already running
+$existing = Get-Process python* -ErrorAction SilentlyContinue | Where-Object {
+    $cmd = ""
+    try { $cmd = $_.CommandLine } catch { try { $cmd = (Get-CimInstance Win32_Process -Filter "ProcessId=$($_.Id)").CommandLine } catch {} }
+    $cmd -like "*runtime_daemon*"
+}
+if ($existing) {
+    Write-Host "Daemon da chay (PID: $($existing.Id))" -ForegroundColor Yellow
+    exit 0
 }
 
-# Test Python truoc
-Write-Host "`n[TEST] Kiem tra Python..." -ForegroundColor Yellow
-try {
-    $test = python -c "print('PYTHON_OK')" 2>&1
-    Write-Host "  -> $test" -ForegroundColor Green
-} catch {
-    Write-Host "  -> LOI: Python khong chay duoc" -ForegroundColor Red
+# Test Python
+Write-Host "[TEST] Python..." -ForegroundColor Yellow
+python -c "print('OK')" 2>&1 | Out-Null
+if ($LASTEXITCODE -ne 0) { Write-Host "  LOI" -ForegroundColor Red; exit 1 }
+Write-Host "  OK" -ForegroundColor Green
+
+# Test import
+Write-Host "[TEST] Import services..." -ForegroundColor Yellow
+python -c "import sys; sys.path.insert(0,'$akPath'); from services.runtime_daemon import main; print('OK')" 2>&1 | Out-Null
+if ($LASTEXITCODE -ne 0) { 
+    Write-Host "  LOI import" -ForegroundColor Red
+    python -c "import sys; sys.path.insert(0,'$akPath'); import services.telegram_gateway; print('tg OK')" 2>&1
+    exit 1
+}
+Write-Host "  OK" -ForegroundColor Green
+
+# Start daemon
+Write-Host "[START] runtime_daemon..." -ForegroundColor Yellow
+$logOut = "$logPath\daemon.out"
+$logErr = "$logPath\daemon.err"
+
+$psi = New-Object System.Diagnostics.ProcessStartInfo
+$psi.FileName = "python"
+$psi.Arguments = "-u `"$daemonScript`""
+$psi.WorkingDirectory = $akPath
+$psi.UseShellExecute = $false
+$psi.RedirectStandardOutput = $true
+$psi.RedirectStandardError = $true
+$psi.WindowStyle = [System.Diagnostics.ProcessWindowStyle]::Hidden
+$psi.CreateNoWindow = $true
+$psi.EnvironmentVariables["TELEGRAM_BOT_TOKEN"] = $env:TELEGRAM_BOT_TOKEN
+$psi.EnvironmentVariables["TELEGRAM_WHITELIST"] = $env:TELEGRAM_WHITELIST
+
+$p = [System.Diagnostics.Process]::Start($psi)
+Start-Sleep -Seconds 4
+
+if (!$p.HasExited) {
+    Write-Host "  PID: $($p.Id)" -ForegroundColor Green
+    $p.StandardOutput.ReadToEndAsync() | Out-Null
+    $p.StandardError.ReadToEndAsync() | Out-Null
+} else {
+    $err = $p.StandardError.ReadToEnd()
+    $out = $p.StandardOutput.ReadToEnd()
+    $err | Out-File -FilePath $logErr -Encoding UTF8
+    $out | Out-File -FilePath $logOut -Encoding UTF8
+    Write-Host "  LOI: thoat ngay" -ForegroundColor Red
+    if ($err) { Write-Host "  STDERR: $err" -ForegroundColor Red }
+    if ($out) { Write-Host "  STDOUT: $out" -ForegroundColor Red }
     exit 1
 }
 
-# Test import services
-Write-Host "[TEST] Kiem tra import services..." -ForegroundColor Yellow
-try {
-    $importTest = python -c "import sys; sys.path.insert(0,'C:\\AK'); from services.telegram_gateway import TelegramGateway; print('IMPORT_OK')" 2>&1
-    Write-Host "  -> $importTest" -ForegroundColor Green
-} catch {
-    Write-Host "  -> LOI: Import services that bai" -ForegroundColor Red
-}
+Start-Sleep -Seconds 5
+$totalPython = (Get-Process python* -ErrorAction SilentlyContinue).Count
+$daemonRunning = (Get-Process python* -ErrorAction SilentlyContinue | Where-Object {
+    $cmd = ""
+    try { $cmd = $_.CommandLine } catch { try { $cmd = (Get-CimInstance Win32_Process -Filter "ProcessId=$($_.Id)").CommandLine } catch {} }
+    $cmd -like "*runtime_daemon*"
+}).Count -gt 0
 
-# Start cac service
-Write-Host "`n[1/3] Dang khoi dong Telegram gateway..." -ForegroundColor Yellow
-Start-AkProcess -name "telegram_gateway" -scriptFile "services\telegram_gateway.py"
+Write-Host "`nPython processes: $totalPython | Daemon: $daemonRunning" -ForegroundColor Cyan
 
-Write-Host "[2/3] Dang khoi dong Kingdom scheduler..." -ForegroundColor Yellow
-Start-AkProcess -name "kingdom_scheduler" -scriptFile "services\kingdom_scheduler.py"
+"$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') | START DAEMON | PID=$($p.Id)" | Out-File -FilePath "$logPath\runtime_start.log" -Encoding UTF8 -Append
 
-Write-Host "[3/3] Dang khoi dong Runtime supervisor..." -ForegroundColor Yellow
-Start-AkProcess -name "runtime_supervisor" -scriptFile "services\runtime_supervisor.py"
-
-# Kiem tra
-Start-Sleep -Seconds 2
-$total = (Get-Process python* -ErrorAction SilentlyContinue).Count
-Write-Host "`n=== RUNTIME: $total Python processes ===" -ForegroundColor Cyan
-
-# Ghi log
-"$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') | START RUNTIME | $total processes" | Out-File -FilePath "$logPath\runtime_start.log" -Encoding UTF8 -Append
-
-# Telegram notify
-$telegramScript = "$akPath\deploy\sync\send_telegram.ps1"
-if (Test-Path $telegramScript) {
-    & $telegramScript -Message "VPS: Runtime da khoi dong ($total processes)" -Status success
+if ($daemonRunning) {
+    & "$akPath\deploy\sync\send_telegram.ps1" -Message "VPS: Runtime daemon da khoi dong (PID $($p.Id))" -Status success
 }
