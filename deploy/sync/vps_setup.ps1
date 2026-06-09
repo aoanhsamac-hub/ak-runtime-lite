@@ -139,30 +139,17 @@ Set-Content -Path "$deployPath\send_telegram.ps1" -Value $sendScript -Encoding U
 
 # === 7. Tao scheduled tasks ===
 Write-Host "[7/8] Tao Windows Scheduled Tasks..." -ForegroundColor Yellow
-$taskUser = "SYSTEM"
 
 # Task 1: AK_Git_Pull_Every_30min
-$action1 = New-ScheduledTaskAction -Execute "PowerShell.exe" -Argument "-NoProfile -ExecutionPolicy Bypass -File `"$deployPath\pull_source.ps1`""
-$trigger1 = New-ScheduledTaskTrigger -Daily -At "00:00" -RepetitionInterval "00:30:00"
-$settings1 = New-ScheduledTaskSettingsSet -StartWhenAvailable -MultipleInstances IgnoreNew
-$principal1 = New-ScheduledTaskPrincipal -UserId $taskUser -RunLevel Highest
-Register-ScheduledTask -TaskName "AK_Git_Pull_Every_30min" -Action $action1 -Trigger $trigger1 -Settings $settings1 -Principal $principal1 -Force | Out-Null
+schtasks /create /tn "AK_Git_Pull_Every_30min" /tr "powershell.exe -NoProfile -ExecutionPolicy Bypass -File `"$deployPath\pull_source.ps1`"" /sc minute /mo 30 /ru SYSTEM /rl HIGHEST /f 2>&1 | Out-Null
 Write-Host "  [OK] AK_Git_Pull_Every_30min" -ForegroundColor Green
 
 # Task 2: AK_Push_Reports_Every_1h
-$action2 = New-ScheduledTaskAction -Execute "PowerShell.exe" -Argument "-NoProfile -ExecutionPolicy Bypass -File `"$deployPath\push_reports.ps1`""
-$trigger2 = New-ScheduledTaskTrigger -Daily -At "00:00" -RepetitionInterval "01:00:00"
-$settings2 = New-ScheduledTaskSettingsSet -StartWhenAvailable -MultipleInstances IgnoreNew
-$principal2 = New-ScheduledTaskPrincipal -UserId $taskUser -RunLevel Highest
-Register-ScheduledTask -TaskName "AK_Push_Reports_Every_1h" -Action $action2 -Trigger $trigger2 -Settings $settings2 -Principal $principal2 -Force | Out-Null
+schtasks /create /tn "AK_Push_Reports_Every_1h" /tr "powershell.exe -NoProfile -ExecutionPolicy Bypass -File `"$deployPath\push_reports.ps1`"" /sc minute /mo 60 /ru SYSTEM /rl HIGHEST /f 2>&1 | Out-Null
 Write-Host "  [OK] AK_Push_Reports_Every_1h" -ForegroundColor Green
 
 # Task 3: AK_System_Health_Every_5min
-$action3 = New-ScheduledTaskAction -Execute "PowerShell.exe" -Argument "-NoProfile -ExecutionPolicy Bypass -Command `"Get-Process python* -ErrorAction SilentlyContinue | Format-Table Id,ProcessName -AutoSize; Get-CimInstance Win32_OperatingSystem | Select-Object @{N='FreeRAM';E={[math]::Round(`$_.FreePhysicalMemory/1MB,1)}} | Format-Table -AutoSize`""
-$trigger3 = New-ScheduledTaskTrigger -Daily -At "00:00" -RepetitionInterval "00:05:00"
-$settings3 = New-ScheduledTaskSettingsSet -StartWhenAvailable -MultipleInstances IgnoreNew
-$principal3 = New-ScheduledTaskPrincipal -UserId $taskUser -RunLevel Highest
-Register-ScheduledTask -TaskName "AK_System_Health_Every_5min" -Action $action3 -Trigger $trigger3 -Settings $settings3 -Principal $principal3 -Force | Out-Null
+schtasks /create /tn "AK_System_Health_Every_5min" /tr "powershell.exe -NoProfile -ExecutionPolicy Bypass -Command `"Get-Process python* -ErrorAction SilentlyContinue | Format-Table Id,ProcessName -AutoSize; Get-CimInstance Win32_OperatingSystem | Select-Object @{N='FreeRAM';E={[math]::Round(`$_.FreePhysicalMemory/1MB,1)}} | Format-Table -AutoSize`"" /sc minute /mo 5 /ru SYSTEM /rl HIGHEST /f 2>&1 | Out-Null
 Write-Host "  [OK] AK_System_Health_Every_5min" -ForegroundColor Green
 
 # === 8. Kiem tra ===
