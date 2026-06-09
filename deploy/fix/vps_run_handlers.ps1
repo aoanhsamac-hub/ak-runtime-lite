@@ -28,6 +28,10 @@ try {
 }
 Write-Host "Python path: $pythonPath" -ForegroundColor Gray
 
+# Set PYTHONPATH de handlers co the import services.*
+$env:PYTHONPATH = $akPath
+Write-Host "PYTHONPATH: $env:PYTHONPATH" -ForegroundColor Gray
+
 Write-Host "=== RUN DAY1 HANDLERS ===" -ForegroundColor Cyan
 Write-Host "Time: $time"
 
