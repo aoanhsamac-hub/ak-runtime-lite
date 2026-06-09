@@ -16,6 +16,8 @@ if (-not $TelegramToken) { $TelegramToken = [Environment]::GetEnvironmentVariabl
 if (-not $TelegramWhitelist) { $TelegramWhitelist = [Environment]::GetEnvironmentVariable("TELEGRAM_WHITELIST","Machine") }
 
 if (-not $GitHubToken) { Write-Host "LOI: Thieu GitHubToken. Set env GITHUB_TOKEN hoac truyen tham so." -ForegroundColor Red; exit 1 }
+if (-not $TelegramToken) { Write-Host "LOI: Thieu TelegramToken. Truyen tham so -TelegramToken." -ForegroundColor Red; exit 1 }
+if (-not $TelegramWhitelist) { Write-Host "LOI: Thieu TelegramWhitelist. Truyen tham so -TelegramWhitelist." -ForegroundColor Red; exit 1 }
 
 $ErrorActionPreference = "Continue"
 $akPath = "C:\AK"
@@ -122,8 +124,9 @@ Set-Content -Path "$deployPath\push_reports.ps1" -Value $pushScript -Encoding UT
 Write-Host "[6/8] Tao send_telegram.ps1 tren VPS..." -ForegroundColor Yellow
 $sendScript = @"
 param(`$Message, `$Status)
-`$botToken = [Environment]::GetEnvironmentVariable("TELEGRAM_BOT_TOKEN","Machine")
-`$chatId = [Environment]::GetEnvironmentVariable("TELEGRAM_WHITELIST","Machine")
+# Thu Process scope truoc, Machine scope sau
+`$botToken = if (`$env:TELEGRAM_BOT_TOKEN) { `$env:TELEGRAM_BOT_TOKEN } else { [Environment]::GetEnvironmentVariable("TELEGRAM_BOT_TOKEN","Machine") }
+`$chatId = if (`$env:TELEGRAM_WHITELIST) { `$env:TELEGRAM_WHITELIST } else { [Environment]::GetEnvironmentVariable("TELEGRAM_WHITELIST","Machine") }
 `$icons = @{info="ℹ️"; success="✅"; warning="⚠️"; error="❌"}
 `$text = "`$(`$icons[`$Status]) [VPS] `$Message"
 try {
