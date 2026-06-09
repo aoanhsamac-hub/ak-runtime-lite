@@ -22,18 +22,40 @@ if ($existing) {
     exit 0
 }
 
+# Tim Python path (quan trong khi chay tu SYSTEM user)
+$pythonPath = "python"
+try {
+    $pythonPath = (Get-Command python).Source
+} catch {
+    $possiblePaths = @(
+        "$env:LOCALAPPDATA\Programs\Python\Python313\python.exe",
+        "$env:LOCALAPPDATA\Programs\Python\Python312\python.exe",
+        "$env:LOCALAPPDATA\Programs\Python\Python311\python.exe",
+        "$env:ProgramFiles\Python313\python.exe",
+        "$env:ProgramFiles\Python312\python.exe",
+        "$env:ProgramFiles\Python311\python.exe",
+        "C:\Python313\python.exe",
+        "C:\Python312\python.exe",
+        "C:\Python311\python.exe"
+    )
+    foreach ($p in $possiblePaths) {
+        if (Test-Path $p) { $pythonPath = $p; break }
+    }
+}
+Write-Host "Python path: $pythonPath" -ForegroundColor Gray
+
 # Test Python
 Write-Host "[TEST] Python..." -ForegroundColor Yellow
-python -c "print('OK')" 2>&1 | Out-Null
+& $pythonPath -c "print('OK')" 2>&1 | Out-Null
 if ($LASTEXITCODE -ne 0) { Write-Host "  LOI" -ForegroundColor Red; exit 1 }
 Write-Host "  OK" -ForegroundColor Green
 
 # Test import
 Write-Host "[TEST] Import services..." -ForegroundColor Yellow
-python -c "import sys; sys.path.insert(0,'$akPath'); from services.runtime_daemon import main; print('OK')" 2>&1 | Out-Null
+& $pythonPath -c "import sys; sys.path.insert(0,'$akPath'); from services.runtime_daemon import main; print('OK')" 2>&1 | Out-Null
 if ($LASTEXITCODE -ne 0) { 
     Write-Host "  LOI import" -ForegroundColor Red
-    python -c "import sys; sys.path.insert(0,'$akPath'); import services.telegram_gateway; print('tg OK')" 2>&1
+    & $pythonPath -c "import sys; sys.path.insert(0,'$akPath'); import services.telegram_gateway; print('tg OK')" 2>&1
     exit 1
 }
 Write-Host "  OK" -ForegroundColor Green
@@ -44,7 +66,7 @@ $logOut = "$logPath\daemon.out"
 $logErr = "$logPath\daemon.err"
 
 $psi = New-Object System.Diagnostics.ProcessStartInfo
-$psi.FileName = "python"
+$psi.FileName = $pythonPath
 $psi.Arguments = "-u `"$daemonScript`""
 $psi.WorkingDirectory = $akPath
 $psi.UseShellExecute = $false
