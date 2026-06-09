@@ -149,7 +149,19 @@ schtasks /create /tn "AK_Push_Reports_Every_1h" /tr "powershell.exe -NoProfile -
 Write-Host "  [OK] AK_Push_Reports_Every_1h" -ForegroundColor Green
 
 # Task 3: AK_System_Health_Every_5min
-schtasks /create /tn "AK_System_Health_Every_5min" /tr "powershell.exe -NoProfile -ExecutionPolicy Bypass -Command `"Get-Process python* -ErrorAction SilentlyContinue | Format-Table Id,ProcessName -AutoSize; Get-CimInstance Win32_OperatingSystem | Select-Object @{N='FreeRAM';E={[math]::Round(`$_.FreePhysicalMemory/1MB,1)}} | Format-Table -AutoSize`"" /sc minute /mo 5 /ru SYSTEM /rl HIGHEST /f 2>&1 | Out-Null
+$healthScript = @"
+`$proc = Get-Process python* -ErrorAction SilentlyContinue
+`$ram = Get-CimInstance Win32_OperatingSystem -ErrorAction SilentlyContinue
+`$freeRAM = [math]::Round(`$ram.FreePhysicalMemory/1MB, 1)
+`$totalRAM = [math]::Round(`$ram.TotalVisibleMemorySize/1MB, 1)
+Write-Host "Python processes: `$(`$proc.Count)"
+Write-Host "Free RAM: `$freeRAM GB / `$totalRAM GB"
+if (`$freeRAM -lt 0.3) {
+    powershell -NoProfile -ExecutionPolicy Bypass -Command "& `"$deployPath\send_telegram.ps1`" -Message 'RAM thap: `$freeRAM GB' -Status warning" 2>`$null
+}
+"@
+Set-Content -Path "$deployPath\health_check.ps1" -Value $healthScript -Encoding UTF8
+schtasks /create /tn "AK_System_Health_Every_5min" /tr "powershell.exe -NoProfile -ExecutionPolicy Bypass -File `"$deployPath\health_check.ps1`"" /sc minute /mo 5 /ru SYSTEM /rl HIGHEST /f 2>&1 | Out-Null
 Write-Host "  [OK] AK_System_Health_Every_5min" -ForegroundColor Green
 
 # === 8. Kiem tra ===
