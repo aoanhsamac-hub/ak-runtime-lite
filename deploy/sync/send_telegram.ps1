@@ -1,37 +1,31 @@
-# Them Git usr/bin vao PATH de tim ssh, tar, etc.
-$gitBins = @("C:\Program Files\Git\usr\bin","C:\Program Files (x86)\Git\usr\bin","$env:LOCALAPPDATA\Programs\Git\usr\bin")
-foreach ($p in $gitBins) { if (Test-Path "$p\ssh.exe") { $env:Path = "$p;$env:Path"; break } }
-
+# send_telegram.ps1 — Gui thong bao Telegram (FIXED v2)
 param(
-    [Parameter(Mandatory=$true)]
-    [string]$Message,
-    [ValidateSet("info","success","warning","error")]
+    [string]$Message = "",
     [string]$Status = "info"
 )
 
-$botToken = [Environment]::GetEnvironmentVariable("TELEGRAM_BOT_TOKEN","User")
-$chatId = [Environment]::GetEnvironmentVariable("TELEGRAM_WHITELIST","User")
+$botToken = if ($env:TELEGRAM_BOT_TOKEN) { $env:TELEGRAM_BOT_TOKEN } else { [Environment]::GetEnvironmentVariable("TELEGRAM_BOT_TOKEN","Machine") }
+$chatId = if ($env:TELEGRAM_WHITELIST) { $env:TELEGRAM_WHITELIST } else { [Environment]::GetEnvironmentVariable("TELEGRAM_WHITELIST","Machine") }
 
 if (-not $botToken -or -not $chatId) {
     Write-Host "TELEGRAM_BOT_TOKEN hoac TELEGRAM_WHITELIST chua duoc set. Bo qua Telegram." -ForegroundColor Yellow
     exit 0
 }
 
-$icons = @{ "info"="ℹ️"; "success"="✅"; "warning"="⚠️"; "error"="❌" }
-$icon = $icons[$Status]
-$hostname = $env:COMPUTERNAME
-$text = "$icon [$hostname] $Message"
+if (-not $Message) {
+    Write-Host "Message trong. Bo qua." -ForegroundColor Yellow
+    exit 0
+}
 
-$body = @{
-    chat_id = $chatId
-    text = $text
-    parse_mode = "HTML"
-} | ConvertTo-Json -Compress
+$icons = @{ "info"="ℹ️"; "success"="✅"; "warning"="⚠️"; "error"="❌" }
+$icon = if ($icons.ContainsKey($Status)) { $icons[$Status] } else { "ℹ️" }
+$text = "$icon [VPS] $Message"
 
 try {
+    $body = @{ chat_id = $chatId; text = $text; parse_mode = "HTML" } | ConvertTo-Json -Compress
     $url = "https://api.telegram.org/bot$botToken/sendMessage"
-    $response = Invoke-RestMethod -Uri $url -Method Post -Body $body -ContentType "application/json" -TimeoutSec 10
-    Write-Host "Telegram da gui: $text" -ForegroundColor Green
+    Invoke-RestMethod -Uri $url -Method Post -Body $body -ContentType "application/json" -TimeoutSec 10 | Out-Null
+    Write-Host "Telegram da gui" -ForegroundColor Green
 } catch {
-    Write-Host "Loi gui Telegram: $_" -ForegroundColor Red
+    Write-Host "Loi gui Telegram: $($_.Exception.Message)" -ForegroundColor Red
 }
