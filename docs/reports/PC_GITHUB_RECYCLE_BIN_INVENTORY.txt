@@ -1,0 +1,44 @@
+# PC GITHUB AUDIT — RECYCLE BIN INVENTORY
+Generated: 2026-06-10 16:23
+Host: DESKTOP-IQB9870
+User: GiangKhoi
+Location: D:\$Recycle.Bin\S-1-5-21-3432697636-3353394745-1738757603-1001
+
+---
+
+## Git Repositories Found in Recycle Bin
+
+### 1. $RL3C2N6 (old D:\Alkasik repo)
+
+- Path: D:\$Recycle.Bin\S-1-5-21-3432697636-3353394745-1738757603-1001\$RL3C2N6
+- Remotes: None
+- Last commits: 565b3a66 Harden dashboard health checks
+                  c3c603eb Align Phase 2 with Project NEURON
+                  7025fd3f Document Phase 1B handoff state
+- Contains: Subdirectory "Open source\agents-towards-production" (upstream clone)
+- Deleted from: D:\Alkasik (original path)
+
+---
+
+## Non-AK Files (not cleared — mixed content)
+
+The recycle bin contains approximately 100+ items including:
+- Executables (.exe, .bat)
+- Archives (.7z, .zip)
+- Documents (.md, .txt, .xlsx)
+- Python scripts (.py)
+- Various other user files
+
+Largest items by size:
+- $R4H1YE3.exe: 196 MB
+- $RCK5ZD5.zip: 114 MB
+- $R0U1DZ7.txt: 15 MB
+- $REFBJTP.7z: 8 MB
+
+---
+
+## Decision
+
+NOT CLEARED. Per Phase H constraint: "If uncertain, do not clear. Report only."
+
+Recommended: Operator to manually review and selectively restore or purge.
